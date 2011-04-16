@@ -1,0 +1,177 @@
+;************
+;Use this to load all of our lisp files ahead of time so we can call them later on from the mnu file
+;Make sure you dont include the .lsp extension when loading them
+;
+;Format: (load "filename" '("command1" "command2" "command3" "etc"))
+;                         ^ that is NOT a typo
+;
+;Written for Centek Engineering (http://www.centekeng.com/)
+;Author: Daniel Centore
+;*************
+
+;Begin loading all required files
+
+(setvar "cmdecho" 0)		;Disable other commands from printing
+(setvar "glswapmode" 2)		;fixes ati graphics issue
+
+(setq text-size)
+
+(command "-linetype" "load" "*" (findfile "acad.lin") ^C^C)
+
+(load "readcsv" '("loadblockinfo"))
+(load "customcomm" '("revcloud"))
+(load "dline" '("dline"))
+(load "infogetter" '("getlinestart" "getlineend"))
+(load "userinput" '("getreal-def"))
+(load "stringfunctions" '("char-array"))
+(load "customhvac" '("to-demo-hvac"))
+(load "customteldata" '("wirebreakend"))
+(load "autobreaktxt" '("autobreaktext"))
+(load "annotation" '("quickarrow"))
+
+(loaddefaults)
+
+(defun c:cw ()
+	(print "======================")
+	(c:quickarrow)
+	(print "======================")
+	(princ)
+)
+
+(defun insertblock (blockpath layername color linetype rotation position xcommand xscale)	;;dont set any temp vars here - it needs them as public
+	(begincommand)
+	(setq xcommand (split xcommand ";"))
+	
+	(if (/= (equal layername "") t) (command "._layer" "_M"    layername ""))
+	(if (/= (equal color "")     t) (command "-layer"  "color" color     "" ""))
+	(if (/= (equal linetype "")  t) (command "-layer"  "ltype" linetype  "" ""))
+
+	(if (/= (equal blockpath "") t) (progn 	;if we dont have a block to insert, then dont!
+	
+		(setq scale (getvar "dimscale"))
+		
+		(if (/= (equal xscale "-1" ) t) (setq scale xscale))
+		
+		;(if (equal position "0") (setq ins_pt (getpoint "\nPick Insertion point.")))
+		
+		(command "-insert" blockpath "_non")
+		(if (/= (equal position "0") t) 
+			;;IF
+			(command ins_pt)
+			;;ELSE
+			(progn
+			(prompt "\nPick insertion point: ")
+			(command pause)
+			(setq ins_pt (getvar "lastpoint"))	
+		))
+		(command scale scale)
+		(setvar "cmdecho" 1)
+		(if (equal rotation "-1") (progn (prompt "\nRotation angle for block <0>: ") (command pause)) (command rotation))
+		
+;		(if (equal rotation "-1")
+;			(progn
+;				(prompt "\nRotation angle for block <0>:")
+;				(command "-insert" blockpath "_non" ins_pt scale scale)
+;				(setvar "cmdecho" 1)
+;				(command pause)
+;			))
+;		
+;		(if (/= (equal rotation "-1") t) (progn (command "-insert" blockpath "_non" ins_pt scale scale) (setvar "cmdecho" 1) (command rotation)))
+		
+	))
+	
+	(foreach item xcommand (progn
+		;;Note for xcommand: if the command is located within cencad, then it must be explicitly stated like DL below:
+		(if (equal item "DL") (progn (setvar "tracewid" (* 0.03125 (getvar "dimscale"))) (c:dl))
+		(if (/= (equal item "-1") t) (command item)
+		))
+	))
+	
+	(while (/= (getvar "cmdactive") 0) (command pause))
+	(setvar "cmdecho" 0)
+	
+	;;Lets set the attribute height now - must be AFTER the commands in case we decide to add attributes from there
+	(set-attribute-height (entity-ename (entlast)) (text-size))
+
+	(endcommand)
+)
+
+(defun begincommand ()	
+	(command ".undo" "BE")		;Begin undo set
+)
+
+(defun endcommand ()
+	(princ)
+)
+
+(setq disabled '())
+(defun disablesnap ()
+	(if (/= disabled t) (progn 
+		;(print "disabled")
+		(setq oldsnap (getvar "osmode"))
+		(setq oldortho (getvar "orthomode"))
+	
+		(setvar "osmode" 0)		;turn off all snapping
+		(setvar "orthomode" 0)		;turn off straight lines
+	))
+	
+	(setq disabled t)
+)
+
+(defun enablesnap ()
+	;(print "enabled")
+	(setvar "osmode" oldsnap)
+	(setvar "orthomode" oldortho)
+	
+	(setq disabled '())
+)
+
+(defun c:clear ()
+	(repeat 500 (prompt "\n"))
+	
+	(princ)
+)
+
+(defun as-string (number / olddim result)
+	(setq olddim (getvar "dimzin"))
+	(setvar "dimzin" 15)
+	
+	(setq result (rtos number 2 12))
+	
+	(setvar "dimzin" olddim)
+	
+	result
+)
+
+(defun c:extents ()
+	(begincommand)
+	(command "zoom" "e")
+	(endcommand)
+)
+
+;;fixes prompt when it stops showing the :
+(defun c:fixp ()
+	(prompt "\n")
+)
+
+(defun c:rlsp ()
+	(setq s::startup nil)
+	(load (findfile "cencad.mnl"))
+	(if s::startup (s::startup))
+	(setq s::startup nil)
+	(princ)
+)
+
+(defun c:entitydata ()
+	;(begincommand)	;only 1 command dont bother
+	
+	(entget (car (entsel "Ah-choo: ")))
+	
+	;(endcommand)	;dont add this back - we lose the return val
+)
+
+
+(command "-style" "CEN-ATT" "romans.shx" (as-string (text-size)) "0.75" "0" "no" "no")
+(c:clear)
+(prompt "\nCENCAD is READY for you to use :-)")
+(drawingsetup)

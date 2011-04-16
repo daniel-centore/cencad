@@ -1,0 +1,9 @@
+readcsv
+-loadblockinfo
+
+customcomm
+-revcloud
+-xrev
+
+customteldata
+-all except last
