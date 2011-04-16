@@ -1,0 +1,5 @@
+(defun c:to-demo-hvac ()
+	(begincommand)
+	(changeto "DEMO" "cyan" "HIDDEN2")
+	(endcommand)
+)
