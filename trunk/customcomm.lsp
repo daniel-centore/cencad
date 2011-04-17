@@ -396,7 +396,7 @@
 ;;Changes a block to be on it's (layername + "-" + text)
 (defun changeto (text color linetype / obj)
 	(while (/= (setq obj (entsel "Select Objects: ")) nil) (progn
-		changeto2(text color linetype obj)
+		(changeto2 text color linetype obj)
 	))
 )
 
