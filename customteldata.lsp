@@ -1,3 +1,11 @@
+;;************
+;;Handles Tel/Data menu
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
+
+;;Puts a ~ at the end of a line
 (defun c:wirebreakend (/ line)
 	(begincommand)
 	
@@ -8,6 +16,7 @@
 	(endcommand)
 )
 
+;;like wirebreakend but cuts to points from center and does it there
 (defun c:wirebreakline ()
 	(begincommand)
 	
@@ -25,6 +34,7 @@
 	(endcommand)
 )
 
+;;Similar to wirebreakend
 (defun c:objectbreakend (/ line)
 	(begincommand)
 	
@@ -35,6 +45,7 @@
 	(endcommand)
 )
 
+;;similar to objectbreakline
 (defun c:objectbreakline (/ line pt1 pt2 wawa)
 	(begincommand)
 	
@@ -52,6 +63,7 @@
 	(endcommand)
 )
 
+;;Puts a symbol between 2 points
 (defun c:objbreakdbl ()
 	(begincommand)
 	
