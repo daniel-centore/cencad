@@ -1,13 +1,13 @@
-//before all commands goes ^P^C^C
-//[--] makes a separator (not that its very visible in Ubuntu)
+//************
+//Cencad menu file - this is the one we should modify and/or load
+//
+//Before all commands goes ^P^C^C
+//[--] makes a separator
 //Remember to begin menu with -> and end with <-
-
-//Procedure:
-//1. Setup this file completely
-//1.1Bring it into writer so we can check spelling
-//2. import it into bricscad
-//3. edit icons through command cui
-//4. remove mns from official version BUT keep backup for later editing
+//
+//Written for Centek Engineering (http://www.centekeng.com/)
+//Author: Daniel Centore (dcentore@optonline.net)
+//*************
 
 ***MENUGROUP=CENCAD
 
