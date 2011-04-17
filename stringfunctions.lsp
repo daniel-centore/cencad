@@ -1,4 +1,9 @@
+;;************
 ;;Some kludgy functions for working with strings
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
 
 ;;Returns an array of chars
 (defun char-array (string / final count)
@@ -16,6 +21,7 @@
 )
 
 ;;Replaces the first instance of replace inside string with with. (ie HELLO,ELL,!!! ~~> H!!!O)
+;;Precondition: replace has >1 characters
 (defun replace-first (string replace with
 / replaceC length sArray count runs first howfar continue s r begin end final)
 	(setq final nil)
@@ -68,12 +74,15 @@
 	final
 )
 
+;;Converts a character array to a string
 (defun char2string (chararray / final)
 	(setq final "")
 	(foreach item chararray (setq final (strcat final item)))
 	final
 )
 
+;;Replaces the last instance of replace inside string with with
+;;Precondition: replace has >1 characters
 (defun replace-last (string replace with / Rstring Rreplace Rwith final)
 	(setq Rstring (char2string (reverse (char-array string))))
 	(setq Rreplace (char2string (reverse (char-array replace))))
@@ -83,6 +92,8 @@
 	final
 )
 
+;;Calls replace-first repeatedly until string no longer contains with
+;;Precondition: replace has >1 characters
 (defun replace-all (string replace with)
 	(if (/= (equal replace with) t)
 	(while (contains string replace)
@@ -92,8 +103,9 @@
 	string
 )
 
-(defun contains (string replace
-/ replaceC length sArray count runs first howfar continue)
+;;Checks to see if string has an instance of replace in it (ie "HELLO" "EL" returns true)
+;;Precondition: replace has >1 characters
+(defun contains (string replace / replaceC length sArray count runs first howfar continue)
 	(setq replaceC (char-array replace))
 	
 	(setq length (strlen replacew))
@@ -131,6 +143,7 @@
 	final
 )
 
+;;Takes a string and turns it into an array splitting at at each instance of delimeter (ie "hello,wawa,chicken" "," ==> '("hello" "wawa" "chicken"))
 (defun split (string delimeter)
 	(setq string (strcat string delimeter))		;;so we break include the last one, bit of a hack
 	
@@ -155,7 +168,7 @@
 	array
 )
 
-
+;;Replaces value n of array with newval
 (defun replace (array n newval)
 	
 	(setq firstpart '())

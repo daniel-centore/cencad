@@ -242,10 +242,10 @@
 	
 	(setq intersection (infiniteptintersection line1 line2))
 	
-	(setq top1 (getfarthertop line1 line2))
+	(setq top1 (infinitegetfarthertop line1 line2))
 	(setq ang1 (angle intersection top1))
 	
-	(setq top2 (getfarthertop line2 line1))
+	(setq top2 (infinitegetfarthertop line2 line1))
 	(setq ang2 (angle intersection top2))
 	
 	(disablesnap) ;;\/
