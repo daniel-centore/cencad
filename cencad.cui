@@ -5820,6 +5820,8 @@
     </MacroGroup>
     <MenuRoot>
       <AcceleratorRoot/>
+      <MouseButtonRoot/>
+      <DigitizerButtonRoot/>
       <PopMenuRoot>
         <PopMenu UID="ID_POP1">
           <Alias>POP1</Alias>

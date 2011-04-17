@@ -1,3 +1,5 @@
+;;Credits: http://www.simplecad.com/lisp/files/tb.lsp.txt
+
 (defun c:autobreaktext ( / TEMP FIRST TX ANG TEMPLA TEMPCMD TEMPBLIP TEMPOS TXTST TXTH line1)
 
 	(begincommand)
