@@ -1,12 +1,22 @@
-;;All the ones in annotation should be put on their corresponding layer
-;;so the command should be something like: (progn (anot-layer "T") (c:quickarrow))
+;;************
+;;Handles annotations (which are in multiple menus)
+;;
+;;All the commands in here should be put on a corresponding layer
+;;so the command in the menu file should be something like: (progn (anot-layer "T") (c:quickarrow))
 ;;
 ;;List below:
 ;;T - tel/data
 ;;E - electrical
 ;;P - plumbing
 ;;M - hvac (mechanical)
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
 
+
+;;Draws a quick "what". See user methods.
+;;Basically quickarrow but with other arrowheads
 (defun quicksomething (what)
 	(setvar "DIMLDRBLK" what)
 	
@@ -32,6 +42,7 @@
 	)
 )
 
+;;Draws a quick arrow
 (defun c:quickarrow ()
 	(begincommand)
 	
@@ -40,6 +51,7 @@
 	(endcommand)
 )
 
+;;Draws a quick arrow with a dot on the end
 (defun c:quickdot ()
 	(begincommand)
 	
@@ -49,6 +61,7 @@
 	(endcommand)
 )
 
+;;Draws a quick arrow with a loop at the end
 (defun c:quickloop ()
 	(begincommand)
 	
@@ -58,6 +71,7 @@
 	(endcommand)
 )
 
+;;Draws a quick arrow with no arrowhead
 (defun c:quicknone ()
 	(begincommand)
 	
@@ -66,6 +80,7 @@
 	(endcommand)
 )
 
+;;Creates and loads a layer for use w/ annotation
 (defun anot-layer (which / color linetype text)
 	(command "._layer" "_M" (strcat which "-NOTE") "")
 	(command "-layer" "color" "cyan" "" ^C^C)

@@ -1,3 +1,11 @@
+;;************
+;;Handles Common menu
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
+
+;;Creates a layer for the cloud revision, then puts a cloud on it
 (defun revcloud ()
 	(begincommand)
 	
@@ -9,6 +17,7 @@
 	(endcommand)
 )
 
+;;Same as revcloud but with a triangle thing
 (defun xrev ()
 	(begincommand)
 	
@@ -20,6 +29,7 @@
 	(endcommand)
 )
 
+;;Sets the drawing scale
 (defun drawingsetup ()
 	(begincommand)
 	
@@ -30,6 +40,8 @@
 	
 	(endcommand)
 )
+
+;;Came from somewhere...sorry have no credits
 (defun c:shadowbox (/ oldhatch lay osnp p1 p2 len abc p3 p4 p5 p6 p7 p8)
 	(begincommand)
 	

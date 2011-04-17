@@ -1,13 +1,13 @@
-;************
-;Use this to load all of our lisp files ahead of time so we can call them later on from the mnu file
-;Make sure you dont include the .lsp extension when loading them
-;
-;Format: (load "filename" '("command1" "command2" "command3" "etc"))
-;                         ^ that is NOT a typo
-;
-;Written for Centek Engineering (http://www.centekeng.com/)
-;Author: Daniel Centore
-;*************
+;;************
+;;Use this to load all of our lisp files ahead of time so we can call them later on from the mnu file
+;;Make sure you dont include the .lsp extension when loading them
+;;
+;;Format: (load "filename" '("command1" "command2" "command3" "etc"))
+;;                         ^ that is NOT a typo
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
 
 ;Begin loading all required files
 
@@ -16,8 +16,10 @@
 
 (setq text-size)
 
+;load linetypes
 (command "-linetype" "load" "*" (findfile "acad.lin") ^C^C)
 
+;load all helper files (seem to only need to load one method?)
 (load "readcsv" '("loadblockinfo"))
 (load "customcomm" '("revcloud"))
 (load "dline" '("dline"))
@@ -29,8 +31,10 @@
 (load "autobreaktxt" '("autobreaktext"))
 (load "annotation" '("quickarrow"))
 
+;userinput
 (loaddefaults)
 
+;command used for testing o/ commands
 (defun c:cw ()
 	(print "======================")
 	(c:quickarrow)
@@ -38,6 +42,15 @@
 	(princ)
 )
 
+;;Inserts a block
+;;
+;;blockpath	The file path to the blob (or "" to not insert any)
+;;layername	The layer to insert onto
+;;color		Color to set the layer to
+;;linetype	The linetype to set the layer to
+;;rotation	How much to rotate by (-1 for prompt)
+;;position	0=Prompt, -1=Use former
+;;xcommand	A command that should be excecuted afterwards. Separate with ';' for progn effect.
 (defun insertblock (blockpath layername color linetype rotation position xcommand xscale)	;;dont set any temp vars here - it needs them as public
 	(begincommand)
 	(setq xcommand (split xcommand ";"))
@@ -87,7 +100,7 @@
 		))
 	))
 	
-	(while (/= (getvar "cmdactive") 0) (command pause))
+	;(while (/= (getvar "cmdactive") 0) (command pause))
 	(setvar "cmdecho" 0)
 	
 	;;Lets set the attribute height now - must be AFTER the commands in case we decide to add attributes from there
@@ -96,15 +109,19 @@
 	(endcommand)
 )
 
+;;Sets up undo set
 (defun begincommand ()	
 	(command ".undo" "BE")		;Begin undo set
 )
 
+;;Ends command w/ (princ). Perhaps this will be needed later.
 (defun endcommand ()
 	(princ)
 )
 
 (setq disabled '())
+
+;;Disables all snaps
 (defun disablesnap ()
 	(if (/= disabled t) (progn 
 		;(print "disabled")
@@ -118,6 +135,7 @@
 	(setq disabled t)
 )
 
+;;Re-enables snaps
 (defun enablesnap ()
 	;(print "enabled")
 	(setvar "osmode" oldsnap)
@@ -126,12 +144,14 @@
 	(setq disabled '())
 )
 
+;;Clears the console by printing alotta lines
 (defun c:clear ()
 	(repeat 500 (prompt "\n"))
 	
 	(princ)
 )
 
+;;Converts a number to a string w/ 12-pt precision
 (defun as-string (number / olddim result)
 	(setq olddim (getvar "dimzin"))
 	(setvar "dimzin" 15)
@@ -143,6 +163,7 @@
 	result
 )
 
+;;Shortcut to zoom; extents
 (defun c:extents ()
 	(begincommand)
 	(command "zoom" "e")
@@ -150,10 +171,13 @@
 )
 
 ;;fixes prompt when it stops showing the :
+;;
+;;(4/16/11) Not sure if this is still a bug
 (defun c:fixp ()
 	(prompt "\n")
 )
 
+;;Reloads the lisp file
 (defun c:rlsp ()
 	(setq s::startup nil)
 	(load (findfile "cencad.mnl"))
@@ -171,7 +195,12 @@
 )
 
 
+;;Sets the style and such
 (command "-style" "CEN-ATT" "romans.shx" (as-string (text-size)) "0.75" "0" "no" "no")
 (c:clear)
 (prompt "\nCENCAD is READY for you to use :-)")
+
+;;Prompts for drawing scale (remove for production version)
 (drawingsetup)
+
+
