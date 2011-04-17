@@ -1,3 +1,6 @@
+;;Some kludgy functions for working with strings
+
+;;Returns an array of chars
 (defun char-array (string / final count)
 	(setq final '())
 	
@@ -12,6 +15,7 @@
 	final
 )
 
+;;Replaces the first instance of replace inside string with with. (ie HELLO,ELL,!!! ~~> H!!!O)
 (defun replace-first (string replace with
 / replaceC length sArray count runs first howfar continue s r begin end final)
 	(setq final nil)

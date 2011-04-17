@@ -1,3 +1,4 @@
+;;Loads a block using the dwgdata.csv file
 (defun loadblockinfo (blockname)
 	
 	(setq txtpath (findfile "dwgdata.csv"))

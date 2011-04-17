@@ -42,6 +42,7 @@
 )
 
 ;;Came from somewhere...sorry have no credits
+;;Draws a shadow box from bottom left to top right
 (defun c:shadowbox (/ oldhatch lay osnp p1 p2 len abc p3 p4 p5 p6 p7 p8)
 	(begincommand)
 	
@@ -78,6 +79,7 @@
 	(endcommand)
 )
 
+;;Breaks a line in two specified points
 (defun c:breakfirst (/ b)
 	(begincommand)
 	
@@ -91,12 +93,15 @@
 	(endcommand)
 )
 
+;;Continuously copies an entity
 (defun c:continuouscopy ()
 	(begincommand)
 	(command "copy")
 	(endcommand)
 )
 
+;;Breaks a line at an intersection
+;;Precondition: intersection snap is enabled
 (defun c:breakatint ()
 	(begincommand)
 	
@@ -108,6 +113,7 @@
 	(endcommand)
 )
 
+;;Cuts a line at every intersection
 (defun c:intersectionbreak (/ breakline objects obj item intersection myset pt)
 	(begincommand)
 	
@@ -130,6 +136,7 @@
 	(endcommand)
 )
 
+;;intersectionbreak --> helper
 (defun breakmyline (tobreak mydistance intersection breakline / length breakstart breakend)
 
 	(command "break" tobreak "F")
@@ -150,6 +157,7 @@
 	(enablesnap)  ;;/\
 )
 
+;;Quickly copies an object
 (defun c:quickcopy ()
 	(begincommand)
 	
@@ -159,6 +167,7 @@
 	(endcommand)
 )
 
+;;Quickly moves an object
 (defun c:quickmove ()
 	(begincommand)
 	
@@ -168,6 +177,7 @@
 	(endcommand)
 )
 
+;;Glues 2 lines together
 (defun c:glue (/ glline1 glline2)
 	(begincommand)
 	
@@ -179,6 +189,10 @@
 	(endcommand)
 )
 
+;;Glues 2 lines together
+;;
+;;glline1	Lines to glue together
+;;glline2
 (defun glue (glline1 glline2 / start end)
 
 	(disablesnap) ;;\/
@@ -192,11 +206,13 @@
 	(enablesnap)  ;;/\
 )
 
+;;Glues multiple lines together until nil is returned
 (defun c:glue-multiple ()
 	(c:glue)
 	(while t (glue (entlast) (entsel-def "Pick next line: ")))
 )
 
+;;Quickly scales an object based on scale and value
 (defun c:quickscale (/ scalefactor)
 	(begincommand)
 	
@@ -213,6 +229,10 @@
 	(endcommand)
 )
 
+;;|          |
+;;|    -->   |
+;;|_         \_
+;;
 (defun c:chamfer45 (/ line1 line2 intersection top1 ang1 top2 ang2)
 	(begincommand)
 	
@@ -238,6 +258,7 @@
 	(endcommand)
 )
 
+;;Continuously changes objects to hidden2 linetype
 (defun c:hidden2 ()
 	(begincommand)
 	
@@ -247,6 +268,7 @@
 	(endcommand)
 )
 
+;;Taper45 for double lines
 (defun c:taper45dbl (/ branch1 branch2 main between intersection1 pt1 pt2 closer main1 ang line1start line1end line1endrev line1 line2)
 	(begincommand)
 	
@@ -317,6 +339,10 @@
 	(endcommand)
 )
 
+;; |         |
+;; |    -->  |
+;;_|_      __\_
+;;
 (defun c:taper45 (/ branch main intersection side start end line)
 	(begincommand)
 	
@@ -342,6 +368,7 @@
 	(endcommand)
 )
 
+;;Grabs a single source block and continuously replaces o/s with it
 (defun c:blockswap (/ source replace)
 	(begincommand)
 	
@@ -357,6 +384,7 @@
 	(endcommand)
 )
 
+;;changeto --> Helper
 (defun changeto2 (text color linetype entity)
 	(command "._layer" "_M" (strcat (getentdata obj 8) "-" text) "")
 	(if (/= color nil) (command "-layer" "color" color "" ^C^C) (command "-layer" "color" (layer-color obj) "" ^C^C))
@@ -365,12 +393,14 @@
 	(setent-var obj 8 (getvar "clayer"))
 )
 
+;;Changes a block to be on it's (layername + "-" + text)
 (defun changeto (text color linetype / obj)
 	(while (/= (setq obj (entsel "Select Objects: ")) nil) (progn
 		changeto2(text color linetype obj)
 	))
 )
 
+;;Opposite of changeto
 (defun removefrom (text / obj layern)
 	(while (/= (setq obj (entsel "Select Objects: ")) nil) (progn
 		(setq layern (replace-last (getentdata obj 8) (strcat "-" text) ""))
@@ -378,24 +408,28 @@
 	))
 )
 
+;;Moves object to layer suffixed by -PHS1
 (defun c:to-phs1 ()
 	(begincommand)
 	(changeto "PHS1" nil nil)
 	(endcommand)
 )
 
+;;Removes object from layer suffixed by -PHS1
 (defun c:from-phs1 ()
 	(begincommand)
 	(removefrom "PHS1")
 	(endcommand)
 )
 
+;;Moves object to layer suffixed by -PHS2
 (defun c:to-phs2 ()
 	(begincommand)
 	(changeto "PHS2" nil nil)
 	(endcommand)
 )
 
+;;etc...
 (defun c:from-phs2 ()
 	(begincommand)
 	(removefrom "PHS2")
@@ -414,6 +448,7 @@
 	(endcommand)
 )
 
+;;Sets active layer to that of a selected object
 (defun c:layerset (/ obj)
 	(begincommand)
 	
@@ -423,6 +458,7 @@
 	(endcommand)
 )
 
+;;Replaces an mtext string with another
 (defun c:matchstring ()
 	(begincommand)
 	
@@ -434,3 +470,5 @@
 	
 	(endcommand)
 )
+
+
