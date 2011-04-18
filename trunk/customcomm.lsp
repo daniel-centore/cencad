@@ -162,7 +162,8 @@
 	(begincommand)
 	
 	(prompt "\nSelect Object: ")
-	(command "copy" pause "" "O" "M" (getvar "lastpoint"))
+	(command "copy" pause "" "O" "M")
+	(command (getvar "lastpoint"))
 	
 	(endcommand)
 )
