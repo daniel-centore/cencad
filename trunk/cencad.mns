@@ -285,10 +285,10 @@ ID_POP3		[&Electrical]
 			[Pendant 1]^P^C^C(loadblockinfo "LIPENDA1")
 			[Pendant 2]^P^C^C(loadblockinfo "LIPENDA2")
 			[Pendant 3]^P^C^C(loadblockinfo "LIPENDA3")
-			[<-Pendant 4]^P^C^C(loadblockinfo "LIPENDA4")
+			[<-Pendant 4]^P^C^C(loadblockinfo "LIPENDA")
 		[->Switches]
-			[Plain]
-			[3 Way]
+			[Plain]^P^C^C(loadblockinfo "PSWPLAIN")
+			[3 Way]^P^C^C(loadblockinfo "PSWPLAIN2")
 			[A Leg]
 			[B Leg]
 			[Relay]

@@ -194,3 +194,5 @@
 "LIPENDA2","./DWGs/ELEC/lipenda2.dwg","E-LITE","YELLOW","CONTINUOUS",0,0,-1,1
 "LIPENDA3","./DWGs/ELEC/lipenda3.dwg","E-LITE","YELLOW","CONTINUOUS",0,0,-1,1
 "LIPENDA4","./DWGs/ELEC/lipenda4.dwg","E-LITE","YELLOW","CONTINUOUS",0,0,-1,1
+"PSWPLAIN","./DWGs/ELEC/pswplain.dwg","E-LITE","YELLOW","CONTINUOUS",-1,0,";",-1
+"PSWPLAIN2","./DWGs/ELEC/pswplain.dwg","E-LITE","YELLOW","CONTINUOUS",-1,0,";3a",-1
