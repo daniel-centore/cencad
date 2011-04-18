@@ -242,37 +242,37 @@ ID_POP3		[&Electrical]
 				[1*12]^P^C^C(loadblockinfo "LFNW1X12")
 				[2*2]^P^C^C(loadblockinfo "LFNW2X2")
 				[2*4]^P^C^C(loadblockinfo "LFNW2X4")
-				[4*4]^P^C^C(loadblockinfo "LFNW4X4)
+				[4*4]^P^C^C(loadblockinfo "LFNW4X4")
 				[<-Indicator]^P^C^C(loadblockinfo "LFNWIND")
 			[->Normal Critical]
-				[6in*1]
-				[6in*2]
-				[6in*3]
-				[6in*4]
-				[1*1]
-				[1*2]
-				[1*3]
-				[1*4]
-				[1*6]
-				[1*8]
-				[1*12]
-				[2*2]
-				[2*4]
-				[<-4*4]
+				[6in*1]^P^C^C(loadblockinfo "LFNC6IX1")
+				[6in*2]^P^C^C(loadblockinfo "LFNC6IX2")
+				[6in*3]^P^C^C(loadblockinfo "LFNC6IX3")
+				[6in*4]^P^C^C(loadblockinfo "LFNC6IX4")
+				[1*1]^P^C^C(loadblockinfo "LFNC1x1")
+				[1*2]^P^C^C(loadblockinfo "LFNC1x2")
+				[1*3]^P^C^C(loadblockinfo "LFNC1x3")
+				[1*4]^P^C^C(loadblockinfo "LFNC1x4")
+				[1*6]^P^C^C(loadblockinfo "LFNC1x6")
+				[1*8]^P^C^C(loadblockinfo "LFNC1x8")
+				[1*12]^P^C^C(loadblockinfo "LFNC1x12")
+				[2*2]^P^C^C(loadblockinfo "LFNC2x2")
+				[2*4]^P^C^C(loadblockinfo "LFNC2x4")
+				[<-4*4]^P^C^C(loadblockinfo "LFNC4x4")
 			[->Strip Wired]
-				[1]
-				[2]
-				[3]
-				[4]
-				[6]
-				[<-8]
+				[1]^P^C^C(loadblockinfo "LFSTW1")
+				[2]^P^C^C(loadblockinfo "LFSTW2")
+				[3]^P^C^C(loadblockinfo "LFSTW3")
+				[4]^P^C^C(loadblockinfo "LFSTW4")
+				[6]^P^C^C(loadblockinfo "LFSTW6")
+				[<-8]^P^C^C(loadblockinfo "LFSTW8")
 			[->Under Counter]
-				[1]
-				[2]
-				[3]
-				[4]
-				[6]
-				[<-<-8]
+				[1]^P^C^C(loadblockinfo "LFUNC1")
+				[2]^P^C^C(loadblockinfo "LFUNC2")
+				[3]^P^C^C(loadblockinfo "LFUNC3")
+				[4]^P^C^C(loadblockinfo "LFUNC4")
+				[6]^P^C^C(loadblockinfo "LFUNC6")
+				[<-<-8]^P^C^C(loadblockinfo "LFUNC8")
 		[->Incandescent]
 			[Normal]
 			[Normal Wall]

@@ -1152,7 +1152,7 @@
       <MenuMacro UID="MM_00245">
         <Macro>
           <Name>4*4</Name>
-          <Command>^P^C^C(loadblockinfo "LFNW4X4)</Command>
+          <Command>^P^C^C(loadblockinfo "LFNW4X4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00246">
@@ -1164,157 +1164,157 @@
       <MenuMacro UID="MM_00248">
         <Macro>
           <Name>6in*1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC6IX1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00249">
         <Macro>
           <Name>6in*2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC6IX2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00250">
         <Macro>
           <Name>6in*3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC6IX3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00251">
         <Macro>
           <Name>6in*4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC6IX4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00252">
         <Macro>
           <Name>1*1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00253">
         <Macro>
           <Name>1*2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00254">
         <Macro>
           <Name>1*3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00255">
         <Macro>
           <Name>1*4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00256">
         <Macro>
           <Name>1*6</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x6")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00257">
         <Macro>
           <Name>1*8</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x8")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00258">
         <Macro>
           <Name>1*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC1x12")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00259">
         <Macro>
           <Name>2*2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC2x2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00260">
         <Macro>
           <Name>2*4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC2x4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00261">
         <Macro>
           <Name>4*4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFNC4x4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00263">
         <Macro>
           <Name>1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFSTW1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00264">
         <Macro>
           <Name>2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFSTW2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00265">
         <Macro>
           <Name>3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFSTW3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00266">
         <Macro>
           <Name>4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFSTW4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00267">
         <Macro>
           <Name>6</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFSTW6")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00268">
         <Macro>
           <Name>8</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFSTW8")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00270">
         <Macro>
           <Name>1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFUNC1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00271">
         <Macro>
           <Name>2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFUNC2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00272">
         <Macro>
           <Name>3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFUNC3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00273">
         <Macro>
           <Name>4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFUNC4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00274">
         <Macro>
           <Name>6</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFUNC6")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00275">
         <Macro>
           <Name>8</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LFUNC8")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00277">
