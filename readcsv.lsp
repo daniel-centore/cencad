@@ -1,5 +1,6 @@
 ;;Loads a block using the dwgdata.csv file
-(defun loadblockinfo (blockname)
+(defun loadblockinfo (blockname
+/ txtpath fp charlst l mychar firstword wordlst rightsection count columns blockpath layername color linetype rotation position xcommand xscale)
 	
 	(setq txtpath (findfile "dwgdata.csv"))
 
@@ -52,8 +53,12 @@
 		;;Important: Finally, update all other methods (as listed in insertblock.txt) so they include a nil variable for it.
 		;;==Begin of data processing section
 		
+		
 		(if (= rightsection 1) (progn
-			(if (= count 2) (setq blockpath item))
+			(if (= count 2) (progn
+				(if (/= blockpath '()) (*error* "DUPLICATE CSV ENTRY"))
+				(setq blockpath item)
+			))
 			(if (= count 3) (setq layername item))
 			(if (= count 4) (setq color	item))
 			(if (= count 5) (setq linetype	item))
@@ -64,7 +69,9 @@
 		))
 		
 		(if (= count columns) (setq rightsection 0))
-		(if (= count 1) (if (equal blockname item)(setq rightsection 1)))	;set to 1 if were in right section
+		(if (= count 1) (progn
+			(if (equal blockname item)(setq rightsection 1))
+		))	;set to 1 if were in right section
 		
 		;;==End of data processing section==
 		(setq count (1+ count))

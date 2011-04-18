@@ -1386,19 +1386,19 @@
       <MenuMacro UID="MM_00288">
         <Macro>
           <Name>Pendant 4</Name>
-          <Command>^P^C^C(loadblockinfo "LIPENDA4")</Command>
+          <Command>^P^C^C(loadblockinfo "LIPENDA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00290">
         <Macro>
           <Name>Plain</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00291">
         <Macro>
           <Name>3 Way</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00292">

@@ -145,7 +145,7 @@
 
 ;;Takes a string and turns it into an array splitting at at each instance of delimeter (ie "hello,wawa,chicken" "," ==> '("hello" "wawa" "chicken"))
 (defun split (string delimeter)
-	(setq string (strcat string delimeter))		;;so we break include the last one, bit of a hack
+	(setq string (strcat string delimeter))		;;so we break include the last chunk, bit of a hack
 	
 	(setq stringc (char-array string))
 	

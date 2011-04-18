@@ -53,6 +53,7 @@
 ;;xcommand	A command that should be excecuted afterwards. Separate with ';' for progn effect.
 (defun insertblock (blockpath layername color linetype rotation position xcommand xscale)	;;dont set any temp vars here - it needs them as public
 	(begincommand)
+	(if (= xcommand '()) (*error* "xcommand is nil"))
 	(setq xcommand (split xcommand ";"))
 	
 	(if (/= (equal layername "") t) (command "._layer" "_M"    layername ""))
