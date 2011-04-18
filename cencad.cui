@@ -1884,199 +1884,199 @@
       <MenuMacro UID="MM_00379">
         <Macro>
           <Name>#1 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR1-3FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00380">
         <Macro>
           <Name>#2 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR1-3S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00381">
         <Macro>
           <Name>#3 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR1-3E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00382">
         <Macro>
           <Name>#4 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR4-6FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00383">
         <Macro>
           <Name>#5 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR4-6S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00384">
         <Macro>
           <Name>#6 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR4-6E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00385">
         <Macro>
           <Name>#7 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR7-9FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00386">
         <Macro>
           <Name>#8 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR7-9S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00387">
         <Macro>
           <Name>#9 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR7-9E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00388">
         <Macro>
           <Name>#10 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR10-12FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00389">
         <Macro>
           <Name>#11 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR10-12S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00390">
         <Macro>
           <Name>#12 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLR10-12E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00392">
         <Macro>
           <Name>#1 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL1-3FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00393">
         <Macro>
           <Name>#2 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL1-3S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00394">
         <Macro>
           <Name>#3 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL1-3E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00395">
         <Macro>
           <Name>#4 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL4-6FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00396">
         <Macro>
           <Name>#5 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL4-6S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00397">
         <Macro>
           <Name>#6 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL4-6E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00398">
         <Macro>
           <Name>#7 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL7-9FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00399">
         <Macro>
           <Name>#8 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL7-9S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00400">
         <Macro>
           <Name>#9 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL7-9E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00401">
         <Macro>
           <Name>#10 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL10-12FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00402">
         <Macro>
           <Name>#11 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL10-12S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00403">
         <Macro>
           <Name>#12 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLL10-12E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00404">
         <Macro>
           <Name>#16 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB16-18FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00405">
         <Macro>
           <Name>#17 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB16-18S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00406">
         <Macro>
           <Name>#18 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB16-18E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00407">
         <Macro>
           <Name>#19 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB19-21FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00408">
         <Macro>
           <Name>#20 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB19-21S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00409">
         <Macro>
           <Name>#21 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB19-21E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00410">
         <Macro>
           <Name>#22 Fire Escape</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB22-24FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00411">
         <Macro>
           <Name>#23 Stair</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB22-24S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00412">
         <Macro>
           <Name>#24 Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHIEXLB22-24E")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00415">
