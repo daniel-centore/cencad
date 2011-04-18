@@ -12,7 +12,7 @@
 ;Begin loading all required files
 
 (setvar "cmdecho" 0)		;Disable other commands from printing
-(setvar "glswapmode" 2)		;fixes ati graphics issue
+;(setvar "glswapmode" 0)		;fixes ati graphics issue
 
 (setq text-size)
 
@@ -68,6 +68,7 @@
 		;(if (equal position "0") (setq ins_pt (getpoint "\nPick Insertion point.")))
 		
 		(command "-insert" blockpath "_non")
+		(command "s" scale)
 		(if (/= (equal position "0") t) 
 			;;IF
 			(command ins_pt)
@@ -77,7 +78,7 @@
 			(command pause)
 			(setq ins_pt (getvar "lastpoint"))	
 		))
-		(command scale scale)
+
 		(setvar "cmdecho" 1)
 		(if (equal rotation "-1") (progn (prompt "\nRotation angle for block <0>: ") (command pause)) (command rotation))
 		
