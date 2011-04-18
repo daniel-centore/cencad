@@ -201,6 +201,7 @@
 (command "-style" "CEN-ATT" "romans.shx" (as-string (text-size)) "0.75" "0" "no" "no")
 (c:clear)
 (prompt "\nCENCAD is READY for you to use :-)")
+(prompt "\nIf you find any bugs, please report them to Daniel Centore <dcentore@optonline.net>")
 
 ;;Prompts for drawing scale (remove for production version)
 (drawingsetup)

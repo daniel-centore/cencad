@@ -56,7 +56,7 @@
 		
 		(if (= rightsection 1) (progn
 			(if (= count 2) (progn
-				(if (/= blockpath '()) (*error* "DUPLICATE CSV ENTRY"))
+				(if (/= blockpath '()) (alert "ERROR: DUPLICATE CSV ENTRY. Please notify Daniel Centore <dcentore@optonline.net> immediately including which menu item you were going to insert."))
 				(setq blockpath item)
 			))
 			(if (= count 3) (setq layername item))
