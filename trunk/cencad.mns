@@ -222,28 +222,28 @@ ID_POP3		[&Electrical]
 				[2*4]^P^C^C(loadblockinfo "LFN2x4")
 				[<-4*4]^P^C^C(loadblockinfo "LFN4x4")
 			[->Normal Power Strip]
-				[1]
-				[2]
-				[3]
-				[4]
-				[6]
-				[<-8]
+				[1]^P^C^C(loadblockinfo "LFNST1")
+				[2]^P^C^C(loadblockinfo "LFNST2")
+				[3]^P^C^C(loadblockinfo "LFNST3")
+				[4]^P^C^C(loadblockinfo "LFNST4")
+				[6]^P^C^C(loadblockinfo "LFNST6")
+				[<-8]^P^C^C(loadblockinfo "LFNST8")
 			[->Normal Power Wired]
-				[6in*1]
-				[6in*2]
-				[6in*3]
-				[6in*4]
-				[1*1]
-				[1*2]
-				[1*3]
-				[1*4]
-				[1*6]
-				[1*8]
-				[1*12]
-				[2*2]
-				[2*4]
-				[4*4]
-				[<-Indicator]
+				[6in*1]^P^C^C(loadblockinfo "LFNW6IX1")
+				[6in*2]^P^C^C(loadblockinfo "LFNW6IX2")
+				[6in*3]^P^C^C(loadblockinfo "LFNW6IX3")
+				[6in*4]^P^C^C(loadblockinfo "LFNW6IX4")
+				[1*1]^P^C^C(loadblockinfo "LFNW1X1")
+				[1*2]^P^C^C(loadblockinfo "LFNW1X2")
+				[1*3]^P^C^C(loadblockinfo "LFNW1X3")
+				[1*4]^P^C^C(loadblockinfo "LFNW1X4")
+				[1*6]^P^C^C(loadblockinfo "LFNW1X6")
+				[1*8]^P^C^C(loadblockinfo "LFNW1X8")
+				[1*12]^P^C^C(loadblockinfo "LFNW1X12")
+				[2*2]^P^C^C(loadblockinfo "LFNW2X2")
+				[2*4]^P^C^C(loadblockinfo "LFNW2X4")
+				[4*4]^P^C^C(loadblockinfo "LFNW4X4)
+				[<-Indicator]^P^C^C(loadblockinfo "LFNWIND")
 			[->Normal Critical]
 				[6in*1]
 				[6in*2]
