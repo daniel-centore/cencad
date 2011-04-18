@@ -1404,169 +1404,169 @@
       <MenuMacro UID="MM_00292">
         <Macro>
           <Name>A Leg</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00293">
         <Macro>
           <Name>B Leg</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00294">
         <Macro>
           <Name>Relay</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00295">
         <Macro>
           <Name>Bypass</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN5")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00296">
         <Macro>
           <Name>Bypass 3 Way</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN6")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00297">
         <Macro>
           <Name>Bypass A Leg</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN7")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00298">
         <Macro>
           <Name>Bypass B Leg</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN8")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00299">
         <Macro>
           <Name>Push Button Plate</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2L")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00300">
         <Macro>
           <Name>Plain Super/ Sub</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN9")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00301">
         <Macro>
           <Name>Fan</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWMOMC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00302">
         <Macro>
           <Name>Control Module</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFHEX1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00303">
         <Macro>
           <Name>Dimmer 1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00304">
         <Macro>
           <Name>Dimmer 2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00305">
         <Macro>
           <Name>Occupancy Sensor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWMOTI")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00306">
         <Macro>
           <Name>Intensity Controller</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2L-2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00307">
         <Macro>
           <Name>Lockable Momentary Contact</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWMOMCL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00308">
         <Macro>
           <Name>Rotary Time</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWTIMER")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00309">
         <Macro>
           <Name>Low Voltage Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EDTRI1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00310">
         <Macro>
           <Name>Low Voltage Relay</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EDIAM2L")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00311">
         <Macro>
           <Name>Timer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00312">
         <Macro>
           <Name>Time Clock</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-5")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00313">
         <Macro>
           <Name>Fluorescent Dimmer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-6")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00314">
         <Macro>
           <Name>Pilot</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN10")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00315">
         <Macro>
           <Name>Key</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN11")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00316">
         <Macro>
           <Name>Motor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN12")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00317">
         <Macro>
           <Name>Push Button 1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPUSH1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00318">
         <Macro>
           <Name>Push Button 2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPUSH2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00319">
         <Macro>
           <Name>Push Button 3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPUSH3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00321">

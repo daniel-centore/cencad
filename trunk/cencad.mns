@@ -289,34 +289,34 @@ ID_POP3		[&Electrical]
 		[->Switches]
 			[Plain]^P^C^C(loadblockinfo "PSWPLAIN")
 			[3 Way]^P^C^C(loadblockinfo "PSWPLAIN2")
-			[A Leg]
-			[B Leg]
-			[Relay]
-			[Bypass]
-			[Bypass 3 Way]
-			[Bypass A Leg]
-			[Bypass B Leg]
-			[Push Button Plate]
-			[Plain Super/ Sub]
-			[Fan]
-			[Control Module]
-			[Dimmer 1]
-			[Dimmer 2]
-			[Occupancy Sensor]
-			[Intensity Controller]
-			[Lockable Momentary Contact]
-			[Rotary Time]
-			[Low Voltage Switch]
-			[Low Voltage Relay]
-			[Timer]
-			[Time Clock]
-			[Fluorescent Dimmer]
-			[Pilot]
-			[Key]
-			[Motor]
-			[Push Button 1]
-			[Push Button 2]
-			[<-Push Button 3]
+			[A Leg]^P^C^C(loadblockinfo "PSWPLAIN3")
+			[B Leg]^P^C^C(loadblockinfo "PSWPLAIN4")
+			[Relay]^P^C^C(loadblockinfo "ESQR2")
+			[Bypass]^P^C^C(loadblockinfo "PSWPLAIN5")
+			[Bypass 3 Way]^P^C^C(loadblockinfo "PSWPLAIN6")
+			[Bypass A Leg]^P^C^C(loadblockinfo "PSWPLAIN7")
+			[Bypass B Leg]^P^C^C(loadblockinfo "PSWPLAIN8")
+			[Push Button Plate]^P^C^C(loadblockinfo "ESQR2L")
+			[Plain Super/ Sub]^P^C^C(loadblockinfo "PSWPLAIN9")
+			[Fan]^P^C^C(loadblockinfo "PSWMOMC")
+			[Control Module]^P^C^C(loadblockinfo "EFHEX1")
+			[Dimmer 1]^P^C^C(loadblockinfo "ESQR2-2")
+			[Dimmer 2]^P^C^C(loadblockinfo "ESQR2-3")
+			[Occupancy Sensor]^P^C^C(loadblockinfo "PSWMOTI")
+			[Intensity Controller]^P^C^C(loadblockinfo "ESQR2L-2")
+			[Lockable Momentary Contact]^P^C^C(loadblockinfo "PSWMOMCL")
+			[Rotary Time]^P^C^C(loadblockinfo "PSWTIMER")
+			[Low Voltage Switch]^P^C^C(loadblockinfo "EDTRI1")
+			[Low Voltage Relay]^P^C^C(loadblockinfo "EDIAM2L")
+			[Timer]^P^C^C(loadblockinfo "ESQR2-4")
+			[Time Clock]^P^C^C(loadblockinfo "ESQR2-5")
+			[Fluorescent Dimmer]^P^C^C(loadblockinfo "ESQR2-6")
+			[Pilot]^P^C^C(loadblockinfo "PSWPLAIN10")
+			[Key]^P^C^C(loadblockinfo "PSWPLAIN11")
+			[Motor]^P^C^C(loadblockinfo "PSWPLAIN12")
+			[Push Button 1]^P^C^C(loadblockinfo "PSWPUSH1")
+			[Push Button 2]^P^C^C(loadblockinfo "PSWPUSH2")
+			[<-Push Button 3]^P^C^C(loadblockinfo "PSWPUSH3")
 		[->Site]
 			[Square Bollard]
 			[Square 2 Bollard 90d]
