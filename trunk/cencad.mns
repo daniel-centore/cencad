@@ -376,40 +376,40 @@ ID_POP3		[&Electrical]
 					[#11 Stair]^P^C^C(loadblockinfo "CHIEXLD10-12S")
 					[<-#12 Exit]^P^C^C(loadblockinfo "CHIEXLD10-12E")
 				[->Marker Right (1-12)]
-					[#1 Fire Escape]
-					[#2 Stair]
-					[#3 Exit]
-					[#4 Fire Escape]
-					[#5 Stair]
-					[#6 Exit]
-					[#7 Fire Escape]
-					[#8 Stair]
-					[#9 Exit]
-					[#10 Fire Escape]
-					[#11 Stair]
-					[<-#12 Exit]
+					[#1 Fire Escape]^P^C^C(loadblockinfo "CHIEXLR1-3FE")
+					[#2 Stair]^P^C^C(loadblockinfo "CHIEXLR1-3S")
+					[#3 Exit]^P^C^C(loadblockinfo "CHIEXLR1-3E")
+					[#4 Fire Escape]^P^C^C(loadblockinfo "CHIEXLR4-6FE")
+					[#5 Stair]^P^C^C(loadblockinfo "CHIEXLR4-6S")
+					[#6 Exit]^P^C^C(loadblockinfo "CHIEXLR4-6E")
+					[#7 Fire Escape]^P^C^C(loadblockinfo "CHIEXLR7-9FE")
+					[#8 Stair]^P^C^C(loadblockinfo "CHIEXLR7-9S")
+					[#9 Exit]^P^C^C(loadblockinfo "CHIEXLR7-9E")
+					[#10 Fire Escape]^P^C^C(loadblockinfo "CHIEXLR10-12FE")
+					[#11 Stair]^P^C^C(loadblockinfo "CHIEXLR10-12S")
+					[<-#12 Exit]^P^C^C(loadblockinfo "CHIEXLR10-12E")
 				[->Marker Left (1-12)]
-					[#1 Fire Escape]
-					[#2 Stair]
-					[#3 Exit]
-					[#4 Fire Escape]
-					[#5 Stair]
-					[#6 Exit]
-					[#7 Fire Escape]
-					[#8 Stair]
-					[#9 Exit]
-					[#10 Fire Escape]
-					[#11 Stair]
-					[<-#12 Exit]
-				[#16 Fire Escape]
-				[#17 Stair]
-				[#18 Exit]
-				[#19 Fire Escape]
-				[#20 Stair]
-				[#21 Exit]
-				[#22 Fire Escape]
-				[#23 Stair]
-				[<-<-<-#24 Exit]
+					[#1 Fire Escape]^P^C^C(loadblockinfo "CHIEXLL1-3FE")
+					[#2 Stair]^P^C^C(loadblockinfo "CHIEXLL1-3S")
+					[#3 Exit]^P^C^C(loadblockinfo "CHIEXLL1-3E")
+					[#4 Fire Escape]^P^C^C(loadblockinfo "CHIEXLL4-6FE")
+					[#5 Stair]^P^C^C(loadblockinfo "CHIEXLL4-6S")
+					[#6 Exit]^P^C^C(loadblockinfo "CHIEXLL4-6E")
+					[#7 Fire Escape]^P^C^C(loadblockinfo "CHIEXLL7-9FE")
+					[#8 Stair]^P^C^C(loadblockinfo "CHIEXLL7-9S")
+					[#9 Exit]^P^C^C(loadblockinfo "CHIEXLL7-9E")
+					[#10 Fire Escape]^P^C^C(loadblockinfo "CHIEXLL10-12FE")
+					[#11 Stair]^P^C^C(loadblockinfo "CHIEXLL10-12S")
+					[<-#12 Exit]^P^C^C(loadblockinfo "CHIEXLL10-12E")
+				[#16 Fire Escape]^P^C^C(loadblockinfo "CHIEXLB16-18FE")
+				[#17 Stair]^P^C^C(loadblockinfo "CHIEXLB16-18S")
+				[#18 Exit]^P^C^C(loadblockinfo "CHIEXLB16-18E")
+				[#19 Fire Escape]^P^C^C(loadblockinfo "CHIEXLB19-21FE")
+				[#20 Stair]^P^C^C(loadblockinfo "CHIEXLB19-21S")
+				[#21 Exit]^P^C^C(loadblockinfo "CHIEXLB19-21E")
+				[#22 Fire Escape]^P^C^C(loadblockinfo "CHIEXLB22-24FE")
+				[#23 Stair]^P^C^C(loadblockinfo "CHIEXLB22-24S")
+				[<-<-<-#24 Exit]^P^C^C(loadblockinfo "CHIEXLB22-24E")
 	[->Power]
 		[->Receptacles]
 			[Simplex]
