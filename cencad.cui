@@ -1320,73 +1320,73 @@
       <MenuMacro UID="MM_00277">
         <Macro>
           <Name>Normal</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LINO")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00278">
         <Macro>
           <Name>Normal Wall</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LINOW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00279">
         <Macro>
           <Name>Wall Wash</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LIWWASH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00280">
         <Macro>
           <Name>Life Safety</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LILS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00281">
         <Macro>
           <Name>Life Safety Wall</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LILSWALL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00282">
         <Macro>
           <Name>Critical</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LICR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00283">
         <Macro>
           <Name>Critical Wall</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LINOW2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00284">
         <Macro>
           <Name>Wall Sconce</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LIWSCON")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00285">
         <Macro>
           <Name>Pendant 1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LIPENDA1")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00286">
         <Macro>
           <Name>Pendant 2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LIPENDA2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00287">
         <Macro>
           <Name>Pendant 3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LIPENDA3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00288">
         <Macro>
           <Name>Pendant 4</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LIPENDA4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00290">

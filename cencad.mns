@@ -274,18 +274,18 @@ ID_POP3		[&Electrical]
 				[6]^P^C^C(loadblockinfo "LFUNC6")
 				[<-<-8]^P^C^C(loadblockinfo "LFUNC8")
 		[->Incandescent]
-			[Normal]
-			[Normal Wall]
-			[Wall Wash]
-			[Life Safety]
-			[Life Safety Wall]
-			[Critical]
-			[Critical Wall]
-			[Wall Sconce]
-			[Pendant 1]
-			[Pendant 2]
-			[Pendant 3]
-			[<-Pendant 4]
+			[Normal]^P^C^C(loadblockinfo "LINO")
+			[Normal Wall]^P^C^C(loadblockinfo "LINOW")
+			[Wall Wash]^P^C^C(loadblockinfo "LIWWASH")
+			[Life Safety]^P^C^C(loadblockinfo "LILS")
+			[Life Safety Wall]^P^C^C(loadblockinfo "LILSWALL")
+			[Critical]^P^C^C(loadblockinfo "LICR")
+			[Critical Wall]^P^C^C(loadblockinfo "LINOW2")
+			[Wall Sconce]^P^C^C(loadblockinfo "LIWSCON")
+			[Pendant 1]^P^C^C(loadblockinfo "LIPENDA1")
+			[Pendant 2]^P^C^C(loadblockinfo "LIPENDA2")
+			[Pendant 3]^P^C^C(loadblockinfo "LIPENDA3")
+			[<-Pendant 4]^P^C^C(loadblockinfo "LIPENDA4")
 		[->Switches]
 			[Plain]
 			[3 Way]
