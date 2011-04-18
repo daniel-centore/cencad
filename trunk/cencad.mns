@@ -1,4 +1,4 @@
-0//************
+//************
 //Cencad menu file - this is the one we should modify and/or load
 //
 //Before all commands goes ^P^C^C
@@ -98,8 +98,8 @@ ID_POP2		[&Tel/Data]
 		[Voice]^P^C^C(loadblockinfo "2TOVOICE2")
 		[Voice/ Data Combo]^P^C^C(loadblockinfo "2TOVD")
 		[Misc Data]^P^C^C(loadblockinfo "2TODATA2")
-		[Misc Voice]^P^C^C(loadblockinfo "2TOVOICE2")
-		[Misc Voice/ Data]^P^C^C(loadblockinfo "2TOVD)
+		[Misc Voice]^P^C^C(loadblockinfo "2TOVOICE3")
+		[Misc Voice/ Data]^P^C^C(loadblockinfo "2TOVD2")
 		[Surface Mtd Data]^P^C^C(loadblockinfo "2TOSDATA")
 		[Surface Mtd Voice]^P^C^C(loadblockinfo "2TOSVOICE")
 		[Surface Mtd Voice/ Data]^P^C^C(loadblockinfo "2TOSVD")
@@ -331,22 +331,85 @@ ID_POP3		[&Electrical]
 			[Wall Mtd Sqr Bollard]^P^C^C(loadblockinfo "ESSQRBL")
 			[<-Wall Mtd Rnd Bollard]^P^C^C(loadblockinfo "ESRNDBL")
 		[->Emergency Battery Units]
-			[Battery]
-			[Battery w/ Heads]
-			[Remote Head]
-			[<-Remote Heads]
+			[Battery]^P^C^C(loadblockinfo "EEBAT")
+			[Battery w/ Heads]^P^C^C(loadblockinfo "EEBATH")
+			[Remote Head]^P^C^C(loadblockinfo "EEREMH")
+			[<-Remote Heads]^P^C^C(loadblockinfo "EEREMDH")
 		[->Exit Signs]
-			[Ceiling]
-			[Ceiling 1 Left]
-			[Ceiling 1 Right]
-			[Ceiling 1 Both]
-			[Ceiling 2 Arrows]
-			[Ceiling 2 Both]
-			[Wall Mounted]
-			[Wall Mounted 1 Left]
-			[Wall Mounted 1 Right]
-			[Wall Mounted 1 Both]
-			[<-<-Wall Mounted 1 Up]
+			[->Ceiling Mounted]
+				[#1 Fire Escape]^P^C^C(loadblockinfo "CHIEX1-3FE")
+				[#2 Stair]^P^C^C(loadblockinfo "CHIEX1-3S")
+				[#3 Exit]^P^C^C(loadblockinfo "CHIEX1-3E")
+				[#4 Fire Escape]^P^C^C(loadblockinfo "CHIEX4-6FE")
+				[#5 Stair]^P^C^C(loadblockinfo "CHIEX4-6S")
+				[#6 Exit]^P^C^C(loadblockinfo "CHIEX4-6E")
+				[#7 Fire Escape]^P^C^C(loadblockinfo "CHIEX7-9FE")
+				[#8 Stair]^P^C^C(loadblockinfo "CHIEX7-9S")
+				[#9 Exit]^P^C^C(loadblockinfo "CHIEX7-9E")
+				[#10 Fire Escape]^P^C^C(loadblockinfo "CHIEX10-12FE")
+				[#11 Stair]^P^C^C(loadblockinfo "CHIEX10-12S")
+				[#12 Exit]^P^C^C(loadblockinfo "CHIEX10-12E")
+				[#13 Fire Escape]^P^C^C(loadblockinfo "CHIEX13-15FE")
+				[#14 Stair]^P^C^C(loadblockinfo "CHIEX13-15S")
+				[#15 Exit]^P^C^C(loadblockinfo "CHIEX13-15E")
+				[#16 Fire Escape]^P^C^C(loadblockinfo "CHIEX16-18FE")
+				[#17 Stair]^P^C^C(loadblockinfo "CHIEX16-18S")
+				[#18 Exit]^P^C^C(loadblockinfo "CHIEX16-18E")
+				[#19 Fire Escape]^P^C^C(loadblockinfo "CHIEX19-21FE")
+				[#20 Stair]^P^C^C(loadblockinfo "CHIEX19-21S")
+				[#21 Exit]^P^C^C(loadblockinfo "CHIEX19-21E")
+				[#22 Fire Escape]^P^C^C(loadblockinfo "CHIEX22-24FE")
+				[#23 Stair]^P^C^C(loadblockinfo "CHIEX22-24S")
+				[<-#24 Exit]^P^C^C(loadblockinfo "CHIEX22-24E")
+			[->Wall Mounted]
+				[->Marker Down (1-12)]
+					[#1 Fire Escape]^P^C^C(loadblockinfo "CHIEXLD1-3FE")
+					[#2 Stair]^P^C^C(loadblockinfo "CHIEXLD1-3S")
+					[#3 Exit]^P^C^C(loadblockinfo "CHIEXLD1-3E")
+					[#4 Fire Escape]^P^C^C(loadblockinfo "CHIEXLD4-6FE")
+					[#5 Stair]^P^C^C(loadblockinfo "CHIEXLD4-6S")
+					[#6 Exit]^P^C^C(loadblockinfo "CHIEXLD4-6E")
+					[#7 Fire Escape]^P^C^C(loadblockinfo "CHIEXLD7-9FE")
+					[#8 Stair]^P^C^C(loadblockinfo "CHIEXLD7-9S")
+					[#9 Exit]^P^C^C(loadblockinfo "CHIEXLD7-9E")
+					[#10 Fire Escape]^P^C^C(loadblockinfo "CHIEXLD10-12FE")
+					[#11 Stair]^P^C^C(loadblockinfo "CHIEXLD10-12S")
+					[<-#12 Exit]^P^C^C(loadblockinfo "CHIEXLD10-12E")
+				[->Marker Right (1-12)]
+					[#1 Fire Escape]
+					[#2 Stair]
+					[#3 Exit]
+					[#4 Fire Escape]
+					[#5 Stair]
+					[#6 Exit]
+					[#7 Fire Escape]
+					[#8 Stair]
+					[#9 Exit]
+					[#10 Fire Escape]
+					[#11 Stair]
+					[<-#12 Exit]
+				[->Marker Left (1-12)]
+					[#1 Fire Escape]
+					[#2 Stair]
+					[#3 Exit]
+					[#4 Fire Escape]
+					[#5 Stair]
+					[#6 Exit]
+					[#7 Fire Escape]
+					[#8 Stair]
+					[#9 Exit]
+					[#10 Fire Escape]
+					[#11 Stair]
+					[<-#12 Exit]
+				[#16 Fire Escape]
+				[#17 Stair]
+				[#18 Exit]
+				[#19 Fire Escape]
+				[#20 Stair]
+				[#21 Exit]
+				[#22 Fire Escape]
+				[#23 Stair]
+				[<-<-<-#24 Exit]
 	[->Power]
 		[->Receptacles]
 			[Simplex]
