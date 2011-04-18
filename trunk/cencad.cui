@@ -1572,73 +1572,73 @@
       <MenuMacro UID="MM_00321">
         <Macro>
           <Name>Square Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSQRB")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00322">
         <Macro>
           <Name>Square 2 Bollard 90d</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSQR2BR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00323">
         <Macro>
           <Name>Square 2 Bollard 180d</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSQR2BS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00324">
         <Macro>
           <Name>Square 3 Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSQR3B")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00325">
         <Macro>
           <Name>Square 4 Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSQR4B")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00326">
         <Macro>
           <Name>Round Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESRNDB")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00327">
         <Macro>
           <Name>Round 2 Bollard 90d</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESRND2BR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00328">
         <Macro>
           <Name>Round 2 Bollard 180d</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESRND2BS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00329">
         <Macro>
           <Name>Round 3 Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESRND3B")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00330">
         <Macro>
           <Name>Round 4 Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESRND4B")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00331">
         <Macro>
           <Name>Wall Mtd Sqr Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSQRBL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00332">
         <Macro>
           <Name>Wall Mtd Rnd Bollard</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESRNDBL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00334">

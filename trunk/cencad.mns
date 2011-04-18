@@ -318,18 +318,18 @@ ID_POP3		[&Electrical]
 			[Push Button 2]^P^C^C(loadblockinfo "PSWPUSH2")
 			[<-Push Button 3]^P^C^C(loadblockinfo "PSWPUSH3")
 		[->Site]
-			[Square Bollard]
-			[Square 2 Bollard 90d]
-			[Square 2 Bollard 180d]
-			[Square 3 Bollard]
-			[Square 4 Bollard]
-			[Round Bollard]
-			[Round 2 Bollard 90d]
-			[Round 2 Bollard 180d]
-			[Round 3 Bollard]
-			[Round 4 Bollard]
-			[Wall Mtd Sqr Bollard]
-			[<-Wall Mtd Rnd Bollard]
+			[Square Bollard]^P^C^C(loadblockinfo "ESSQRB")
+			[Square 2 Bollard 90d]^P^C^C(loadblockinfo "ESSQR2BR")
+			[Square 2 Bollard 180d]^P^C^C(loadblockinfo "ESSQR2BS")
+			[Square 3 Bollard]^P^C^C(loadblockinfo "ESSQR3B")
+			[Square 4 Bollard]^P^C^C(loadblockinfo "ESSQR4B")
+			[Round Bollard]^P^C^C(loadblockinfo "ESRNDB")
+			[Round 2 Bollard 90d]^P^C^C(loadblockinfo "ESRND2BR")
+			[Round 2 Bollard 180d]^P^C^C(loadblockinfo "ESRND2BS")
+			[Round 3 Bollard]^P^C^C(loadblockinfo "ESRND3B")
+			[Round 4 Bollard]^P^C^C(loadblockinfo "ESRND4B")
+			[Wall Mtd Sqr Bollard]^P^C^C(loadblockinfo "ESSQRBL")
+			[<-Wall Mtd Rnd Bollard]^P^C^C(loadblockinfo "ESRNDBL")
 		[->Emergency Battery Units]
 			[Battery]
 			[Battery w/ Heads]
