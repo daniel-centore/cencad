@@ -440,8 +440,7 @@ ID_POP3		[&Electrical]
 			[Monitor]^P^C^C(loadblockinfo "ESQR2L-3")
 			[OR Power Module]^P^C^C(loadblockinfo "EPORPWR")
 			[Time Clock]^P^C^C(loadblockinfo "EPCLK")
-			[Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
-			[<-Wiremold (field wired)]
+			[<-Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
 		[->Motors/ Disconnects]
 			[Motor]
 			[Disconnect]
