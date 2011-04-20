@@ -82,17 +82,6 @@
 
 		(setvar "cmdecho" 1)
 		(if (equal rotation "-1") (progn (prompt "\nRotation angle for block <0>: ") (command pause)) (command rotation))
-		
-;		(if (equal rotation "-1")
-;			(progn
-;				(prompt "\nRotation angle for block <0>:")
-;				(command "-insert" blockpath "_non" ins_pt scale scale)
-;				(setvar "cmdecho" 1)
-;				(command pause)
-;			))
-;		
-;		(if (/= (equal rotation "-1") t) (progn (command "-insert" blockpath "_non" ins_pt scale scale) (setvar "cmdecho" 1) (command rotation)))
-		
 	))
 	
 	(foreach item xcommand (progn
@@ -144,6 +133,11 @@
 	(setvar "orthomode" oldortho)
 	
 	(setq disabled '())
+)
+
+(defun c:enablesnap ()
+	(enablesnap)
+	(princ)
 )
 
 ;;Clears the console by printing alotta lines
