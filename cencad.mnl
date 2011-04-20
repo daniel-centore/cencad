@@ -27,6 +27,7 @@
 (load "userinput" '("getreal-def"))
 (load "stringfunctions" '("char-array"))
 (load "customhvac" '("to-demo-hvac"))
+(load "customelec" '("wiremoldprewired"))
 (load "customteldata" '("wirebreakend"))
 (load "autobreaktxt" '("autobreaktext"))
 (load "annotation" '("quickarrow"))

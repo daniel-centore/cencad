@@ -2082,175 +2082,175 @@
       <MenuMacro UID="MM_00415">
         <Macro>
           <Name>Simplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPSPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00416">
         <Macro>
-          <Name>Duplax</Name>
-          <Command>^c^c</Command>
+          <Name>Duplex</Name>
+          <Command>^P^C^C(loadblockinfo "EPDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00417">
         <Macro>
           <Name>Double Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPDDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00418">
         <Macro>
           <Name>Counter Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00419">
         <Macro>
           <Name>Switched Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPSWDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00420">
         <Macro>
           <Name>GFI</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPGFI")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00421">
         <Macro>
           <Name>Counter GFI</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCGFI")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00422">
         <Macro>
           <Name>Quad GFI</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPQGFI")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00423">
         <Macro>
           <Name>Safety Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPSFDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00424">
         <Macro>
           <Name>Safety Double Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPSFDDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00425">
         <Macro>
           <Name>Flr Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPFLDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00426">
         <Macro>
           <Name>Flr D.Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPFDDPLX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00427">
         <Macro>
           <Name>Special</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPSPCL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00428">
         <Macro>
           <Name>Special Purpose</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00429">
         <Macro>
           <Name>Comb Flr TD/ Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCFDTEL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00430">
         <Macro>
           <Name>Comb Flr TD/ D.Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCFDDTD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00431">
         <Macro>
           <Name>Comb Flr Data/ Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCFDD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00432">
         <Macro>
           <Name>Comb Flr Data/ D.Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCFDDD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00433">
         <Macro>
           <Name>Yag Laser</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPYAG")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00434">
         <Macro>
           <Name>Yag Laser 2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPYAG2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00435">
         <Macro>
           <Name>Yag Laser 3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPYAG3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00436">
         <Macro>
           <Name>Flr Yag Laser</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPFYAG")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00437">
         <Macro>
           <Name>X-Ray</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00438">
         <Macro>
           <Name>Film Viewer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00439">
         <Macro>
           <Name>Duplex over Duplex</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPDOD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00440">
         <Macro>
           <Name>Monitor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2L-3")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00441">
         <Macro>
           <Name>OR Power Module</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPORPWR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00442">
         <Macro>
           <Name>Time Clock</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPCLK")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00443">
         <Macro>
           <Name>Wiremold (prewired)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(c:wiremoldprewired)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00444">
@@ -8434,7 +8434,7 @@
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Duplax</NameRef>
+            <NameRef>Duplex</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00416"/>
             </MenuItem>

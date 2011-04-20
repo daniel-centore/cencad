@@ -429,18 +429,18 @@ ID_POP3		[&Electrical]
 			[Comb Flr TD/ Duplex]^P^C^C(loadblockinfo "EPCFDTEL")
 			[Comb Flr TD/ D.Duplex]^P^C^C(loadblockinfo "EPCFDDTD")
 			[Comb Flr Data/ Duplex]^P^C^C(loadblockinfo "EPCFDD")
-			[Comb Flr Data/ D.Duplex]
-			[Yag Laser]
-			[Yag Laser 2]
-			[Yag Laser 3]
-			[Flr Yag Laser]
-			[X-Ray]
-			[Film Viewer]
-			[Duplex over Duplex]
-			[Monitor]
-			[OR Power Module]
-			[Time Clock]
-			[Wiremold (prewired)]
+			[Comb Flr Data/ D.Duplex]^P^C^C(loadblockinfo "EPCFDDD")
+			[Yag Laser]^P^C^C(loadblockinfo "EPYAG")
+			[Yag Laser 2]^P^C^C(loadblockinfo "EPYAG2")
+			[Yag Laser 3]^P^C^C(loadblockinfo "EPYAG3")
+			[Flr Yag Laser]^P^C^C(loadblockinfo "EPFYAG")
+			[X-Ray]^P^C^C(loadblockinfo "ECIR2L-2")
+			[Film Viewer]^P^C^C(loadblockinfo "ECIR2L-3")
+			[Duplex over Duplex]^P^C^C(loadblockinfo "EPDOD")
+			[Monitor]^P^C^C(loadblockinfo "ESQR2L-3")
+			[OR Power Module]^P^C^C(loadblockinfo "EPORPWR")
+			[Time Clock]^P^C^C(loadblockinfo "EPCLK")
+			[Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
 			[<-Wiremold (field wired)]
 		[->Motors/ Disconnects]
 			[Motor]

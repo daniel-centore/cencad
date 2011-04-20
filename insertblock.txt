@@ -7,3 +7,6 @@ customcomm
 
 customteldata
 -all except last
+
+customelec
+-wiremoldprewired
