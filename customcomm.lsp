@@ -96,7 +96,9 @@
 ;;Continuously copies an entity
 (defun c:continuouscopy ()
 	(begincommand)
+
 	(command "copy")
+
 	(endcommand)
 )
 

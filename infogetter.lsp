@@ -322,7 +322,6 @@
 
 ;;Bill Kramer (http://forums.cadalyst.com/showthread.php?p=19880)
 ;;Find all intersections between objects in the selection set SS.
-;;TODO: Clean this up!
 (defun ss-inters (SS / SSL PTS aObj1 aObj2 N1 N2 iPts)
 	(setq N1 0 SSL (sslength SS))
 
