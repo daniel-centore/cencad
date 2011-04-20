@@ -412,23 +412,23 @@ ID_POP3		[&Electrical]
 				[<-<-<-#24 Exit]^P^C^C(loadblockinfo "CHIEXLB22-24E")
 	[->Power]
 		[->Receptacles]
-			[Simplex]
-			[Duplax]
-			[Double Duplex]
-			[Counter Duplex]
-			[Switched Duplex]
-			[GFI]
-			[Counter GFI]
-			[Quad GFI]
-			[Safety Duplex]
-			[Safety Double Duplex]
-			[Flr Duplex]
-			[Flr D.Duplex]
-			[Special]
-			[Special Purpose]
-			[Comb Flr TD/ Duplex]
-			[Comb Flr TD/ D.Duplex]
-			[Comb Flr Data/ Duplex]
+			[Simplex]^P^C^C(loadblockinfo "EPSPLX")
+			[Duplex]^P^C^C(loadblockinfo "EPDPLX")
+			[Double Duplex]^P^C^C(loadblockinfo "EPDDPLX")
+			[Counter Duplex]^P^C^C(loadblockinfo "EPCDPLX")
+			[Switched Duplex]^P^C^C(loadblockinfo "EPSWDPLX")
+			[GFI]^P^C^C(loadblockinfo "EPGFI")
+			[Counter GFI]^P^C^C(loadblockinfo "EPCGFI")
+			[Quad GFI]^P^C^C(loadblockinfo "EPQGFI")
+			[Safety Duplex]^P^C^C(loadblockinfo "EPSFDPLX")
+			[Safety Double Duplex]^P^C^C(loadblockinfo "EPSFDDPLX")
+			[Flr Duplex]^P^C^C(loadblockinfo "EPFLDPLX")
+			[Flr D.Duplex]^P^C^C(loadblockinfo "EPFDDPLX")
+			[Special]^P^C^C(loadblockinfo "EPSPCL")
+			[Special Purpose]^P^C^C(loadblockinfo "ECIR2L")
+			[Comb Flr TD/ Duplex]^P^C^C(loadblockinfo "EPCFDTEL")
+			[Comb Flr TD/ D.Duplex]^P^C^C(loadblockinfo "EPCFDDTD")
+			[Comb Flr Data/ Duplex]^P^C^C(loadblockinfo "EPCFDD")
 			[Comb Flr Data/ D.Duplex]
 			[Yag Laser]
 			[Yag Laser 2]
