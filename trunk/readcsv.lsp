@@ -76,8 +76,15 @@
 		;;==End of data processing section==
 		(setq count (1+ count))
 	)
+
+	(if (= blockpath nil) (progn
+		;;IF
+		(alert (strcat "Invalid block identifier: " blockname))
+		) (progn
+		;;ELSE
+		(insertblock blockpath layername color linetype rotation position xcommand xscale)
+	))	
 	
-	(insertblock blockpath layername color linetype rotation position xcommand xscale)
 )
 
 

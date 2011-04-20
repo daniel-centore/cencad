@@ -16,6 +16,7 @@
 	(setq chamdist       1)
 	(setq taperdist45    1)
 	(setq taperdist      1)
+	(setq plugdist       5)
 	;end default value collection
 )
 
