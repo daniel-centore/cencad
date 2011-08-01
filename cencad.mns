@@ -452,10 +452,10 @@ ID_POP3		[&Electrical]
 			[Motor w/ Thermal Sw]^P^C^C(loadblockinfo "EPMTSW")
 			[<-Thermal Sw]^P^C^C(loadblockinfo "PSWPLAIN13")
 		[->Panels/ Transformers]
-			[Open Surface]^P^C^C(c:opensurface)
-			[Recessed Open Panel]
-			[Surface Single Tub Panel]
-			[Distribution Panel]
+			[Open Surface]^P^C^C(panelcommand "eopanel")
+			[Recessed Open Panel]^P^C^C(panelcommand "eropanel")
+			[Surface Single Tub Panel]^P^C^C(panelcommand "espanel")
+			[Distribution Panel]^P^C^C(panelcommand "erspanel")
 			[--]
 			[->Dry Type Transformers]
 				[T1]
