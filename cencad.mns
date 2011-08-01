@@ -442,15 +442,15 @@ ID_POP3		[&Electrical]
 			[Time Clock]^P^C^C(loadblockinfo "EPCLK")
 			[<-Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
 		[->Motors/ Disconnects]
-			[Motor]
-			[Disconnect]
-			[Fused Disconnect]
-			[Comb Starter/ Safety Sw]
-			[Motor w/ Non-fused Sw]
-			[Motor w/ Fused Sw]
-			[Motor w/ Starter Sw]
-			[Motor w/ Thermal Sw]
-			[<-Thermal Sw]
+			[Motor]^P^C^C(loadblockinfo "EPMOTOR")
+			[Disconnect]^P^C^C(loadblockinfo "EPMSS")
+			[Fused Disconnect]^P^C^C(loadblockinfo "EPMFSS")
+			[Comb Starter/ Safety Sw]^P^C^C(loadblockinfo "EPMSTSS")
+			[Motor w/ Non-fused Sw]^P^C^C(loadblockinfo "EPMSW")
+			[Motor w/ Fused Sw]^P^C^C(loadblockinfo "EPMFSW")
+			[Motor w/ Starter Sw]^P^C^C(loadblockinfo "EPMSTSW")
+			[Motor w/ Thermal Sw]^P^C^C(loadblockinfo "EPMTSW")
+			[<-Thermal Sw]^P^C^C(loadblockinfo "PSWPLAIN13")
 		[->Panels/ Transformations]
 			[Open Surface]
 			[Recessed Open Panel]
