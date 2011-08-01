@@ -17,6 +17,7 @@
 	(setq taperdist45    1)
 	(setq taperdist      1)
 	(setq plugdist       5)
+	(setq opensurfaceht  1)
 	;end default value collection
 )
 

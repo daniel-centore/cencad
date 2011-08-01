@@ -2046,7 +2046,7 @@
       <MenuMacro UID="MM_00407">
         <Macro>
           <Name>#19 Fire Escape</Name>
-          <Command>^P^C^C(loadblockinfo "CHIEXLB19-21FE")</Command>
+          <Command>^Popensurface^C^C(loadblockinfo "CHIEXLB19-21FE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00408">
@@ -2256,61 +2256,61 @@
       <MenuMacro UID="MM_00445">
         <Macro>
           <Name>Motor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMOTOR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00446">
         <Macro>
           <Name>Disconnect</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMSS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00447">
         <Macro>
           <Name>Fused Disconnect</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMFSS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00448">
         <Macro>
           <Name>Comb Starter/ Safety Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMSTSS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00449">
         <Macro>
           <Name>Motor w/ Non-fused Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00450">
         <Macro>
           <Name>Motor w/ Fused Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMFSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00451">
         <Macro>
           <Name>Motor w/ Starter Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMSTSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00452">
         <Macro>
           <Name>Motor w/ Thermal Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPMTSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00453">
         <Macro>
           <Name>Thermal Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PSWPLAIN13")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00455">
         <Macro>
           <Name>Open Surface</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(c:opensurface)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00456">
@@ -8654,7 +8654,7 @@
           </PopMenuItem>
         </PopMenu>
         <PopMenu UID="PM_00454">
-          <Name>Panels/ Transformations</Name>
+          <Name>Panels/ Transformers</Name>
           <PopMenuItem>
             <NameRef>Open Surface</NameRef>
             <MenuItem>
