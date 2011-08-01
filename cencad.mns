@@ -404,7 +404,7 @@ ID_POP3		[&Electrical]
 				[#16 Fire Escape]^P^C^C(loadblockinfo "CHIEXLB16-18FE")
 				[#17 Stair]^P^C^C(loadblockinfo "CHIEXLB16-18S")
 				[#18 Exit]^P^C^C(loadblockinfo "CHIEXLB16-18E")
-				[#19 Fire Escape]^P^C^C(loadblockinfo "CHIEXLB19-21FE")
+				[#19 Fire Escape]^Popensurface^C^C(loadblockinfo "CHIEXLB19-21FE")
 				[#20 Stair]^P^C^C(loadblockinfo "CHIEXLB19-21S")
 				[#21 Exit]^P^C^C(loadblockinfo "CHIEXLB19-21E")
 				[#22 Fire Escape]^P^C^C(loadblockinfo "CHIEXLB22-24FE")
@@ -451,8 +451,8 @@ ID_POP3		[&Electrical]
 			[Motor w/ Starter Sw]^P^C^C(loadblockinfo "EPMSTSW")
 			[Motor w/ Thermal Sw]^P^C^C(loadblockinfo "EPMTSW")
 			[<-Thermal Sw]^P^C^C(loadblockinfo "PSWPLAIN13")
-		[->Panels/ Transformations]
-			[Open Surface]
+		[->Panels/ Transformers]
+			[Open Surface]^P^C^C(c:opensurface)
 			[Recessed Open Panel]
 			[Surface Single Tub Panel]
 			[Distribution Panel]
