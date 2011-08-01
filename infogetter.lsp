@@ -273,6 +273,7 @@
 ;;Kind of kludgy --> Inserts it then erases it via entlast
 (defun defblock (path)
 	(command "-insert" path (getvar "lastpoint") "1" "1" "0")
+	(while (/= (getvar "cmdactive") 0) (command ""))
 	(command "erase" (entlast) "")
 )
 

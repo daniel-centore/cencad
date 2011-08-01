@@ -18,6 +18,8 @@
 	(setq taperdist      1)
 	(setq plugdist       5)
 	(setq opensurfaceht  1)
+	(setq transformerx   1)
+	(setq transformery   1)
 	;end default value collection
 )
 
