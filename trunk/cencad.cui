@@ -2310,25 +2310,25 @@
       <MenuMacro UID="MM_00455">
         <Macro>
           <Name>Open Surface</Name>
-          <Command>^P^C^C(c:opensurface)</Command>
+          <Command>^P^C^C(panelcommand "eopanel")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00456">
         <Macro>
           <Name>Recessed Open Panel</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(panelcommand "eropanel")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00457">
         <Macro>
           <Name>Surface Single Tub Panel</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(panelcommand "espanel")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00458">
         <Macro>
           <Name>Distribution Panel</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(panelcommand "erspanel")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00461">

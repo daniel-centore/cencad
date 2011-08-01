@@ -43,15 +43,15 @@
 	(endcommand)
 )
 
-(defun c:opensurface ()
+(defun panelcommand (name)
 	(begincommand)
 	
 	(setq opensurfaceht (getdist-def opensurfaceht "Length/Height"))
 	(insertblock "" "E-AUXL" "YELLOW" "CONTINUOUS" "0" "-1" "-1" "-1")
 	
-	(defblock "./DWGs/ELEC/eopanel.dwg")
+	(defblock (strcat "./DWGs/ELEC/" name ".dwg"))
 	
-	(command "-insert" "eopanel" "x" opensurfaceht "y" "1" "z" opensurfaceht pause)
+	(command "-insert" name "x" opensurfaceht "y" "1" "z" opensurfaceht pause)
 	
 	(command pause)
 	
