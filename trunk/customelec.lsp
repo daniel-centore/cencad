@@ -52,8 +52,33 @@
 	(defblock (strcat "./DWGs/ELEC/" name ".dwg"))
 	
 	(command "-insert" name "x" opensurfaceht "y" "1" "z" opensurfaceht pause)
-	
 	(command pause)
+	
+	(endcommand)
+)
+
+(defun transformers (name x y)
+	(begincommand)
+	
+	(insertblock "" "E-AUXL" "YELLOW" "CONTINUOUS" "0" "-1" "-1" "-1")
+	(defblock (strcat "./DWGs/ELEC/" name ".dwg"))
+	
+	(command "-insert" name "x" x "y" y "z" x pause)
+	(command pause "T")
+	
+	;(if (/= (entlast) nil) (progn
+	;	(set-attribute-height (entity-ename (entlast)) (text-size))
+	;))
+	
+	(endcommand)
+)
+
+(defun c:customtransformer ()
+	(begincommand)
+	
+	(setq transformerx (getdist-def transformerx "X Size: "))
+	(setq transformery (getdist-def transformery "Y Size: "))
+	(transformers "exfmr" transformerx transformery)
 	
 	(endcommand)
 )

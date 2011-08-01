@@ -14,7 +14,7 @@
 (setvar "cmdecho" 0)		;Disable other commands from printing
 ;(setvar "glswapmode" 0)		;fixes ati graphics issue
 
-(setq text-size)
+(setq text-size (/ (getvar "dimscale") 10.66))
 
 ;load linetypes
 (command "-linetype" "load" "*" (findfile "acad.lin") ^C^C)
@@ -96,9 +96,9 @@
 	(setvar "cmdecho" 0)
 	
 	;;Lets set the attribute height now - must be AFTER the commands in case we decide to add attributes from there
-	(if (/= (entlast) nil) (progn
-		(set-attribute-height (entity-ename (entlast)) (text-size))
-	))
+	;(if (/= (entlast) nil) (progn
+	;	(set-attribute-height (entity-ename (entlast)) (text-size))
+	;))
 
 	(endcommand)
 )

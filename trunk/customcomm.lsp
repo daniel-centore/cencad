@@ -34,9 +34,9 @@
 	(begincommand)
 	
 	(setq myscale (getreal (strcat "Enter the drawing scale <" (as-string (getvar "dimscale")) ">: ")))
-	(if (/= myscale nil) (setvar "dimscale" myscale))
-	
-	(command "-style" "CEN-ATT" "romans.shx" (text-size) "0.75" "0" "no" "no")
+	(if (/= myscale nil) (progn (setvar "dimscale" myscale) ))
+	(setq text-size (/ myscale 10.66))
+	(command "-style" "CEN-ATT" "romans.shx" text-size "0.75" "0" "no" "no")
 	
 	(endcommand)
 )
