@@ -337,3 +337,12 @@
 "ESQR2L-3","./DWGs/ELEC/esqr2l.dwg","E-POWR","YELLOW","CONTINUOUS",-1,0,"M",-1
 "EPORPWR","./DWGs/ELEC/eporpwr.dwg","E-POWR","YELLOW","CONTINUOUS",-1,0,-1,-1
 "EPCLK","./DWGs/ELEC/epclk.dwg","E-POWR","YELLOW","CONTINUOUS",-1,0,-1,-1
+"EPMOTOR","./DWGs/ELEC/epmotor.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,,-1
+"EPMSS","./DWGs/ELEC/epmss.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,-1,-1
+"EPMFSS","./DWGs/ELEC/epmfss.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,-1,-1
+"EPMSTSS","./DWGs/ELEC/epmstss.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,-1,-1
+"EPMSW","./DWGs/ELEC/epmsw.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,,-1
+"EPMFSW","./DWGs/ELEC/epmfsw.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,,-1
+"EPMSTSW","./DWGs/ELEC/epmstsw.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,,-1
+"EPMTSW","./DWGs/ELEC/epmtsw.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,";M",-1
+"PSWPLAIN13","./DWGs/ELEC/pswplain.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,";M",-1
