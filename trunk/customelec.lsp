@@ -1,3 +1,11 @@
+;;************
+;;Handles electrical menu
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
+
+;; Allows one to draw a prewired wiremold
 (defun c:wiremoldprewired ()
 	(begincommand)
 	
@@ -43,6 +51,7 @@
 	(endcommand)
 )
 
+;; Helper for the different panel commands
 (defun panelcommand (name)
 	(begincommand)
 	
@@ -57,6 +66,7 @@
 	(endcommand)
 )
 
+;; Helper for drawing different size tranformers
 (defun transformers (name x y)
 	(begincommand)
 	
@@ -73,6 +83,7 @@
 	(endcommand)
 )
 
+;; Command for drawing a custom sized transformer
 (defun c:customtransformer ()
 	(begincommand)
 	
@@ -83,7 +94,8 @@
 	(endcommand)
 )
 
-; keep ang public so we can use it in homerunwires
+; Helps draw a homerun
+; Keep vars public so we can use them in homerunwires
 (defun c:homerun ()
 	(begincommand)	
 	
@@ -101,6 +113,7 @@
 	(endcommand)
 )
 
+; Draws a homerun with &wires wires
 (defun homerunwires (wires)
 	(begincommand)
 	
@@ -120,6 +133,7 @@
 	(endcommand)
 )
 
+;; Command for drawing a homerun with x wires (we ask for them)
 (defun c:homerunqwires ()
 	(begincommand)
 	
@@ -128,6 +142,7 @@
 	(endcommand)
 )
 
+;; Inserts $block on the end of the line selected
 (defun nearend (block)
 	(begincommand)
 	
@@ -144,6 +159,8 @@
 	(endcommand)
 )
 
+;; Draws a cap
+;; Deprecated: Just do (nearend "ewcap")
 (defun c:cap ()
 	(begincommand)
 	

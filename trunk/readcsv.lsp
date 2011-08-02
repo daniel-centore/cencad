@@ -1,3 +1,10 @@
+;;************
+;;Handles CSV File
+;;
+;;Written for Centek Engineering (http://www.centekeng.com/)
+;;Author: Daniel Centore (dcentore@optonline.net)
+;;*************
+
 ;;Loads a block using the dwgdata.csv file
 (defun loadblockinfo (blockname
 / txtpath fp charlst l mychar firstword wordlst rightsection count columns blockpath layername color linetype rotation position xcommand xscale)
