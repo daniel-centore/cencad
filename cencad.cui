@@ -2352,19 +2352,19 @@
       <MenuMacro UID="MM_00465">
         <Macro>
           <Name>Homerun 3 Wires</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(homerunwires 3)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00466">
         <Macro>
           <Name>Homerun 4 Wires</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(homerunwires 4)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00467">
         <Macro>
           <Name>Homerun ? Wires</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(c:homerunqwires)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00468">

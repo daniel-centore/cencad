@@ -20,6 +20,7 @@
 	(setq opensurfaceht  1)
 	(setq transformerx   1)
 	(setq transformery   1)
+	(setq homerun        3)
 	;end default value collection
 )
 
