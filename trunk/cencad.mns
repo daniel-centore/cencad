@@ -574,42 +574,42 @@ ID_POP3		[&Electrical]
 			[<-<-Comm Interface Module]^P^C^C(loadblockinfo "ENCIM")
 	[->1 Line]
 		[->Schematic]
-			[Bus Plan]
-			[Transformer]
-			[ISO Transformer]
-			[ATS]
-			[CT]
-			[Auto Transformer]
-			[Power Transformer]
-			[Med Voltage CB]
-			[Ammeter]
-			[Disc/Switch]
-			[Drawout CB]
-			[Fused Disc/Switch]
-			[Circuit Breaker]
-			[Ground]
-			[<-Fuse]
+			[Bus Plan]^P^C^C(loadblockinfo "E1BUSPLN")
+			[Transformer]^P^C^C(loadblockinfo "E1XFMR")
+			[ISO Transformer]^P^C^C(loadblockinfo "E1SIXFMR")
+			[ATS]^P^C^C(loadblockinfo "E1ATS")
+			[CT]^P^C^C(loadblockinfo "E1CT")
+			[Auto Transformer]^P^C^C(loadblockinfo "E1ATRAN")
+			[Power Transformer]^P^C^C(loadblockinfo "E1PT")
+			[Med Voltage CB]^P^C^C(loadblockinfo "E1MVOLTD")
+			[Ammeter]^P^C^C(loadblockinfo "E1AMTR")
+			[Disc/Switch]^P^C^C(loadblockinfo "E1DISCSW")
+			[Drawout CB]^P^C^C(loadblockinfo "E1DRAWOC")
+			[Fused Disc/Switch]^P^C^C(loadblockinfo "E1FDSW")
+			[Circuit Breaker]^P^C^C(loadblockinfo "E1CIRB")
+			[Ground]^P^C^C(loadblockinfo "E1GND")
+			[<-Fuse]^P^C^C(loadblockinfo "E1FUSE")
 		[->Medium Voltage]
-			[Primary Fused Sw]
-			[... Double Leg]
-			[Primary Selector Sw Left]
-			[... Right]
-			[... Dual Left]
-			[... Dual Right]
-			[Primary Vacuum Brkr]
-			[Drawout Primary Vac Brkr]
-			[Drawout Space]
-			[Ground - Straight]
-			[Incoming Line]
-			[Surge Arrestor]
-			[<-Med Volt Fuse]
+			[Primary Fused Sw]^P^C^C(loadblockinfo "E1MVPFSW")
+			[... Double Leg]^P^C^C(loadblockinfo "E1MVPFSWDL")
+			[Primary Selector Sw Left]^P^C^C(loadblockinfo "E1MVPSELSWL")
+			[... Right]^P^C^C(loadblockinfo "E1MVPSELSWR")
+			[... Dual Left]^P^C^C(loadblockinfo "E1MVPSELSWDL")
+			[... Dual Right]^P^C^C(loadblockinfo "E1MVPSELSWDR")
+			[Primary Vacuum Brkr]^P^C^C(loadblockinfo "E1MVPVACB")
+			[Drawout Primary Vac Brkr]^P^C^C(loadblockinfo "E1MVDRAWOPVAC")
+			[Drawout Space]^P^C^C(loadblockinfo "E1MVDRAWOSP")
+			[Ground - Straight]^P^C^C(loadblockinfo "E1MVGND")
+			[Incoming Line]^P^C^C(loadblockinfo "E1MVINLINE")
+			[Surge Arrestor]^P^C^C(loadblockinfo "E1MVSURGE")
+			[<-Med Volt Fuse]^P^C^C(loadblockinfo "E1MVFUSE")
 		[--]
-		[Contact - NC]
-		[Contact - NO]
+		[Contact - NC]^P^C^C(loadblockinfo "E1CNCH")
+		[Contact - NO]^P^C^C(loadblockinfo "E1CNOH")
 		[--]
-		[Fuse]
-		[Heater]
-		[<-Relay]
+		[Fuse]^P^C^C(loadblockinfo "E1RFHFUSEH")
+		[Heater]^P^C^C(loadblockinfo "E1RFHHEAT")
+		[<-Relay]^P^C^C(loadblockinfo "E1RFHRELAY")
 	[--]
 	[->Annotation]
 		[Multiline Text]^P^C^C(progn (anot-layer "E") (command "mtext"))
