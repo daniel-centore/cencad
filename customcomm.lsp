@@ -1,4 +1,4 @@
-;;************
+;;*************
 ;;Handles Common menu
 ;;
 ;;Written for Centek Engineering (http://www.centekeng.com/)
@@ -34,8 +34,11 @@
 	(begincommand)
 	
 	(setq myscale (getreal (strcat "Enter the drawing scale <" (as-string (getvar "dimscale")) ">: ")))
-	(if (/= myscale nil) (progn (setvar "dimscale" myscale) ))
-	(setq text-size (/ myscale 10.66))
+	(if (= myscale nil) (setq myscale (getvar "dimscale")))
+	
+	(setvar "dimscale" myscale)
+	(setq text-size (/ myscale text-var))	
+	
 	(command "-style" "CEN-ATT" "romans.shx" text-size "0.75" "0" "no" "no")
 	
 	(endcommand)

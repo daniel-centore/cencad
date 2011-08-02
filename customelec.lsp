@@ -66,9 +66,9 @@
 	(command "-insert" name "x" x "y" y "z" x pause)
 	(command pause "T")
 	
-	;(if (/= (entlast) nil) (progn
-	;	(set-attribute-height (entity-ename (entlast)) (text-size))
-	;))
+	(set-attribute-height (entity-ename (entlast)) text-size)
+	(set-attribute-width (entity-ename (entlast)) 0.75)
+	
 	
 	(endcommand)
 )

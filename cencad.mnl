@@ -14,7 +14,9 @@
 (setvar "cmdecho" 0)		;Disable other commands from printing
 ;(setvar "glswapmode" 0)		;fixes ati graphics issue
 
-(setq text-size (/ (getvar "dimscale") 10.66))
+;; 10.6-->. We go out so many places so we don't get funky decimals when dividing
+(setq text-var 10.66666666666666)
+(setq text-size (/ (getvar "dimscale") text-var))
 
 ;load linetypes
 (command "-linetype" "load" "*" (findfile "acad.lin") ^C^C)
@@ -195,7 +197,7 @@
 
 
 ;;Sets the style and such
-(command "-style" "CEN-ATT" "romans.shx" (as-string (text-size)) "0.75" "0" "no" "no")
+(command "-style" "CEN-ATT" "romans.shx" (as-string text-size) "0.75" "0" "no" "no")
 (c:clear)
 (prompt "\nCENCAD is READY for you to use :-)")
 (prompt "\nIf you find any bugs, please report them to Daniel Centore <dcentore@optonline.net>")
