@@ -2814,43 +2814,43 @@
       <MenuMacro UID="MM_00548">
         <Macro>
           <Name>Entry Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENTRYS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00549">
         <Macro>
           <Name>Master Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MASTERS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00550">
         <Macro>
           <Name>Remote Master Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "RMS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00551">
         <Macro>
           <Name>Programming Jack</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PROGJACK")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00552">
         <Macro>
           <Name>Remote Override Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ROS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00553">
         <Macro>
           <Name>Ceiling Infrared Detector</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CIR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00554">
         <Macro>
           <Name>Area Control Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ACS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00556">

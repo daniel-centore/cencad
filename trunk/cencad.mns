@@ -545,13 +545,13 @@ ID_POP3		[&Electrical]
 			[Check Set]^P^C^C(loadblockinfo "CHECKS")
 			[<-Door Strike]^P^C^C(loadblockinfo "DOORSTRIKE")
 		[->Dimmers]
-			[Entry Station]
-			[Master Station]
-			[Remote Master Station]
-			[Programming Jack]
-			[Remote Override Station]
-			[Ceiling Infrared Detector]
-			[<-Area Control Station]
+			[Entry Station]^P^C^C(loadblockinfo "ENTRYS")
+			[Master Station]^P^C^C(loadblockinfo "MASTERS")
+			[Remote Master Station]^P^C^C(loadblockinfo "RMS")
+			[Programming Jack]^P^C^C(loadblockinfo "PROGJACK")
+			[Remote Override Station]^P^C^C(loadblockinfo "ROS")
+			[Ceiling Infrared Detector]^P^C^C(loadblockinfo "CIR")
+			[<-Area Control Station]^P^C^C(loadblockinfo "ACS")
 		[->Nurse Call]
 			[Wall Mtd Dome Light]
 			[Ceiling Mtd Dome Light]
