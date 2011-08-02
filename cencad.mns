@@ -467,12 +467,10 @@ ID_POP3		[&Electrical]
 			[Homerun ? Wires]^P^C^C(c:homerunqwires)
 			[Wire Line]^P^C^C(loadblockinfo "WIRELINE")
 			[Cap]^P^C^C(c:cap)
-			[Connector Square]
-			[Connector Circle]
-			[Conduit Up]
-			[Conduit Down]
-			[Junction Box Round]
-			[Junction Box Round w/ Flex Conduit]
+			[Conduit Up]^P^C^C(nearend "econdup")
+			[Conduit Down]^P^C^C(nearend "econddn")
+			[Junction Box Round]^P^C^C(loadblockinfo "ECIR2")
+			[Junction Box Round w/ Flex Conduit]^P^C^C(progn (loadblockinfo "ECIR2") (loadblockinfo "EWFCOND"))
 			[Flex Conduit]
 			[Junction Box Round Wall]
 			[<-<-Junction Box Square]
