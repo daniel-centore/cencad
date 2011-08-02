@@ -2970,199 +2970,199 @@
       <MenuMacro UID="MM_00577">
         <Macro>
           <Name>Bus Plan</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1BUSPLN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00578">
         <Macro>
           <Name>Transformer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1XFMR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00579">
         <Macro>
           <Name>ISO Transformer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1SIXFMR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00580">
         <Macro>
           <Name>ATS</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1ATS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00581">
         <Macro>
           <Name>CT</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1CT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00582">
         <Macro>
           <Name>Auto Transformer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1ATRAN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00583">
         <Macro>
           <Name>Power Transformer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1PT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00584">
         <Macro>
           <Name>Med Voltage CB</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVOLTD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00585">
         <Macro>
           <Name>Ammeter</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1AMTR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00586">
         <Macro>
           <Name>Disc/Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1DISCSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00587">
         <Macro>
           <Name>Drawout CB</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1DRAWOC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00588">
         <Macro>
           <Name>Fused Disc/Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1FDSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00589">
         <Macro>
           <Name>Circuit Breaker</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1CIRB")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00590">
         <Macro>
           <Name>Ground</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1GND")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00591">
         <Macro>
           <Name>Fuse</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1FUSE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00593">
         <Macro>
           <Name>Primary Fused Sw</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPFSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00594">
         <Macro>
           <Name>... Double Leg</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPFSWDL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00595">
         <Macro>
           <Name>Primary Selector Sw Left</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPSELSWL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00596">
         <Macro>
           <Name>... Right</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPSELSWR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00597">
         <Macro>
           <Name>... Dual Left</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPSELSWDL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00598">
         <Macro>
           <Name>... Dual Right</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPSELSWDR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00599">
         <Macro>
           <Name>Primary Vacuum Brkr</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVPVACB")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00600">
         <Macro>
           <Name>Drawout Primary Vac Brkr</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVDRAWOPVAC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00601">
         <Macro>
           <Name>Drawout Space</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVDRAWOSP")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00602">
         <Macro>
           <Name>Ground - Straight</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVGND")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00603">
         <Macro>
           <Name>Incoming Line</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVINLINE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00604">
         <Macro>
           <Name>Surge Arrestor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVSURGE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00605">
         <Macro>
           <Name>Med Volt Fuse</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1MVFUSE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00607">
         <Macro>
           <Name>Contact - NC</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1CNCH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00608">
         <Macro>
           <Name>Contact - NO</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1CNOH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00610">
         <Macro>
           <Name>Fuse</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1RFHFUSEH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00611">
         <Macro>
           <Name>Heater</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1RFHHEAT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00612">
         <Macro>
           <Name>Relay</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "E1RFHRELAY")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00615">
