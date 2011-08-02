@@ -260,8 +260,14 @@
 )
 
 ;;Returns a radian number in degress
+;;Deprecated: use rtd (spelling mistake here)
 (defun rtg (rad)
 	(* rad (/ 180 pi))
+)
+
+;;Returns a radian number in degress
+(defun rtd (rad)
+	(rtg rad)
 )
 
 ;;Returns a degrees number in radians

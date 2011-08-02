@@ -82,3 +82,28 @@
 	
 	(endcommand)
 )
+
+(defun c:homerun (/ ang)
+	(begincommand)	
+	
+	(insertblock "" "E-AUXL" "YELLOW" "CONTINUOUS" "0" "-1" "-1" "-1")
+	
+	(command "line")
+	(while (/= (getvar "cmdactive") 0) (prompt "\nNext point: ") (command pause))
+	
+	(setq ang (rtd (angle (line-start (entlast)) (line-end (entlast)))))
+	
+	(defblock "./DWGs/ELEC/ehrunarw.dwg")
+	
+	(command "-insert" "ehrunarw" (line-end (entlast)) (getvar "dimscale") "" ang)
+	
+	
+)
+
+
+
+
+
+
+
+
