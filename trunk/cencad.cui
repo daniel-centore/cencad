@@ -2724,91 +2724,91 @@
       <MenuMacro UID="MM_00532">
         <Macro>
           <Name>Card Reader</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CARDR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00533">
         <Macro>
           <Name>Door Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "DOORS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00534">
         <Macro>
           <Name>Magnetic Lock</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MAGL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00535">
         <Macro>
           <Name>Power Supply</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "POWERS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00536">
         <Macro>
           <Name>Electric Lock</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ELECL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00537">
         <Macro>
           <Name>Camera</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSCAM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00538">
         <Macro>
           <Name>Keypad</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "KEYPAD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00539">
         <Macro>
           <Name>Bell</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "BELL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00540">
         <Macro>
           <Name>Motion Sensor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MOTION")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00541">
         <Macro>
           <Name>Request to Exit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "RTE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00542">
         <Macro>
           <Name>Electric Pivot</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPIVOT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00543">
         <Macro>
           <Name>Electric Power Transfer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EPT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00544">
         <Macro>
           <Name>Electric Ext Device</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EED")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00545">
         <Macro>
           <Name>Check Set</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CHECKS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00546">
         <Macro>
           <Name>Door Strike</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "DOORSTRIKE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00548">

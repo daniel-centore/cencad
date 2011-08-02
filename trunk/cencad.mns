@@ -529,21 +529,21 @@ ID_POP3		[&Electrical]
 			[Beam Smoke Transmit]^P^C^C(loadblockinfo "EFBST")
 			[<-Beam Smoke Receive]^P^C^C(loadblockinfo "EFBSR")
 		[->Security]
-			[Card Reader]
-			[Door Switch]
-			[Magnetic Lock]
-			[Power Supply]
-			[Electric Lock]
-			[Camera]
-			[Keypad]
-			[Bell]
-			[Motion Sensor]
-			[Request to Exit]
-			[Electric Pivot]
-			[Electric Power Transfer]
-			[Electric Ext Device]
-			[Check Set]
-			[<-Door Strike]
+			[Card Reader]^P^C^C(loadblockinfo "CARDR")
+			[Door Switch]^P^C^C(loadblockinfo "DOORS")
+			[Magnetic Lock]^P^C^C(loadblockinfo "MAGL")
+			[Power Supply]^P^C^C(loadblockinfo "POWERS")
+			[Electric Lock]^P^C^C(loadblockinfo "ELECL")
+			[Camera]^P^C^C(loadblockinfo "ESSCAM")
+			[Keypad]^P^C^C(loadblockinfo "KEYPAD")
+			[Bell]^P^C^C(loadblockinfo "BELL")
+			[Motion Sensor]^P^C^C(loadblockinfo "MOTION")
+			[Request to Exit]^P^C^C(loadblockinfo "RTE")
+			[Electric Pivot]^P^C^C(loadblockinfo "EPIVOT")
+			[Electric Power Transfer]^P^C^C(loadblockinfo "EPT")
+			[Electric Ext Device]^P^C^C(loadblockinfo "EED")
+			[Check Set]^P^C^C(loadblockinfo "CHECKS")
+			[<-Door Strike]^P^C^C(loadblockinfo "DOORSTRIKE")
 		[->Dimmers]
 			[Entry Station]
 			[Master Station]
