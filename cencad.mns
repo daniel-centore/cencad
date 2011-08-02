@@ -488,19 +488,19 @@ ID_POP3		[&Electrical]
 			[Slave Intercom]^P^C^C(loadblockinfo "ESSSINT")
 			[<-Intercom]^P^C^C(loadblockinfo "ESQR2-8")
 		[->Telecommunications]
-			[Telephone]
-			[Tele 54" AFF]
-			[Pay-Phone]
-			[Flr Mtd Tele]
-			[Data]
-			[Flr Mtd Data]
-			[Tel/ Data]
-			[Flr Mtd Tel/ Data]
-			[Dual Tele]
-			[Private Tele]
-			[Telephone ?]
-			[Data ?]
-			[<-Tel/ Data ?]
+			[Telephone]^P^C^C(loadblockinfo "ETTEL")
+			[Tele 54" AFF]^P^C^C(loadblockinfo "ETTEL-W")
+			[Pay-Phone]^P^C^C(loadblockinfo "ETTEL-P")
+			[Flr Mtd Tele]^P^C^C(loadblockinfo "ETFTEL")
+			[Data]^P^C^C(loadblockinfo "ETDATA")
+			[Flr Mtd Data]^P^C^C(loadblockinfo "ETFDATA")
+			[Tel/ Data]^P^C^C(loadblockinfo "ETTD")
+			[Flr Mtd Tel/ Data]^P^C^C(loadblockinfo "ETFTD")
+			[Dual Tele]^P^C^C(loadblockinfo "ETTDUAL")
+			[Private Tele]^P^C^C(loadblockinfo "ETTPRIV")
+			[Telephone ?]^P^C^C(loadblockinfo "ETTEL-?")
+			[Data ?]^P^C^C(loadblockinfo "ETDATA-?")
+			[<-Tel/ Data ?]^P^C^C(loadblockinfo "ETTD-?")
 		[->Fire Alarm]
 			[Pull Station]
 			[A/V Alarm]
