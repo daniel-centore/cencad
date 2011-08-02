@@ -502,32 +502,32 @@ ID_POP3		[&Electrical]
 			[Data ?]^P^C^C(loadblockinfo "ETDATA-?")
 			[<-Tel/ Data ?]^P^C^C(loadblockinfo "ETTD-?")
 		[->Fire Alarm]
-			[Pull Station]
-			[A/V Alarm]
-			[ADA A/V Alarm]
-			[Pull + A/V]
-			[Horn]
-			[Smoke Detector]
-			[Heat Detector]
-			[Flow Switch]
-			[Tamper Switch]
-			[Door Holder]
-			[Fire Alarm Master]
-			[Duct Mtd Smoke Detector]
-			[Remote Indicator for Duct Mtd]
-			[Remote Indicator]
-			[Patient Room Indicator]
-			[Fire Fighter Phone]
-			[Fire Control Center]
-			[FA Termination Cabinet]
-			[FA Termination Panel]
-			[FA Control Panel]
-			[FA Annunciator]
-			[Control Module]
-			[Monitor Module]
-			[External FA Beacon]
-			[Beam Smoke Transmit]
-			[<-Beam Smoke Receive]
+			[Pull Station]^P^C^C(loadblockinfo "ESQR2-9")
+			[A/V Alarm]^P^C^C(loadblockinfo "EFAVA")
+			[ADA A/V Alarm]^P^C^C(loadblockinfo "EFADAVA")
+			[Pull + A/V]^P^C^C(loadblockinfo "EFAVAPS")
+			[Horn]^P^C^C(loadblockinfo "EFHORN")
+			[Smoke Detector]^P^C^C(loadblockinfo "SMOKE")
+			[Heat Detector]^P^C^C(loadblockinfo "HEAT")
+			[Flow Switch]^P^C^C(loadblockinfo "FLOWSWITCH")
+			[Tamper Switch]^P^C^C(loadblockinfo "TSWITCH")
+			[Door Holder]^P^C^C(loadblockinfo "DOOR")
+			[Fire Alarm Master]^P^C^C(loadblockinfo "EFMASTER")
+			[Duct Mtd Smoke Detector]^P^C^C(loadblockinfo "EFDMSD")
+			[Remote Indicator for Duct Mtd]^P^C^C(loadblockinfo "EFRIDMSD")
+			[Remote Indicator]^P^C^C(loadblockinfo "ECIR2L-7")
+			[Patient Room Indicator]^P^C^C(loadblockinfo "ECIR2L-F")
+			[Fire Fighter Phone]^P^C^C(loadblockinfo "FFFONE")
+			[Fire Control Center]^P^C^C(loadblockinfo "FCC")
+			[FA Termination Cabinet]^P^C^C(loadblockinfo "FATC")
+			[FA Termination Panel]^P^C^C(loadblockinfo "FATP")
+			[FA Control Panel]^P^C^C(loadblockinfo "FACP")
+			[FA Annunciator]^P^C^C(loadblockinfo "FAA")
+			[Control Module]^P^C^C(loadblockinfo "CM")
+			[Monitor Module]^P^C^C(loadblockinfo "MM")
+			[External FA Beacon]^P^C^C(loadblockinfo "EFAB")
+			[Beam Smoke Transmit]^P^C^C(loadblockinfo "EFBST")
+			[<-Beam Smoke Receive]^P^C^C(loadblockinfo "EFBSR")
 		[->Security]
 			[Card Reader]
 			[Door Switch]
