@@ -553,25 +553,25 @@ ID_POP3		[&Electrical]
 			[Ceiling Infrared Detector]^P^C^C(loadblockinfo "CIR")
 			[<-Area Control Station]^P^C^C(loadblockinfo "ACS")
 		[->Nurse Call]
-			[Wall Mtd Dome Light]
-			[Ceiling Mtd Dome Light]
-			[Ceiling Mtd Dome Light (Half)]
-			[Zone Dome Light]
-			[Toilet Pushbutton/ Cord]
-			[Staff Station]
-			[Master Station]
-			[Duty Station]
-			[Pullcord Station]
-			[Staff Assist]
-			[Single Patient Staff Assist/ Push B]
-			[Dual Patient Bed Station]
-			[Annunciator Station]
-			[Wall Mtd Dome Light w/ Signal]
-			[Nurse Call Cabinet]
-			[Nurse Assistance Station]
-			[Code 99/ Annunciator]
-			[Time Clock w/ Control Station]
-			[<-<-Comm Interface Module]
+			[Wall Mtd Dome Light]^P^C^C(loadblockinfo "ENWDML")
+			[Ceiling Mtd Dome Light]^P^C^C(loadblockinfo "ENCDML")
+			[Ceiling Mtd Dome Light (Half)]^P^C^C(loadblockinfo "ENCDML2")
+			[Zone Dome Light]^P^C^C(loadblockinfo "ENZNDML")
+			[Toilet Pushbutton/ Cord]^P^C^C(loadblockinfo "ENTPBPC")
+			[Staff Station]^P^C^C(loadblockinfo "ENSTAFF")
+			[Master Station]^P^C^C(loadblockinfo "ENMASTER")
+			[Duty Station]^P^C^C(loadblockinfo "ENDUTY")
+			[Pullcord Station]^P^C^C(loadblockinfo "ENTPBPC-?")
+			[Staff Assist]^P^C^C(loadblockinfo "ENSTAS")
+			[Single Patient Staff Assist/ Push B]^P^C^C(loadblockinfo "ENSPSAPB")
+			[Dual Patient Bed Station]^P^C^C(loadblockinfo "ENDPBS")
+			[Annunciator Station]^P^C^C(loadblockinfo "ANUNC")
+			[Wall Mtd Dome Light w/ Signal]^P^C^C(loadblockinfo "ENWDMLS")
+			[Nurse Call Cabinet]^P^C^C(loadblockinfo "NCC")
+			[Nurse Assistance Station]^P^C^C(loadblockinfo "ENC99A")
+			[Code 99/ Annunciator]^P^C^C(loadblockinfo "ENC99A-NA")
+			[Time Clock w/ Control Station]^P^C^C(loadblockinfo "ENTCLK")
+			[<-<-Comm Interface Module]^P^C^C(loadblockinfo "ENCIM")
 	[->1 Line]
 		[Schematic...]
 		[Medium Voltage...]
