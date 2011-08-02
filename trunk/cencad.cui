@@ -2346,7 +2346,7 @@
       <MenuMacro UID="MM_00464">
         <Macro>
           <Name>Homerun</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(c:homerun)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00465">
