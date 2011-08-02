@@ -2856,115 +2856,115 @@
       <MenuMacro UID="MM_00556">
         <Macro>
           <Name>Wall Mtd Dome Light</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENWDML")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00557">
         <Macro>
           <Name>Ceiling Mtd Dome Light</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENCDML")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00558">
         <Macro>
           <Name>Ceiling Mtd Dome Light (Half)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENCDML2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00559">
         <Macro>
           <Name>Zone Dome Light</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENZNDML")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00560">
         <Macro>
           <Name>Toilet Pushbutton/ Cord</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENTPBPC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00561">
         <Macro>
           <Name>Staff Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENSTAFF")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00562">
         <Macro>
           <Name>Master Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENMASTER")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00563">
         <Macro>
           <Name>Duty Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENDUTY")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00564">
         <Macro>
           <Name>Pullcord Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENTPBPC-?")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00565">
         <Macro>
           <Name>Staff Assist</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENSTAS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00566">
         <Macro>
           <Name>Single Patient Staff Assist/ Push B</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENSPSAPB")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00567">
         <Macro>
           <Name>Dual Patient Bed Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENDPBS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00568">
         <Macro>
           <Name>Annunciator Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ANUNC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00569">
         <Macro>
           <Name>Wall Mtd Dome Light w/ Signal</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENWDMLS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00570">
         <Macro>
           <Name>Nurse Call Cabinet</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NCC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00571">
         <Macro>
           <Name>Nurse Assistance Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENC99A")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00572">
         <Macro>
           <Name>Code 99/ Annunciator</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENC99A-NA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00573">
         <Macro>
           <Name>Time Clock w/ Control Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENTCLK")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00574">
         <Macro>
           <Name>Comm Interface Module</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ENCIM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00576">
