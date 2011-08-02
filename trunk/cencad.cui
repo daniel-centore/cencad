@@ -2490,79 +2490,79 @@
       <MenuMacro UID="MM_00491">
         <Macro>
           <Name>Telephone</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTEL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00492">
         <Macro>
           <Name>Tele 54" AFF</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTEL-W")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00493">
         <Macro>
           <Name>Pay-Phone</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTEL-P")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00494">
         <Macro>
           <Name>Flr Mtd Tele</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETFTEL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00495">
         <Macro>
           <Name>Data</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETDATA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00496">
         <Macro>
           <Name>Flr Mtd Data</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETFDATA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00497">
         <Macro>
           <Name>Tel/ Data</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00498">
         <Macro>
           <Name>Flr Mtd Tel/ Data</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETFTD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00499">
         <Macro>
           <Name>Dual Tele</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTDUAL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00500">
         <Macro>
           <Name>Private Tele</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTPRIV")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00501">
         <Macro>
           <Name>Telephone ?</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTEL-?")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00502">
         <Macro>
           <Name>Data ?</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETDATA-?")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00503">
         <Macro>
           <Name>Tel/ Data ?</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ETTD-?")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00505">
