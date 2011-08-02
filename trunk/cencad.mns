@@ -462,9 +462,9 @@ ID_POP3		[&Electrical]
 				[<-<-Custom]^P^C^C(c:customtransformer)
 		[->Wiring/ Junction Boxes]
 			[Homerun]^P^C^C(c:homerun)
-			[Homerun 3 Wires]
-			[Homerun 4 Wires]
-			[Homerun ? Wires]
+			[Homerun 3 Wires]^P^C^C(homerunwires 3)
+			[Homerun 4 Wires]^P^C^C(homerunwires 4)
+			[Homerun ? Wires]^P^C^C(c:homerunqwires)
 			[? Wires]
 			[3 Wires]
 			[4 Wires]

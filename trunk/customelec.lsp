@@ -83,7 +83,8 @@
 	(endcommand)
 )
 
-(defun c:homerun (/ ang)
+; keep ang public so we can use it in homerunwires
+(defun c:homerun ()
 	(begincommand)	
 	
 	(insertblock "" "E-AUXL" "YELLOW" "CONTINUOUS" "0" "-1" "-1" "-1")
@@ -91,16 +92,41 @@
 	(command "line")
 	(while (/= (getvar "cmdactive") 0) (prompt "\nNext point: ") (command pause))
 	
-	(setq ang (rtd (angle (line-start (entlast)) (line-end (entlast)))))
+	(setq wire (entlast))
+	(setq ang (rtd (angle (line-start wire) (line-end wire))))
 	
 	(defblock "./DWGs/ELEC/ehrunarw.dwg")
-	
-	(command "-insert" "ehrunarw" (line-end (entlast)) (getvar "dimscale") "" ang)
+	(command "-insert" "ehrunarw" (line-end wire) (getvar "dimscale") "" ang)
 	
 	(endcommand)
 )
 
+(defun homerunwires (wires)
+	(begincommand)
+	
+	(c:homerun)
+	
+	(setq middle (middle-of wire))
+	
+	(setq wir "")
+	
+	(while (< (strlen wir) wires) (setq wir (strcat wir "/")))
+	
+	(defblock "./DWGs/ELEC/ewires.dwg")
+	(disablesnap)
+	(command "-insert" "ewires" middle (getvar "dimscale") "" ang wir)
+	(enablesnap)
+	
+	(endcommand)
+)
 
+(defun c:homerunqwires ()
+	(begincommand)
+	
+	(homerunwires (setq homerun (getint-def homerun "Wires: ")))
+	
+	(endcommand)
+)
 
 
 
