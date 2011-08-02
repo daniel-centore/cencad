@@ -316,9 +316,43 @@
 	)
 )
 
-;;Returns the size of text
-(defun text-size ()
-	(* 0.09375 (getvar "dimscale"))
+;; Based on: http://forums.augi.com/showthread.php?t=58198
+;; Sets an entity's width
+(defun set-attribute-width (entity width / BS BSL CT NOFUV NOFNU LP NE NEL NEAET NEA OFNU NNEL)
+	(setq BS (ssadd entity))
+	(SETQ BSL (SSLENGTH BS))
+	(SETQ CT (- BSL 1))
+	(setq NOFUV width)
+	(SETQ NOFNU (CONS 41 NOFUV))
+	(SETQ LP 1)
+	(WHILE LP
+		(SETQ NE (SSNAME BS CT))
+		(SETQ CT2 0)
+		(SETQ LP2 1)
+		(WHILE LP2
+			(if (/= NE nil) (SETQ NE (ENTNEXT NE)))
+			(if (/= NE nil) (progn
+				(SETQ NEL (ENTGET NE))
+				(SETQ NEAET (CDR (ASSOC 0 NEL)))
+				(SETQ NEA (ASSOC 41 NEL))
+				(IF (= NEAET "ATTRIB") 
+					(PROGN
+					(IF (/= NEA NIL)
+						(PROGN
+						(SETQ OFNU NEA)
+						(SETQ NNEL (SUBST NOFNU OFNU NEL))
+						(ENTMOD NNEL)
+						(ENTUPD NE)
+					))
+				))
+				(IF (= NEAET "SEQEND") (SETQ LP2 NIL))
+			))
+			
+			(if (= NE nil) (progn (setq LP nil) (setq LP2 nil)))
+		)
+		(SETQ CT (- CT 1))
+		(IF (< CT 0) (SETQ LP NIL))
+	)
 )
 
 ;;Bill Kramer (http://forums.cadalyst.com/showthread.php?p=19880)
