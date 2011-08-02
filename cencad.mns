@@ -465,11 +465,8 @@ ID_POP3		[&Electrical]
 			[Homerun 3 Wires]^P^C^C(homerunwires 3)
 			[Homerun 4 Wires]^P^C^C(homerunwires 4)
 			[Homerun ? Wires]^P^C^C(c:homerunqwires)
-			[? Wires]
-			[3 Wires]
-			[4 Wires]
-			[Wire Line]
-			[Cap]
+			[Wire Line]^P^C^C(loadblockinfo "WIRELINE")
+			[Cap]^P^C^C(c:cap)
 			[Connector Square]
 			[Connector Circle]
 			[Conduit Up]
