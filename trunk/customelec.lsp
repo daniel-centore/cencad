@@ -128,8 +128,20 @@
 	(endcommand)
 )
 
-
-
+(defun c:cap ()
+	(begincommand)
+	
+	(setq line (entsel-def "\nSelect near end of line:"))
+	(setq end (closerend  line (getvar "lastpoint")))
+	(setq start (fartherend  line (getvar "lastpoint")))
+	
+	(defblock "./DWGs/ELEC/ewcap.dwg")
+	(disablesnap)
+	(command "-insert" "ewcap" end (getvar "dimscale") "" (rtd (angle start end)))
+	(enablesnap)
+	
+	(endcommand)
+)
 
 
 
