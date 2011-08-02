@@ -2424,67 +2424,67 @@
       <MenuMacro UID="MM_00479">
         <Macro>
           <Name>Speaker</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2-2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00480">
         <Macro>
           <Name>Wall Mtd Speaker</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-4")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00481">
         <Macro>
           <Name>Microphone Jack</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-5")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00482">
         <Macro>
           <Name>Flr Mtd Mic Jack</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSFMMJ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00483">
         <Macro>
           <Name>Volume Control</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-6")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00484">
         <Macro>
           <Name>Amplifier</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ERECT2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00485">
         <Macro>
           <Name>Sound System Junction Box</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ERECT2-2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00486">
         <Macro>
           <Name>Trumpet Speaker</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EDTRI1-2")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00487">
         <Macro>
           <Name>Master Intercom</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSMINT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00488">
         <Macro>
           <Name>Slave Intercom</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESSSINT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00489">
         <Macro>
           <Name>Intercom</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-8")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00491">
