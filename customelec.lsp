@@ -97,7 +97,7 @@
 	
 	(command "-insert" "ehrunarw" (line-end (entlast)) (getvar "dimscale") "" ang)
 	
-	
+	(endcommand)
 )
 
 

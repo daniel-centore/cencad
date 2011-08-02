@@ -461,7 +461,7 @@ ID_POP3		[&Electrical]
 				[3x2]^P^C^C(transformers "exfmr" 36 24)
 				[<-<-Custom]^P^C^C(c:customtransformer)
 		[->Wiring/ Junction Boxes]
-			[Homerun]
+			[Homerun]^P^C^C(c:homerun)
 			[Homerun 3 Wires]
 			[Homerun 4 Wires]
 			[Homerun ? Wires]
