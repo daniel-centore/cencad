@@ -352,3 +352,14 @@
 "EWFCOND2","./DWGs/ELEC/ewfcond2.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,-1,-1
 "ECIR2L2","./DWGs/ELEC/ecir2l.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,"J",-1
 "ESQR2-7","./DWGs/ELEC/esqr2.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,"J",-1
+"ECIR2-2","./DWGs/ELEC/ecir2.dwg","E-SOUN","YELLOW","CONTINUOUS",0,0,"S",-1
+"ECIR2L-4","./DWGs/ELEC/ecir2l.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"S",-1
+"ECIR2L-5","./DWGs/ELEC/ecir2l.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"M",-1
+"ESSFMMJ","./DWGs/ELEC/essfmmj.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"M",-1
+"ECIR2L-6","./DWGs/ELEC/ecir2l.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"V",-1
+"ERECT2","./DWGs/ELEC/erect2.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"AMP",-1
+"ERECT2-2","./DWGs/ELEC/erect2.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"SJB",-1
+"EDTRI1-2","./DWGs/ELEC/edtri1.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,"T",-1
+"ESSMINT","./DWGs/ELEC/essmint.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,-1,-1
+"ESSSINT","./DWGs/ELEC/esssint.dwg","E-SOUN","YELLOW","CONTINUOUS",-1,0,-1,-1
+"ESQR2-8","./DWGs/ELEC/esqr2.dwg","E-AUXL","YELLOW","CONTINUOUS",-1,0,"I",-1

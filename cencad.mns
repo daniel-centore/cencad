@@ -476,17 +476,17 @@ ID_POP3		[&Electrical]
 			[<-<-Junction Box Square]^P^C^C(loadblockinfo "ESQR2-7")
 	[->Systems]
 		[->Sound]
-			[Speaker]
-			[Wall Mtd Speaker]
-			[Microphone Jack]
-			[Flr Mtd Mic Jack]
-			[Volume Control]
-			[Amplifier]
-			[Sound System Junction Box]
-			[Trumpet Speaker]
-			[Master Intercom]
-			[Slave Intercom]
-			[<-Intercom]
+			[Speaker]^P^C^C(loadblockinfo "ECIR2-2")
+			[Wall Mtd Speaker]^P^C^C(loadblockinfo "ECIR2L-4")
+			[Microphone Jack]^P^C^C(loadblockinfo "ECIR2L-5")
+			[Flr Mtd Mic Jack]^P^C^C(loadblockinfo "ESSFMMJ")
+			[Volume Control]^P^C^C(loadblockinfo "ECIR2L-6")
+			[Amplifier]^P^C^C(loadblockinfo "ERECT2")
+			[Sound System Junction Box]^P^C^C(loadblockinfo "ERECT2-2")
+			[Trumpet Speaker]^P^C^C(loadblockinfo "EDTRI1-2")
+			[Master Intercom]^P^C^C(loadblockinfo "ESSMINT")
+			[Slave Intercom]^P^C^C(loadblockinfo "ESSSINT")
+			[<-Intercom]^P^C^C(loadblockinfo "ESQR2-8")
 		[->Telecommunications]
 			[Telephone]
 			[Tele 54" AFF]
