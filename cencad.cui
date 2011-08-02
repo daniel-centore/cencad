@@ -2568,157 +2568,157 @@
       <MenuMacro UID="MM_00505">
         <Macro>
           <Name>Pull Station</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ESQR2-9")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00506">
         <Macro>
           <Name>A/V Alarm</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFAVA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00507">
         <Macro>
           <Name>ADA A/V Alarm</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFADAVA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00508">
         <Macro>
           <Name>Pull + A/V</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFAVAPS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00509">
         <Macro>
           <Name>Horn</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFHORN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00510">
         <Macro>
           <Name>Smoke Detector</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "SMOKE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00511">
         <Macro>
           <Name>Heat Detector</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HEAT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00512">
         <Macro>
           <Name>Flow Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FLOWSWITCH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00513">
         <Macro>
           <Name>Tamper Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "TSWITCH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00514">
         <Macro>
           <Name>Door Holder</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "DOOR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00515">
         <Macro>
           <Name>Fire Alarm Master</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFMASTER")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00516">
         <Macro>
           <Name>Duct Mtd Smoke Detector</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFDMSD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00517">
         <Macro>
           <Name>Remote Indicator for Duct Mtd</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFRIDMSD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00518">
         <Macro>
           <Name>Remote Indicator</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-7")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00519">
         <Macro>
           <Name>Patient Room Indicator</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ECIR2L-F")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00520">
         <Macro>
           <Name>Fire Fighter Phone</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FFFONE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00521">
         <Macro>
           <Name>Fire Control Center</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FCC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00522">
         <Macro>
           <Name>FA Termination Cabinet</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FATC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00523">
         <Macro>
           <Name>FA Termination Panel</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FATP")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00524">
         <Macro>
           <Name>FA Control Panel</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FACP")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00525">
         <Macro>
           <Name>FA Annunciator</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "FAA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00526">
         <Macro>
           <Name>Control Module</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00527">
         <Macro>
           <Name>Monitor Module</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00528">
         <Macro>
           <Name>External FA Beacon</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFAB")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00529">
         <Macro>
           <Name>Beam Smoke Transmit</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFBST")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00530">
         <Macro>
           <Name>Beam Smoke Receive</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EFBSR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00532">
