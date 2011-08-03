@@ -685,60 +685,70 @@
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X1")</Command>
+          <Image ID="./icons/i-elfc1x1.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00162">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X2")</Command>
+          <Image ID="./icons/i-elfc1x2.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00163">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X3")</Command>
+          <Image ID="./icons/i-elfc1x3.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00164">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X4")</Command>
+          <Image ID="./icons/i-elfc1x4.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00165">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X6")</Command>
+          <Image ID="./icons/i-elfc1x6.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00166">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X8")</Command>
+          <Image ID="./icons/i-elfc1x8.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00167">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X12")</Command>
+          <Image ID="./icons/i-elfc1x12.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00168">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFC2X2")</Command>
+          <Image ID="./icons/i-elfc2x2.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00169">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFC2X4")</Command>
+          <Image ID="./icons/i-elfc2x4.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00170">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFC4X4")</Command>
+          <Image ID="./icons/i-elfc4x4.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00172">
@@ -6181,6 +6191,14 @@
         <Macro>
           <Name>Change to Demo</Name>
           <Command>^P^C^C(c:to-demo-hvac)</Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="TAG1">
+        <Macro>
+          <Name>4'</Name>
+          <Command>^C^C^Pline4</Command>
+          <SmallImage Name="icons/I-L4FT"/>
+          <LargeImage Name="icons/I-L4FT"/>
         </Macro>
       </MenuMacro>
     </MacroGroup>
@@ -12900,7 +12918,18 @@
           </PopMenuItem>
         </PopMenu>
       </PopMenuRoot>
-      <ToolbarRoot/>
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TOOLBAR_TELDATA" rows="1" xval="545" yval="73">
+          <Alias>TOOLS1</Alias>
+          <Name>AAAAAA</Name>
+          <ToolbarButton>
+            <Name>4'</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="TAG1"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
       <ImageMenuRoot/>
       <TabletMenuRoot/>
     </MenuRoot>
