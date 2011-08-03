@@ -620,8 +620,8 @@ ID_POP3		[&Electrical]
 		[Quick Loop]^P^C^C(progn (anot-layer "E") (c:quickloop))
 		[No Arrow]^P^C^C(progn (anot-layer "E") (c:quicknone))
 		[--]
-		[Typical Room Tag]
-		[Feeder Tag]
+		[Typical Room Tag]^P^C^C(loadblockinfo "EDESTYPSM")
+		[Feeder Tag]^P^C^C(loadblockinfo "EGHEX")
 		[Key Note Tag]^P^C^C(loadblockinfo "EGDIAM")
 		[<-General Note Tag]^P^C^C(loadblockinfo "EGNOTE")
 	[--]

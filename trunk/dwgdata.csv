@@ -476,3 +476,5 @@
 "E1RFHFUSEH","./DWGs/ELEC/e1rfhfuseh.dwg","E-1LIN","YELLOW","CONTINUOUS",-1,0,-1,-1
 "E1RFHHEAT","./DWGs/ELEC/e1rfhheat.dwg","E-1LIN","YELLOW","CONTINUOUS",-1,0,-1,-1
 "E1RFHRELAY","./DWGs/ELEC/e1rfhrelay.dwg","E-1LIN","YELLOW","CONTINUOUS",-1,0,-1,-1
+"EDESTYPSM","./DWGs/ELEC/edestypsm.dwg","E-NOTE","CYAN","CONTINUOUS",-1,0,-1,-1
+"EGHEX","./DWGs/ELEC/eghex.dwg","E-NOTE","CYAN","CONTINUOUS",-1,0,-1,-1
