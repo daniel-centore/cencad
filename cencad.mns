@@ -439,38 +439,39 @@ ID_ILExitLB24			[<-<-<-#24 Exit]^P^C^C(loadblockinfo "CHIEXLB22-24E")
 			[Time Clock]^P^C^C(loadblockinfo "EPCLK")
 			[<-Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
 		[->Motors/ Disconnects]
-			[Motor]^P^C^C(loadblockinfo "EPMOTOR")
-			[Disconnect]^P^C^C(loadblockinfo "EPMSS")
-			[Fused Disconnect]^P^C^C(loadblockinfo "EPMFSS")
-			[Comb Starter/ Safety Sw]^P^C^C(loadblockinfo "EPMSTSS")
-			[Motor w/ Non-fused Sw]^P^C^C(loadblockinfo "EPMSW")
-			[Motor w/ Fused Sw]^P^C^C(loadblockinfo "EPMFSW")
-			[Motor w/ Starter Sw]^P^C^C(loadblockinfo "EPMSTSW")
-			[Motor w/ Thermal Sw]^P^C^C(loadblockinfo "EPMTSW")
-			[<-Thermal Sw]^P^C^C(loadblockinfo "PSWPLAIN13")
+ID_EPMMotor		[Motor]^P^C^C(loadblockinfo "EPMOTOR")
+ID_EPMSafetySw		[Disconnect]^P^C^C(loadblockinfo "EPMSS")
+ID_EPMFusedSSw		[Fused Disconnect]^P^C^C(loadblockinfo "EPMFSS")
+ID_EPMCSSSw		[Comb Starter/ Safety Sw]^P^C^C(loadblockinfo "EPMSTSS")
+ID_EPMMotorSw		[Motor w/ Non-fused Sw]^P^C^C(loadblockinfo "EPMSW")
+ID_EPMMotorFSw		[Motor w/ Fused Sw]^P^C^C(loadblockinfo "EPMFSW")
+ID_EPMMotorStSw		[Motor w/ Starter Sw]^P^C^C(loadblockinfo "EPMSTSW")
+ID_EPMMotorTherm	[Motor w/ Thermal Sw]^P^C^C(loadblockinfo "EPMTSW")
+ID_EPMThermSw		[<-Thermal Sw]^P^C^C(loadblockinfo "PSWPLAIN13")
 		[->Panels/ Transformers]
-			[Open Surface]^P^C^C(panelcommand "eopanel")
-			[Recessed Open Panel]^P^C^C(panelcommand "eropanel")
-			[Surface Single Tub Panel]^P^C^C(panelcommand "espanel")
-			[Distribution Panel]^P^C^C(panelcommand "erspanel")
+ID_EOpenPanel		[Open Surface]^P^C^C(panelcommand "eopanel")
+ID_ERecessedOPanel	[Recessed Open Panel]^P^C^C(panelcommand "eropanel")
+ID_ESingleTub		[Surface Single Tub Panel]^P^C^C(panelcommand "espanel")
+ID_ERSingleTub		[Recessed Single Tub Panel]^P^C^C(print "Havnt made it yet!")
+ID_EDistPanel		[Distribution Panel]^P^C^C(panelcommand "erspanel")
 			[--]
 			[->Dry Type Transformers]
-				[3x2]^P^C^C(transformers "exfmr" 36 24)
-				[<-<-Custom]^P^C^C(c:customtransformer)
+ID_ETrans1			[3x2]^P^C^C(transformers "exfmr" 36 24)
+ID_ETrans2			[<-<-Custom]^P^C^C(c:customtransformer)
 		[->Wiring/ Junction Boxes]
-			[Homerun]^P^C^C(c:homerun)
-			[Homerun 3 Wires]^P^C^C(homerunwires 3)
-			[Homerun 4 Wires]^P^C^C(homerunwires 4)
-			[Homerun ? Wires]^P^C^C(c:homerunqwires)
-			[Wire Line]^P^C^C(loadblockinfo "WIRELINE")
-			[Cap]^P^C^C(c:cap)
-			[Conduit Up]^P^C^C(nearend "econdup")
-			[Conduit Down]^P^C^C(nearend "econddn")
-			[Junction Box Round]^P^C^C(loadblockinfo "ECIR2")
-			[Junction Box Round w/ Flex Conduit]^P^C^C(progn (loadblockinfo "ECIR2") (loadblockinfo "EWFCOND"))
-			[Flex Conduit]^P^C^C(loadblockinfo "EWFCOND2")
-			[Junction Box Round Wall]^P^C^C(loadblockinfo "ECIR2L2")
-			[<-<-Junction Box Square]^P^C^C(loadblockinfo "ESQR2-7")
+ID_EWHomeRun		[Homerun]^P^C^C(c:homerun)
+ID_EWHomeRun3		[Homerun 3 Wires]^P^C^C(homerunwires 3)
+ID_EWHomeRun4		[Homerun 4 Wires]^P^C^C(homerunwires 4)
+ID_EWHomeRunX		[Homerun ? Wires]^P^C^C(c:homerunqwires)
+ID_EWWireLine		[Wire Line]^P^C^C(loadblockinfo "WIRELINE")
+ID_EWCap		[Cap]^P^C^C(c:cap)
+ID_EWConduitUp		[Conduit Up]^P^C^C(nearend "econdup")
+ID_EWConduitDn		[Conduit Down]^P^C^C(nearend "econddn")
+ID_EWJuncBoxRnd		[Junction Box Round]^P^C^C(loadblockinfo "ECIR2")
+ID_EWJuncBoxRndFlx	[Junction Box Round w/ Flex Conduit]^P^C^C(progn (loadblockinfo "ECIR2") (loadblockinfo "EWFCOND"))
+ID_EWFlexConduit	[Flex Conduit]^P^C^C(loadblockinfo "EWFCOND2")
+ID_EWJuncBoxRndWall	[Junction Box Round Wall]^P^C^C(loadblockinfo "ECIR2L2")
+ID_EWJuncBoxSqr		[<-<-Junction Box Square]^P^C^C(loadblockinfo "ESQR2-7")
 	[->Systems]
 		[->Sound]
 			[Speaker]^P^C^C(loadblockinfo "ECIR2-2")
@@ -1502,9 +1503,48 @@ ID_ILExitLB22  [_Button("No.22 Fire Escape", ./icons/i-chiexitlb22.bmp, ./icons/
 ID_ILExitLB23  [_Button("No.23 Stair", ./icons/i-chiexitlb23.bmp, ./icons/i-chiexitlb23.bmp)]^P^C^C(loadblockinfo "CHIEXLB22-24S")
 ID_ILExitLB24  [_Button("No.24 Exit", ./icons/i-chiexitlb24.bmp, ./icons/i-chiexitlb24.bmp)]^P^C^C(loadblockinfo "CHIEXLB22-24E")
 
+**E-MOTOR
+**E/MOTORS-DISC
+ID_TbEMotors   [_Toolbar("E/Motors-Disc", _Floating, _Hide, 545, 73, 6)]
+ID_EPMMotor    [_Button("Motor", ./icons/i-epmotor.bmp, ./icons/i-epmotor.bmp)]^P^C^C(loadblockinfo "EPMOTOR")
+ID_EPMSafetySw [_Button("Disconnect", ./icons/i-epmss.bmp, ./icons/i-epmss.bmp)]^P^C^C(loadblockinfo "EPMSS")
+ID_EPMFusedSSw [_Button("Fused Disconnect", ./icons/i-epmfss.bmp, ./icons/i-epmfss.bmp)]^P^C^C(loadblockinfo "EPMFSS")
+ID_EPMCSSSw    [_Button("Comb. Starter/Safety Sw.", ./icons/i-epmstss.bmp, ./icons/i-epmstss.bmp)]^P^C^C(loadblockinfo "EPMSTSS")
+ID_EPMMotorSw  [_Button("Motor w/Non-fused Sw.", ./icons/i-epmsw.bmp, ./icons/i-epmsw.bmp)]^P^C^C(loadblockinfo "EPMSW")
+ID_EPMMotorFSw [_Button("Motor w/Fused Sw.", ./icons/i-epmfsw.bmp, ./icons/i-epmfsw.bmp)]^P^C^C(loadblockinfo "EPMFSW")
+ID_EPMMotorStSw [_Button("Motor w/Starter/Sw.", ./icons/i-epmstsw.bmp, ./icons/i-epmstsw.bmp)]^P^C^C(loadblockinfo "EPMSTSW")
+ID_EPMMotorTherm [_Button("Motor w/Thermal Sw.", ./icons/i-epmtsw.bmp, ./icons/i-epmtsw.bmp)]^P^C^C(loadblockinfo "EPMTSW")
+ID_EPMThermSw  [_Button("Thermal Switch", ./icons/i-switchm.bmp, ./icons/i-switchm.bmp)]^P^C^C(loadblockinfo "PSWPLAIN13")
 
+**E-PWRPANELS
+**E/PANELS-XFMRS
+ID_TbEPwrPanels [_Toolbar("E/Panels-Xfmrs", _Floating, _Hide, 545, 73, 6)]
+ID_EOpenPanel  [_Button("Power Panel: Open Surface", ./icons/i-eopanel.bmp, ./icons/i-eopanel.bmp)]^P^C^C(panelcommand "eopanel")
+ID_ERecessedOPanel [_Button("Power Panel: Recessed Open Panel", ./icons/i-eropanel.bmp, ./icons/i-eropanel.bmp)]^P^C^C(panelcommand "eropanel")
+ID_ESingleTub  [_Button("Power Panel: Surface Single Tub Panel", ./icons/i-espanel.bmp, ./icons/i-espanel.bmp)]^P^C^C(panelcommand "espanel")
+ID_ERSingleTub [_Button("Power Panel: Recessed Single Tub Panel", ./icons/i-erspanel.bmp, ./icons/i-erspanel.bmp)]^P^C^C(print "Havnt made it yet!")
+ID_EDistPanel  [_Button("Power Panel: Distribution Panel", ./icons/i-edpanel.bmp, ./icons/i-edpanel.bmp)]^P^C^C(panelcommand "erspanel")
+[--]
+ID_ETrans1     [_Button("3x2", ./icons/i-et1.bmp, ./icons/i-et1.bmp)]^P^C^C(transformers "exfmr" 36 24)
+ID_ETrans2     [_Button("Custom", ./icons/i-et2.bmp, ./icons/i-et2.bmp)]^P^C^C(c:customtransformer)
+[--]
 
-
+**E-WIRING
+**E/WIRING-JB
+ID_TbEWiring   [_Toolbar("E/Wiring-JB", _Floating, _Hide, 545, 73, 6)]
+ID_EWHomeRun   [_Button("Homerun", ./icons/i-ehomern.bmp, ./icons/i-ehomern.bmp)]^P^C^C(c:homerun)
+ID_EWHomeRun3  [_Button("Homerun 3 Wires", ./icons/i-ehomern3.bmp, ./icons/i-ehomern3.bmp)]^P^C^C(homerunwires 3)
+ID_EWHomeRun4  [_Button("Homerun 4 Wires", ./icons/i-ehomern4.bmp, ./icons/i-ehomern4.bmp)]^P^C^C(homerunwires 4)
+ID_EWHomeRunX  [_Button("Homerun ? Wires", ./icons/i-ehomernx.bmp, ./icons/i-ehomernx.bmp)]^P^C^C(c:homerunqwires)
+ID_EWWireLine  [_Button("Wire Line", ./icons/i-ewwire.bmp, ./icons/i-ewwire.bmp)]^P^C^C(loadblockinfo "WIRELINE")
+ID_EWCap       [_Button("Cap", ./icons/i-ewcap.bmp, ./icons/i-ewcap.bmp)]^P^C^C(c:cap)
+ID_EWConduitUp [_Button("Conduit Up", ./icons/i-gcir.bmp, ./icons/i-gcir.bmp)]^P^C^C(nearend "econdup")
+ID_EWConduitDn [_Button("Conduit Down", ./icons/i-eilifesafe.bmp, ./icons/i-eilifesafe.bmp)]^P^C^C(nearend "econddn")
+ID_EWJuncBoxRnd [_Button("Junction Box Rnd", ./icons/i-ewjb.bmp, ./icons/i-ewjb.bmp)]^P^C^C(loadblockinfo "ECIR2")
+ID_EWJuncBoxRndFlx [_Button("Junction Box Rnd w/Flex Conduit", ./icons/i-ewjbflex.bmp, ./icons/i-ewjbflex.bmp)]^P^C^C(progn (loadblockinfo "ECIR2") (loadblockinfo "EWFCOND"))
+ID_EWFlexConduit [_Button("Flex Conduit", ./icons/i-ewflexcond.bmp, ./icons/i-ewflexcond.bmp)]^P^C^C(loadblockinfo "EWFCOND2")
+ID_EWJuncBoxRndWall [_Button("Junction Box Rnd Wall", ./icons/i-epjboxl.bmp, ./icons/i-epjboxl.bmp)]^P^C^C(loadblockinfo "ECIR2L2")
+ID_EWJuncBoxSqr [_Button("Junction Box Sqr", ./icons/i-epjboxsqr.bmp, ./icons/i-epjboxsqr.bmp)]^P^C^C(loadblockinfo "ESQR2-7")
 
 
 
