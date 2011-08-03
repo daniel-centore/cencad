@@ -437,8 +437,7 @@ ID_ERDupOverDup		[Duplex over Duplex]^P^C^C(loadblockinfo "EPDOD")
 ID_ERMonitor		[Monitor]^P^C^C(loadblockinfo "ESQR2L-3")
 ID_ERORModule		[OR Power Module]^P^C^C(loadblockinfo "EPORPWR")
 ID_ERTimeClock		[Time Clock]^P^C^C(loadblockinfo "EPCLK")
-ID_ERWiremold1		[Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
-ID_ERWiremold2		[<-Wiremold (field wired)]^P^C^C(print "Not yet made!")
+ID_ERWiremold1		[<-Wiremold (prewired)]^P^C^C(c:wiremoldprewired)
 		[->Motors/ Disconnects]
 ID_EPMMotor		[Motor]^P^C^C(loadblockinfo "EPMOTOR")
 ID_EPMSafetySw		[Disconnect]^P^C^C(loadblockinfo "EPMSS")
@@ -453,7 +452,7 @@ ID_EPMThermSw		[<-Thermal Sw]^P^C^C(loadblockinfo "PSWPLAIN13")
 ID_EOpenPanel		[Open Surface]^P^C^C(panelcommand "eopanel")
 ID_ERecessedOPanel	[Recessed Open Panel]^P^C^C(panelcommand "eropanel")
 ID_ESingleTub		[Surface Single Tub Panel]^P^C^C(panelcommand "espanel")
-ID_ERSingleTub		[Recessed Single Tub Panel]^P^C^C(print "Havnt made it yet!")
+ID_ERSingleTub		[Recessed Single Tub Panel]^P^C^C(panelcommand "erspanel")
 ID_EDistPanel		[Distribution Panel]^P^C^C(panelcommand "erspanel")
 			[--]
 			[->Dry Type Transformers]
@@ -566,7 +565,7 @@ ID_ENSPatStAsPB		[Single Patient Staff Assist/ Push B]^P^C^C(loadblockinfo "ENSP
 ID_ENDualPatBedSt		[Dual Patient Bed Station]^P^C^C(loadblockinfo "ENDPBS")
 ID_ENAnnunSt		[Annunciator Station]^P^C^C(loadblockinfo "ANUNC")
 ID_ENWDomeSig		[Wall Mtd Dome Light w/ Signal]^P^C^C(loadblockinfo "ENWDMLS")
-ID_ENCDomeSig		[Ceiling Mtd Dome Light w/ Signal]^P^C^C(print "Not yet made!")
+ID_ENCDomeSig		[Ceiling Mtd Dome Light w/ Signal]^P^C^C(loadblockinfo "ENCDMLS")
 ID_ENNCallCab		[Nurse Call Cabinet]^P^C^C(loadblockinfo "NCC")
 ID_ENNAssistSt		[Nurse Assistance Station]^P^C^C(loadblockinfo "ENC99A")
 ID_ENCode99A		[Code 99/ Annunciator]^P^C^C(loadblockinfo "ENC99A-NA")
@@ -1524,7 +1523,7 @@ ID_TbEPwrPanels [_Toolbar("E/Panels-Xfmrs", _Floating, _Hide, 545, 73, 6)]
 ID_EOpenPanel  [_Button("Power Panel: Open Surface", ./icons/i-eopanel.bmp, ./icons/i-eopanel.bmp)]^P^C^C(panelcommand "eopanel")
 ID_ERecessedOPanel [_Button("Power Panel: Recessed Open Panel", ./icons/i-eropanel.bmp, ./icons/i-eropanel.bmp)]^P^C^C(panelcommand "eropanel")
 ID_ESingleTub  [_Button("Power Panel: Surface Single Tub Panel", ./icons/i-espanel.bmp, ./icons/i-espanel.bmp)]^P^C^C(panelcommand "espanel")
-ID_ERSingleTub [_Button("Power Panel: Recessed Single Tub Panel", ./icons/i-erspanel.bmp, ./icons/i-erspanel.bmp)]^P^C^C(print "Havnt made it yet!")
+ID_ERSingleTub [_Button("Power Panel: Recessed Single Tub Panel", ./icons/i-erspanel.bmp, ./icons/i-erspanel.bmp)]^P^C^C(panelcommand "erspanel")
 ID_EDistPanel  [_Button("Power Panel: Distribution Panel", ./icons/i-edpanel.bmp, ./icons/i-edpanel.bmp)]^P^C^C(panelcommand "erspanel")
 [--]
 ID_ETrans1     [_Button("3x2", ./icons/i-et1.bmp, ./icons/i-et1.bmp)]^P^C^C(transformers "exfmr" 36 24)
@@ -1580,7 +1579,6 @@ ID_ERMonitor   	[_Button("Monitor", ./icons/i-epmonitor.bmp, ./icons/i-epmonitor
 ID_ERORModule  	[_Button("OR Module", ./icons/i-eporpwr.bmp, ./icons/i-eporpwr.bmp)]^P^C^C(loadblockinfo "EPORPWR")
 ID_ERTimeClock [_Button("Time Clock", ./icons/i-epclk.bmp, ./icons/i-epclk.bmp)]^P^C^C(loadblockinfo "EPCLK")
 ID_ERWiremold1 [_Button("Wiremold (prewired)", ./icons/i-ewiremold1.bmp, ./icons/i-ewiremold1.bmp)]^P^C^C(c:wiremoldprewired)
-ID_ERWiremold2 [_Button("Wiremold (field wired)", ./icons/i-ewiremold2.bmp, ./icons/i-ewiremold2.bmp)]^P^C^C(print "Not yet made!")
 
 **E-SOUND
 **TB_E/SOUND_SYSTEMS
@@ -1691,7 +1689,7 @@ ID_ENSPatStAsPB [_Button("Single Patient Staff Assist/PushB", ./icons/i-enspsapb
 ID_ENDualPatBedSt [_Button("Dual Patient Bed Station", ./icons/i-endpbs.bmp, ./icons/i-endpbs.bmp)]^P^C^C(loadblockinfo "ENDPBS")
 ID_ENAnnunSt   [_Button("Annunciator Station", ./icons/i-enannun.bmp, ./icons/i-enannun.bmp)]^P^C^C(loadblockinfo "ANUNC")
 ID_ENWDomeSig  [_Button("Wall Mtd. Dome Light w/Signal", ./icons/i-enwdmls.bmp, ./icons/i-enwdmls.bmp)]^P^C^C(loadblockinfo "ENWDMLS")
-ID_ENCDomeSig  [_Button("Ceiling Mtd. Dome Light W/Signal", ./icons/i-encdmls.bmp, ./icons/i-encdmls.bmp)]^P^C^C(print "Not yet made!")
+ID_ENCDomeSig  [_Button("Ceiling Mtd. Dome Light W/Signal", ./icons/i-encdmls.bmp, ./icons/i-encdmls.bmp)]^P^C^C(loadblockinfo "ENCDMLS")
 ID_ENNCallCab  [_Button("Nurse Call Cabinet", ./icons/i-ennc.bmp, ./icons/i-ennc.bmp)]^P^C^C(loadblockinfo "NCC")
 ID_ENNAssistSt [_Button("Nurse Assistance Station", ./icons/i-ennursea.bmp, ./icons/i-ennursea.bmp)]^P^C^C(loadblockinfo "ENC99A")
 ID_ENCode99A   [_Button("Code 99 / Annuniciator", ./icons/i-enc99a.bmp, ./icons/i-enc99a.bmp)]^P^C^C(loadblockinfo "ENC99A-NA")
