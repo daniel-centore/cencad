@@ -3204,13 +3204,13 @@
       <MenuMacro UID="MM_00623">
         <Macro>
           <Name>Typical Room Tag</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EDESTYPSM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00624">
         <Macro>
           <Name>Feeder Tag</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "EGHEX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00625">

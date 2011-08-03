@@ -202,7 +202,7 @@
 (prompt "\nCENCAD is READY for you to use :-)")
 (prompt "\nIf you find any bugs, please report them to Daniel Centore <dcentore@optonline.net>")
 
-;;Prompts for drawing scale (remove for production version)
-(drawingsetup)
+;;Prompts for drawing scale (remove for production versions)
+;(drawingsetup)
 
 
