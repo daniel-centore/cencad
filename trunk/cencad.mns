@@ -573,21 +573,21 @@ ID_ENTclkSt		[Time Clock w/ Control Station]^P^C^C(loadblockinfo "ENTCLK")
 ID_ENCommIntMod		[<-<-Comm Interface Module]^P^C^C(loadblockinfo "ENCIM")
 	[->1 Line]
 		[->Schematic]
-			[Bus Plan]^P^C^C(loadblockinfo "E1BUSPLN")
-			[Transformer]^P^C^C(loadblockinfo "E1XFMR")
-			[ISO Transformer]^P^C^C(loadblockinfo "E1SIXFMR")
-			[ATS]^P^C^C(loadblockinfo "E1ATS")
-			[CT]^P^C^C(loadblockinfo "E1CT")
-			[Auto Transformer]^P^C^C(loadblockinfo "E1ATRAN")
-			[Power Transformer]^P^C^C(loadblockinfo "E1PT")
-			[Med Voltage CB]^P^C^C(loadblockinfo "E1MVOLTD")
-			[Ammeter]^P^C^C(loadblockinfo "E1AMTR")
-			[Disc/Switch]^P^C^C(loadblockinfo "E1DISCSW")
-			[Drawout CB]^P^C^C(loadblockinfo "E1DRAWOC")
-			[Fused Disc/Switch]^P^C^C(loadblockinfo "E1FDSW")
-			[Circuit Breaker]^P^C^C(loadblockinfo "E1CIRB")
-			[Ground]^P^C^C(loadblockinfo "E1GND")
-			[<-Fuse]^P^C^C(loadblockinfo "E1FUSE")
+ID_BusPlan		[Bus Plan]^P^C^C(loadblockinfo "E1BUSPLN")
+ID_Transformer		[Transformer]^P^C^C(loadblockinfo "E1XFMR")
+ID_ISOTrans		[ISO Transformer]^P^C^C(loadblockinfo "E1SIXFMR")
+ID_ATS			[ATS]^P^C^C(loadblockinfo "E1ATS")
+ID_CT			[CT]^P^C^C(loadblockinfo "E1CT")
+ID_AutoTrans		[Auto Transformer]^P^C^C(loadblockinfo "E1ATRAN")
+ID_PowerTrans		[Power Transformer]^P^C^C(loadblockinfo "E1PT")
+ID_MedVoltCB		[Med Voltage CB]^P^C^C(loadblockinfo "E1MVOLTD")
+ID_Ammeter		[Ammeter]^P^C^C(loadblockinfo "E1AMTR")
+ID_DiscSwitch		[Disc/Switch]^P^C^C(loadblockinfo "E1DISCSW")
+ID_DrawCB		[Drawout CB]^P^C^C(loadblockinfo "E1DRAWOC")
+ID_FusedDiscSw		[Fused Disc/Switch]^P^C^C(loadblockinfo "E1FDSW")
+ID_CircBrkr		[Circuit Breaker]^P^C^C(loadblockinfo "E1CIRB")
+ID_TBEGrnd		[Ground]^P^C^C(loadblockinfo "E1GND")
+ID_TBEFuse		[<-Fuse]^P^C^C(loadblockinfo "E1FUSE")
 		[->Medium Voltage]
 			[Primary Fused Sw]^P^C^C(loadblockinfo "E1MVPFSW")
 			[... Double Leg]^P^C^C(loadblockinfo "E1MVPFSWDL")
@@ -1696,7 +1696,24 @@ ID_ENCode99A   [_Button("Code 99 / Annuniciator", ./icons/i-enc99a.bmp, ./icons/
 ID_ENTclkSt    [_Button("TimeClock w/Control Station", ./icons/i-entclk.bmp, ./icons/i-entclk.bmp)]^P^C^C(loadblockinfo "ENTCLK")
 ID_ENCommIntMod [_Button("Comm. Interface Module", ./icons/i-encim.bmp, ./icons/i-encim.bmp)]^P^C^C(loadblockinfo "ENCIM")
 
-
+**E-1Line
+**TB_E/1-Line
+ID_TbEOLine    [_Toolbar("E/1-Line", _Floating, _Hide, 545, 73, 6)]
+ID_BusPlan [_Button("Bus Plan", ./icons/c-bus.bmp, ./icons/c-bus.bmp)]^P^C^C(loadblockinfo "E1BUSPLN")
+ID_Transformer [_Button("Transformer", ./icons/c-transformer.bmp, ./icons/c-transformer.bmp)]^P^C^C(loadblockinfo "E1XFMR")
+ID_ISOTrans [_Button("ISO Transformer", ./icons/c-isotrans.bmp, ./icons/c-isotrans.bmp)]^P^C^C(loadblockinfo "E1SIXFMR")
+ID_ATS [_Button("ATS", ./icons/c-ats.bmp, ./icons/c-ats.bmp)]^P^C^C(loadblockinfo "E1ATS")
+ID_CT [_Button("CT", ./icons/c-ct.bmp, ./icons/c-ct.bmp)]^P^C^C(loadblockinfo "E1CT")
+ID_AutoTrans [_Button("Auto Transformer", ./icons/c-autotrans.bmp, ./icons/c-autotrans.bmp)]^P^C^C(loadblockinfo "E1ATRAN")
+ID_PowerTrans [_Button("Power Transformer", ./icons/c-powertrans.bmp, ./icons/c-powertrans.bmp)]^P^C^C(loadblockinfo "E1PT")
+ID_MedVoltCB [_Button("Med Voltage CB", ./icons/c-medcb.bmp, ./icons/c-medcb.bmp)]^P^C^C(loadblockinfo "E1MVOLTD")
+ID_Ammeter [_Button("Ammeter", ./icons/c-ammeter.bmp, ./icons/c-ammeter.bmp)]^P^C^C(loadblockinfo "E1AMTR")
+ID_DiscSwitch [_Button("Disc/Switch", ./icons/c-diskswitch.bmp, ./icons/c-diskswitch.bmp)]^P^C^C(loadblockinfo "E1DISCSW")
+ID_DrawCB [_Button("Drawout CB", ./icons/c-drawoutcb.bmp, ./icons/c-drawoutcb.bmp)]^P^C^C(loadblockinfo "E1DRAWOC")
+ID_FusedDiscSw [_Button("Fused Disc/Switch", ./icons/c-fuseddisksw.bmp, ./icons/c-fuseddisksw.bmp)]^P^C^C(loadblockinfo "E1FDSW")
+ID_CircBrkr [_Button("Circuit Breaker", ./icons/c-circuitbrkr.bmp, ./icons/c-circuitbrkr.bmp)]^P^C^C(loadblockinfo "E1CIRB")
+ID_TBEGrnd [_Button("Ground", ./icons/c-ground.bmp, ./icons/c-ground.bmp)]^P^C^C(loadblockinfo "E1GND")
+ID_TBEFuse [_Button("Fuse", ./icons/c-fuse.bmp, ./icons/c-fuse.bmp)]^P^C^C(loadblockinfo "E1FUSE")
 
 
 
