@@ -3721,94 +3721,124 @@
           <LargeImage Name="./icons/i-encim.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00576">
+      <MenuMacro UID="ID_BusPlan">
         <Macro>
           <Name>Bus Plan</Name>
           <Command>^P^C^C(loadblockinfo "E1BUSPLN")</Command>
+          <SmallImage Name="./icons/c-bus.bmp"/>
+          <LargeImage Name="./icons/c-bus.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00577">
+      <MenuMacro UID="ID_Transformer">
         <Macro>
           <Name>Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1XFMR")</Command>
+          <SmallImage Name="./icons/c-transformer.bmp"/>
+          <LargeImage Name="./icons/c-transformer.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00578">
+      <MenuMacro UID="ID_ISOTrans">
         <Macro>
           <Name>ISO Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1SIXFMR")</Command>
+          <SmallImage Name="./icons/c-isotrans.bmp"/>
+          <LargeImage Name="./icons/c-isotrans.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00579">
+      <MenuMacro UID="ID_ATS">
         <Macro>
           <Name>ATS</Name>
           <Command>^P^C^C(loadblockinfo "E1ATS")</Command>
+          <SmallImage Name="./icons/c-ats.bmp"/>
+          <LargeImage Name="./icons/c-ats.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00580">
+      <MenuMacro UID="ID_CT">
         <Macro>
           <Name>CT</Name>
           <Command>^P^C^C(loadblockinfo "E1CT")</Command>
+          <SmallImage Name="./icons/c-ct.bmp"/>
+          <LargeImage Name="./icons/c-ct.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00581">
+      <MenuMacro UID="ID_AutoTrans">
         <Macro>
           <Name>Auto Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1ATRAN")</Command>
+          <SmallImage Name="./icons/c-autotrans.bmp"/>
+          <LargeImage Name="./icons/c-autotrans.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00582">
+      <MenuMacro UID="ID_PowerTrans">
         <Macro>
           <Name>Power Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1PT")</Command>
+          <SmallImage Name="./icons/c-powertrans.bmp"/>
+          <LargeImage Name="./icons/c-powertrans.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00583">
+      <MenuMacro UID="ID_MedVoltCB">
         <Macro>
           <Name>Med Voltage CB</Name>
           <Command>^P^C^C(loadblockinfo "E1MVOLTD")</Command>
+          <SmallImage Name="./icons/c-medcb.bmp"/>
+          <LargeImage Name="./icons/c-medcb.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00584">
+      <MenuMacro UID="ID_Ammeter">
         <Macro>
           <Name>Ammeter</Name>
           <Command>^P^C^C(loadblockinfo "E1AMTR")</Command>
+          <SmallImage Name="./icons/c-ammeter.bmp"/>
+          <LargeImage Name="./icons/c-ammeter.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00585">
+      <MenuMacro UID="ID_DiscSwitch">
         <Macro>
           <Name>Disc/Switch</Name>
           <Command>^P^C^C(loadblockinfo "E1DISCSW")</Command>
+          <SmallImage Name="./icons/c-diskswitch.bmp"/>
+          <LargeImage Name="./icons/c-diskswitch.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00586">
+      <MenuMacro UID="ID_DrawCB">
         <Macro>
           <Name>Drawout CB</Name>
           <Command>^P^C^C(loadblockinfo "E1DRAWOC")</Command>
+          <SmallImage Name="./icons/c-drawoutcb.bmp"/>
+          <LargeImage Name="./icons/c-drawoutcb.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00587">
+      <MenuMacro UID="ID_FusedDiscSw">
         <Macro>
           <Name>Fused Disc/Switch</Name>
           <Command>^P^C^C(loadblockinfo "E1FDSW")</Command>
+          <SmallImage Name="./icons/c-fuseddisksw.bmp"/>
+          <LargeImage Name="./icons/c-fuseddisksw.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00588">
+      <MenuMacro UID="ID_CircBrkr">
         <Macro>
           <Name>Circuit Breaker</Name>
           <Command>^P^C^C(loadblockinfo "E1CIRB")</Command>
+          <SmallImage Name="./icons/c-circuitbrkr.bmp"/>
+          <LargeImage Name="./icons/c-circuitbrkr.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00589">
+      <MenuMacro UID="ID_TBEGrnd">
         <Macro>
           <Name>Ground</Name>
           <Command>^P^C^C(loadblockinfo "E1GND")</Command>
+          <SmallImage Name="./icons/c-ground.bmp"/>
+          <LargeImage Name="./icons/c-ground.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00590">
+      <MenuMacro UID="ID_TBEFuse">
         <Macro>
           <Name>Fuse</Name>
           <Command>^P^C^C(loadblockinfo "E1FUSE")</Command>
+          <SmallImage Name="./icons/c-fuse.bmp"/>
+          <LargeImage Name="./icons/c-fuse.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00592">
@@ -10165,91 +10195,91 @@
           <PopMenuItem>
             <NameRef>Bus Plan</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00576"/>
+              <MacroRef MenuMacroID="ID_BusPlan"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Transformer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00577"/>
+              <MacroRef MenuMacroID="ID_Transformer"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>ISO Transformer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00578"/>
+              <MacroRef MenuMacroID="ID_ISOTrans"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>ATS</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00579"/>
+              <MacroRef MenuMacroID="ID_ATS"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>CT</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00580"/>
+              <MacroRef MenuMacroID="ID_CT"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Auto Transformer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00581"/>
+              <MacroRef MenuMacroID="ID_AutoTrans"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Power Transformer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00582"/>
+              <MacroRef MenuMacroID="ID_PowerTrans"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Med Voltage CB</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00583"/>
+              <MacroRef MenuMacroID="ID_MedVoltCB"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Ammeter</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00584"/>
+              <MacroRef MenuMacroID="ID_Ammeter"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Disc/Switch</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00585"/>
+              <MacroRef MenuMacroID="ID_DiscSwitch"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Drawout CB</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00586"/>
+              <MacroRef MenuMacroID="ID_DrawCB"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Fused Disc/Switch</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00587"/>
+              <MacroRef MenuMacroID="ID_FusedDiscSw"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Circuit Breaker</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00588"/>
+              <MacroRef MenuMacroID="ID_CircBrkr"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Ground</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00589"/>
+              <MacroRef MenuMacroID="ID_TBEGrnd"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Fuse</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00590"/>
+              <MacroRef MenuMacroID="ID_TBEFuse"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -16056,6 +16086,101 @@
             <Name>Comm. Interface Module</Name>
             <MenuItem>
               <MacroRef MenuMacroID="ID_ENCommIntMod"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbEOLine" rows="6" xval="545" yval="73">
+          <Alias>E-1Line</Alias>
+          <Alias>TB_E/1-Line</Alias>
+          <Name>E/1-Line</Name>
+          <ToolbarButton>
+            <Name>Bus Plan</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_BusPlan"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Transformer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Transformer"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>ISO Transformer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ISOTrans"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>ATS</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ATS"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>CT</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CT"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Auto Transformer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_AutoTrans"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Power Transformer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PowerTrans"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Med Voltage CB</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_MedVoltCB"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ammeter</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Ammeter"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Disc/Switch</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_DiscSwitch"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Drawout CB</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_DrawCB"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Fused Disc/Switch</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_FusedDiscSw"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Circuit Breaker</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CircBrkr"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ground</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TBEGrnd"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Fuse</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TBEFuse"/>
             </MenuItem>
           </ToolbarButton>
         </Toolbar>
