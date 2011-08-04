@@ -98,9 +98,9 @@
 	(setvar "cmdecho" 0)
 	
 	;;Lets set the attribute height now - must be AFTER the commands in case we decide to add attributes from there
-	;(if (/= (entlast) nil) (progn
-	;	(set-attribute-height (entity-ename (entlast)) (text-size))
-	;))
+	(if (/= (entlast) nil) (progn
+		(set-attribute-height (entity-ename (entlast)) text-size)
+	))
 
 	(endcommand)
 )
