@@ -3,34 +3,44 @@
 
   <MenuGroup Name="CENCAD">
     <MacroGroup Name="CENCADMacros">
-      <MenuMacro UID="MM_00016">
+      <MenuMacro UID="ID_CSetupBtn">
         <Macro>
           <Name>Drawing Setup</Name>
           <Command>^P^C^C(drawingsetup)</Command>
+          <SmallImage Name="calculator"/>
+          <LargeImage Name="calculator"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00018">
+      <MenuMacro UID="ID_CDetail">
         <Macro>
           <Name>Detail Mark</Name>
           <Command>^P^C^C(loadblockinfo "XDETAIL")</Command>
+          <SmallImage Name="c-detail"/>
+          <LargeImage Name="c-detail"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00019">
+      <MenuMacro UID="ID_CRevision">
         <Macro>
           <Name>Section Mark</Name>
           <Command>^P^C^C(progn (loadblockinfo "XSECTA") (loadblockinfo "XSECTT"))</Command>
+          <SmallImage Name="c-revision"/>
+          <LargeImage Name="c-revision"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00020">
+      <MenuMacro UID="ID_CRevCld">
         <Macro>
           <Name>Revision Cloud (REVC)</Name>
           <Command>^P^C^C(revcloud)</Command>
+          <SmallImage Name="c-cloud"/>
+          <LargeImage Name="c-cloud"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00021">
+      <MenuMacro UID="ID_CRevD">
         <Macro>
           <Name>Revision Delta (REVD)</Name>
           <Command>^P^C^C(xrev)</Command>
+          <SmallImage Name="c-revd"/>
+          <LargeImage Name="c-revd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00023">
@@ -685,3160 +695,3160 @@
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X1")</Command>
-          <SmallImage Name="./icons/i-elfc1x1.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x1.bmp"/>
+          <SmallImage Name="i-elfc1x1"/>
+          <LargeImage Name="i-elfc1x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc1x2">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X2")</Command>
-          <SmallImage Name="./icons/i-elfc1x2.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x2.bmp"/>
+          <SmallImage Name="i-elfc1x2"/>
+          <LargeImage Name="i-elfc1x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc1x3">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X3")</Command>
-          <SmallImage Name="./icons/i-elfc1x3.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x3.bmp"/>
+          <SmallImage Name="i-elfc1x3"/>
+          <LargeImage Name="i-elfc1x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc1x4">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X4")</Command>
-          <SmallImage Name="./icons/i-elfc1x4.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x4.bmp"/>
+          <SmallImage Name="i-elfc1x4"/>
+          <LargeImage Name="i-elfc1x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc1x6">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X6")</Command>
-          <SmallImage Name="./icons/i-elfc1x6.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x6.bmp"/>
+          <SmallImage Name="i-elfc1x6"/>
+          <LargeImage Name="i-elfc1x6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc1x8">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X8")</Command>
-          <SmallImage Name="./icons/i-elfc1x8.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x8.bmp"/>
+          <SmallImage Name="i-elfc1x8"/>
+          <LargeImage Name="i-elfc1x8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc1x12">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFC1X12")</Command>
-          <SmallImage Name="./icons/i-elfc1x12.bmp"/>
-          <LargeImage Name="./icons/i-elfc1x12.bmp"/>
+          <SmallImage Name="i-elfc1x12"/>
+          <LargeImage Name="i-elfc1x12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc2x2">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFC2X2")</Command>
-          <SmallImage Name="./icons/i-elfc2x2.bmp"/>
-          <LargeImage Name="./icons/i-elfc2x2.bmp"/>
+          <SmallImage Name="i-elfc2x2"/>
+          <LargeImage Name="i-elfc2x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc2x4">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFC2X4")</Command>
-          <SmallImage Name="./icons/i-elfc2x4.bmp"/>
-          <LargeImage Name="./icons/i-elfc2x4.bmp"/>
+          <SmallImage Name="i-elfc2x4"/>
+          <LargeImage Name="i-elfc2x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFc4x4">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFC4X4")</Command>
-          <SmallImage Name="./icons/i-elfc4x4.bmp"/>
-          <LargeImage Name="./icons/i-elfc4x4.bmp"/>
+          <SmallImage Name="i-elfc4x4"/>
+          <LargeImage Name="i-elfc4x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh6inx1">
         <Macro>
           <Name>6in*1</Name>
           <Command>^P^C^C(loadblockinfo "LFE6IX1")</Command>
-          <SmallImage Name="./icons/i-elfhalfswe.bmp"/>
-          <LargeImage Name="./icons/i-elfhalfswe.bmp"/>
+          <SmallImage Name="i-elfhalfswe"/>
+          <LargeImage Name="i-elfhalfswe"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh6inx2">
         <Macro>
           <Name>6in*2</Name>
           <Command>^P^C^C(loadblockinfo "LFE6IX2")</Command>
-          <SmallImage Name="./icons/i-l6x2.bmp"/>
-          <LargeImage Name="./icons/i-l6x2.bmp"/>
+          <SmallImage Name="i-l6x2"/>
+          <LargeImage Name="i-l6x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh6inx3">
         <Macro>
           <Name>6in*3</Name>
           <Command>^P^C^C(loadblockinfo "LFE6IX3")</Command>
-          <SmallImage Name="./icons/i-l6x3.bmp"/>
-          <LargeImage Name="./icons/i-l6x3.bmp"/>
+          <SmallImage Name="i-l6x3"/>
+          <LargeImage Name="i-l6x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh6inx4">
         <Macro>
           <Name>6in*4</Name>
           <Command>^P^C^C(loadblockinfo "LFE6IX4")</Command>
-          <SmallImage Name="./icons/i-l6x4.bmp"/>
-          <LargeImage Name="./icons/i-l6x4.bmp"/>
+          <SmallImage Name="i-l6x4"/>
+          <LargeImage Name="i-l6x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x1">
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X1")</Command>
-          <SmallImage Name="./icons/i-l1x1.bmp"/>
-          <LargeImage Name="./icons/i-l1x1.bmp"/>
+          <SmallImage Name="i-l1x1"/>
+          <LargeImage Name="i-l1x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x2">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X2")</Command>
-          <SmallImage Name="./icons/i-l1x2.bmp"/>
-          <LargeImage Name="./icons/i-l1x2.bmp"/>
+          <SmallImage Name="i-l1x2"/>
+          <LargeImage Name="i-l1x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x3">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X3")</Command>
-          <SmallImage Name="./icons/i-l1x3.bmp"/>
-          <LargeImage Name="./icons/i-l1x3.bmp"/>
+          <SmallImage Name="i-l1x3"/>
+          <LargeImage Name="i-l1x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x4">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X4")</Command>
-          <SmallImage Name="./icons/i-l1x4.bmp"/>
-          <LargeImage Name="./icons/i-l1x4.bmp"/>
+          <SmallImage Name="i-l1x4"/>
+          <LargeImage Name="i-l1x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x6">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X6")</Command>
-          <SmallImage Name="./icons/i-l1x6.bmp"/>
-          <LargeImage Name="./icons/i-l1x6.bmp"/>
+          <SmallImage Name="i-l1x6"/>
+          <LargeImage Name="i-l1x6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x8">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X8")</Command>
-          <SmallImage Name="./icons/i-l1x8.bmp"/>
-          <LargeImage Name="./icons/i-l1x8.bmp"/>
+          <SmallImage Name="i-l1x8"/>
+          <LargeImage Name="i-l1x8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh1x12">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFE1X12")</Command>
-          <SmallImage Name="./icons/i-l1x12.bmp"/>
-          <LargeImage Name="./icons/i-l1x12.bmp"/>
+          <SmallImage Name="i-l1x12"/>
+          <LargeImage Name="i-l1x12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh2x2">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFE2X2")</Command>
-          <SmallImage Name="./icons/i-l2x2.bmp"/>
-          <LargeImage Name="./icons/i-l2x2.bmp"/>
+          <SmallImage Name="i-l2x2"/>
+          <LargeImage Name="i-l2x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh2x4">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFE2X4")</Command>
-          <SmallImage Name="./icons/i-l2x4.bmp"/>
-          <LargeImage Name="./icons/i-l2x4.bmp"/>
+          <SmallImage Name="i-l2x4"/>
+          <LargeImage Name="i-l2x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFh4x4">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFE4X4")</Command>
-          <SmallImage Name="./icons/i-l4x4.bmp"/>
-          <LargeImage Name="./icons/i-l4x4.bmp"/>
+          <SmallImage Name="i-l4x4"/>
+          <LargeImage Name="i-l4x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS6inx1">
         <Macro>
           <Name>6in*1</Name>
           <Command>^P^C^C(loadblockinfo "LFS6IX1")</Command>
-          <SmallImage Name="./icons/i-elfls6x1.bmp"/>
-          <LargeImage Name="./icons/i-elfls6x1.bmp"/>
+          <SmallImage Name="i-elfls6x1"/>
+          <LargeImage Name="i-elfls6x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS6inx2">
         <Macro>
           <Name>6in*2</Name>
           <Command>^P^C^C(loadblockinfo "LFS6IX2")</Command>
-          <SmallImage Name="./icons/i-l6x2.bmp"/>
-          <LargeImage Name="./icons/i-l6x2.bmp"/>
+          <SmallImage Name="i-l6x2"/>
+          <LargeImage Name="i-l6x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS6inx3">
         <Macro>
           <Name>6in*3</Name>
           <Command>^P^C^C(loadblockinfo "LFS6IX3")</Command>
-          <SmallImage Name="./icons/i-l6x3.bmp"/>
-          <LargeImage Name="./icons/i-l6x3.bmp"/>
+          <SmallImage Name="i-l6x3"/>
+          <LargeImage Name="i-l6x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS6inx4">
         <Macro>
           <Name>6in*4</Name>
           <Command>^P^C^C(loadblockinfo "LFS6IX4")</Command>
-          <SmallImage Name="./icons/i-l6x4.bmp"/>
-          <LargeImage Name="./icons/i-l6x4.bmp"/>
+          <SmallImage Name="i-l6x4"/>
+          <LargeImage Name="i-l6x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x1">
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X1")</Command>
-          <SmallImage Name="./icons/i-l1x1.bmp"/>
-          <LargeImage Name="./icons/i-l1x1.bmp"/>
+          <SmallImage Name="i-l1x1"/>
+          <LargeImage Name="i-l1x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x2">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X2")</Command>
-          <SmallImage Name="./icons/i-l1x2.bmp"/>
-          <LargeImage Name="./icons/i-l1x2.bmp"/>
+          <SmallImage Name="i-l1x2"/>
+          <LargeImage Name="i-l1x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x3">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X3")</Command>
-          <SmallImage Name="./icons/i-l1x3.bmp"/>
-          <LargeImage Name="./icons/i-l1x3.bmp"/>
+          <SmallImage Name="i-l1x3"/>
+          <LargeImage Name="i-l1x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x4">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X4")</Command>
-          <SmallImage Name="./icons/i-l1x4.bmp"/>
-          <LargeImage Name="./icons/i-l1x4.bmp"/>
+          <SmallImage Name="i-l1x4"/>
+          <LargeImage Name="i-l1x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x6">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X6")</Command>
-          <SmallImage Name="./icons/i-l1x6.bmp"/>
-          <LargeImage Name="./icons/i-l1x6.bmp"/>
+          <SmallImage Name="i-l1x6"/>
+          <LargeImage Name="i-l1x6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x8">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X8")</Command>
-          <SmallImage Name="./icons/i-l1x8.bmp"/>
-          <LargeImage Name="./icons/i-l1x8.bmp"/>
+          <SmallImage Name="i-l1x8"/>
+          <LargeImage Name="i-l1x8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS1x12">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFS1X12")</Command>
-          <SmallImage Name="./icons/i-l1x12.bmp"/>
-          <LargeImage Name="./icons/i-l1x12.bmp"/>
+          <SmallImage Name="i-l1x12"/>
+          <LargeImage Name="i-l1x12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS2x2">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFS2X2")</Command>
-          <SmallImage Name="./icons/i-l2x2.bmp"/>
-          <LargeImage Name="./icons/i-l2x2.bmp"/>
+          <SmallImage Name="i-l2x2"/>
+          <LargeImage Name="i-l2x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS2x4">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFS2X4")</Command>
-          <SmallImage Name="./icons/i-l2x4.bmp"/>
-          <LargeImage Name="./icons/i-l2x4.bmp"/>
+          <SmallImage Name="i-l2x4"/>
+          <LargeImage Name="i-l2x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLS4x4">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFS4X4")</Command>
-          <SmallImage Name="./icons/i-l4x4.bmp"/>
-          <LargeImage Name="./icons/i-l4x4.bmp"/>
+          <SmallImage Name="i-l4x4"/>
+          <LargeImage Name="i-l4x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSind">
         <Macro>
           <Name>Indicator</Name>
           <Command>^P^C^C(loadblockinfo "LFSIND")</Command>
-          <SmallImage Name="./icons/i-lfsind.bmp"/>
-          <LargeImage Name="./icons/i-lfsind.bmp"/>
+          <SmallImage Name="i-lfsind"/>
+          <LargeImage Name="i-lfsind"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSS1">
         <Macro>
           <Name>1</Name>
           <Command>^P^C^C(loadblockinfo "LFSST1")</Command>
-          <SmallImage Name="./icons/i-elflfst.bmp"/>
-          <LargeImage Name="./icons/i-elflfst.bmp"/>
+          <SmallImage Name="i-elflfst"/>
+          <LargeImage Name="i-elflfst"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSS2">
         <Macro>
           <Name>2</Name>
           <Command>^P^C^C(loadblockinfo "LFSST2")</Command>
-          <SmallImage Name="./icons/i-l2ft.bmp"/>
-          <LargeImage Name="./icons/i-l2ft.bmp"/>
+          <SmallImage Name="i-l2ft"/>
+          <LargeImage Name="i-l2ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSS3">
         <Macro>
           <Name>3</Name>
           <Command>^P^C^C(loadblockinfo "LFSST3")</Command>
-          <SmallImage Name="./icons/i-l3ft.bmp"/>
-          <LargeImage Name="./icons/i-l3ft.bmp"/>
+          <SmallImage Name="i-l3ft"/>
+          <LargeImage Name="i-l3ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSS4">
         <Macro>
           <Name>4</Name>
           <Command>^P^C^C(loadblockinfo "LFSST4")</Command>
-          <SmallImage Name="./icons/i-l4ft.bmp"/>
-          <LargeImage Name="./icons/i-l4ft.bmp"/>
+          <SmallImage Name="i-l4ft"/>
+          <LargeImage Name="i-l4ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSS6">
         <Macro>
           <Name>6</Name>
           <Command>^P^C^C(loadblockinfo "LFSST6")</Command>
-          <SmallImage Name="./icons/i-l6ft.bmp"/>
-          <LargeImage Name="./icons/i-l6ft.bmp"/>
+          <SmallImage Name="i-l6ft"/>
+          <LargeImage Name="i-l6ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFLSS8">
         <Macro>
           <Name>8</Name>
           <Command>^P^C^C(loadblockinfo "LFSST8")</Command>
-          <SmallImage Name="./icons/i-l8ft.bmp"/>
-          <LargeImage Name="./icons/i-l8ft.bmp"/>
+          <SmallImage Name="i-l8ft"/>
+          <LargeImage Name="i-l8ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP6inx1">
         <Macro>
           <Name>6in*1</Name>
           <Command>^P^C^C(loadblockinfo "LFN6IX1")</Command>
-          <SmallImage Name="./icons/i-elfnorm.bmp"/>
-          <LargeImage Name="./icons/i-elfnorm.bmp"/>
+          <SmallImage Name="i-elfnorm"/>
+          <LargeImage Name="i-elfnorm"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP6inx2">
         <Macro>
           <Name>6in*2</Name>
           <Command>^P^C^C(loadblockinfo "LFN6IX2")</Command>
-          <SmallImage Name="./icons/i-l6x2.bmp"/>
-          <LargeImage Name="./icons/i-l6x2.bmp"/>
+          <SmallImage Name="i-l6x2"/>
+          <LargeImage Name="i-l6x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP6inx3">
         <Macro>
           <Name>6in*3</Name>
           <Command>^P^C^C(loadblockinfo "LFN6IX3")</Command>
-          <SmallImage Name="./icons/i-l6x3.bmp"/>
-          <LargeImage Name="./icons/i-l6x3.bmp"/>
+          <SmallImage Name="i-l6x3"/>
+          <LargeImage Name="i-l6x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP6inx4">
         <Macro>
           <Name>6in*4</Name>
           <Command>^P^C^C(loadblockinfo "LFN6IX4")</Command>
-          <SmallImage Name="./icons/i-l6x4.bmp"/>
-          <LargeImage Name="./icons/i-l6x4.bmp"/>
+          <SmallImage Name="i-l6x4"/>
+          <LargeImage Name="i-l6x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x1">
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x1")</Command>
-          <SmallImage Name="./icons/i-l1x1.bmp"/>
-          <LargeImage Name="./icons/i-l1x1.bmp"/>
+          <SmallImage Name="i-l1x1"/>
+          <LargeImage Name="i-l1x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x2">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x2")</Command>
-          <SmallImage Name="./icons/i-l1x2.bmp"/>
-          <LargeImage Name="./icons/i-l1x2.bmp"/>
+          <SmallImage Name="i-l1x2"/>
+          <LargeImage Name="i-l1x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x3">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x3")</Command>
-          <SmallImage Name="./icons/i-l1x3.bmp"/>
-          <LargeImage Name="./icons/i-l1x3.bmp"/>
+          <SmallImage Name="i-l1x3"/>
+          <LargeImage Name="i-l1x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x4">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x4")</Command>
-          <SmallImage Name="./icons/i-l1x4.bmp"/>
-          <LargeImage Name="./icons/i-l1x4.bmp"/>
+          <SmallImage Name="i-l1x4"/>
+          <LargeImage Name="i-l1x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x6">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x6")</Command>
-          <SmallImage Name="./icons/i-l1x6.bmp"/>
-          <LargeImage Name="./icons/i-l1x6.bmp"/>
+          <SmallImage Name="i-l1x6"/>
+          <LargeImage Name="i-l1x6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x8">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x8")</Command>
-          <SmallImage Name="./icons/i-l1x8.bmp"/>
-          <LargeImage Name="./icons/i-l1x8.bmp"/>
+          <SmallImage Name="i-l1x8"/>
+          <LargeImage Name="i-l1x8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP1x12">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFN1x12")</Command>
-          <SmallImage Name="./icons/i-l1x12.bmp"/>
-          <LargeImage Name="./icons/i-l1x12.bmp"/>
+          <SmallImage Name="i-l1x12"/>
+          <LargeImage Name="i-l1x12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP2x2">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFN2x2")</Command>
-          <SmallImage Name="./icons/i-l2x2.bmp"/>
-          <LargeImage Name="./icons/i-l2x2.bmp"/>
+          <SmallImage Name="i-l2x2"/>
+          <LargeImage Name="i-l2x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP2x4">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFN2x4")</Command>
-          <SmallImage Name="./icons/i-l2x4.bmp"/>
-          <LargeImage Name="./icons/i-l2x4.bmp"/>
+          <SmallImage Name="i-l2x4"/>
+          <LargeImage Name="i-l2x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNP4x4">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFN4x4")</Command>
-          <SmallImage Name="./icons/i-l4x4.bmp"/>
-          <LargeImage Name="./icons/i-l4x4.bmp"/>
+          <SmallImage Name="i-l4x4"/>
+          <LargeImage Name="i-l4x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPS1">
         <Macro>
           <Name>1</Name>
           <Command>^P^C^C(loadblockinfo "LFNST1")</Command>
-          <SmallImage Name="./icons/i-elfnormpwrst.bmp"/>
-          <LargeImage Name="./icons/i-elfnormpwrst.bmp"/>
+          <SmallImage Name="i-elfnormpwrst"/>
+          <LargeImage Name="i-elfnormpwrst"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPS2">
         <Macro>
           <Name>2</Name>
           <Command>^P^C^C(loadblockinfo "LFNST2")</Command>
-          <SmallImage Name="./icons/i-l2ft.bmp"/>
-          <LargeImage Name="./icons/i-l2ft.bmp"/>
+          <SmallImage Name="i-l2ft"/>
+          <LargeImage Name="i-l2ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPS3">
         <Macro>
           <Name>3</Name>
           <Command>^P^C^C(loadblockinfo "LFNST3")</Command>
-          <SmallImage Name="./icons/i-l3ft.bmp"/>
-          <LargeImage Name="./icons/i-l3ft.bmp"/>
+          <SmallImage Name="i-l3ft"/>
+          <LargeImage Name="i-l3ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPS4">
         <Macro>
           <Name>4</Name>
           <Command>^P^C^C(loadblockinfo "LFNST4")</Command>
-          <SmallImage Name="./icons/i-l4ft.bmp"/>
-          <LargeImage Name="./icons/i-l4ft.bmp"/>
+          <SmallImage Name="i-l4ft"/>
+          <LargeImage Name="i-l4ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPS6">
         <Macro>
           <Name>6</Name>
           <Command>^P^C^C(loadblockinfo "LFNST6")</Command>
-          <SmallImage Name="./icons/i-l6ft.bmp"/>
-          <LargeImage Name="./icons/i-l6ft.bmp"/>
+          <SmallImage Name="i-l6ft"/>
+          <LargeImage Name="i-l6ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPS8">
         <Macro>
           <Name>8</Name>
           <Command>^P^C^C(loadblockinfo "LFNST8")</Command>
-          <SmallImage Name="./icons/i-l8ft.bmp"/>
-          <LargeImage Name="./icons/i-l8ft.bmp"/>
+          <SmallImage Name="i-l8ft"/>
+          <LargeImage Name="i-l8ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW6inx1">
         <Macro>
           <Name>6in*1</Name>
           <Command>^P^C^C(loadblockinfo "LFNW6IX1")</Command>
-          <SmallImage Name="./icons/i-elfnwired.bmp"/>
-          <LargeImage Name="./icons/i-elfnwired.bmp"/>
+          <SmallImage Name="i-elfnwired"/>
+          <LargeImage Name="i-elfnwired"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW6inx2">
         <Macro>
           <Name>6in*2</Name>
           <Command>^P^C^C(loadblockinfo "LFNW6IX2")</Command>
-          <SmallImage Name="./icons/i-l6x2.bmp"/>
-          <LargeImage Name="./icons/i-l6x2.bmp"/>
+          <SmallImage Name="i-l6x2"/>
+          <LargeImage Name="i-l6x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW6inx3">
         <Macro>
           <Name>6in*3</Name>
           <Command>^P^C^C(loadblockinfo "LFNW6IX3")</Command>
-          <SmallImage Name="./icons/i-l6x3.bmp"/>
-          <LargeImage Name="./icons/i-l6x3.bmp"/>
+          <SmallImage Name="i-l6x3"/>
+          <LargeImage Name="i-l6x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW6inx4">
         <Macro>
           <Name>6in*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNW6IX4")</Command>
-          <SmallImage Name="./icons/i-l6x4.bmp"/>
-          <LargeImage Name="./icons/i-l6x4.bmp"/>
+          <SmallImage Name="i-l6x4"/>
+          <LargeImage Name="i-l6x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x1">
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X1")</Command>
-          <SmallImage Name="./icons/i-l1x1.bmp"/>
-          <LargeImage Name="./icons/i-l1x1.bmp"/>
+          <SmallImage Name="i-l1x1"/>
+          <LargeImage Name="i-l1x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x2">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X2")</Command>
-          <SmallImage Name="./icons/i-l1x2.bmp"/>
-          <LargeImage Name="./icons/i-l1x2.bmp"/>
+          <SmallImage Name="i-l1x2"/>
+          <LargeImage Name="i-l1x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x3">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X3")</Command>
-          <SmallImage Name="./icons/i-l1x3.bmp"/>
-          <LargeImage Name="./icons/i-l1x3.bmp"/>
+          <SmallImage Name="i-l1x3"/>
+          <LargeImage Name="i-l1x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x4">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X4")</Command>
-          <SmallImage Name="./icons/i-l1x4.bmp"/>
-          <LargeImage Name="./icons/i-l1x4.bmp"/>
+          <SmallImage Name="i-l1x4"/>
+          <LargeImage Name="i-l1x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x6">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X6")</Command>
-          <SmallImage Name="./icons/i-l1x6.bmp"/>
-          <LargeImage Name="./icons/i-l1x6.bmp"/>
+          <SmallImage Name="i-l1x6"/>
+          <LargeImage Name="i-l1x6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x8">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X8")</Command>
-          <SmallImage Name="./icons/i-l1x8.bmp"/>
-          <LargeImage Name="./icons/i-l1x8.bmp"/>
+          <SmallImage Name="i-l1x8"/>
+          <LargeImage Name="i-l1x8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW1x12">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFNW1X12")</Command>
-          <SmallImage Name="./icons/i-l1x12.bmp"/>
-          <LargeImage Name="./icons/i-l1x12.bmp"/>
+          <SmallImage Name="i-l1x12"/>
+          <LargeImage Name="i-l1x12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW2x2">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFNW2X2")</Command>
-          <SmallImage Name="./icons/i-l2x2.bmp"/>
-          <LargeImage Name="./icons/i-l2x2.bmp"/>
+          <SmallImage Name="i-l2x2"/>
+          <LargeImage Name="i-l2x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW2x4">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNW2X4")</Command>
-          <SmallImage Name="./icons/i-l2x4.bmp"/>
-          <LargeImage Name="./icons/i-l2x4.bmp"/>
+          <SmallImage Name="i-l2x4"/>
+          <LargeImage Name="i-l2x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPW4x4">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNW4X4")</Command>
-          <SmallImage Name="./icons/i-l4x4.bmp"/>
-          <LargeImage Name="./icons/i-l4x4.bmp"/>
+          <SmallImage Name="i-l4x4"/>
+          <LargeImage Name="i-l4x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNPWind">
         <Macro>
           <Name>Indicator</Name>
           <Command>^P^C^C(loadblockinfo "LFNWIND")</Command>
-          <SmallImage Name="./icons/i-lfnwind.bmp"/>
-          <LargeImage Name="./icons/i-lfnwind.bmp"/>
+          <SmallImage Name="i-lfnwind"/>
+          <LargeImage Name="i-lfnwind"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC6inx1">
         <Macro>
           <Name>6in*1</Name>
           <Command>^P^C^C(loadblockinfo "LFNC6IX1")</Command>
-          <SmallImage Name="./icons/i-elfncrit.bmp"/>
-          <LargeImage Name="./icons/i-elfncrit.bmp"/>
+          <SmallImage Name="i-elfncrit"/>
+          <LargeImage Name="i-elfncrit"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC6inx2">
         <Macro>
           <Name>6in*2</Name>
           <Command>^P^C^C(loadblockinfo "LFNC6IX2")</Command>
-          <SmallImage Name="./icons/i-l6x2.bmp"/>
-          <LargeImage Name="./icons/i-l6x2.bmp"/>
+          <SmallImage Name="i-l6x2"/>
+          <LargeImage Name="i-l6x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC6inx3">
         <Macro>
           <Name>6in*3</Name>
           <Command>^P^C^C(loadblockinfo "LFNC6IX3")</Command>
-          <SmallImage Name="./icons/i-l6x3.bmp"/>
-          <LargeImage Name="./icons/i-l6x3.bmp"/>
+          <SmallImage Name="i-l6x3"/>
+          <LargeImage Name="i-l6x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC6inx4">
         <Macro>
           <Name>6in*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNC6IX4")</Command>
-          <SmallImage Name="./icons/i-l6x4.bmp"/>
-          <LargeImage Name="./icons/i-l6x4.bmp"/>
+          <SmallImage Name="i-l6x4"/>
+          <LargeImage Name="i-l6x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x1">
         <Macro>
           <Name>1*1</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x1")</Command>
-          <SmallImage Name="./icons/i-l1x1.bmp"/>
-          <LargeImage Name="./icons/i-l1x1.bmp"/>
+          <SmallImage Name="i-l1x1"/>
+          <LargeImage Name="i-l1x1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x2">
         <Macro>
           <Name>1*2</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x2")</Command>
-          <SmallImage Name="./icons/i-l1x2.bmp"/>
-          <LargeImage Name="./icons/i-l1x2.bmp"/>
+          <SmallImage Name="i-l1x2"/>
+          <LargeImage Name="i-l1x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x3">
         <Macro>
           <Name>1*3</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x3")</Command>
-          <SmallImage Name="./icons/i-l1x3.bmp"/>
-          <LargeImage Name="./icons/i-l1x3.bmp"/>
+          <SmallImage Name="i-l1x3"/>
+          <LargeImage Name="i-l1x3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x4">
         <Macro>
           <Name>1*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x4")</Command>
-          <SmallImage Name="./icons/i-l1x4.bmp"/>
-          <LargeImage Name="./icons/i-l1x4.bmp"/>
+          <SmallImage Name="i-l1x4"/>
+          <LargeImage Name="i-l1x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x6">
         <Macro>
           <Name>1*6</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x6")</Command>
-          <SmallImage Name="./icons/i-l1x6.bmp"/>
-          <LargeImage Name="./icons/i-l1x6.bmp"/>
+          <SmallImage Name="i-l1x6"/>
+          <LargeImage Name="i-l1x6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x8">
         <Macro>
           <Name>1*8</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x8")</Command>
-          <SmallImage Name="./icons/i-l1x8.bmp"/>
-          <LargeImage Name="./icons/i-l1x8.bmp"/>
+          <SmallImage Name="i-l1x8"/>
+          <LargeImage Name="i-l1x8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC1x12">
         <Macro>
           <Name>1*12</Name>
           <Command>^P^C^C(loadblockinfo "LFNC1x12")</Command>
-          <SmallImage Name="./icons/i-l1x12.bmp"/>
-          <LargeImage Name="./icons/i-l1x12.bmp"/>
+          <SmallImage Name="i-l1x12"/>
+          <LargeImage Name="i-l1x12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC2x2">
         <Macro>
           <Name>2*2</Name>
           <Command>^P^C^C(loadblockinfo "LFNC2x2")</Command>
-          <SmallImage Name="./icons/i-l2x2.bmp"/>
-          <LargeImage Name="./icons/i-l2x2.bmp"/>
+          <SmallImage Name="i-l2x2"/>
+          <LargeImage Name="i-l2x2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC2x4">
         <Macro>
           <Name>2*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNC2x4")</Command>
-          <SmallImage Name="./icons/i-l2x4.bmp"/>
-          <LargeImage Name="./icons/i-l2x4.bmp"/>
+          <SmallImage Name="i-l2x4"/>
+          <LargeImage Name="i-l2x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFNC4x4">
         <Macro>
           <Name>4*4</Name>
           <Command>^P^C^C(loadblockinfo "LFNC4x4")</Command>
-          <SmallImage Name="./icons/i-l4x4.bmp"/>
-          <LargeImage Name="./icons/i-l4x4.bmp"/>
+          <SmallImage Name="i-l4x4"/>
+          <LargeImage Name="i-l4x4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFSWired1">
         <Macro>
           <Name>1</Name>
           <Command>^P^C^C(loadblockinfo "LFSTW1")</Command>
-          <SmallImage Name="./icons/i-elfstrwired.bmp"/>
-          <LargeImage Name="./icons/i-elfstrwired.bmp"/>
+          <SmallImage Name="i-elfstrwired"/>
+          <LargeImage Name="i-elfstrwired"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFSWired2">
         <Macro>
           <Name>2</Name>
           <Command>^P^C^C(loadblockinfo "LFSTW2")</Command>
-          <SmallImage Name="./icons/i-l2ft.bmp"/>
-          <LargeImage Name="./icons/i-l2ft.bmp"/>
+          <SmallImage Name="i-l2ft"/>
+          <LargeImage Name="i-l2ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFSWired3">
         <Macro>
           <Name>3</Name>
           <Command>^P^C^C(loadblockinfo "LFSTW3")</Command>
-          <SmallImage Name="./icons/i-l3ft.bmp"/>
-          <LargeImage Name="./icons/i-l3ft.bmp"/>
+          <SmallImage Name="i-l3ft"/>
+          <LargeImage Name="i-l3ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFSWired4">
         <Macro>
           <Name>4</Name>
           <Command>^P^C^C(loadblockinfo "LFSTW4")</Command>
-          <SmallImage Name="./icons/i-l4ft.bmp"/>
-          <LargeImage Name="./icons/i-l4ft.bmp"/>
+          <SmallImage Name="i-l4ft"/>
+          <LargeImage Name="i-l4ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFSWired6">
         <Macro>
           <Name>6</Name>
           <Command>^P^C^C(loadblockinfo "LFSTW6")</Command>
-          <SmallImage Name="./icons/i-l6ft.bmp"/>
-          <LargeImage Name="./icons/i-l6ft.bmp"/>
+          <SmallImage Name="i-l6ft"/>
+          <LargeImage Name="i-l6ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFSWired8">
         <Macro>
           <Name>8</Name>
           <Command>^P^C^C(loadblockinfo "LFSTW8")</Command>
-          <SmallImage Name="./icons/i-l8ft.bmp"/>
-          <LargeImage Name="./icons/i-l8ft.bmp"/>
+          <SmallImage Name="i-l8ft"/>
+          <LargeImage Name="i-l8ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFUC1">
         <Macro>
           <Name>1</Name>
           <Command>^P^C^C(loadblockinfo "LFUNC1")</Command>
-          <SmallImage Name="./icons/i-elfundcount.bmp"/>
-          <LargeImage Name="./icons/i-elfundcount.bmp"/>
+          <SmallImage Name="i-elfundcount"/>
+          <LargeImage Name="i-elfundcount"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFUC2">
         <Macro>
           <Name>2</Name>
           <Command>^P^C^C(loadblockinfo "LFUNC2")</Command>
-          <SmallImage Name="./icons/i-l2ft.bmp"/>
-          <LargeImage Name="./icons/i-l2ft.bmp"/>
+          <SmallImage Name="i-l2ft"/>
+          <LargeImage Name="i-l2ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFUC3">
         <Macro>
           <Name>3</Name>
           <Command>^P^C^C(loadblockinfo "LFUNC3")</Command>
-          <SmallImage Name="./icons/i-l3ft.bmp"/>
-          <LargeImage Name="./icons/i-l3ft.bmp"/>
+          <SmallImage Name="i-l3ft"/>
+          <LargeImage Name="i-l3ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFUC4">
         <Macro>
           <Name>4</Name>
           <Command>^P^C^C(loadblockinfo "LFUNC4")</Command>
-          <SmallImage Name="./icons/i-l4ft.bmp"/>
-          <LargeImage Name="./icons/i-l4ft.bmp"/>
+          <SmallImage Name="i-l4ft"/>
+          <LargeImage Name="i-l4ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFUC6">
         <Macro>
           <Name>6</Name>
           <Command>^P^C^C(loadblockinfo "LFUNC6")</Command>
-          <SmallImage Name="./icons/i-l6ft.bmp"/>
-          <LargeImage Name="./icons/i-l6ft.bmp"/>
+          <SmallImage Name="i-l6ft"/>
+          <LargeImage Name="i-l6ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ELFUC8">
         <Macro>
           <Name>8</Name>
           <Command>^P^C^C(loadblockinfo "LFUNC8")</Command>
-          <SmallImage Name="./icons/i-l8ft.bmp"/>
-          <LargeImage Name="./icons/i-l8ft.bmp"/>
+          <SmallImage Name="i-l8ft"/>
+          <LargeImage Name="i-l8ft"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EINormal">
         <Macro>
           <Name>Normal</Name>
           <Command>^P^C^C(loadblockinfo "LINO")</Command>
-          <SmallImage Name="./icons/i-gcir.bmp"/>
-          <LargeImage Name="./icons/i-gcir.bmp"/>
+          <SmallImage Name="i-gcir"/>
+          <LargeImage Name="i-gcir"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIWNormal">
         <Macro>
           <Name>Normal Wall</Name>
           <Command>^P^C^C(loadblockinfo "LINOW")</Command>
-          <SmallImage Name="./icons/i-gcirl.bmp"/>
-          <LargeImage Name="./icons/i-gcirl.bmp"/>
+          <SmallImage Name="i-gcirl"/>
+          <LargeImage Name="i-gcirl"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIWallWash">
         <Macro>
           <Name>Wall Wash</Name>
           <Command>^P^C^C(loadblockinfo "LIWWASH")</Command>
-          <SmallImage Name="./icons/i-elwwash.bmp"/>
-          <LargeImage Name="./icons/i-elwwash.bmp"/>
+          <SmallImage Name="i-elwwash"/>
+          <LargeImage Name="i-elwwash"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EILifeSafety">
         <Macro>
           <Name>Life Safety</Name>
           <Command>^P^C^C(loadblockinfo "LILS")</Command>
-          <SmallImage Name="./icons/i-eilifesafe.bmp"/>
-          <LargeImage Name="./icons/i-eilifesafe.bmp"/>
+          <SmallImage Name="i-eilifesafe"/>
+          <LargeImage Name="i-eilifesafe"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIWLifeSafety">
         <Macro>
           <Name>Life Safety Wall</Name>
           <Command>^P^C^C(loadblockinfo "LILSWALL")</Command>
-          <SmallImage Name="./icons/i-eilifesafew.bmp"/>
-          <LargeImage Name="./icons/i-eilifesafew.bmp"/>
+          <SmallImage Name="i-eilifesafew"/>
+          <LargeImage Name="i-eilifesafew"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EICritical">
         <Macro>
           <Name>Critical</Name>
           <Command>^P^C^C(loadblockinfo "LICR")</Command>
-          <SmallImage Name="./icons/i-licr.bmp"/>
-          <LargeImage Name="./icons/i-licr.bmp"/>
+          <SmallImage Name="i-licr"/>
+          <LargeImage Name="i-licr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIWCritical">
         <Macro>
           <Name>Critical Wall</Name>
           <Command>^P^C^C(loadblockinfo "LINOW2")</Command>
-          <SmallImage Name="./icons/i-elicritw.bmp"/>
-          <LargeImage Name="./icons/i-elicritw.bmp"/>
+          <SmallImage Name="i-elicritw"/>
+          <LargeImage Name="i-elicritw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIWallSconce">
         <Macro>
           <Name>Wall Sconce</Name>
           <Command>^P^C^C(loadblockinfo "LIWSCON")</Command>
-          <SmallImage Name="./icons/i-eliwscon.bmp"/>
-          <LargeImage Name="./icons/i-eliwscon.bmp"/>
+          <SmallImage Name="i-eliwscon"/>
+          <LargeImage Name="i-eliwscon"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIPendant1">
         <Macro>
           <Name>Pendant 1</Name>
           <Command>^P^C^C(loadblockinfo "LIPENDA1")</Command>
-          <SmallImage Name="./icons/i-elipenda1.bmp"/>
-          <LargeImage Name="./icons/i-elipenda1.bmp"/>
+          <SmallImage Name="i-elipenda1"/>
+          <LargeImage Name="i-elipenda1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIPendant2">
         <Macro>
           <Name>Pendant 2</Name>
           <Command>^P^C^C(loadblockinfo "LIPENDA2")</Command>
-          <SmallImage Name="./icons/i-elipenda2.bmp"/>
-          <LargeImage Name="./icons/i-elipenda2.bmp"/>
+          <SmallImage Name="i-elipenda2"/>
+          <LargeImage Name="i-elipenda2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIPendant3">
         <Macro>
           <Name>Pendant 3</Name>
           <Command>^P^C^C(loadblockinfo "LIPENDA3")</Command>
-          <SmallImage Name="./icons/i-elipenda3.bmp"/>
-          <LargeImage Name="./icons/i-elipenda3.bmp"/>
+          <SmallImage Name="i-elipenda3"/>
+          <LargeImage Name="i-elipenda3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EIPendant4">
         <Macro>
           <Name>Pendant 4</Name>
           <Command>^P^C^C(loadblockinfo "LIPENDA")</Command>
-          <SmallImage Name="./icons/i-elipenda4.bmp"/>
-          <LargeImage Name="./icons/i-elipenda4.bmp"/>
+          <SmallImage Name="i-elipenda4"/>
+          <LargeImage Name="i-elipenda4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPlain">
         <Macro>
           <Name>Plain</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN")</Command>
-          <SmallImage Name="./icons/i-switch.bmp"/>
-          <LargeImage Name="./icons/i-switch.bmp"/>
+          <SmallImage Name="i-switch"/>
+          <LargeImage Name="i-switch"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESw3Way">
         <Macro>
           <Name>3 Way</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN2")</Command>
-          <SmallImage Name="./icons/i-switch3.bmp"/>
-          <LargeImage Name="./icons/i-switch3.bmp"/>
+          <SmallImage Name="i-switch3"/>
+          <LargeImage Name="i-switch3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwLegA">
         <Macro>
           <Name>A Leg</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN3")</Command>
-          <SmallImage Name="./icons/i-switcha.bmp"/>
-          <LargeImage Name="./icons/i-switcha.bmp"/>
+          <SmallImage Name="i-switcha"/>
+          <LargeImage Name="i-switcha"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwLegB">
         <Macro>
           <Name>B Leg</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN4")</Command>
-          <SmallImage Name="./icons/i-switchb.bmp"/>
-          <LargeImage Name="./icons/i-switchb.bmp"/>
+          <SmallImage Name="i-switchb"/>
+          <LargeImage Name="i-switchb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwRelay">
         <Macro>
           <Name>Relay</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2")</Command>
-          <SmallImage Name="./icons/i-switchr.bmp"/>
-          <LargeImage Name="./icons/i-switchr.bmp"/>
+          <SmallImage Name="i-switchr"/>
+          <LargeImage Name="i-switchr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwBypass">
         <Macro>
           <Name>Bypass</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN5")</Command>
-          <SmallImage Name="./icons/i-switchbp.bmp"/>
-          <LargeImage Name="./icons/i-switchbp.bmp"/>
+          <SmallImage Name="i-switchbp"/>
+          <LargeImage Name="i-switchbp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwBypass3Way">
         <Macro>
           <Name>Bypass 3 Way</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN6")</Command>
-          <SmallImage Name="./icons/i-switchbp3.bmp"/>
-          <LargeImage Name="./icons/i-switchbp3.bmp"/>
+          <SmallImage Name="i-switchbp3"/>
+          <LargeImage Name="i-switchbp3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwBypassLegA">
         <Macro>
           <Name>Bypass A Leg</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN7")</Command>
-          <SmallImage Name="./icons/i-switchbpa.bmp"/>
-          <LargeImage Name="./icons/i-switchbpa.bmp"/>
+          <SmallImage Name="i-switchbpa"/>
+          <LargeImage Name="i-switchbpa"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwBypassLegB">
         <Macro>
           <Name>Bypass B Leg</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN8")</Command>
-          <SmallImage Name="./icons/i-switchbpb.bmp"/>
-          <LargeImage Name="./icons/i-switchbpb.bmp"/>
+          <SmallImage Name="i-switchbpb"/>
+          <LargeImage Name="i-switchbpb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPBPlate">
         <Macro>
           <Name>Push Button Plate</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2L")</Command>
-          <SmallImage Name="./icons/i-switchpbp.bmp"/>
-          <LargeImage Name="./icons/i-switchpbp.bmp"/>
+          <SmallImage Name="i-switchpbp"/>
+          <LargeImage Name="i-switchpbp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPlain2Att">
         <Macro>
           <Name>Plain Super/ Sub</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN9")</Command>
-          <SmallImage Name="./icons/i-switchxx.bmp"/>
-          <LargeImage Name="./icons/i-switchxx.bmp"/>
+          <SmallImage Name="i-switchxx"/>
+          <LargeImage Name="i-switchxx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwFan">
         <Macro>
           <Name>Fan</Name>
           <Command>^P^C^C(loadblockinfo "PSWMOMC")</Command>
-          <SmallImage Name="./icons/i-switchfan.bmp"/>
-          <LargeImage Name="./icons/i-switchfan.bmp"/>
+          <SmallImage Name="i-switchfan"/>
+          <LargeImage Name="i-switchfan"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwCtrlModule">
         <Macro>
           <Name>Control Module</Name>
           <Command>^P^C^C(loadblockinfo "EFHEX1")</Command>
-          <SmallImage Name="./icons/i-switchc.bmp"/>
-          <LargeImage Name="./icons/i-switchc.bmp"/>
+          <SmallImage Name="i-switchc"/>
+          <LargeImage Name="i-switchc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwDimmer1">
         <Macro>
           <Name>Dimmer 1</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-2")</Command>
-          <SmallImage Name="./icons/i-switchd1.bmp"/>
-          <LargeImage Name="./icons/i-switchd1.bmp"/>
+          <SmallImage Name="i-switchd1"/>
+          <LargeImage Name="i-switchd1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwDimmer2">
         <Macro>
           <Name>Dimmer 2</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-3")</Command>
-          <SmallImage Name="./icons/i-switchd2.bmp"/>
-          <LargeImage Name="./icons/i-switchd2.bmp"/>
+          <SmallImage Name="i-switchd2"/>
+          <LargeImage Name="i-switchd2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwOccSensor">
         <Macro>
           <Name>Occupancy Sensor</Name>
           <Command>^P^C^C(loadblockinfo "PSWMOTI")</Command>
-          <SmallImage Name="./icons/i-pswmoti.bmp"/>
-          <LargeImage Name="./icons/i-pswmoti.bmp"/>
+          <SmallImage Name="i-pswmoti"/>
+          <LargeImage Name="i-pswmoti"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwIntCtrllr">
         <Macro>
           <Name>Intensity Controller</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2L-2")</Command>
-          <SmallImage Name="./icons/i-switchic.bmp"/>
-          <LargeImage Name="./icons/i-switchic.bmp"/>
+          <SmallImage Name="i-switchic"/>
+          <LargeImage Name="i-switchic"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwLMomContact">
         <Macro>
           <Name>Lockable Momentary Contact</Name>
           <Command>^P^C^C(loadblockinfo "PSWMOMCL")</Command>
-          <SmallImage Name="./icons/i-pswmomcl.bmp"/>
-          <LargeImage Name="./icons/i-pswmomcl.bmp"/>
+          <SmallImage Name="i-pswmomcl"/>
+          <LargeImage Name="i-pswmomcl"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwRotTime">
         <Macro>
           <Name>Rotary Time</Name>
           <Command>^P^C^C(loadblockinfo "PSWTIMER")</Command>
-          <SmallImage Name="./icons/i-pswtimer.bmp"/>
-          <LargeImage Name="./icons/i-pswtimer.bmp"/>
+          <SmallImage Name="i-pswtimer"/>
+          <LargeImage Name="i-pswtimer"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwLowVol">
         <Macro>
           <Name>Low Voltage Switch</Name>
           <Command>^P^C^C(loadblockinfo "EDTRI1")</Command>
-          <SmallImage Name="./icons/i-eswlowv.bmp"/>
-          <LargeImage Name="./icons/i-eswlowv.bmp"/>
+          <SmallImage Name="i-eswlowv"/>
+          <LargeImage Name="i-eswlowv"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwLowVolRelay">
         <Macro>
           <Name>Low Voltage Relay</Name>
           <Command>^P^C^C(loadblockinfo "EDIAM2L")</Command>
-          <SmallImage Name="./icons/i-switchlv.bmp"/>
-          <LargeImage Name="./icons/i-switchlv.bmp"/>
+          <SmallImage Name="i-switchlv"/>
+          <LargeImage Name="i-switchlv"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwTimer">
         <Macro>
           <Name>Timer</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-4")</Command>
-          <SmallImage Name="./icons/i-switchts.bmp"/>
-          <LargeImage Name="./icons/i-switchts.bmp"/>
+          <SmallImage Name="i-switchts"/>
+          <LargeImage Name="i-switchts"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwTimeclock">
         <Macro>
           <Name>Time Clock</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-5")</Command>
-          <SmallImage Name="./icons/i-switchtc.bmp"/>
-          <LargeImage Name="./icons/i-switchtc.bmp"/>
+          <SmallImage Name="i-switchtc"/>
+          <LargeImage Name="i-switchtc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwFluoDimmer">
         <Macro>
           <Name>Fluorescent Dimmer</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-6")</Command>
-          <SmallImage Name="./icons/i-switchfd.bmp"/>
-          <LargeImage Name="./icons/i-switchfd.bmp"/>
+          <SmallImage Name="i-switchfd"/>
+          <LargeImage Name="i-switchfd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPilot">
         <Macro>
           <Name>Pilot</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN10")</Command>
-          <SmallImage Name="./icons/i-switchp.bmp"/>
-          <LargeImage Name="./icons/i-switchp.bmp"/>
+          <SmallImage Name="i-switchp"/>
+          <LargeImage Name="i-switchp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwKey">
         <Macro>
           <Name>Key</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN11")</Command>
-          <SmallImage Name="./icons/i-switchk.bmp"/>
-          <LargeImage Name="./icons/i-switchk.bmp"/>
+          <SmallImage Name="i-switchk"/>
+          <LargeImage Name="i-switchk"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwMotor">
         <Macro>
           <Name>Motor</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN12")</Command>
-          <SmallImage Name="./icons/i-switchm.bmp"/>
-          <LargeImage Name="./icons/i-switchm.bmp"/>
+          <SmallImage Name="i-switchm"/>
+          <LargeImage Name="i-switchm"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPB1">
         <Macro>
           <Name>Push Button 1</Name>
           <Command>^P^C^C(loadblockinfo "PSWPUSH1")</Command>
-          <SmallImage Name="./icons/i-pswpush1.bmp"/>
-          <LargeImage Name="./icons/i-pswpush1.bmp"/>
+          <SmallImage Name="i-pswpush1"/>
+          <LargeImage Name="i-pswpush1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPB2">
         <Macro>
           <Name>Push Button 2</Name>
           <Command>^P^C^C(loadblockinfo "PSWPUSH2")</Command>
-          <SmallImage Name="./icons/i-pswpush2.bmp"/>
-          <LargeImage Name="./icons/i-pswpush2.bmp"/>
+          <SmallImage Name="i-pswpush2"/>
+          <LargeImage Name="i-pswpush2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESwPB3">
         <Macro>
           <Name>Push Button 3</Name>
           <Command>^P^C^C(loadblockinfo "PSWPUSH3")</Command>
-          <SmallImage Name="./icons/i-pswpush3.bmp"/>
-          <LargeImage Name="./icons/i-pswpush3.bmp"/>
+          <SmallImage Name="i-pswpush3"/>
+          <LargeImage Name="i-pswpush3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteSqrBoll">
         <Macro>
           <Name>Square Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESSQRB")</Command>
-          <SmallImage Name="./icons/i-essqr1b.bmp"/>
-          <LargeImage Name="./icons/i-essqr1b.bmp"/>
+          <SmallImage Name="i-essqr1b"/>
+          <LargeImage Name="i-essqr1b"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteSqr2Boll90">
         <Macro>
           <Name>Square 2 Bollard 90d</Name>
           <Command>^P^C^C(loadblockinfo "ESSQR2BR")</Command>
-          <SmallImage Name="./icons/i-essqr2br.bmp"/>
-          <LargeImage Name="./icons/i-essqr2br.bmp"/>
+          <SmallImage Name="i-essqr2br"/>
+          <LargeImage Name="i-essqr2br"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteSqr2Boll180">
         <Macro>
           <Name>Square 2 Bollard 180d</Name>
           <Command>^P^C^C(loadblockinfo "ESSQR2BS")</Command>
-          <SmallImage Name="./icons/i-essqr2bs.bmp"/>
-          <LargeImage Name="./icons/i-essqr2bs.bmp"/>
+          <SmallImage Name="i-essqr2bs"/>
+          <LargeImage Name="i-essqr2bs"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteSqr3Boll">
         <Macro>
           <Name>Square 3 Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESSQR3B")</Command>
-          <SmallImage Name="./icons/i-essqr3b.bmp"/>
-          <LargeImage Name="./icons/i-essqr3b.bmp"/>
+          <SmallImage Name="i-essqr3b"/>
+          <LargeImage Name="i-essqr3b"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteSqr4Boll">
         <Macro>
           <Name>Square 4 Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESSQR4B")</Command>
-          <SmallImage Name="./icons/i-essqr4b.bmp"/>
-          <LargeImage Name="./icons/i-essqr4b.bmp"/>
+          <SmallImage Name="i-essqr4b"/>
+          <LargeImage Name="i-essqr4b"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteRndBoll">
         <Macro>
           <Name>Round Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESRNDB")</Command>
-          <SmallImage Name="./icons/i-esrnd1b.bmp"/>
-          <LargeImage Name="./icons/i-esrnd1b.bmp"/>
+          <SmallImage Name="i-esrnd1b"/>
+          <LargeImage Name="i-esrnd1b"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteRnd2Boll90">
         <Macro>
           <Name>Round 2 Bollard 90d</Name>
           <Command>^P^C^C(loadblockinfo "ESRND2BR")</Command>
-          <SmallImage Name="./icons/i-esrnd2br.bmp"/>
-          <LargeImage Name="./icons/i-esrnd2br.bmp"/>
+          <SmallImage Name="i-esrnd2br"/>
+          <LargeImage Name="i-esrnd2br"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteRnd2Boll180">
         <Macro>
           <Name>Round 2 Bollard 180d</Name>
           <Command>^P^C^C(loadblockinfo "ESRND2BS")</Command>
-          <SmallImage Name="./icons/i-esrnd2bs.bmp"/>
-          <LargeImage Name="./icons/i-esrnd2bs.bmp"/>
+          <SmallImage Name="i-esrnd2bs"/>
+          <LargeImage Name="i-esrnd2bs"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteRnd3Boll">
         <Macro>
           <Name>Round 3 Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESRND3B")</Command>
-          <SmallImage Name="./icons/i-esrnd3b.bmp"/>
-          <LargeImage Name="./icons/i-esrnd3b.bmp"/>
+          <SmallImage Name="i-esrnd3b"/>
+          <LargeImage Name="i-esrnd3b"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteRnd4Boll">
         <Macro>
           <Name>Round 4 Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESRND4B")</Command>
-          <SmallImage Name="./icons/i-esrnd4b.bmp"/>
-          <LargeImage Name="./icons/i-esrnd4b.bmp"/>
+          <SmallImage Name="i-esrnd4b"/>
+          <LargeImage Name="i-esrnd4b"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteWSqrBol">
         <Macro>
           <Name>Wall Mtd Sqr Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESSQRBL")</Command>
-          <SmallImage Name="./icons/i-gsqrl.bmp"/>
-          <LargeImage Name="./icons/i-gsqrl.bmp"/>
+          <SmallImage Name="i-gsqrl"/>
+          <LargeImage Name="i-gsqrl"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESiteWRndBol">
         <Macro>
           <Name>Wall Mtd Rnd Bollard</Name>
           <Command>^P^C^C(loadblockinfo "ESRNDBL")</Command>
-          <SmallImage Name="./icons/i-gcirl.bmp"/>
-          <LargeImage Name="./icons/i-gcirl.bmp"/>
+          <SmallImage Name="i-gcirl"/>
+          <LargeImage Name="i-gcirl"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EBBattery">
         <Macro>
           <Name>Battery</Name>
           <Command>^P^C^C(loadblockinfo "EEBAT")</Command>
-          <SmallImage Name="./icons/i-eebat.bmp"/>
-          <LargeImage Name="./icons/i-eebat.bmp"/>
+          <SmallImage Name="i-eebat"/>
+          <LargeImage Name="i-eebat"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EBBatteryHead">
         <Macro>
           <Name>Battery w/ Heads</Name>
           <Command>^P^C^C(loadblockinfo "EEBATH")</Command>
-          <SmallImage Name="./icons/i-eebath.bmp"/>
-          <LargeImage Name="./icons/i-eebath.bmp"/>
+          <SmallImage Name="i-eebath"/>
+          <LargeImage Name="i-eebath"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EBRemoteHead">
         <Macro>
           <Name>Remote Head</Name>
           <Command>^P^C^C(loadblockinfo "EEREMH")</Command>
-          <SmallImage Name="./icons/i-eeremh.bmp"/>
-          <LargeImage Name="./icons/i-eeremh.bmp"/>
+          <SmallImage Name="i-eeremh"/>
+          <LargeImage Name="i-eeremh"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EBRemoteHeads">
         <Macro>
           <Name>Remote Heads</Name>
           <Command>^P^C^C(loadblockinfo "EEREMDH")</Command>
-          <SmallImage Name="./icons/i-eeremdh.bmp"/>
-          <LargeImage Name="./icons/i-eeremdh.bmp"/>
+          <SmallImage Name="i-eeremdh"/>
+          <LargeImage Name="i-eeremdh"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit1">
         <Macro>
           <Name>#1 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX1-3FE")</Command>
-          <SmallImage Name="./icons/i-chiexit1.bmp"/>
-          <LargeImage Name="./icons/i-chiexit1.bmp"/>
+          <SmallImage Name="i-chiexit1"/>
+          <LargeImage Name="i-chiexit1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit2">
         <Macro>
           <Name>#2 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX1-3S")</Command>
-          <SmallImage Name="./icons/i-chiexit2.bmp"/>
-          <LargeImage Name="./icons/i-chiexit2.bmp"/>
+          <SmallImage Name="i-chiexit2"/>
+          <LargeImage Name="i-chiexit2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit3">
         <Macro>
           <Name>#3 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX1-3E")</Command>
-          <SmallImage Name="./icons/i-chiexit3.bmp"/>
-          <LargeImage Name="./icons/i-chiexit3.bmp"/>
+          <SmallImage Name="i-chiexit3"/>
+          <LargeImage Name="i-chiexit3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit4">
         <Macro>
           <Name>#4 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX4-6FE")</Command>
-          <SmallImage Name="./icons/i-chiexit4.bmp"/>
-          <LargeImage Name="./icons/i-chiexit4.bmp"/>
+          <SmallImage Name="i-chiexit4"/>
+          <LargeImage Name="i-chiexit4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit5">
         <Macro>
           <Name>#5 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX4-6S")</Command>
-          <SmallImage Name="./icons/i-chiexit5.bmp"/>
-          <LargeImage Name="./icons/i-chiexit5.bmp"/>
+          <SmallImage Name="i-chiexit5"/>
+          <LargeImage Name="i-chiexit5"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit6">
         <Macro>
           <Name>#6 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX4-6E")</Command>
-          <SmallImage Name="./icons/i-chiexit6.bmp"/>
-          <LargeImage Name="./icons/i-chiexit6.bmp"/>
+          <SmallImage Name="i-chiexit6"/>
+          <LargeImage Name="i-chiexit6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit7">
         <Macro>
           <Name>#7 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX7-9FE")</Command>
-          <SmallImage Name="./icons/i-chiexit7.bmp"/>
-          <LargeImage Name="./icons/i-chiexit7.bmp"/>
+          <SmallImage Name="i-chiexit7"/>
+          <LargeImage Name="i-chiexit7"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit8">
         <Macro>
           <Name>#8 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX7-9S")</Command>
-          <SmallImage Name="./icons/i-chiexit8.bmp"/>
-          <LargeImage Name="./icons/i-chiexit8.bmp"/>
+          <SmallImage Name="i-chiexit8"/>
+          <LargeImage Name="i-chiexit8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit9">
         <Macro>
           <Name>#9 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX7-9E")</Command>
-          <SmallImage Name="./icons/i-chiexit9.bmp"/>
-          <LargeImage Name="./icons/i-chiexit9.bmp"/>
+          <SmallImage Name="i-chiexit9"/>
+          <LargeImage Name="i-chiexit9"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit10">
         <Macro>
           <Name>#10 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX10-12FE")</Command>
-          <SmallImage Name="./icons/i-chiexit10.bmp"/>
-          <LargeImage Name="./icons/i-chiexit10.bmp"/>
+          <SmallImage Name="i-chiexit10"/>
+          <LargeImage Name="i-chiexit10"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit11">
         <Macro>
           <Name>#11 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX10-12S")</Command>
-          <SmallImage Name="./icons/i-chiexit11.bmp"/>
-          <LargeImage Name="./icons/i-chiexit11.bmp"/>
+          <SmallImage Name="i-chiexit11"/>
+          <LargeImage Name="i-chiexit11"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit12">
         <Macro>
           <Name>#12 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX10-12E")</Command>
-          <SmallImage Name="./icons/i-chiexit12.bmp"/>
-          <LargeImage Name="./icons/i-chiexit12.bmp"/>
+          <SmallImage Name="i-chiexit12"/>
+          <LargeImage Name="i-chiexit12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit16">
         <Macro>
           <Name>#16 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX16-18FE")</Command>
-          <SmallImage Name="./icons/i-chiexit16.bmp"/>
-          <LargeImage Name="./icons/i-chiexit16.bmp"/>
+          <SmallImage Name="i-chiexit16"/>
+          <LargeImage Name="i-chiexit16"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit17">
         <Macro>
           <Name>#17 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX16-18S")</Command>
-          <SmallImage Name="./icons/i-chiexit17.bmp"/>
-          <LargeImage Name="./icons/i-chiexit17.bmp"/>
+          <SmallImage Name="i-chiexit17"/>
+          <LargeImage Name="i-chiexit17"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit18">
         <Macro>
           <Name>#18 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX16-18E")</Command>
-          <SmallImage Name="./icons/i-chiexit18.bmp"/>
-          <LargeImage Name="./icons/i-chiexit18.bmp"/>
+          <SmallImage Name="i-chiexit18"/>
+          <LargeImage Name="i-chiexit18"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit19">
         <Macro>
           <Name>#19 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX19-21FE")</Command>
-          <SmallImage Name="./icons/i-chiexit19.bmp"/>
-          <LargeImage Name="./icons/i-chiexit19.bmp"/>
+          <SmallImage Name="i-chiexit19"/>
+          <LargeImage Name="i-chiexit19"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit20">
         <Macro>
           <Name>#20 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX19-21S")</Command>
-          <SmallImage Name="./icons/i-chiexit20.bmp"/>
-          <LargeImage Name="./icons/i-chiexit20.bmp"/>
+          <SmallImage Name="i-chiexit20"/>
+          <LargeImage Name="i-chiexit20"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit21">
         <Macro>
           <Name>#21 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX19-21E")</Command>
-          <SmallImage Name="./icons/i-chiexit21.bmp"/>
-          <LargeImage Name="./icons/i-chiexit21.bmp"/>
+          <SmallImage Name="i-chiexit21"/>
+          <LargeImage Name="i-chiexit21"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit22">
         <Macro>
           <Name>#22 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX22-24FE")</Command>
-          <SmallImage Name="./icons/i-chiexit22.bmp"/>
-          <LargeImage Name="./icons/i-chiexit22.bmp"/>
+          <SmallImage Name="i-chiexit22"/>
+          <LargeImage Name="i-chiexit22"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit23">
         <Macro>
           <Name>#23 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX22-24S")</Command>
-          <SmallImage Name="./icons/i-chiexit23.bmp"/>
-          <LargeImage Name="./icons/i-chiexit23.bmp"/>
+          <SmallImage Name="i-chiexit23"/>
+          <LargeImage Name="i-chiexit23"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExit24">
         <Macro>
           <Name>#24 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEX22-24E")</Command>
-          <SmallImage Name="./icons/i-chiexit24.bmp"/>
-          <LargeImage Name="./icons/i-chiexit24.bmp"/>
+          <SmallImage Name="i-chiexit24"/>
+          <LargeImage Name="i-chiexit24"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD1">
         <Macro>
           <Name>#1 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD1-3FE")</Command>
-          <SmallImage Name="./icons/i-chiexitld1.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld1.bmp"/>
+          <SmallImage Name="i-chiexitld1"/>
+          <LargeImage Name="i-chiexitld1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD2">
         <Macro>
           <Name>#2 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD1-3S")</Command>
-          <SmallImage Name="./icons/i-chiexitld2.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld2.bmp"/>
+          <SmallImage Name="i-chiexitld2"/>
+          <LargeImage Name="i-chiexitld2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD3">
         <Macro>
           <Name>#3 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD1-3E")</Command>
-          <SmallImage Name="./icons/i-chiexitld3.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld3.bmp"/>
+          <SmallImage Name="i-chiexitld3"/>
+          <LargeImage Name="i-chiexitld3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD4">
         <Macro>
           <Name>#4 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD4-6FE")</Command>
-          <SmallImage Name="./icons/i-chiexitld4.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld4.bmp"/>
+          <SmallImage Name="i-chiexitld4"/>
+          <LargeImage Name="i-chiexitld4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD5">
         <Macro>
           <Name>#5 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD4-6S")</Command>
-          <SmallImage Name="./icons/i-chiexitld5.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld5.bmp"/>
+          <SmallImage Name="i-chiexitld5"/>
+          <LargeImage Name="i-chiexitld5"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD6">
         <Macro>
           <Name>#6 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD4-6E")</Command>
-          <SmallImage Name="./icons/i-chiexitld6.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld6.bmp"/>
+          <SmallImage Name="i-chiexitld6"/>
+          <LargeImage Name="i-chiexitld6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD7">
         <Macro>
           <Name>#7 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD7-9FE")</Command>
-          <SmallImage Name="./icons/i-chiexitld7.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld7.bmp"/>
+          <SmallImage Name="i-chiexitld7"/>
+          <LargeImage Name="i-chiexitld7"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD8">
         <Macro>
           <Name>#8 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD7-9S")</Command>
-          <SmallImage Name="./icons/i-chiexitld8.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld8.bmp"/>
+          <SmallImage Name="i-chiexitld8"/>
+          <LargeImage Name="i-chiexitld8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD9">
         <Macro>
           <Name>#9 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD7-9E")</Command>
-          <SmallImage Name="./icons/i-chiexitld9.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld9.bmp"/>
+          <SmallImage Name="i-chiexitld9"/>
+          <LargeImage Name="i-chiexitld9"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD10">
         <Macro>
           <Name>#10 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD10-12FE")</Command>
-          <SmallImage Name="./icons/i-chiexitld10.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld10.bmp"/>
+          <SmallImage Name="i-chiexitld10"/>
+          <LargeImage Name="i-chiexitld10"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD11">
         <Macro>
           <Name>#11 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD10-12S")</Command>
-          <SmallImage Name="./icons/i-chiexitld11.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld11.bmp"/>
+          <SmallImage Name="i-chiexitld11"/>
+          <LargeImage Name="i-chiexitld11"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLD12">
         <Macro>
           <Name>#12 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLD10-12E")</Command>
-          <SmallImage Name="./icons/i-chiexitld12.bmp"/>
-          <LargeImage Name="./icons/i-chiexitld12.bmp"/>
+          <SmallImage Name="i-chiexitld12"/>
+          <LargeImage Name="i-chiexitld12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR1">
         <Macro>
           <Name>#1 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR1-3FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlr1.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr1.bmp"/>
+          <SmallImage Name="i-chiexitlr1"/>
+          <LargeImage Name="i-chiexitlr1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR2">
         <Macro>
           <Name>#2 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR1-3S")</Command>
-          <SmallImage Name="./icons/i-chiexitlr2.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr2.bmp"/>
+          <SmallImage Name="i-chiexitlr2"/>
+          <LargeImage Name="i-chiexitlr2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR3">
         <Macro>
           <Name>#3 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR1-3E")</Command>
-          <SmallImage Name="./icons/i-chiexitlr3.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr3.bmp"/>
+          <SmallImage Name="i-chiexitlr3"/>
+          <LargeImage Name="i-chiexitlr3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR4">
         <Macro>
           <Name>#4 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR4-6FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlr4.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr4.bmp"/>
+          <SmallImage Name="i-chiexitlr4"/>
+          <LargeImage Name="i-chiexitlr4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR5">
         <Macro>
           <Name>#5 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR4-6S")</Command>
-          <SmallImage Name="./icons/i-chiexitlr5.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr5.bmp"/>
+          <SmallImage Name="i-chiexitlr5"/>
+          <LargeImage Name="i-chiexitlr5"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR6">
         <Macro>
           <Name>#6 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR4-6E")</Command>
-          <SmallImage Name="./icons/i-chiexitlr6.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr6.bmp"/>
+          <SmallImage Name="i-chiexitlr6"/>
+          <LargeImage Name="i-chiexitlr6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR7">
         <Macro>
           <Name>#7 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR7-9FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlr7.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr7.bmp"/>
+          <SmallImage Name="i-chiexitlr7"/>
+          <LargeImage Name="i-chiexitlr7"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR8">
         <Macro>
           <Name>#8 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR7-9S")</Command>
-          <SmallImage Name="./icons/i-chiexitlr8.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr8.bmp"/>
+          <SmallImage Name="i-chiexitlr8"/>
+          <LargeImage Name="i-chiexitlr8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR9">
         <Macro>
           <Name>#9 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR7-9E")</Command>
-          <SmallImage Name="./icons/i-chiexitlr9.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr9.bmp"/>
+          <SmallImage Name="i-chiexitlr9"/>
+          <LargeImage Name="i-chiexitlr9"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR10">
         <Macro>
           <Name>#10 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR10-12FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlr10.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr10.bmp"/>
+          <SmallImage Name="i-chiexitlr10"/>
+          <LargeImage Name="i-chiexitlr10"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR11">
         <Macro>
           <Name>#11 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR10-12S")</Command>
-          <SmallImage Name="./icons/i-chiexitlr11.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr11.bmp"/>
+          <SmallImage Name="i-chiexitlr11"/>
+          <LargeImage Name="i-chiexitlr11"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLR12">
         <Macro>
           <Name>#12 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLR10-12E")</Command>
-          <SmallImage Name="./icons/i-chiexitlr12.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlr12.bmp"/>
+          <SmallImage Name="i-chiexitlr12"/>
+          <LargeImage Name="i-chiexitlr12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL1">
         <Macro>
           <Name>#1 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL1-3FE")</Command>
-          <SmallImage Name="./icons/i-chiexitll1.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll1.bmp"/>
+          <SmallImage Name="i-chiexitll1"/>
+          <LargeImage Name="i-chiexitll1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL2">
         <Macro>
           <Name>#2 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL1-3S")</Command>
-          <SmallImage Name="./icons/i-chiexitll2.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll2.bmp"/>
+          <SmallImage Name="i-chiexitll2"/>
+          <LargeImage Name="i-chiexitll2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL3">
         <Macro>
           <Name>#3 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL1-3E")</Command>
-          <SmallImage Name="./icons/i-chiexitll3.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll3.bmp"/>
+          <SmallImage Name="i-chiexitll3"/>
+          <LargeImage Name="i-chiexitll3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL4">
         <Macro>
           <Name>#4 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL4-6FE")</Command>
-          <SmallImage Name="./icons/i-chiexitll4.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll4.bmp"/>
+          <SmallImage Name="i-chiexitll4"/>
+          <LargeImage Name="i-chiexitll4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL5">
         <Macro>
           <Name>#5 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL4-6S")</Command>
-          <SmallImage Name="./icons/i-chiexitll5.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll5.bmp"/>
+          <SmallImage Name="i-chiexitll5"/>
+          <LargeImage Name="i-chiexitll5"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL6">
         <Macro>
           <Name>#6 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL4-6E")</Command>
-          <SmallImage Name="./icons/i-chiexitll6.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll6.bmp"/>
+          <SmallImage Name="i-chiexitll6"/>
+          <LargeImage Name="i-chiexitll6"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL7">
         <Macro>
           <Name>#7 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL7-9FE")</Command>
-          <SmallImage Name="./icons/i-chiexitll7.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll7.bmp"/>
+          <SmallImage Name="i-chiexitll7"/>
+          <LargeImage Name="i-chiexitll7"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL8">
         <Macro>
           <Name>#8 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL7-9S")</Command>
-          <SmallImage Name="./icons/i-chiexitll8.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll8.bmp"/>
+          <SmallImage Name="i-chiexitll8"/>
+          <LargeImage Name="i-chiexitll8"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL9">
         <Macro>
           <Name>#9 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL7-9E")</Command>
-          <SmallImage Name="./icons/i-chiexitll9.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll9.bmp"/>
+          <SmallImage Name="i-chiexitll9"/>
+          <LargeImage Name="i-chiexitll9"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL10">
         <Macro>
           <Name>#10 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL10-12FE")</Command>
-          <SmallImage Name="./icons/i-chiexitll10.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll10.bmp"/>
+          <SmallImage Name="i-chiexitll10"/>
+          <LargeImage Name="i-chiexitll10"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL11">
         <Macro>
           <Name>#11 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL10-12S")</Command>
-          <SmallImage Name="./icons/i-chiexitll11.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll11.bmp"/>
+          <SmallImage Name="i-chiexitll11"/>
+          <LargeImage Name="i-chiexitll11"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLL12">
         <Macro>
           <Name>#12 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLL10-12E")</Command>
-          <SmallImage Name="./icons/i-chiexitll12.bmp"/>
-          <LargeImage Name="./icons/i-chiexitll12.bmp"/>
+          <SmallImage Name="i-chiexitll12"/>
+          <LargeImage Name="i-chiexitll12"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB16">
         <Macro>
           <Name>#16 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB16-18FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlb16.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb16.bmp"/>
+          <SmallImage Name="i-chiexitlb16"/>
+          <LargeImage Name="i-chiexitlb16"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB17">
         <Macro>
           <Name>#17 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB16-18S")</Command>
-          <SmallImage Name="./icons/i-chiexitlb17.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb17.bmp"/>
+          <SmallImage Name="i-chiexitlb17"/>
+          <LargeImage Name="i-chiexitlb17"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB18">
         <Macro>
           <Name>#18 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB16-18E")</Command>
-          <SmallImage Name="./icons/i-chiexitlb18.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb18.bmp"/>
+          <SmallImage Name="i-chiexitlb18"/>
+          <LargeImage Name="i-chiexitlb18"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB19">
         <Macro>
           <Name>#19 Fire Escape</Name>
           <Command>^Popensurface^C^C(loadblockinfo "CHIEXLB19-21FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlb19.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb19.bmp"/>
+          <SmallImage Name="i-chiexitlb19"/>
+          <LargeImage Name="i-chiexitlb19"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB20">
         <Macro>
           <Name>#20 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB19-21S")</Command>
-          <SmallImage Name="./icons/i-chiexitlb20.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb20.bmp"/>
+          <SmallImage Name="i-chiexitlb20"/>
+          <LargeImage Name="i-chiexitlb20"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB21">
         <Macro>
           <Name>#21 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB19-21E")</Command>
-          <SmallImage Name="./icons/i-chiexitlb21.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb21.bmp"/>
+          <SmallImage Name="i-chiexitlb21"/>
+          <LargeImage Name="i-chiexitlb21"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB22">
         <Macro>
           <Name>#22 Fire Escape</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB22-24FE")</Command>
-          <SmallImage Name="./icons/i-chiexitlb22.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb22.bmp"/>
+          <SmallImage Name="i-chiexitlb22"/>
+          <LargeImage Name="i-chiexitlb22"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB23">
         <Macro>
           <Name>#23 Stair</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB22-24S")</Command>
-          <SmallImage Name="./icons/i-chiexitlb23.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb23.bmp"/>
+          <SmallImage Name="i-chiexitlb23"/>
+          <LargeImage Name="i-chiexitlb23"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ILExitLB24">
         <Macro>
           <Name>#24 Exit</Name>
           <Command>^P^C^C(loadblockinfo "CHIEXLB22-24E")</Command>
-          <SmallImage Name="./icons/i-chiexitlb24.bmp"/>
-          <LargeImage Name="./icons/i-chiexitlb24.bmp"/>
+          <SmallImage Name="i-chiexitlb24"/>
+          <LargeImage Name="i-chiexitlb24"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSimplex">
         <Macro>
           <Name>Simplex</Name>
           <Command>^P^C^C(loadblockinfo "EPSPLX")</Command>
-          <SmallImage Name="./icons/i-epsplx.bmp"/>
-          <LargeImage Name="./icons/i-epsplx.bmp"/>
+          <SmallImage Name="i-epsplx"/>
+          <LargeImage Name="i-epsplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERDuplex">
         <Macro>
           <Name>Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPDPLX")</Command>
-          <SmallImage Name="./icons/i-epdplx.bmp"/>
-          <LargeImage Name="./icons/i-epdplx.bmp"/>
+          <SmallImage Name="i-epdplx"/>
+          <LargeImage Name="i-epdplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERDblDuplex">
         <Macro>
           <Name>Double Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPDDPLX")</Command>
-          <SmallImage Name="./icons/i-epddplx.bmp"/>
-          <LargeImage Name="./icons/i-epddplx.bmp"/>
+          <SmallImage Name="i-epddplx"/>
+          <LargeImage Name="i-epddplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERCntrDuplex">
         <Macro>
           <Name>Counter Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPCDPLX")</Command>
-          <SmallImage Name="./icons/i-epcdplx.bmp"/>
-          <LargeImage Name="./icons/i-epcdplx.bmp"/>
+          <SmallImage Name="i-epcdplx"/>
+          <LargeImage Name="i-epcdplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSwitchDuplex">
         <Macro>
           <Name>Switched Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPSWDPLX")</Command>
-          <SmallImage Name="./icons/i-epswdplx.bmp"/>
-          <LargeImage Name="./icons/i-epswdplx.bmp"/>
+          <SmallImage Name="i-epswdplx"/>
+          <LargeImage Name="i-epswdplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERGFI">
         <Macro>
           <Name>GFI</Name>
           <Command>^P^C^C(loadblockinfo "EPGFI")</Command>
-          <SmallImage Name="./icons/i-epgfi.bmp"/>
-          <LargeImage Name="./icons/i-epgfi.bmp"/>
+          <SmallImage Name="i-epgfi"/>
+          <LargeImage Name="i-epgfi"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERCntrGFI">
         <Macro>
           <Name>Counter GFI</Name>
           <Command>^P^C^C(loadblockinfo "EPCGFI")</Command>
-          <SmallImage Name="./icons/i-epcgfi.bmp"/>
-          <LargeImage Name="./icons/i-epcgfi.bmp"/>
+          <SmallImage Name="i-epcgfi"/>
+          <LargeImage Name="i-epcgfi"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERQuadGFI">
         <Macro>
           <Name>Quad GFI</Name>
           <Command>^P^C^C(loadblockinfo "EPQGFI")</Command>
-          <SmallImage Name="./icons/i-epqgfi.bmp"/>
-          <LargeImage Name="./icons/i-epqgfi.bmp"/>
+          <SmallImage Name="i-epqgfi"/>
+          <LargeImage Name="i-epqgfi"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSafetyDuplex">
         <Macro>
           <Name>Safety Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPSFDPLX")</Command>
-          <SmallImage Name="./icons/i-epsfdplx.bmp"/>
-          <LargeImage Name="./icons/i-epsfdplx.bmp"/>
+          <SmallImage Name="i-epsfdplx"/>
+          <LargeImage Name="i-epsfdplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSafetyDblDup">
         <Macro>
           <Name>Safety Double Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPSFDDPLX")</Command>
-          <SmallImage Name="./icons/i-epsfddplx.bmp"/>
-          <LargeImage Name="./icons/i-epsfddplx.bmp"/>
+          <SmallImage Name="i-epsfddplx"/>
+          <LargeImage Name="i-epsfddplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERFlrMtdDuplex">
         <Macro>
           <Name>Flr Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPFLDPLX")</Command>
-          <SmallImage Name="./icons/i-epfldplx.bmp"/>
-          <LargeImage Name="./icons/i-epfldplx.bmp"/>
+          <SmallImage Name="i-epfldplx"/>
+          <LargeImage Name="i-epfldplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERFlrDblDuplex">
         <Macro>
           <Name>Flr D.Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPFDDPLX")</Command>
-          <SmallImage Name="./icons/i-epfddplx.bmp"/>
-          <LargeImage Name="./icons/i-epfddplx.bmp"/>
+          <SmallImage Name="i-epfddplx"/>
+          <LargeImage Name="i-epfddplx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSpecial">
         <Macro>
           <Name>Special</Name>
           <Command>^P^C^C(loadblockinfo "EPSPCL")</Command>
-          <SmallImage Name="./icons/i-special.bmp"/>
-          <LargeImage Name="./icons/i-special.bmp"/>
+          <SmallImage Name="i-special"/>
+          <LargeImage Name="i-special"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSpecialPurp">
         <Macro>
           <Name>Special Purpose</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L")</Command>
-          <SmallImage Name="./icons/i-epspecial.bmp"/>
-          <LargeImage Name="./icons/i-epspecial.bmp"/>
+          <SmallImage Name="i-epspecial"/>
+          <LargeImage Name="i-epspecial"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERCFTDDuplex">
         <Macro>
           <Name>Comb Flr TD/ Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPCFDTEL")</Command>
-          <SmallImage Name="./icons/i-epcfdtel.bmp"/>
-          <LargeImage Name="./icons/i-epcfdtel.bmp"/>
+          <SmallImage Name="i-epcfdtel"/>
+          <LargeImage Name="i-epcfdtel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERCFTDDbDuplex">
         <Macro>
           <Name>Comb Flr TD/ D.Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPCFDDTD")</Command>
-          <SmallImage Name="./icons/i-epcfddtd.bmp"/>
-          <LargeImage Name="./icons/i-epcfddtd.bmp"/>
+          <SmallImage Name="i-epcfddtd"/>
+          <LargeImage Name="i-epcfddtd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERCFDataDuplex">
         <Macro>
           <Name>Comb Flr Data/ Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPCFDD")</Command>
-          <SmallImage Name="./icons/i-epcfdd.bmp"/>
-          <LargeImage Name="./icons/i-epcfdd.bmp"/>
+          <SmallImage Name="i-epcfdd"/>
+          <LargeImage Name="i-epcfdd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERCFDataDbDuplex">
         <Macro>
           <Name>Comb Flr Data/ D.Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPCFDDD")</Command>
-          <SmallImage Name="./icons/i-epcfddd.bmp"/>
-          <LargeImage Name="./icons/i-epcfddd.bmp"/>
+          <SmallImage Name="i-epcfddd"/>
+          <LargeImage Name="i-epcfddd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERYagLaser">
         <Macro>
           <Name>Yag Laser</Name>
           <Command>^P^C^C(loadblockinfo "EPYAG")</Command>
-          <SmallImage Name="./icons/i-epyag.bmp"/>
-          <LargeImage Name="./icons/i-epyag.bmp"/>
+          <SmallImage Name="i-epyag"/>
+          <LargeImage Name="i-epyag"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERYagLaser2">
         <Macro>
           <Name>Yag Laser 2</Name>
           <Command>^P^C^C(loadblockinfo "EPYAG2")</Command>
-          <SmallImage Name="./icons/i-epyag2.bmp"/>
-          <LargeImage Name="./icons/i-epyag2.bmp"/>
+          <SmallImage Name="i-epyag2"/>
+          <LargeImage Name="i-epyag2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERYagLaser3">
         <Macro>
           <Name>Yag Laser 3</Name>
           <Command>^P^C^C(loadblockinfo "EPYAG3")</Command>
-          <SmallImage Name="./icons/i-epyag3.bmp"/>
-          <LargeImage Name="./icons/i-epyag3.bmp"/>
+          <SmallImage Name="i-epyag3"/>
+          <LargeImage Name="i-epyag3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERFlrYag">
         <Macro>
           <Name>Flr Yag Laser</Name>
           <Command>^P^C^C(loadblockinfo "EPFYAG")</Command>
-          <SmallImage Name="./icons/i-epfyag.bmp"/>
-          <LargeImage Name="./icons/i-epfyag.bmp"/>
+          <SmallImage Name="i-epfyag"/>
+          <LargeImage Name="i-epfyag"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERXray">
         <Macro>
           <Name>X-Ray</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-2")</Command>
-          <SmallImage Name="./icons/i-epxray.bmp"/>
-          <LargeImage Name="./icons/i-epxray.bmp"/>
+          <SmallImage Name="i-epxray"/>
+          <LargeImage Name="i-epxray"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERFilmViewer">
         <Macro>
           <Name>Film Viewer</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-3")</Command>
-          <SmallImage Name="./icons/i-epfilmv.bmp"/>
-          <LargeImage Name="./icons/i-epfilmv.bmp"/>
+          <SmallImage Name="i-epfilmv"/>
+          <LargeImage Name="i-epfilmv"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERDupOverDup">
         <Macro>
           <Name>Duplex over Duplex</Name>
           <Command>^P^C^C(loadblockinfo "EPDOD")</Command>
-          <SmallImage Name="./icons/i-epdod.bmp"/>
-          <LargeImage Name="./icons/i-epdod.bmp"/>
+          <SmallImage Name="i-epdod"/>
+          <LargeImage Name="i-epdod"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERMonitor">
         <Macro>
           <Name>Monitor</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2L-3")</Command>
-          <SmallImage Name="./icons/i-epmonitor.bmp"/>
-          <LargeImage Name="./icons/i-epmonitor.bmp"/>
+          <SmallImage Name="i-epmonitor"/>
+          <LargeImage Name="i-epmonitor"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERORModule">
         <Macro>
           <Name>OR Power Module</Name>
           <Command>^P^C^C(loadblockinfo "EPORPWR")</Command>
-          <SmallImage Name="./icons/i-eporpwr.bmp"/>
-          <LargeImage Name="./icons/i-eporpwr.bmp"/>
+          <SmallImage Name="i-eporpwr"/>
+          <LargeImage Name="i-eporpwr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERTimeClock">
         <Macro>
           <Name>Time Clock</Name>
           <Command>^P^C^C(loadblockinfo "EPCLK")</Command>
-          <SmallImage Name="./icons/i-epclk.bmp"/>
-          <LargeImage Name="./icons/i-epclk.bmp"/>
+          <SmallImage Name="i-epclk"/>
+          <LargeImage Name="i-epclk"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERWiremold1">
         <Macro>
           <Name>Wiremold (prewired)</Name>
           <Command>^P^C^C(c:wiremoldprewired)</Command>
-          <SmallImage Name="./icons/i-ewiremold1.bmp"/>
-          <LargeImage Name="./icons/i-ewiremold1.bmp"/>
+          <SmallImage Name="i-ewiremold1"/>
+          <LargeImage Name="i-ewiremold1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMMotor">
         <Macro>
           <Name>Motor</Name>
           <Command>^P^C^C(loadblockinfo "EPMOTOR")</Command>
-          <SmallImage Name="./icons/i-epmotor.bmp"/>
-          <LargeImage Name="./icons/i-epmotor.bmp"/>
+          <SmallImage Name="i-epmotor"/>
+          <LargeImage Name="i-epmotor"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMSafetySw">
         <Macro>
           <Name>Disconnect</Name>
           <Command>^P^C^C(loadblockinfo "EPMSS")</Command>
-          <SmallImage Name="./icons/i-epmss.bmp"/>
-          <LargeImage Name="./icons/i-epmss.bmp"/>
+          <SmallImage Name="i-epmss"/>
+          <LargeImage Name="i-epmss"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMFusedSSw">
         <Macro>
           <Name>Fused Disconnect</Name>
           <Command>^P^C^C(loadblockinfo "EPMFSS")</Command>
-          <SmallImage Name="./icons/i-epmfss.bmp"/>
-          <LargeImage Name="./icons/i-epmfss.bmp"/>
+          <SmallImage Name="i-epmfss"/>
+          <LargeImage Name="i-epmfss"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMCSSSw">
         <Macro>
           <Name>Comb Starter/ Safety Sw</Name>
           <Command>^P^C^C(loadblockinfo "EPMSTSS")</Command>
-          <SmallImage Name="./icons/i-epmstss.bmp"/>
-          <LargeImage Name="./icons/i-epmstss.bmp"/>
+          <SmallImage Name="i-epmstss"/>
+          <LargeImage Name="i-epmstss"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMMotorSw">
         <Macro>
           <Name>Motor w/ Non-fused Sw</Name>
           <Command>^P^C^C(loadblockinfo "EPMSW")</Command>
-          <SmallImage Name="./icons/i-epmsw.bmp"/>
-          <LargeImage Name="./icons/i-epmsw.bmp"/>
+          <SmallImage Name="i-epmsw"/>
+          <LargeImage Name="i-epmsw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMMotorFSw">
         <Macro>
           <Name>Motor w/ Fused Sw</Name>
           <Command>^P^C^C(loadblockinfo "EPMFSW")</Command>
-          <SmallImage Name="./icons/i-epmfsw.bmp"/>
-          <LargeImage Name="./icons/i-epmfsw.bmp"/>
+          <SmallImage Name="i-epmfsw"/>
+          <LargeImage Name="i-epmfsw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMMotorStSw">
         <Macro>
           <Name>Motor w/ Starter Sw</Name>
           <Command>^P^C^C(loadblockinfo "EPMSTSW")</Command>
-          <SmallImage Name="./icons/i-epmstsw.bmp"/>
-          <LargeImage Name="./icons/i-epmstsw.bmp"/>
+          <SmallImage Name="i-epmstsw"/>
+          <LargeImage Name="i-epmstsw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMMotorTherm">
         <Macro>
           <Name>Motor w/ Thermal Sw</Name>
           <Command>^P^C^C(loadblockinfo "EPMTSW")</Command>
-          <SmallImage Name="./icons/i-epmtsw.bmp"/>
-          <LargeImage Name="./icons/i-epmtsw.bmp"/>
+          <SmallImage Name="i-epmtsw"/>
+          <LargeImage Name="i-epmtsw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EPMThermSw">
         <Macro>
           <Name>Thermal Sw</Name>
           <Command>^P^C^C(loadblockinfo "PSWPLAIN13")</Command>
-          <SmallImage Name="./icons/i-switchm.bmp"/>
-          <LargeImage Name="./icons/i-switchm.bmp"/>
+          <SmallImage Name="i-switchm"/>
+          <LargeImage Name="i-switchm"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EOpenPanel">
         <Macro>
           <Name>Open Surface</Name>
           <Command>^P^C^C(panelcommand "eopanel")</Command>
-          <SmallImage Name="./icons/i-eopanel.bmp"/>
-          <LargeImage Name="./icons/i-eopanel.bmp"/>
+          <SmallImage Name="i-eopanel"/>
+          <LargeImage Name="i-eopanel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERecessedOPanel">
         <Macro>
           <Name>Recessed Open Panel</Name>
           <Command>^P^C^C(panelcommand "eropanel")</Command>
-          <SmallImage Name="./icons/i-eropanel.bmp"/>
-          <LargeImage Name="./icons/i-eropanel.bmp"/>
+          <SmallImage Name="i-eropanel"/>
+          <LargeImage Name="i-eropanel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESingleTub">
         <Macro>
           <Name>Surface Single Tub Panel</Name>
           <Command>^P^C^C(panelcommand "espanel")</Command>
-          <SmallImage Name="./icons/i-espanel.bmp"/>
-          <LargeImage Name="./icons/i-espanel.bmp"/>
+          <SmallImage Name="i-espanel"/>
+          <LargeImage Name="i-espanel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ERSingleTub">
         <Macro>
           <Name>Recessed Single Tub Panel</Name>
           <Command>^P^C^C(panelcommand "erspanel")</Command>
-          <SmallImage Name="./icons/i-erspanel.bmp"/>
-          <LargeImage Name="./icons/i-erspanel.bmp"/>
+          <SmallImage Name="i-erspanel"/>
+          <LargeImage Name="i-erspanel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDistPanel">
         <Macro>
           <Name>Distribution Panel</Name>
           <Command>^P^C^C(panelcommand "erspanel")</Command>
-          <SmallImage Name="./icons/i-edpanel.bmp"/>
-          <LargeImage Name="./icons/i-edpanel.bmp"/>
+          <SmallImage Name="i-edpanel"/>
+          <LargeImage Name="i-edpanel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETrans1">
         <Macro>
           <Name>3x2</Name>
           <Command>^P^C^C(transformers "exfmr" 36 24)</Command>
-          <SmallImage Name="./icons/i-et1.bmp"/>
-          <LargeImage Name="./icons/i-et1.bmp"/>
+          <SmallImage Name="i-et1"/>
+          <LargeImage Name="i-et1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETrans2">
         <Macro>
           <Name>Custom</Name>
           <Command>^P^C^C(c:customtransformer)</Command>
-          <SmallImage Name="./icons/i-et2.bmp"/>
-          <LargeImage Name="./icons/i-et2.bmp"/>
+          <SmallImage Name="i-et2"/>
+          <LargeImage Name="i-et2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWHomeRun">
         <Macro>
           <Name>Homerun</Name>
           <Command>^P^C^C(c:homerun)</Command>
-          <SmallImage Name="./icons/i-ehomern.bmp"/>
-          <LargeImage Name="./icons/i-ehomern.bmp"/>
+          <SmallImage Name="i-ehomern"/>
+          <LargeImage Name="i-ehomern"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWHomeRun3">
         <Macro>
           <Name>Homerun 3 Wires</Name>
           <Command>^P^C^C(homerunwires 3)</Command>
-          <SmallImage Name="./icons/i-ehomern3.bmp"/>
-          <LargeImage Name="./icons/i-ehomern3.bmp"/>
+          <SmallImage Name="i-ehomern3"/>
+          <LargeImage Name="i-ehomern3"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWHomeRun4">
         <Macro>
           <Name>Homerun 4 Wires</Name>
           <Command>^P^C^C(homerunwires 4)</Command>
-          <SmallImage Name="./icons/i-ehomern4.bmp"/>
-          <LargeImage Name="./icons/i-ehomern4.bmp"/>
+          <SmallImage Name="i-ehomern4"/>
+          <LargeImage Name="i-ehomern4"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWHomeRunX">
         <Macro>
           <Name>Homerun ? Wires</Name>
           <Command>^P^C^C(c:homerunqwires)</Command>
-          <SmallImage Name="./icons/i-ehomernx.bmp"/>
-          <LargeImage Name="./icons/i-ehomernx.bmp"/>
+          <SmallImage Name="i-ehomernx"/>
+          <LargeImage Name="i-ehomernx"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWWireLine">
         <Macro>
           <Name>Wire Line</Name>
           <Command>^P^C^C(loadblockinfo "WIRELINE")</Command>
-          <SmallImage Name="./icons/i-ewwire.bmp"/>
-          <LargeImage Name="./icons/i-ewwire.bmp"/>
+          <SmallImage Name="i-ewwire"/>
+          <LargeImage Name="i-ewwire"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWCap">
         <Macro>
           <Name>Cap</Name>
           <Command>^P^C^C(c:cap)</Command>
-          <SmallImage Name="./icons/i-ewcap.bmp"/>
-          <LargeImage Name="./icons/i-ewcap.bmp"/>
+          <SmallImage Name="i-ewcap"/>
+          <LargeImage Name="i-ewcap"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWConduitUp">
         <Macro>
           <Name>Conduit Up</Name>
           <Command>^P^C^C(nearend "econdup")</Command>
-          <SmallImage Name="./icons/i-gcir.bmp"/>
-          <LargeImage Name="./icons/i-gcir.bmp"/>
+          <SmallImage Name="i-gcir"/>
+          <LargeImage Name="i-gcir"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWConduitDn">
         <Macro>
           <Name>Conduit Down</Name>
           <Command>^P^C^C(nearend "econddn")</Command>
-          <SmallImage Name="./icons/i-eilifesafe.bmp"/>
-          <LargeImage Name="./icons/i-eilifesafe.bmp"/>
+          <SmallImage Name="i-eilifesafe"/>
+          <LargeImage Name="i-eilifesafe"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWJuncBoxRnd">
         <Macro>
           <Name>Junction Box Round</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2")</Command>
-          <SmallImage Name="./icons/i-ewjb.bmp"/>
-          <LargeImage Name="./icons/i-ewjb.bmp"/>
+          <SmallImage Name="i-ewjb"/>
+          <LargeImage Name="i-ewjb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWJuncBoxRndFlx">
         <Macro>
           <Name>Junction Box Round w/ Flex Conduit</Name>
           <Command>^P^C^C(progn (loadblockinfo "ECIR2") (loadblockinfo "EWFCOND"))</Command>
-          <SmallImage Name="./icons/i-ewjbflex.bmp"/>
-          <LargeImage Name="./icons/i-ewjbflex.bmp"/>
+          <SmallImage Name="i-ewjbflex"/>
+          <LargeImage Name="i-ewjbflex"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWFlexConduit">
         <Macro>
           <Name>Flex Conduit</Name>
           <Command>^P^C^C(loadblockinfo "EWFCOND2")</Command>
-          <SmallImage Name="./icons/i-ewflexcond.bmp"/>
-          <LargeImage Name="./icons/i-ewflexcond.bmp"/>
+          <SmallImage Name="i-ewflexcond"/>
+          <LargeImage Name="i-ewflexcond"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWJuncBoxRndWall">
         <Macro>
           <Name>Junction Box Round Wall</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L2")</Command>
-          <SmallImage Name="./icons/i-epjboxl.bmp"/>
-          <LargeImage Name="./icons/i-epjboxl.bmp"/>
+          <SmallImage Name="i-epjboxl"/>
+          <LargeImage Name="i-epjboxl"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EWJuncBoxSqr">
         <Macro>
           <Name>Junction Box Square</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-7")</Command>
-          <SmallImage Name="./icons/i-epjboxsqr.bmp"/>
-          <LargeImage Name="./icons/i-epjboxsqr.bmp"/>
+          <SmallImage Name="i-epjboxsqr"/>
+          <LargeImage Name="i-epjboxsqr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndSpeaker">
         <Macro>
           <Name>Speaker</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2-2")</Command>
-          <SmallImage Name="./icons/i-essspkr.bmp"/>
-          <LargeImage Name="./icons/i-essspkr.bmp"/>
+          <SmallImage Name="i-essspkr"/>
+          <LargeImage Name="i-essspkr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndWSpeaker">
         <Macro>
           <Name>Wall Mtd Speaker</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-4")</Command>
-          <SmallImage Name="./icons/i-esswspkr.bmp"/>
-          <LargeImage Name="./icons/i-esswspkr.bmp"/>
+          <SmallImage Name="i-esswspkr"/>
+          <LargeImage Name="i-esswspkr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndMicroJack">
         <Macro>
           <Name>Microphone Jack</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-5")</Command>
-          <SmallImage Name="./icons/i-essmicro.bmp"/>
-          <LargeImage Name="./icons/i-essmicro.bmp"/>
+          <SmallImage Name="i-essmicro"/>
+          <LargeImage Name="i-essmicro"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndFMicroJack">
         <Macro>
           <Name>Flr Mtd Mic Jack</Name>
           <Command>^P^C^C(loadblockinfo "ESSFMMJ")</Command>
-          <SmallImage Name="./icons/i-essfmicro.bmp"/>
-          <LargeImage Name="./icons/i-essfmicro.bmp"/>
+          <SmallImage Name="i-essfmicro"/>
+          <LargeImage Name="i-essfmicro"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndVolCtrl">
         <Macro>
           <Name>Volume Control</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-6")</Command>
-          <SmallImage Name="./icons/i-essvolctrl.bmp"/>
-          <LargeImage Name="./icons/i-essvolctrl.bmp"/>
+          <SmallImage Name="i-essvolctrl"/>
+          <LargeImage Name="i-essvolctrl"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndAmp">
         <Macro>
           <Name>Amplifier</Name>
           <Command>^P^C^C(loadblockinfo "ERECT2")</Command>
-          <SmallImage Name="./icons/i-essamp.bmp"/>
-          <LargeImage Name="./icons/i-essamp.bmp"/>
+          <SmallImage Name="i-essamp"/>
+          <LargeImage Name="i-essamp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndSoundSys">
         <Macro>
           <Name>Sound System Junction Box</Name>
           <Command>^P^C^C(loadblockinfo "ERECT2-2")</Command>
-          <SmallImage Name="./icons/i-esssjb.bmp"/>
-          <LargeImage Name="./icons/i-esssjb.bmp"/>
+          <SmallImage Name="i-esssjb"/>
+          <LargeImage Name="i-esssjb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndTrumpet">
         <Macro>
           <Name>Trumpet Speaker</Name>
           <Command>^P^C^C(loadblockinfo "EDTRI1-2")</Command>
-          <SmallImage Name="./icons/i-esstrump.bmp"/>
-          <LargeImage Name="./icons/i-esstrump.bmp"/>
+          <SmallImage Name="i-esstrump"/>
+          <LargeImage Name="i-esstrump"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndMasterInt">
         <Macro>
           <Name>Master Intercom</Name>
           <Command>^P^C^C(loadblockinfo "ESSMINT")</Command>
-          <SmallImage Name="./icons/i-essmint.bmp"/>
-          <LargeImage Name="./icons/i-essmint.bmp"/>
+          <SmallImage Name="i-essmint"/>
+          <LargeImage Name="i-essmint"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndSlaveInt">
         <Macro>
           <Name>Slave Intercom</Name>
           <Command>^P^C^C(loadblockinfo "ESSSINT")</Command>
-          <SmallImage Name="./icons/i-esssint.bmp"/>
-          <LargeImage Name="./icons/i-esssint.bmp"/>
+          <SmallImage Name="i-esssint"/>
+          <LargeImage Name="i-esssint"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESndIntercom">
         <Macro>
           <Name>Intercom</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-8")</Command>
-          <SmallImage Name="./icons/i-essint.bmp"/>
-          <LargeImage Name="./icons/i-essint.bmp"/>
+          <SmallImage Name="i-essint"/>
+          <LargeImage Name="i-essint"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETTelephone">
         <Macro>
           <Name>Telephone</Name>
           <Command>^P^C^C(loadblockinfo "ETTEL")</Command>
-          <SmallImage Name="./icons/i-ettel.bmp"/>
-          <LargeImage Name="./icons/i-ettel.bmp"/>
+          <SmallImage Name="i-ettel"/>
+          <LargeImage Name="i-ettel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETTelWall">
         <Macro>
           <Name>Tele 54" AFF</Name>
           <Command>^P^C^C(loadblockinfo "ETTEL-W")</Command>
-          <SmallImage Name="./icons/i-ettelw.bmp"/>
-          <LargeImage Name="./icons/i-ettelw.bmp"/>
+          <SmallImage Name="i-ettelw"/>
+          <LargeImage Name="i-ettelw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETPayphone">
         <Macro>
           <Name>Pay-Phone</Name>
           <Command>^P^C^C(loadblockinfo "ETTEL-P")</Command>
-          <SmallImage Name="./icons/i-etpayphone.bmp"/>
-          <LargeImage Name="./icons/i-etpayphone.bmp"/>
+          <SmallImage Name="i-etpayphone"/>
+          <LargeImage Name="i-etpayphone"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETFTelephone">
         <Macro>
           <Name>Flr Mtd Tele</Name>
           <Command>^P^C^C(loadblockinfo "ETFTEL")</Command>
-          <SmallImage Name="./icons/i-etftel.bmp"/>
-          <LargeImage Name="./icons/i-etftel.bmp"/>
+          <SmallImage Name="i-etftel"/>
+          <LargeImage Name="i-etftel"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETData">
         <Macro>
           <Name>Data</Name>
           <Command>^P^C^C(loadblockinfo "ETDATA")</Command>
-          <SmallImage Name="./icons/i-etdata.bmp"/>
-          <LargeImage Name="./icons/i-etdata.bmp"/>
+          <SmallImage Name="i-etdata"/>
+          <LargeImage Name="i-etdata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETFData">
         <Macro>
           <Name>Flr Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "ETFDATA")</Command>
-          <SmallImage Name="./icons/i-etfdata.bmp"/>
-          <LargeImage Name="./icons/i-etfdata.bmp"/>
+          <SmallImage Name="i-etfdata"/>
+          <LargeImage Name="i-etfdata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETTeleData">
         <Macro>
           <Name>Tel/ Data</Name>
           <Command>^P^C^C(loadblockinfo "ETTD")</Command>
-          <SmallImage Name="./icons/i-ettd.bmp"/>
-          <LargeImage Name="./icons/i-ettd.bmp"/>
+          <SmallImage Name="i-ettd"/>
+          <LargeImage Name="i-ettd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETFTeleData">
         <Macro>
           <Name>Flr Mtd Tel/ Data</Name>
           <Command>^P^C^C(loadblockinfo "ETFTD")</Command>
-          <SmallImage Name="./icons/i-etftd.bmp"/>
-          <LargeImage Name="./icons/i-etftd.bmp"/>
+          <SmallImage Name="i-etftd"/>
+          <LargeImage Name="i-etftd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETDualTele">
         <Macro>
           <Name>Dual Tele</Name>
           <Command>^P^C^C(loadblockinfo "ETTDUAL")</Command>
-          <SmallImage Name="./icons/i-etdual.bmp"/>
-          <LargeImage Name="./icons/i-etdual.bmp"/>
+          <SmallImage Name="i-etdual"/>
+          <LargeImage Name="i-etdual"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETPrivTele">
         <Macro>
           <Name>Private Tele</Name>
           <Command>^P^C^C(loadblockinfo "ETTPRIV")</Command>
-          <SmallImage Name="./icons/i-etpriv.bmp"/>
-          <LargeImage Name="./icons/i-etpriv.bmp"/>
+          <SmallImage Name="i-etpriv"/>
+          <LargeImage Name="i-etpriv"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETTeleAttrib">
         <Macro>
           <Name>Telephone ?</Name>
           <Command>^P^C^C(loadblockinfo "ETTEL-?")</Command>
-          <SmallImage Name="./icons/i-ettelea.bmp"/>
-          <LargeImage Name="./icons/i-ettelea.bmp"/>
+          <SmallImage Name="i-ettelea"/>
+          <LargeImage Name="i-ettelea"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETDataAttrib">
         <Macro>
           <Name>Data ?</Name>
           <Command>^P^C^C(loadblockinfo "ETDATA-?")</Command>
-          <SmallImage Name="./icons/i-etdataa.bmp"/>
-          <LargeImage Name="./icons/i-etdataa.bmp"/>
+          <SmallImage Name="i-etdataa"/>
+          <LargeImage Name="i-etdataa"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ETTeleDataAttrib">
         <Macro>
           <Name>Tel/ Data ?</Name>
           <Command>^P^C^C(loadblockinfo "ETTD-?")</Command>
-          <SmallImage Name="./icons/i-ettda.bmp"/>
-          <LargeImage Name="./icons/i-ettda.bmp"/>
+          <SmallImage Name="i-ettda"/>
+          <LargeImage Name="i-ettda"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFPullStation">
         <Macro>
           <Name>Pull Station</Name>
           <Command>^P^C^C(loadblockinfo "ESQR2-9")</Command>
-          <SmallImage Name="./icons/i-efpulls.bmp"/>
-          <LargeImage Name="./icons/i-efpulls.bmp"/>
+          <SmallImage Name="i-efpulls"/>
+          <LargeImage Name="i-efpulls"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFAVAlarm">
         <Macro>
           <Name>A/V Alarm</Name>
           <Command>^P^C^C(loadblockinfo "EFAVA")</Command>
-          <SmallImage Name="./icons/i-efava.bmp"/>
-          <LargeImage Name="./icons/i-efava.bmp"/>
+          <SmallImage Name="i-efava"/>
+          <LargeImage Name="i-efava"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFADAAlarm">
         <Macro>
           <Name>ADA A/V Alarm</Name>
           <Command>^P^C^C(loadblockinfo "EFADAVA")</Command>
-          <SmallImage Name="./icons/i-efadava.bmp"/>
-          <LargeImage Name="./icons/i-efadava.bmp"/>
+          <SmallImage Name="i-efadava"/>
+          <LargeImage Name="i-efadava"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFPullAV">
         <Macro>
           <Name>Pull + A/V</Name>
           <Command>^P^C^C(loadblockinfo "EFAVAPS")</Command>
-          <SmallImage Name="./icons/i-efavaps.bmp"/>
-          <LargeImage Name="./icons/i-efavaps.bmp"/>
+          <SmallImage Name="i-efavaps"/>
+          <LargeImage Name="i-efavaps"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFHorn">
         <Macro>
           <Name>Horn</Name>
           <Command>^P^C^C(loadblockinfo "EFHORN")</Command>
-          <SmallImage Name="./icons/i-efhorn.bmp"/>
-          <LargeImage Name="./icons/i-efhorn.bmp"/>
+          <SmallImage Name="i-efhorn"/>
+          <LargeImage Name="i-efhorn"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFSmokeDet">
         <Macro>
           <Name>Smoke Detector</Name>
           <Command>^P^C^C(loadblockinfo "SMOKE")</Command>
-          <SmallImage Name="./icons/i-efsmoked.bmp"/>
-          <LargeImage Name="./icons/i-efsmoked.bmp"/>
+          <SmallImage Name="i-efsmoked"/>
+          <LargeImage Name="i-efsmoked"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFHeatDet">
         <Macro>
           <Name>Heat Detector</Name>
           <Command>^P^C^C(loadblockinfo "HEAT")</Command>
-          <SmallImage Name="./icons/i-efheatd.bmp"/>
-          <LargeImage Name="./icons/i-efheatd.bmp"/>
+          <SmallImage Name="i-efheatd"/>
+          <LargeImage Name="i-efheatd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFlowSwitch">
         <Macro>
           <Name>Flow Switch</Name>
           <Command>^P^C^C(loadblockinfo "FLOWSWITCH")</Command>
-          <SmallImage Name="./icons/i-efflows.bmp"/>
-          <LargeImage Name="./icons/i-efflows.bmp"/>
+          <SmallImage Name="i-efflows"/>
+          <LargeImage Name="i-efflows"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFTamperSwitch">
         <Macro>
           <Name>Tamper Switch</Name>
           <Command>^P^C^C(loadblockinfo "TSWITCH")</Command>
-          <SmallImage Name="./icons/i-eftampers.bmp"/>
-          <LargeImage Name="./icons/i-eftampers.bmp"/>
+          <SmallImage Name="i-eftampers"/>
+          <LargeImage Name="i-eftampers"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFDoorHolder">
         <Macro>
           <Name>Door Holder</Name>
           <Command>^P^C^C(loadblockinfo "DOOR")</Command>
-          <SmallImage Name="./icons/i-efdoorh.bmp"/>
-          <LargeImage Name="./icons/i-efdoorh.bmp"/>
+          <SmallImage Name="i-efdoorh"/>
+          <LargeImage Name="i-efdoorh"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireMaster">
         <Macro>
           <Name>Fire Alarm Master</Name>
           <Command>^P^C^C(loadblockinfo "EFMASTER")</Command>
-          <SmallImage Name="./icons/i-efmaster.bmp"/>
-          <LargeImage Name="./icons/i-efmaster.bmp"/>
+          <SmallImage Name="i-efmaster"/>
+          <LargeImage Name="i-efmaster"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFDuctMtdSmokeDet">
         <Macro>
           <Name>Duct Mtd Smoke Detector</Name>
           <Command>^P^C^C(loadblockinfo "EFDMSD")</Command>
-          <SmallImage Name="./icons/i-efdmsd.bmp"/>
-          <LargeImage Name="./icons/i-efdmsd.bmp"/>
+          <SmallImage Name="i-efdmsd"/>
+          <LargeImage Name="i-efdmsd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFRemIndDuctMtd">
         <Macro>
           <Name>Remote Indicator for Duct Mtd</Name>
           <Command>^P^C^C(loadblockinfo "EFRIDMSD")</Command>
-          <SmallImage Name="./icons/i-efridmsd.bmp"/>
-          <LargeImage Name="./icons/i-efridmsd.bmp"/>
+          <SmallImage Name="i-efridmsd"/>
+          <LargeImage Name="i-efridmsd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFRemoteInd">
         <Macro>
           <Name>Remote Indicator</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-7")</Command>
-          <SmallImage Name="./icons/i-efremote.bmp"/>
-          <LargeImage Name="./icons/i-efremote.bmp"/>
+          <SmallImage Name="i-efremote"/>
+          <LargeImage Name="i-efremote"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFPatRmInd">
         <Macro>
           <Name>Patient Room Indicator</Name>
           <Command>^P^C^C(loadblockinfo "ECIR2L-F")</Command>
-          <SmallImage Name="./icons/i-efpatind.bmp"/>
-          <LargeImage Name="./icons/i-efpatind.bmp"/>
+          <SmallImage Name="i-efpatind"/>
+          <LargeImage Name="i-efpatind"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireJack">
         <Macro>
           <Name>Fire Fighter Phone</Name>
           <Command>^P^C^C(loadblockinfo "FFFONE")</Command>
-          <SmallImage Name="./icons/i-effjack.bmp"/>
-          <LargeImage Name="./icons/i-effjack.bmp"/>
+          <SmallImage Name="i-effjack"/>
+          <LargeImage Name="i-effjack"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireContCtr">
         <Macro>
           <Name>Fire Control Center</Name>
           <Command>^P^C^C(loadblockinfo "FCC")</Command>
-          <SmallImage Name="./icons/i-effcc.bmp"/>
-          <LargeImage Name="./icons/i-effcc.bmp"/>
+          <SmallImage Name="i-effcc"/>
+          <LargeImage Name="i-effcc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireTermCab">
         <Macro>
           <Name>FA Termination Cabinet</Name>
           <Command>^P^C^C(loadblockinfo "FATC")</Command>
-          <SmallImage Name="./icons/i-effatc.bmp"/>
-          <LargeImage Name="./icons/i-effatc.bmp"/>
+          <SmallImage Name="i-effatc"/>
+          <LargeImage Name="i-effatc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireTermPan">
         <Macro>
           <Name>FA Termination Panel</Name>
           <Command>^P^C^C(loadblockinfo "FATP")</Command>
-          <SmallImage Name="./icons/i-effatp.bmp"/>
-          <LargeImage Name="./icons/i-effatp.bmp"/>
+          <SmallImage Name="i-effatp"/>
+          <LargeImage Name="i-effatp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireContPan">
         <Macro>
           <Name>FA Control Panel</Name>
           <Command>^P^C^C(loadblockinfo "FACP")</Command>
-          <SmallImage Name="./icons/i-effacp.bmp"/>
-          <LargeImage Name="./icons/i-effacp.bmp"/>
+          <SmallImage Name="i-effacp"/>
+          <LargeImage Name="i-effacp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFFireAnnun">
         <Macro>
           <Name>FA Annunciator</Name>
           <Command>^P^C^C(loadblockinfo "FAA")</Command>
-          <SmallImage Name="./icons/i-effaa.bmp"/>
-          <LargeImage Name="./icons/i-effaa.bmp"/>
+          <SmallImage Name="i-effaa"/>
+          <LargeImage Name="i-effaa"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFContModule">
         <Macro>
           <Name>Control Module</Name>
           <Command>^P^C^C(loadblockinfo "CM")</Command>
-          <SmallImage Name="./icons/i-efcontmod.bmp"/>
-          <LargeImage Name="./icons/i-efcontmod.bmp"/>
+          <SmallImage Name="i-efcontmod"/>
+          <LargeImage Name="i-efcontmod"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFMonitorModule">
         <Macro>
           <Name>Monitor Module</Name>
           <Command>^P^C^C(loadblockinfo "MM")</Command>
-          <SmallImage Name="./icons/i-efmonmod.bmp"/>
-          <LargeImage Name="./icons/i-efmonmod.bmp"/>
+          <SmallImage Name="i-efmonmod"/>
+          <LargeImage Name="i-efmonmod"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFExtFABeacon">
         <Macro>
           <Name>External FA Beacon</Name>
           <Command>^P^C^C(loadblockinfo "EFAB")</Command>
-          <SmallImage Name="./icons/i-efefab.bmp"/>
-          <LargeImage Name="./icons/i-efefab.bmp"/>
+          <SmallImage Name="i-efefab"/>
+          <LargeImage Name="i-efefab"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFBeamTransmit">
         <Macro>
           <Name>Beam Smoke Transmit</Name>
           <Command>^P^C^C(loadblockinfo "EFBST")</Command>
-          <SmallImage Name="./icons/i-efbst.bmp"/>
-          <LargeImage Name="./icons/i-efbst.bmp"/>
+          <SmallImage Name="i-efbst"/>
+          <LargeImage Name="i-efbst"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EFBeamReceive">
         <Macro>
           <Name>Beam Smoke Receive</Name>
           <Command>^P^C^C(loadblockinfo "EFBSR")</Command>
-          <SmallImage Name="./icons/i-efbsr.bmp"/>
-          <LargeImage Name="./icons/i-efbsr.bmp"/>
+          <SmallImage Name="i-efbsr"/>
+          <LargeImage Name="i-efbsr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecCardRead">
         <Macro>
           <Name>Card Reader</Name>
           <Command>^P^C^C(loadblockinfo "CARDR")</Command>
-          <SmallImage Name="./icons/i-escardr.bmp"/>
-          <LargeImage Name="./icons/i-escardr.bmp"/>
+          <SmallImage Name="i-escardr"/>
+          <LargeImage Name="i-escardr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecDoorSw">
         <Macro>
           <Name>Door Switch</Name>
           <Command>^P^C^C(loadblockinfo "DOORS")</Command>
-          <SmallImage Name="./icons/i-esdoorsw.bmp"/>
-          <LargeImage Name="./icons/i-esdoorsw.bmp"/>
+          <SmallImage Name="i-esdoorsw"/>
+          <LargeImage Name="i-esdoorsw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecMagLock">
         <Macro>
           <Name>Magnetic Lock</Name>
           <Command>^P^C^C(loadblockinfo "MAGL")</Command>
-          <SmallImage Name="./icons/i-esmaglock.bmp"/>
-          <LargeImage Name="./icons/i-esmaglock.bmp"/>
+          <SmallImage Name="i-esmaglock"/>
+          <LargeImage Name="i-esmaglock"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecPwrSupply">
         <Macro>
           <Name>Power Supply</Name>
           <Command>^P^C^C(loadblockinfo "POWERS")</Command>
-          <SmallImage Name="./icons/i-espwrsup.bmp"/>
-          <LargeImage Name="./icons/i-espwrsup.bmp"/>
+          <SmallImage Name="i-espwrsup"/>
+          <LargeImage Name="i-espwrsup"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecElecLock">
         <Macro>
           <Name>Electric Lock</Name>
           <Command>^P^C^C(loadblockinfo "ELECL")</Command>
-          <SmallImage Name="./icons/i-eselock.bmp"/>
-          <LargeImage Name="./icons/i-eselock.bmp"/>
+          <SmallImage Name="i-eselock"/>
+          <LargeImage Name="i-eselock"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecCamera">
         <Macro>
           <Name>Camera</Name>
           <Command>^P^C^C(loadblockinfo "ESSCAM")</Command>
-          <SmallImage Name="./icons/i-esscam.bmp"/>
-          <LargeImage Name="./icons/i-esscam.bmp"/>
+          <SmallImage Name="i-esscam"/>
+          <LargeImage Name="i-esscam"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecKeypad">
         <Macro>
           <Name>Keypad</Name>
           <Command>^P^C^C(loadblockinfo "KEYPAD")</Command>
-          <SmallImage Name="./icons/i-eskeypad.bmp"/>
-          <LargeImage Name="./icons/i-eskeypad.bmp"/>
+          <SmallImage Name="i-eskeypad"/>
+          <LargeImage Name="i-eskeypad"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecBell">
         <Macro>
           <Name>Bell</Name>
           <Command>^P^C^C(loadblockinfo "BELL")</Command>
-          <SmallImage Name="./icons/i-esbell.bmp"/>
-          <LargeImage Name="./icons/i-esbell.bmp"/>
+          <SmallImage Name="i-esbell"/>
+          <LargeImage Name="i-esbell"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecMotion">
         <Macro>
           <Name>Motion Sensor</Name>
           <Command>^P^C^C(loadblockinfo "MOTION")</Command>
-          <SmallImage Name="./icons/i-esmotion.bmp"/>
-          <LargeImage Name="./icons/i-esmotion.bmp"/>
+          <SmallImage Name="i-esmotion"/>
+          <LargeImage Name="i-esmotion"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecReqExit">
         <Macro>
           <Name>Request to Exit</Name>
           <Command>^P^C^C(loadblockinfo "RTE")</Command>
-          <SmallImage Name="./icons/i-esreq2exit.bmp"/>
-          <LargeImage Name="./icons/i-esreq2exit.bmp"/>
+          <SmallImage Name="i-esreq2exit"/>
+          <LargeImage Name="i-esreq2exit"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecElecPivot">
         <Macro>
           <Name>Electric Pivot</Name>
           <Command>^P^C^C(loadblockinfo "EPIVOT")</Command>
-          <SmallImage Name="./icons/i-esepivot.bmp"/>
-          <LargeImage Name="./icons/i-esepivot.bmp"/>
+          <SmallImage Name="i-esepivot"/>
+          <LargeImage Name="i-esepivot"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecElecPwrXfer">
         <Macro>
           <Name>Electric Power Transfer</Name>
           <Command>^P^C^C(loadblockinfo "EPT")</Command>
-          <SmallImage Name="./icons/i-esepwrxfr.bmp"/>
-          <LargeImage Name="./icons/i-esepwrxfr.bmp"/>
+          <SmallImage Name="i-esepwrxfr"/>
+          <LargeImage Name="i-esepwrxfr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecElecXDev">
         <Macro>
           <Name>Electric Ext Device</Name>
           <Command>^P^C^C(loadblockinfo "EED")</Command>
-          <SmallImage Name="./icons/i-esexdev.bmp"/>
-          <LargeImage Name="./icons/i-esexdev.bmp"/>
+          <SmallImage Name="i-esexdev"/>
+          <LargeImage Name="i-esexdev"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecCheckSet">
         <Macro>
           <Name>Check Set</Name>
           <Command>^P^C^C(loadblockinfo "CHECKS")</Command>
-          <SmallImage Name="./icons/i-eschkset.bmp"/>
-          <LargeImage Name="./icons/i-eschkset.bmp"/>
+          <SmallImage Name="i-eschkset"/>
+          <LargeImage Name="i-eschkset"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ESecDoorStrike">
         <Macro>
           <Name>Door Strike</Name>
           <Command>^P^C^C(loadblockinfo "DOORSTRIKE")</Command>
-          <SmallImage Name="./icons/i-efdoorh.bmp"/>
-          <LargeImage Name="./icons/i-efdoorh.bmp"/>
+          <SmallImage Name="i-efdoorh"/>
+          <LargeImage Name="i-efdoorh"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimEntry">
         <Macro>
           <Name>Entry Station</Name>
           <Command>^P^C^C(loadblockinfo "ENTRYS")</Command>
-          <SmallImage Name="./icons/i-esdes.bmp"/>
-          <LargeImage Name="./icons/i-esdes.bmp"/>
+          <SmallImage Name="i-esdes"/>
+          <LargeImage Name="i-esdes"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimMaster">
         <Macro>
           <Name>Master Station</Name>
           <Command>^P^C^C(loadblockinfo "MASTERS")</Command>
-          <SmallImage Name="./icons/i-esdms.bmp"/>
-          <LargeImage Name="./icons/i-esdms.bmp"/>
+          <SmallImage Name="i-esdms"/>
+          <LargeImage Name="i-esdms"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimRemoteMaster">
         <Macro>
           <Name>Remote Master Station</Name>
           <Command>^P^C^C(loadblockinfo "RMS")</Command>
-          <SmallImage Name="./icons/i-esdrms.bmp"/>
-          <LargeImage Name="./icons/i-esdrms.bmp"/>
+          <SmallImage Name="i-esdrms"/>
+          <LargeImage Name="i-esdrms"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimProgramJack">
         <Macro>
           <Name>Programming Jack</Name>
           <Command>^P^C^C(loadblockinfo "PROGJACK")</Command>
-          <SmallImage Name="./icons/i-esdpj.bmp"/>
-          <LargeImage Name="./icons/i-esdpj.bmp"/>
+          <SmallImage Name="i-esdpj"/>
+          <LargeImage Name="i-esdpj"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimRemoteOver">
         <Macro>
           <Name>Remote Override Station</Name>
           <Command>^P^C^C(loadblockinfo "ROS")</Command>
-          <SmallImage Name="./icons/i-esdros.bmp"/>
-          <LargeImage Name="./icons/i-esdros.bmp"/>
+          <SmallImage Name="i-esdros"/>
+          <LargeImage Name="i-esdros"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimInfraDet">
         <Macro>
           <Name>Ceiling Infrared Detector</Name>
           <Command>^P^C^C(loadblockinfo "CIR")</Command>
-          <SmallImage Name="./icons/i-esdcir.bmp"/>
-          <LargeImage Name="./icons/i-esdcir.bmp"/>
+          <SmallImage Name="i-esdcir"/>
+          <LargeImage Name="i-esdcir"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_EDimAreaControl">
         <Macro>
           <Name>Area Control Station</Name>
           <Command>^P^C^C(loadblockinfo "ACS")</Command>
-          <SmallImage Name="./icons/i-esdacs.bmp"/>
-          <LargeImage Name="./icons/i-esdacs.bmp"/>
+          <SmallImage Name="i-esdacs"/>
+          <LargeImage Name="i-esdacs"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENWDomeLight">
         <Macro>
           <Name>Wall Mtd Dome Light</Name>
           <Command>^P^C^C(loadblockinfo "ENWDML")</Command>
-          <SmallImage Name="./icons/i-enwdml.bmp"/>
-          <LargeImage Name="./icons/i-enwdml.bmp"/>
+          <SmallImage Name="i-enwdml"/>
+          <LargeImage Name="i-enwdml"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENCDomeLight">
         <Macro>
           <Name>Ceiling Mtd Dome Light</Name>
           <Command>^P^C^C(loadblockinfo "ENCDML")</Command>
-          <SmallImage Name="./icons/i-encdml.bmp"/>
-          <LargeImage Name="./icons/i-encdml.bmp"/>
+          <SmallImage Name="i-encdml"/>
+          <LargeImage Name="i-encdml"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENCDomeLtHlf">
         <Macro>
           <Name>Ceiling Mtd Dome Light (Half)</Name>
           <Command>^P^C^C(loadblockinfo "ENCDML2")</Command>
-          <SmallImage Name="./icons/i-encdml2.bmp"/>
-          <LargeImage Name="./icons/i-encdml2.bmp"/>
+          <SmallImage Name="i-encdml2"/>
+          <LargeImage Name="i-encdml2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENZDomeLight">
         <Macro>
           <Name>Zone Dome Light</Name>
           <Command>^P^C^C(loadblockinfo "ENZNDML")</Command>
-          <SmallImage Name="./icons/i-enzndml.bmp"/>
-          <LargeImage Name="./icons/i-enzndml.bmp"/>
+          <SmallImage Name="i-enzndml"/>
+          <LargeImage Name="i-enzndml"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENToiletPBC">
         <Macro>
           <Name>Toilet Pushbutton/ Cord</Name>
           <Command>^P^C^C(loadblockinfo "ENTPBPC")</Command>
-          <SmallImage Name="./icons/i-entpbpc.bmp"/>
-          <LargeImage Name="./icons/i-entpbpc.bmp"/>
+          <SmallImage Name="i-entpbpc"/>
+          <LargeImage Name="i-entpbpc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENStaffSt">
         <Macro>
           <Name>Staff Station</Name>
           <Command>^P^C^C(loadblockinfo "ENSTAFF")</Command>
-          <SmallImage Name="./icons/i-enstaff.bmp"/>
-          <LargeImage Name="./icons/i-enstaff.bmp"/>
+          <SmallImage Name="i-enstaff"/>
+          <LargeImage Name="i-enstaff"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENMasterSt">
         <Macro>
           <Name>Master Station</Name>
           <Command>^P^C^C(loadblockinfo "ENMASTER")</Command>
-          <SmallImage Name="./icons/i-enmaster.bmp"/>
-          <LargeImage Name="./icons/i-enmaster.bmp"/>
+          <SmallImage Name="i-enmaster"/>
+          <LargeImage Name="i-enmaster"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENDutySt">
         <Macro>
           <Name>Duty Station</Name>
           <Command>^P^C^C(loadblockinfo "ENDUTY")</Command>
-          <SmallImage Name="./icons/i-enduty.bmp"/>
-          <LargeImage Name="./icons/i-enduty.bmp"/>
+          <SmallImage Name="i-enduty"/>
+          <LargeImage Name="i-enduty"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENPullSt">
         <Macro>
           <Name>Pullcord Station</Name>
           <Command>^P^C^C(loadblockinfo "ENTPBPC-?")</Command>
-          <SmallImage Name="./icons/i-entpullc.bmp"/>
-          <LargeImage Name="./icons/i-entpullc.bmp"/>
+          <SmallImage Name="i-entpullc"/>
+          <LargeImage Name="i-entpullc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENStaffAssist">
         <Macro>
           <Name>Staff Assist</Name>
           <Command>^P^C^C(loadblockinfo "ENSTAS")</Command>
-          <SmallImage Name="./icons/i-enstas.bmp"/>
-          <LargeImage Name="./icons/i-enstas.bmp"/>
+          <SmallImage Name="i-enstas"/>
+          <LargeImage Name="i-enstas"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENSPatStAsPB">
         <Macro>
           <Name>Single Patient Staff Assist/ Push B</Name>
           <Command>^P^C^C(loadblockinfo "ENSPSAPB")</Command>
-          <SmallImage Name="./icons/i-enspsapb.bmp"/>
-          <LargeImage Name="./icons/i-enspsapb.bmp"/>
+          <SmallImage Name="i-enspsapb"/>
+          <LargeImage Name="i-enspsapb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENDualPatBedSt">
         <Macro>
           <Name>Dual Patient Bed Station</Name>
           <Command>^P^C^C(loadblockinfo "ENDPBS")</Command>
-          <SmallImage Name="./icons/i-endpbs.bmp"/>
-          <LargeImage Name="./icons/i-endpbs.bmp"/>
+          <SmallImage Name="i-endpbs"/>
+          <LargeImage Name="i-endpbs"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENAnnunSt">
         <Macro>
           <Name>Annunciator Station</Name>
           <Command>^P^C^C(loadblockinfo "ANUNC")</Command>
-          <SmallImage Name="./icons/i-enannun.bmp"/>
-          <LargeImage Name="./icons/i-enannun.bmp"/>
+          <SmallImage Name="i-enannun"/>
+          <LargeImage Name="i-enannun"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENWDomeSig">
         <Macro>
           <Name>Wall Mtd Dome Light w/ Signal</Name>
           <Command>^P^C^C(loadblockinfo "ENWDMLS")</Command>
-          <SmallImage Name="./icons/i-enwdmls.bmp"/>
-          <LargeImage Name="./icons/i-enwdmls.bmp"/>
+          <SmallImage Name="i-enwdmls"/>
+          <LargeImage Name="i-enwdmls"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENCDomeSig">
         <Macro>
           <Name>Ceiling Mtd Dome Light w/ Signal</Name>
           <Command>^P^C^C(loadblockinfo "ENCDMLS")</Command>
-          <SmallImage Name="./icons/i-encdmls.bmp"/>
-          <LargeImage Name="./icons/i-encdmls.bmp"/>
+          <SmallImage Name="i-encdmls"/>
+          <LargeImage Name="i-encdmls"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENNCallCab">
         <Macro>
           <Name>Nurse Call Cabinet</Name>
           <Command>^P^C^C(loadblockinfo "NCC")</Command>
-          <SmallImage Name="./icons/i-ennc.bmp"/>
-          <LargeImage Name="./icons/i-ennc.bmp"/>
+          <SmallImage Name="i-ennc"/>
+          <LargeImage Name="i-ennc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENNAssistSt">
         <Macro>
           <Name>Nurse Assistance Station</Name>
           <Command>^P^C^C(loadblockinfo "ENC99A")</Command>
-          <SmallImage Name="./icons/i-ennursea.bmp"/>
-          <LargeImage Name="./icons/i-ennursea.bmp"/>
+          <SmallImage Name="i-ennursea"/>
+          <LargeImage Name="i-ennursea"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENCode99A">
         <Macro>
           <Name>Code 99/ Annunciator</Name>
           <Command>^P^C^C(loadblockinfo "ENC99A-NA")</Command>
-          <SmallImage Name="./icons/i-enc99a.bmp"/>
-          <LargeImage Name="./icons/i-enc99a.bmp"/>
+          <SmallImage Name="i-enc99a"/>
+          <LargeImage Name="i-enc99a"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENTclkSt">
         <Macro>
           <Name>Time Clock w/ Control Station</Name>
           <Command>^P^C^C(loadblockinfo "ENTCLK")</Command>
-          <SmallImage Name="./icons/i-entclk.bmp"/>
-          <LargeImage Name="./icons/i-entclk.bmp"/>
+          <SmallImage Name="i-entclk"/>
+          <LargeImage Name="i-entclk"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ENCommIntMod">
         <Macro>
           <Name>Comm Interface Module</Name>
           <Command>^P^C^C(loadblockinfo "ENCIM")</Command>
-          <SmallImage Name="./icons/i-encim.bmp"/>
-          <LargeImage Name="./icons/i-encim.bmp"/>
+          <SmallImage Name="i-encim"/>
+          <LargeImage Name="i-encim"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_BusPlan">
         <Macro>
           <Name>Bus Plan</Name>
           <Command>^P^C^C(loadblockinfo "E1BUSPLN")</Command>
-          <SmallImage Name="./icons/c-bus.bmp"/>
-          <LargeImage Name="./icons/c-bus.bmp"/>
+          <SmallImage Name="c-bus"/>
+          <LargeImage Name="c-bus"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_Transformer">
         <Macro>
           <Name>Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1XFMR")</Command>
-          <SmallImage Name="./icons/c-transformer.bmp"/>
-          <LargeImage Name="./icons/c-transformer.bmp"/>
+          <SmallImage Name="c-transformer"/>
+          <LargeImage Name="c-transformer"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ISOTrans">
         <Macro>
           <Name>ISO Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1SIXFMR")</Command>
-          <SmallImage Name="./icons/c-isotrans.bmp"/>
-          <LargeImage Name="./icons/c-isotrans.bmp"/>
+          <SmallImage Name="c-isotrans"/>
+          <LargeImage Name="c-isotrans"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_ATS">
         <Macro>
           <Name>ATS</Name>
           <Command>^P^C^C(loadblockinfo "E1ATS")</Command>
-          <SmallImage Name="./icons/c-ats.bmp"/>
-          <LargeImage Name="./icons/c-ats.bmp"/>
+          <SmallImage Name="c-ats"/>
+          <LargeImage Name="c-ats"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_CT">
         <Macro>
           <Name>CT</Name>
           <Command>^P^C^C(loadblockinfo "E1CT")</Command>
-          <SmallImage Name="./icons/c-ct.bmp"/>
-          <LargeImage Name="./icons/c-ct.bmp"/>
+          <SmallImage Name="c-ct"/>
+          <LargeImage Name="c-ct"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_AutoTrans">
         <Macro>
           <Name>Auto Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1ATRAN")</Command>
-          <SmallImage Name="./icons/c-autotrans.bmp"/>
-          <LargeImage Name="./icons/c-autotrans.bmp"/>
+          <SmallImage Name="c-autotrans"/>
+          <LargeImage Name="c-autotrans"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_PowerTrans">
         <Macro>
           <Name>Power Transformer</Name>
           <Command>^P^C^C(loadblockinfo "E1PT")</Command>
-          <SmallImage Name="./icons/c-powertrans.bmp"/>
-          <LargeImage Name="./icons/c-powertrans.bmp"/>
+          <SmallImage Name="c-powertrans"/>
+          <LargeImage Name="c-powertrans"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_MedVoltCB">
         <Macro>
           <Name>Med Voltage CB</Name>
           <Command>^P^C^C(loadblockinfo "E1MVOLTD")</Command>
-          <SmallImage Name="./icons/c-medcb.bmp"/>
-          <LargeImage Name="./icons/c-medcb.bmp"/>
+          <SmallImage Name="c-medcb"/>
+          <LargeImage Name="c-medcb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_Ammeter">
         <Macro>
           <Name>Ammeter</Name>
           <Command>^P^C^C(loadblockinfo "E1AMTR")</Command>
-          <SmallImage Name="./icons/c-ammeter.bmp"/>
-          <LargeImage Name="./icons/c-ammeter.bmp"/>
+          <SmallImage Name="c-ammeter"/>
+          <LargeImage Name="c-ammeter"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_DiscSwitch">
         <Macro>
           <Name>Disc/Switch</Name>
           <Command>^P^C^C(loadblockinfo "E1DISCSW")</Command>
-          <SmallImage Name="./icons/c-diskswitch.bmp"/>
-          <LargeImage Name="./icons/c-diskswitch.bmp"/>
+          <SmallImage Name="c-diskswitch"/>
+          <LargeImage Name="c-diskswitch"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_DrawCB">
         <Macro>
           <Name>Drawout CB</Name>
           <Command>^P^C^C(loadblockinfo "E1DRAWOC")</Command>
-          <SmallImage Name="./icons/c-drawoutcb.bmp"/>
-          <LargeImage Name="./icons/c-drawoutcb.bmp"/>
+          <SmallImage Name="c-drawoutcb"/>
+          <LargeImage Name="c-drawoutcb"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_FusedDiscSw">
         <Macro>
           <Name>Fused Disc/Switch</Name>
           <Command>^P^C^C(loadblockinfo "E1FDSW")</Command>
-          <SmallImage Name="./icons/c-fuseddisksw.bmp"/>
-          <LargeImage Name="./icons/c-fuseddisksw.bmp"/>
+          <SmallImage Name="c-fuseddisksw"/>
+          <LargeImage Name="c-fuseddisksw"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_CircBrkr">
         <Macro>
           <Name>Circuit Breaker</Name>
           <Command>^P^C^C(loadblockinfo "E1CIRB")</Command>
-          <SmallImage Name="./icons/c-circuitbrkr.bmp"/>
-          <LargeImage Name="./icons/c-circuitbrkr.bmp"/>
+          <SmallImage Name="c-circuitbrkr"/>
+          <LargeImage Name="c-circuitbrkr"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TBEGrnd">
         <Macro>
           <Name>Ground</Name>
           <Command>^P^C^C(loadblockinfo "E1GND")</Command>
-          <SmallImage Name="./icons/c-ground.bmp"/>
-          <LargeImage Name="./icons/c-ground.bmp"/>
+          <SmallImage Name="c-ground"/>
+          <LargeImage Name="c-ground"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TBEFuse">
         <Macro>
           <Name>Fuse</Name>
           <Command>^P^C^C(loadblockinfo "E1FUSE")</Command>
-          <SmallImage Name="./icons/c-fuse.bmp"/>
-          <LargeImage Name="./icons/c-fuse.bmp"/>
+          <SmallImage Name="c-fuse"/>
+          <LargeImage Name="c-fuse"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00592">
@@ -6979,7 +6989,7 @@
           <PopMenuItem>
             <NameRef>Drawing Setup</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00016"/>
+              <MacroRef MenuMacroID="ID_CSetupBtn"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuRef pUID="PM_00017"/>
@@ -7005,25 +7015,25 @@
           <PopMenuItem>
             <NameRef>Detail Mark</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00018"/>
+              <MacroRef MenuMacroID="ID_CDetail"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Section Mark</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00019"/>
+              <MacroRef MenuMacroID="ID_CRevision"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Revision Cloud (REVC)</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00020"/>
+              <MacroRef MenuMacroID="ID_CRevCld"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Revision Delta (REVD)</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00021"/>
+              <MacroRef MenuMacroID="ID_CRevD"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -14734,8 +14744,8 @@
           </ToolbarButton>
         </Toolbar>
         <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbECHIExit" rows="6" xval="545" yval="73">
-          <Alias>TB_BR+A:_CHICAGO_EXIT_SIGNS</Alias>
-          <Name>BR+A: Chicago Exit Signs</Name>
+          <Alias>TB_E:_EXIT_SIGNS</Alias>
+          <Name>E/Exit Signs</Name>
           <ToolbarButton>
             <Name>No.1 Fire Escape</Name>
             <MenuItem>
@@ -16089,10 +16099,10 @@
             </MenuItem>
           </ToolbarButton>
         </Toolbar>
-        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbEOLine" rows="6" xval="545" yval="73">
-          <Alias>E-1Line</Alias>
-          <Alias>TB_E/1-Line</Alias>
-          <Name>E/1-Line</Name>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbEOLineSchem" rows="6" xval="545" yval="73">
+          <Alias>E-1LineSchem</Alias>
+          <Alias>TB_E/1-LineS</Alias>
+          <Name>E/1-Line Schematic</Name>
           <ToolbarButton>
             <Name>Bus Plan</Name>
             <MenuItem>
@@ -16181,6 +16191,46 @@
             <Name>Fuse</Name>
             <MenuItem>
               <MacroRef MenuMacroID="ID_TBEFuse"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_CDrawStp" rows="6" xval="545" yval="73">
+          <Alias>C-DrawSetup</Alias>
+          <Alias>TB_C/DrawStp</Alias>
+          <Name>C/Drawing Setup</Name>
+          <ToolbarButton>
+            <Name>Drawing Setup</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CSetupBtn"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_CMarksRevs" rows="6" xval="545" yval="73">
+          <Alias>C-Marks</Alias>
+          <Alias>TB_C/Marks</Alias>
+          <Name>C/Marks and Revisions</Name>
+          <ToolbarButton>
+            <Name>Detail Mark</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CDetail"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Revision Mark</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CRevision"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Revision Cloud</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CRevCld"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Revision Delta</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CRevD"/>
             </MenuItem>
           </ToolbarButton>
         </Toolbar>
