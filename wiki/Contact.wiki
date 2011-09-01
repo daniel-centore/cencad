@@ -1,0 +1,6 @@
+#summary Author Contact Info
+
+= Contact =
+
+||Name||Daniel Centore||
+||E-Mail||[mailto:dcentore@optonline.net dcentore@optonline.net]||
