@@ -385,142 +385,188 @@
           <Command>^P^C^C(loadblockinfo "1POWER")</Command>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00096">
+      <MenuMacro UID="ID_TOWallPhone">
         <Macro>
           <Name>Wall Phone</Name>
           <Command>^P^C^C(loadblockinfo "2TOVOICE")</Command>
+          <SmallImage Name="i-towallp.bmp"/>
+          <LargeImage Name="i-towallp.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00097">
+      <MenuMacro UID="ID_TOData">
         <Macro>
           <Name>Data</Name>
           <Command>^P^C^C(loadblockinfo "2TODATA")</Command>
+          <SmallImage Name="i-todata.bmp"/>
+          <LargeImage Name="i-todata.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00098">
+      <MenuMacro UID="ID_TOVoice">
         <Macro>
           <Name>Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOVOICE2")</Command>
+          <SmallImage Name="i-tovoice.bmp"/>
+          <LargeImage Name="i-tovoice.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00099">
+      <MenuMacro UID="ID_TOVD">
         <Macro>
           <Name>Voice/ Data Combo</Name>
           <Command>^P^C^C(loadblockinfo "2TOVD")</Command>
+          <SmallImage Name="i-tovd.bmp"/>
+          <LargeImage Name="i-tovd.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00100">
+      <MenuMacro UID="ID_TOMData">
         <Macro>
           <Name>Misc Data</Name>
           <Command>^P^C^C(loadblockinfo "2TODATA2")</Command>
+          <SmallImage Name="i-tomdata.bmp"/>
+          <LargeImage Name="i-tomdata.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00101">
+      <MenuMacro UID="ID_TOMVoice">
         <Macro>
           <Name>Misc Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOVOICE3")</Command>
+          <SmallImage Name="i-tomvoice.bmp"/>
+          <LargeImage Name="i-tomvoice.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00102">
+      <MenuMacro UID="ID_TOMVD">
         <Macro>
           <Name>Misc Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOVD2")</Command>
+          <SmallImage Name="i-tomvd.bmp"/>
+          <LargeImage Name="i-tomvd.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00103">
+      <MenuMacro UID="ID_TOSMData">
         <Macro>
           <Name>Surface Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOSDATA")</Command>
+          <SmallImage Name="i-tosdata.bmp"/>
+          <LargeImage Name="i-tosdata.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00104">
+      <MenuMacro UID="ID_TOSMVoice">
         <Macro>
           <Name>Surface Mtd Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOSVOICE")</Command>
+          <SmallImage Name="i-tosvoice.bmp"/>
+          <LargeImage Name="i-tosvoice.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00105">
+      <MenuMacro UID="ID_TOSMVD">
         <Macro>
           <Name>Surface Mtd Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOSVD")</Command>
+          <SmallImage Name="i-tosvd.bmp"/>
+          <LargeImage Name="i-tosvd.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00106">
+      <MenuMacro UID="ID_TOFData">
         <Macro>
           <Name>Floor Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOFDATA")</Command>
+          <SmallImage Name="i-tofdata.bmp"/>
+          <LargeImage Name="i-tofdata.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00107">
+      <MenuMacro UID="ID_TOFVoice">
         <Macro>
           <Name>Floor Mtd Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TODVOICE")</Command>
+          <SmallImage Name="i-tofvoice.bmp"/>
+          <LargeImage Name="i-tofvoice.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00108">
+      <MenuMacro UID="ID_TOFVD">
         <Macro>
           <Name>Floor Mtd Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOFVD")</Command>
+          <SmallImage Name="i-tofvd.bmp"/>
+          <LargeImage Name="i-tofvd.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00109">
+      <MenuMacro UID="ID_TOCMData">
         <Macro>
           <Name>Ceiling Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOCDATA")</Command>
+          <SmallImage Name="i-tocdata.bmp"/>
+          <LargeImage Name="i-tocdata.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00110">
+      <MenuMacro UID="ID_TOCMVoice">
         <Macro>
           <Name>Ceiling Mtd Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOCVOICE")</Command>
+          <SmallImage Name="i-tocvoice.bmp"/>
+          <LargeImage Name="i-tocvoice.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00111">
+      <MenuMacro UID="ID_TOCMVD">
         <Macro>
           <Name>Ceiling Mtd Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOCVD")</Command>
+          <SmallImage Name="i-tocvd.bmp"/>
+          <LargeImage Name="i-tocvd.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00112">
+      <MenuMacro UID="ID_TOFuture">
         <Macro>
           <Name>Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOFC")</Command>
+          <SmallImage Name="i-tofc.bmp"/>
+          <LargeImage Name="i-tofc.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00113">
+      <MenuMacro UID="ID_TOSFuture">
         <Macro>
           <Name>Surface Mtd Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOSFC")</Command>
+          <SmallImage Name="i-tosfc.bmp"/>
+          <LargeImage Name="i-tosfc.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00114">
+      <MenuMacro UID="ID_TOCFuture">
         <Macro>
           <Name>Ceiling Mtd Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOCFC")</Command>
+          <SmallImage Name="i-tocfc.bmp"/>
+          <LargeImage Name="i-tocfc.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00115">
+      <MenuMacro UID="ID_TOFFuture">
         <Macro>
           <Name>Floor Mtd Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOFFC")</Command>
+          <SmallImage Name="i-toffc.bmp"/>
+          <LargeImage Name="i-toffc.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00116">
+      <MenuMacro UID="ID_TOPoke1">
         <Macro>
           <Name>Poke Thru #1</Name>
           <Command>^P^C^C(loadblockinfo "2TSQR2")</Command>
+          <SmallImage Name="i-topoke1.bmp"/>
+          <LargeImage Name="i-topoke1.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00117">
+      <MenuMacro UID="ID_TOPoke2">
         <Macro>
           <Name>Poke Thru #2</Name>
           <Command>^P^C^C(loadblockinfo "2TOPOKE2")</Command>
+          <SmallImage Name="i-topoke2.bmp"/>
+          <LargeImage Name="i-topoke2.bmp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00118">
+      <MenuMacro UID="ID_TOFurnFeed">
         <Macro>
           <Name>Furniture Feed</Name>
           <Command>^P^C^C(loadblockinfo "2TSQR2-2")</Command>
+          <SmallImage Name="i-tofurnf.bmp"/>
+          <LargeImage Name="i-tofurnf.bmp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00120">
@@ -7412,139 +7458,139 @@
           <PopMenuItem>
             <NameRef>Wall Phone</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00096"/>
+              <MacroRef MenuMacroID="ID_TOWallPhone"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00097"/>
+              <MacroRef MenuMacroID="ID_TOData"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Voice</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00098"/>
+              <MacroRef MenuMacroID="ID_TOVoice"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Voice/ Data Combo</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00099"/>
+              <MacroRef MenuMacroID="ID_TOVD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Misc Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00100"/>
+              <MacroRef MenuMacroID="ID_TOMData"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Misc Voice</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00101"/>
+              <MacroRef MenuMacroID="ID_TOMVoice"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Misc Voice/ Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00102"/>
+              <MacroRef MenuMacroID="ID_TOMVD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Surface Mtd Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00103"/>
+              <MacroRef MenuMacroID="ID_TOSMData"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Surface Mtd Voice</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00104"/>
+              <MacroRef MenuMacroID="ID_TOSMVoice"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Surface Mtd Voice/ Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00105"/>
+              <MacroRef MenuMacroID="ID_TOSMVD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Mtd Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00106"/>
+              <MacroRef MenuMacroID="ID_TOFData"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Mtd Voice</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00107"/>
+              <MacroRef MenuMacroID="ID_TOFVoice"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Mtd Voice/ Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00108"/>
+              <MacroRef MenuMacroID="ID_TOFVD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Ceiling Mtd Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00109"/>
+              <MacroRef MenuMacroID="ID_TOCMData"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Ceiling Mtd Voice</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00110"/>
+              <MacroRef MenuMacroID="ID_TOCMVoice"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Ceiling Mtd Voice/ Data</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00111"/>
+              <MacroRef MenuMacroID="ID_TOCMVD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Future Consideration</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00112"/>
+              <MacroRef MenuMacroID="ID_TOFuture"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Surface Mtd Future Consideration</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00113"/>
+              <MacroRef MenuMacroID="ID_TOSFuture"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Ceiling Mtd Future Consideration</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00114"/>
+              <MacroRef MenuMacroID="ID_TOCFuture"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Mtd Future Consideration</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00115"/>
+              <MacroRef MenuMacroID="ID_TOFFuture"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Poke Thru #1</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00116"/>
+              <MacroRef MenuMacroID="ID_TOPoke1"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Poke Thru #2</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00117"/>
+              <MacroRef MenuMacroID="ID_TOPoke2"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Furniture Feed</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00118"/>
+              <MacroRef MenuMacroID="ID_TOFurnFeed"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -16231,6 +16277,149 @@
             <Name>Revision Delta</Name>
             <MenuItem>
               <MacroRef MenuMacroID="ID_CRevD"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbTOutlets" rows="6" xval="545" yval="73">
+          <Alias>T-OUTLETS</Alias>
+          <Alias>T/OUTLETS</Alias>
+          <Name>T/Outlets</Name>
+          <ToolbarButton>
+            <Name>Wall Phone</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOWallPhone"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOData"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Voice</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOVoice"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Voice/Data Combo</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOVD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Misc. Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOMData"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Misc. Voice</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOMVoice"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Misc. Voice/Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOMVD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Surface Mtd Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOSMData"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Surface Mtd Voice</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOSMVoice"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Surface Mtd Voice/Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOSMVD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Mtd Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOFData"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Mtd Voice</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOFVoice"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Mtd Voice/Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOFVD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ceiling Mtd Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOCMData"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ceiling Mtd Voice</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOCMVoice"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ceiling Mtd Voice/Data</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOCMVD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Future Consideration</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOFuture"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Surface Mtd Future Consideration</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOSFuture"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ceiling Mtd Future Consideration</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOCFuture"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Mtd Future Consideration</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOFFuture"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Poke Thru #1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOPoke1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Poke Thru #2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOPoke2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Furniture Feed</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TOFurnFeed"/>
             </MenuItem>
           </ToolbarButton>
         </Toolbar>
