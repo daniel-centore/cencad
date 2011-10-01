@@ -11,8 +11,12 @@
 
 ;Begin loading all required files
 
-(setvar "cmdecho" 0)		;Disable other commands from printing
-;(setvar "glswapmode" 0)		;fixes ati graphics issue
+(setvar "cmdecho" 0)		    ;Disable other commands from printing
+;(setvar "glswapmode" 0)	    ;fixes ati graphics issue
+
+
+(setq PROMPTMENU 0)                 ;Disable the annoying prompt menu
+(setq GRIDUNIT 120,120)             ;Sets the grid size to a reasonable one (autocad default)
 
 ;; 10.6-->. We go out so many places so we don't get funky decimals when dividing
 (setq text-var 10.66666666666666)
