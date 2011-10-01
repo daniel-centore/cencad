@@ -4182,109 +4182,109 @@
       <MenuMacro UID="MM_00653">
         <Macro>
           <Name>Cold Water (CWL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CWLZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00654">
         <Macro>
           <Name>Hot Water (HWL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HWLZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00655">
         <Macro>
           <Name>Hot Water Retn (HWRL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HRLZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00656">
         <Macro>
           <Name>Non-Potable Cold Water (NCWL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NCWL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00657">
         <Macro>
           <Name>Non-Potable Hot Water (NHWL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NHWL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00658">
         <Macro>
           <Name>Non-Potable Hot Water Retn (NHRL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NHRL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00660">
         <Macro>
-          <Name>Cold Water (CWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Cold Water (CWM)</Name>
+          <Command>^P^C^C(loadblockinfo "CWMZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00661">
         <Macro>
-          <Name>Hot Water (HWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Hot Water (HWM)</Name>
+          <Command>^P^C^C(loadblockinfo "HWMZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00662">
         <Macro>
-          <Name>Hot Water Retn (HWRL)</Name>
-          <Command>^c^c</Command>
+          <Name>Hot Water Retn (HWRM)</Name>
+          <Command>^P^C^C(loadblockinfo "HRMZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00663">
         <Macro>
-          <Name>Non-Potable Cold Water (NCWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Non-Potable Cold Water (NCWM)</Name>
+          <Command>^P^C^C(loadblockinfo "NCWM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00664">
         <Macro>
-          <Name>Non-Potable Hot Water (NHWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Non-Potable Hot Water (NHWM)</Name>
+          <Command>^P^C^C(loadblockinfo "NHWM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00665">
         <Macro>
-          <Name>Non-Potable Hot Water Retn (NHRL)</Name>
-          <Command>^c^c</Command>
+          <Name>Non-Potable Hot Water Retn (NHRM)</Name>
+          <Command>^P^C^C(loadblockinfo "NHRM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00667">
         <Macro>
-          <Name>Cold Water (CWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Cold Water (CWH)</Name>
+          <Command>^P^C^C(loadblockinfo "CWHZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00668">
         <Macro>
-          <Name>Hot Water (HWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Hot Water (HWH)</Name>
+          <Command>^P^C^C(loadblockinfo "HWHZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00669">
         <Macro>
-          <Name>Hot Water Retn (HWRL)</Name>
-          <Command>^c^c</Command>
+          <Name>Hot Water Retn (HWRH)</Name>
+          <Command>^P^C^C(loadblockinfo "HRHZ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00670">
         <Macro>
-          <Name>Non-Potable Cold Water (NCWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Non-Potable Cold Water (NCWH)</Name>
+          <Command>^P^C^C(loadblockinfo "NCWH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00671">
         <Macro>
-          <Name>Non-Potable Hot Water (NHWL)</Name>
-          <Command>^c^c</Command>
+          <Name>Non-Potable Hot Water (NHWH)</Name>
+          <Command>^P^C^C(loadblockinfo "NHWH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00672">
         <Macro>
-          <Name>Non-Potable Hot Water Retn (NHRL)</Name>
-          <Command>^c^c</Command>
+          <Name>Non-Potable Hot Water Retn (NHRH)</Name>
+          <Command>^P^C^C(loadblockinfo "NHRH")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00674">
@@ -10678,37 +10678,37 @@
         <PopMenu UID="PM_00659">
           <Name>Medium Zone</Name>
           <PopMenuItem>
-            <NameRef>Cold Water (CWL)</NameRef>
+            <NameRef>Cold Water (CWM)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00660"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Hot Water (HWL)</NameRef>
+            <NameRef>Hot Water (HWM)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00661"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Hot Water Retn (HWRL)</NameRef>
+            <NameRef>Hot Water Retn (HWRM)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00662"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Non-Potable Cold Water (NCWL)</NameRef>
+            <NameRef>Non-Potable Cold Water (NCWM)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00663"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Non-Potable Hot Water (NHWL)</NameRef>
+            <NameRef>Non-Potable Hot Water (NHWM)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00664"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Non-Potable Hot Water Retn (NHRL)</NameRef>
+            <NameRef>Non-Potable Hot Water Retn (NHRM)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00665"/>
             </MenuItem>
@@ -10717,37 +10717,37 @@
         <PopMenu UID="PM_00666">
           <Name>High Zone</Name>
           <PopMenuItem>
-            <NameRef>Cold Water (CWL)</NameRef>
+            <NameRef>Cold Water (CWH)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00667"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Hot Water (HWL)</NameRef>
+            <NameRef>Hot Water (HWH)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00668"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Hot Water Retn (HWRL)</NameRef>
+            <NameRef>Hot Water Retn (HWRH)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00669"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Non-Potable Cold Water (NCWL)</NameRef>
+            <NameRef>Non-Potable Cold Water (NCWH)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00670"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Non-Potable Hot Water (NHWL)</NameRef>
+            <NameRef>Non-Potable Hot Water (NHWH)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00671"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
-            <NameRef>Non-Potable Hot Water Retn (NHRL)</NameRef>
+            <NameRef>Non-Potable Hot Water Retn (NHRH)</NameRef>
             <MenuItem>
               <MacroRef MenuMacroID="MM_00672"/>
             </MenuItem>
