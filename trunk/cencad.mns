@@ -671,7 +671,7 @@ ID_POP4		[&Plumbing]
 				[Non-Potable Hot Water (NHWH)]^P^C^C(loadblockinfo "NHWH")
 				[<-<-Non-Potable Hot Water Retn (NHRH)]^P^C^C(loadblockinfo "NHRH")
 		[->Waste]
-			[Soil or Waste (S or W)]
+			[Soil or Waste (S or W)]^P^C^C(loadblockinfo "WAST")
 			[Soil or Waste Below Floor (S or W)]
 			[Vent (V)]
 			[Vent Below Floor (V)]

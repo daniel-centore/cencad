@@ -1,171 +1,171 @@
 ; $Id: dline.lsp,v 1.6 1994/05/09 17:52:46 kc Exp $
-;;;   DLINE.LSP
-;;;   (C) Copyright 1990-1994 by Autodesk, Inc.
+;;;  DLINE.LSP
+;;;  (C) Copyright 1990-1994 by Autodesk, Inc.
 ;;;      
-;;;   MODIFIED BY CAD STUDIO
+;;;  MODIFIED BY CAD STUDIO
 ;;;
-;;;   Permission to use, copy, modify, and distribute this software 
-;;;   for any purpose and without fee is hereby granted, provided 
-;;;   that the above copyright notice appears in all copies and that 
-;;;   both that copyright notice and this permission notice appear in 
-;;;   all supporting documentation.
+;;;  Permission to use, copy, modify, and distribute this software 
+;;;  for any purpose and without fee is hereby granted, provided 
+;;;  that the above copyright notice appears in all copies and that 
+;;;  both that copyright notice and this permission notice appear in 
+;;;  all supporting documentation.
 ;;;
-;;;   THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED
-;;;   WARRANTY.  ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR
-;;;   PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.
+;;;  THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED
+;;;  WARRANTY.  ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR
+;;;  PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.
 ;;;
-;;;   DESCRIPTION
-;;;     
-;;;     This is a general purpose "double-line/arc" generator.  It performs 
-;;;     automatic corner intersection cleanups, as well as a number of other 
-;;;     features described below.
+;;;  DESCRIPTION
+;;;    
+;;;    This is a general purpose "double-line/arc" generator.  It performs 
+;;;    automatic corner intersection cleanups, as well as a number of other 
+;;;    features described below.
 ;;;  
-;;;     The user is prompted for a series of endpoints.  As they are picked 
-;;;     "DLINE"  segments are drawn on the current layer.  Options are 
-;;;     available for changing the Width of the DLINE, specifying whether
-;;;     or not to Snap to existing lines or arcs, whether or not to 
-;;;     Break the lines or arcs when snapping to them, and which of the 
-;;;     following to do:  
-;;;     
-;;;     Set the global variable dl:ecp to the values listed below:
+;;;    The user is prompted for a series of endpoints.  As they are picked 
+;;;    "DLINE"  segments are drawn on the current layer.  Options are 
+;;;    available for changing the Width of the DLINE, specifying whether
+;;;    or not to Snap to existing lines or arcs, whether or not to 
+;;;    Break the lines or arcs when snapping to them, and which of the 
+;;;    following to do:  
+;;;    
+;;;    Set the global variable dl:ecp to the values listed below:
 ;;;  
-;;;     Value  Meaning
-;;;     ---------------------------
-;;;       0    No end caps
-;;;       1    Start end cap only
-;;;       2    Ending end cap only
-;;;       3    Both end caps
-;;;       4    Auto ON -- Cap any end not on a line or arc.
-;;;       
-;;;     The user may choose to back up as far as the beginning of the command 
-;;;     by typing "U" or "Undo", both of which operate as AutoCAD's "UNDO 1" 
-;;;     does.
-;;;     
-;;;     Curved DLINE's are drawn using the AutoCAD ARC command and follow as 
-;;;     closely as possible its command structure for the various options.
+;;;    Value  Meaning
+;;;    ---------------------------
+;;;      0    No end caps
+;;;      1    Start end cap only
+;;;      2    Ending end cap only
+;;;      3    Both end caps
+;;;      4    Auto ON -- Cap any end not on a line or arc.
+;;;      
+;;;    The user may choose to back up as far as the beginning of the command 
+;;;    by typing "U" or "Undo", both of which operate as AutoCAD's "UNDO 1" 
+;;;    does.
+;;;    
+;;;    Curved DLINE's are drawn using the AutoCAD ARC command and follow as 
+;;;    closely as possible its command structure for the various options.
 ;;;  
 ;;;----------------------------------------------------------------------------
-;;;   OPERATION
+;;;  OPERATION
 ;;;
-;;;     The routine is executed, after loading, by typing either DL or DLINE
-;;;     at which time you are presented with the opening line and menu of
-;;;     choices:
-;;;     
-;;;       Dline, Version 1.12, (c) 1990-1994 by Autodesk, Inc.
-;;;       Break/Caps/Dragline/Offset/Snap/Undo/Width/<start point>: 
-;;;     
-;;;     Typing Break allows you to set breaking of lines and arcs found at
-;;;     the start and end points of any segment either ON or OFF.
-;;;     
-;;;       Break Dline's at start and end points?  OFF/<ON>:
-;;;     
-;;;     Typing Caps allows you to specify how the DLINE will be finished 
-;;;     off when exiting the routine, per the values listed above.
-;;;     
-;;;       Draw which endcaps?  Both/End/None/Start/<Auto>:
-;;;       
-;;;     The default of Auto caps an end only if you did not snap to an arc
-;;;     or line.
-;;;     
-;;;     Typing Dragline allows you to set the location of the dragline
-;;;     relative to the centerline of the two arcs or lines to any value
-;;;     between - 1/2 of "tracewid" and + 1/2 of "tracewid".  (There is a
-;;;     local variable you may set if you want to experiment with offsets
-;;;     outside this range;  the results may not be correct, your choice.
-;;;     See the function (dl_sao) for more information.)
-;;;     
-;;;       Set dragline position to Left/Center/Right/<Offset from center = 0.0>:
-;;;     
-;;;     Enter any real number or one of the keywords.  The value in the angle
-;;;     brackets is the default value and changes as you change the dragline
-;;;     position.
-;;;     
-;;;     Offset allows the first point you enter to be offset from a known
-;;;     point.
-;;;     
-;;;       Offset from:  (enter a point)
-;;;       Offset toward:    (enter a point)
-;;;       Enter the offset distance:   (enter a distance or real number)
+;;;    The routine is executed, after loading, by typing either DL or DLINE
+;;;    at which time you are presented with the opening line and menu of
+;;;    choices:
+;;;    
+;;;      Dline, Version 1.12, (c) 1990-1994 by Autodesk, Inc.
+;;;      Break/Caps/Dragline/Offset/Snap/Undo/Width/<start point>: 
+;;;    
+;;;    Typing Break allows you to set breaking of lines and arcs found at
+;;;    the start and end points of any segment either ON or OFF.
+;;;    
+;;;      Break Dline's at start and end points?  OFF/<ON>:
+;;;    
+;;;    Typing Caps allows you to specify how the DLINE will be finished 
+;;;    off when exiting the routine, per the values listed above.
+;;;    
+;;;      Draw which endcaps?  Both/End/None/Start/<Auto>:
+;;;      
+;;;    The default of Auto caps an end only if you did not snap to an arc
+;;;    or line.
+;;;    
+;;;    Typing Dragline allows you to set the location of the dragline
+;;;    relative to the centerline of the two arcs or lines to any value
+;;;    between - 1/2 of "tracewid" and + 1/2 of "tracewid".  (There is a
+;;;    local variable you may set if you want to experiment with offsets
+;;;    outside this range;  the results may not be correct, your choice.
+;;;    See the function (dl_sao) for more information.)
+;;;    
+;;;      Set dragline position to Left/Center/Right/<Offset from center = 0.0>:
+;;;    
+;;;    Enter any real number or one of the keywords.  The value in the angle
+;;;    brackets is the default value and changes as you change the dragline
+;;;    position.
+;;;    
+;;;    Offset allows the first point you enter to be offset from a known
+;;;    point.
+;;;    
+;;;      Offset from:  (enter a point)
+;;;      Offset toward:    (enter a point)
+;;;      Enter the offset distance:  (enter a distance or real number)
 ;;;  
-;;;     Snap allows you to set the snapping size and turn snapping ON or OFF.
-;;;     
-;;;       Set snap size or snap On/Off.  Size/OFF/<ON>:
-;;;       New snap size (1 - 10):
-;;;     
-;;;     The upper limit may be reset by changing the value of MAXSNP to a 
-;;;     value other than 10.  Higher values may be necessary for ADI display
-;;;     drivers, but generally, you should keep this value somewhere in the 
-;;;     middle of the allowed range for snapping to work most effectively 
-;;;     in an uncluttered drawing, and toward the lower end for a more 
-;;;     cluttered drawing.  You may also use object snap to improve your 
-;;;     aim.
-;;;     
-;;;     This feature allows you to very quickly "snap" to another line or arc, 
-;;;     breaking it at the juncture and performing all of the intersection 
-;;;     cleanups at one time without having to be precisely on the line, i.e., 
-;;;     you can be visually one the line and it will work, or you can use 
-;;;     object snap to be more precise.
-;;;     
-;;;     Undo backs you up one segment in the chain of segments you are drawing,
-;;;     stopping when there are no more segments to be undone.  All of the 
-;;;     necessary points are saved in lists so that the DLINE will close, cap,
-;;;     and continue correctly after any number of undo's.
-;;;     
-;;;     Width prompts you for a new width.
-;;;     
-;;;       New DLINE width <1.0000>:
-;;;       
-;;;     You may enter a new width and continue the DLINE in the same direction
-;;;     you were drawing before;  if you do this, connecting lines from the
-;;;     endpoints of the previous segment are drawn to the start points of 
-;;;     the new segment.
-;;;     
-;;;     If you press RETURN after closing a DLINE or before creating any
-;;;     DLINE's, you will see this message:
-;;;     
-;;;       No continuation point -- please pick a point.  
-;;;       Break/Caps/Dragline/Offset/Snap/Undo/Width/<start point>:  
-;;;     
-;;;     After you pick the first point, you will see this set of options:
-;;;     
-;;;       Arc/Break/CAps/CLose/Dragline/Snap/Undo/Width/<next point>:
-;;;       
-;;;     Picking more points will draw straight DLINE segments until either 
-;;;     RETURN is pressed or the CLose option is chosen.
-;;;     
-;;;     CLose will close the lines if you have drawn at least two segments.
-;;;     
-;;;     Selecting Arc presents you with another set of choices:
-;;;     
-;;;       Break/CAps/CEnter/CLose/Dragline/Endpoint/Line/Snap/Undo/Width/<second point>:
-;;;     
-;;;     All of the options here are the same as they are for drawing straight
-;;;     DLINE's except CEnter, Endpoint, and Line.
-;;;     
-;;;     The default option, CEnter, and Endpoint are modeled after the ARC
-;;;     command in AutoCAD and exactly mimic its operation including all of
-;;;     the subprompts.  Refer to the AutoCAD reference manual for exact usage.
-;;;     
-;;;     The Line option returns you to drawing straight DLINE segments.
-;;;     
-;;;     Snapping to existing LINE's an ARC's accomplishes all of the trimming 
-;;;     and extending of lines and arcs necessary, including cases where arcs 
-;;;     and lines do not intersect.  In these cases a line is drawn from either;
-;;;     a point on the arc at the perpendicular point from the center of the 
-;;;     arc to the line, to the line, or along the line from the centers of the
-;;;     two arcs that do not intersect at the points where this line crosses
-;;;     the two arcs.  In this way, we ensure that all DLINE's can be closed
-;;;     visually.
-;;;     
-;;;     Breaking will not work unless Snapping is turned on.
-;;;     
+;;;    Snap allows you to set the snapping size and turn snapping ON or OFF.
+;;;    
+;;;      Set snap size or snap On/Off.  Size/OFF/<ON>:
+;;;      New snap size (1 - 10):
+;;;    
+;;;    The upper limit may be reset by changing the value of MAXSNP to a 
+;;;    value other than 10.  Higher values may be necessary for ADI display
+;;;    drivers, but generally, you should keep this value somewhere in the 
+;;;    middle of the allowed range for snapping to work most effectively 
+;;;    in an uncluttered drawing, and toward the lower end for a more 
+;;;    cluttered drawing.  You may also use object snap to improve your 
+;;;    aim.
+;;;    
+;;;    This feature allows you to very quickly "snap" to another line or arc, 
+;;;    breaking it at the juncture and performing all of the intersection 
+;;;    cleanups at one time without having to be precisely on the line, i.e., 
+;;;    you can be visually one the line and it will work, or you can use 
+;;;    object snap to be more precise.
+;;;    
+;;;    Undo backs you up one segment in the chain of segments you are drawing,
+;;;    stopping when there are no more segments to be undone.  All of the 
+;;;    necessary points are saved in lists so that the DLINE will close, cap,
+;;;    and continue correctly after any number of undo's.
+;;;    
+;;;    Width prompts you for a new width.
+;;;    
+;;;      New DLINE width <1.0000>:
+;;;      
+;;;    You may enter a new width and continue the DLINE in the same direction
+;;;    you were drawing before;  if you do this, connecting lines from the
+;;;    endpoints of the previous segment are drawn to the start points of 
+;;;    the new segment.
+;;;    
+;;;    If you press RETURN after closing a DLINE or before creating any
+;;;    DLINE's, you will see this message:
+;;;    
+;;;      No continuation point -- please pick a point.  
+;;;      Break/Caps/Dragline/Offset/Snap/Undo/Width/<start point>:  
+;;;    
+;;;    After you pick the first point, you will see this set of options:
+;;;    
+;;;      Arc/Break/CAps/CLose/Dragline/Snap/Undo/Width/<next point>:
+;;;      
+;;;    Picking more points will draw straight DLINE segments until either 
+;;;    RETURN is pressed or the CLose option is chosen.
+;;;    
+;;;    CLose will close the lines if you have drawn at least two segments.
+;;;    
+;;;    Selecting Arc presents you with another set of choices:
+;;;    
+;;;      Break/CAps/CEnter/CLose/Dragline/Endpoint/Line/Snap/Undo/Width/<second point>:
+;;;    
+;;;    All of the options here are the same as they are for drawing straight
+;;;    DLINE's except CEnter, Endpoint, and Line.
+;;;    
+;;;    The default option, CEnter, and Endpoint are modeled after the ARC
+;;;    command in AutoCAD and exactly mimic its operation including all of
+;;;    the subprompts.  Refer to the AutoCAD reference manual for exact usage.
+;;;    
+;;;    The Line option returns you to drawing straight DLINE segments.
+;;;    
+;;;    Snapping to existing LINE's an ARC's accomplishes all of the trimming 
+;;;    and extending of lines and arcs necessary, including cases where arcs 
+;;;    and lines do not intersect.  In these cases a line is drawn from either;
+;;;    a point on the arc at the perpendicular point from the center of the 
+;;;    arc to the line, to the line, or along the line from the centers of the
+;;;    two arcs that do not intersect at the points where this line crosses
+;;;    the two arcs.  In this way, we ensure that all DLINE's can be closed
+;;;    visually.
+;;;    
+;;;    Breaking will not work unless Snapping is turned on.
+;;;    
 ;;;----------------------------------------------------------------------------
 ;;;  GLOBALS:
-;;;     dl:osd -- dragline alignment offset from center of two lines or arcs.
-;;;     dl:snp -- T if snapping to existing lines and arcs.
-;;;     dl:brk -- T if breaking existing lines and arcs.
-;;;     dl:ecp -- Bitwise setting of caps when exiting.
-;;;     v:stpt -- Continuation point.
+;;;    dl:osd -- dragline alignment offset from center of two lines or arcs.
+;;;    dl:snp -- T if snapping to existing lines and arcs.
+;;;    dl:brk -- T if breaking existing lines and arcs.
+;;;    dl:ecp -- Bitwise setting of caps when exiting.
+;;;    v:stpt -- Continuation point.
 ;;;----------------------------------------------------------------------------
 ;;;
 ;;; ===========================================================================
@@ -173,20 +173,20 @@
 ;;;
 
   (defun ai_abort (app msg)
-     (defun *error* (s)
+    (defun *error* (s)
         (if old_error (setq *error* old_error))
         (princ)
-     )
-     (if msg
-       (alert (strcat " Application error: "
+    )
+    (if msg
+      (alert (strcat " Application error: "
                       app
                       " \n\n  "
                       msg
                       "  \n"
               )
-       )
-     )
-     (exit)
+      )
+    )
+    (exit)
   )
 
 ;;; Check to see if AI_UTILS is loaded, If not, try to find it,
@@ -197,33 +197,33 @@
 ;;; stub function.
 
   (cond
-     (  (and ai_dcl (listp ai_dcl)))          ; it's already loaded.
+    (  (and ai_dcl (listp ai_dcl)))          ; it's already loaded.
 
-     (  (not (findfile "ai_utils.lsp"))                     ; find it
+    (  (not (findfile "ai_utils.lsp"))                    ; find it
         (ai_abort "DLINE"
                   (strcat "Can't locate file AI_UTILS.LSP."
                           "\n Check support directory.")))
 
-     (  (eq "failed" (load "ai_utils" "failed"))            ; load it
+    (  (eq "failed" (load "ai_utils" "failed"))            ; load it
         (ai_abort "DLINE" "Can't load file AI_UTILS.LSP"))
   )
 
-  (if (not (ai_acadapp))               ; defined in AI_UTILS.LSP
-      (ai_abort "DLINE" nil)         ; a Nil <msg> supresses
+  (if (not (ai_acadapp))              ; defined in AI_UTILS.LSP
+      (ai_abort "DLINE" nil)        ; a Nil <msg> supresses
   )                                    ; ai_abort's alert box dialog.
 
 ;;; ==================== end load-time operations ===========================
 ;;; Main function
 
-(defun dline  (/ strtpt nextpt pt1    pt2    spts   wnames elast
-                 uctr   pr     prnum  temp   ans    dir    ipt
-                 v      lst    dist   cpt    rad    orad   ftmp
-                 spt    ept    pt     en1    en2    npt    cpt1
-                 flg    cont   flg2   flgn   ang    tmp    undo_setting
-                 brk_e1 brk_e2 bent1  bent2  nn     nnn    
-                 dl_osm dl_oem dl_oce dl_opb dl_obm dl_ver 
-                 dl_err dl_oer dl_arc fang   MAXSNP ange   
-                 savpt1 savpt2 savpt3 savpt4 savpts 
+(defun dline  (/ strtpt nextpt pt1    pt2    spts  wnames elast
+                uctr  pr    prnum  temp  ans    dir    ipt
+                v      lst    dist  cpt    rad    orad  ftmp
+                spt    ept    pt    en1    en2    npt    cpt1
+                flg    cont  flg2  flgn  ang    tmp    undo_setting
+                brk_e1 brk_e2 bent1  bent2  nn    nnn    
+                dl_osm dl_oem dl_oce dl_opb dl_obm dl_ver 
+                dl_err dl_oer dl_arc fang  MAXSNP ange  
+                savpt1 savpt2 savpt3 savpt4 savpts 
               )
 
   ;; Version number.  Reset this local if you make a change.
@@ -231,7 +231,7 @@
   
   ;; Reset this value higher for ADI drivers.
   (setq MAXSNP 10)              
-   
+
   (setq dl_osm (getvar "osmode")
         dl_oce (getvar "cmdecho")
         dl_opb (getvar "pickbox")
@@ -241,7 +241,7 @@
   ;; Internal error handler defined locally
   ;;
 
-  (defun dl_err (s)                   ; If an error (such as CTRL-C) occurs
+  (defun dl_err (s)                  ; If an error (such as CTRL-C) occurs
                                       ; while this command is active...
     (if (/= s "Function cancelled")
       (if (= s "quit / exit abort")
@@ -252,7 +252,7 @@
     (command "_.UNDO" "_EN")
     (ai_undo_off)
     (if dl_oer                        ; If an old error routine exists
-      (setq *error* dl_oer)           ; then, reset it 
+      (setq *error* dl_oer)          ; then, reset it 
     )
     (if dl_osm (setvar "osmode" dl_osm))
     (if dl_opb (setvar "pickbox" dl_opb))
@@ -271,7 +271,7 @@
   )
 
   (setvar "cmdecho" 0)
-  (ai_undo_on)                       ; Turn on UNDO
+  (ai_undo_on)                      ; Turn on UNDO
   (command "_.UNDO" "_GROUP")
   (setvar "osmode" 0)
   (if (null dl:opb) (setq dl:opb (getvar "pickbox")))
@@ -283,7 +283,7 @@
  
   (menucmd "s=dline1")
   (graphscr)
-  ;(princ (strcat "\nDline, Version " dl_ver ", (c) 1990-1994 by Autodesk, Inc. "))
+  (princ (strcat "\nDline, Version " dl_ver ", (c) 1990-1994 by Autodesk, Inc. "))
   
   (setq cont T)
   (while cont
@@ -295,7 +295,7 @@
   )
   
   (if dl_osm (setvar "osmode" dl_osm))
-    (if dl_opb (setvar "pickbox" dl_opb))
+  (if dl_opb (setvar "pickbox" dl_opb))
 
   (ai_undo_off)                      ; Return UNDO to initial state
 
@@ -319,7 +319,6 @@
   )
   ;; temp set to nil when a valid point is entered.
   (while temp
-    (setq dl_osm 15287)
     (initget "Break Caps Dragline Offset Snap Undo Width")
     (setq strtpt (getpoint 
       "\nBreak/Caps/Dragline/Offset/Snap/Undo/Width/<start point>: "))
@@ -351,7 +350,7 @@
       ((null strtpt)
         (if v:stpt
           (setq strtpt v:stpt
-                temp   nil
+                temp  nil
           )
           (progn
             (princ "\nNo continuation point -- please pick a point. ")
@@ -365,7 +364,7 @@
       ;; picked or entered from the keyboard.
       (T
         (setq v:stpt strtpt
-              temp   nil
+              temp  nil
         )
       )
     )
@@ -429,7 +428,7 @@
           ((= uctr 0) (setq nextpt nil) )
           ((> uctr 0) 
             (command "_.U")
-            (setq spts   (dl_lsu spts 1))
+            (setq spts  (dl_lsu spts 1))
             (setq savpts (dl_lsu savpts 2))
             (setq wnames (dl_lsu wnames 2))
             (setq uctr (- uctr 2))
@@ -460,10 +459,10 @@
         (dl_sso)
       )
       ((= nextpt "Arc")
-        (setq dl_arc T)               ; Change to Arc segment prompt.
+        (setq dl_arc T)              ; Change to Arc segment prompt.
       )
       ((= nextpt "Line")
-        (setq dl_arc nil)             ; Change to Line segment prompt.
+        (setq dl_arc nil)            ; Change to Line segment prompt.
       )
       ((= nextpt "CLose")
         (dl_cls)
@@ -505,9 +504,9 @@
         (if brk_e1 (setq brk_e1 nil))
         (if brk_e2 (setq brk_e2 nil))
         (command "_.UNDO" "_EN")
-      )                               ; end of inner cond  
-    )                                 ; end of outer cond  
-  )                                   ; end of while
+      )                              ; end of inner cond  
+    )                                ; end of outer cond  
+  )                                  ; end of while
 )
 ;;; ------------------ End Main Functions ---------------------------
 ;;; ---------------- Begin Support Functions ------------------------
@@ -522,10 +521,10 @@
 ;;;
 (defun dl_cls ()
   (if (or (and (null dl_arc) (< uctr 4)
-               (if (> uctr 1)
-                 (/= (dl_val 0 (entlast)) "ARC")
-                 (not (> uctr 1))
-               )
+              (if (> uctr 1)
+                (/= (dl_val 0 (entlast)) "ARC")
+                (not (> uctr 1))
+              )
           )
           (and dl_arc (< uctr 2)))
     (progn 
@@ -547,7 +546,7 @@
                 ange (angle '(0 0 0) ange)
                 dir (if (= (dl_val 0 tmp) "LINE")
                       (angle (trans (dl_val 10 tmp) 0 1) 
-                             (trans (dl_val 11 tmp) 0 1))
+                            (trans (dl_val 11 tmp) 0 1))
                       (progn
                         (setq dir (+ (dl_val 50 tmp) ange)
                               dir (if (> dir (* 2 pi))
@@ -556,13 +555,13 @@
                                   )
                         )
                         (if (equal dir
-                                   (setq dir (angle (trans (dl_val 10 tmp) 
-                                                           (dl_val -1 tmp) 
-                                                           1)
+                                  (setq dir (angle (trans (dl_val 10 tmp) 
+                                                          (dl_val -1 tmp) 
+                                                          1)
                                                     strtpt
-                                             ) 
-                                   )
-                                   0.01)
+                                            ) 
+                                  )
+                                  0.01)
                           (- dir (/ pi 2))
                           (+ dir (/ pi 2))
                         )
@@ -570,11 +569,11 @@
                     )
           )
           (command "_.ARC" 
-                   strtpt 
-                   "_E" 
-                   nextpt 
-                   "_D"
-                   (* dir (/ 180 pi))
+                  strtpt 
+                  "_E" 
+                  nextpt 
+                  "_D"
+                  (* dir (/ 180 pi))
           )
           ;; Close with arc segments
           (dl_mlf 4)
@@ -583,7 +582,7 @@
       ;; set nextpt to "CLose" which will cause an exit.
       (setq nextpt "CLose"
             v:stpt nil
-            cont   nil
+            cont  nil
       )
     )
   )
@@ -744,7 +743,7 @@
             (princ "\nfor the selected endpoints.  ")
             (princ "Please enter a radius greater than ")
             (if (< (/ (getvar "tracewid") 2.0) 
-                   (/ (distance strtpt cpt) 2.0))
+                  (/ (distance strtpt cpt) 2.0))
               (princ (rtos (/ (distance strtpt cpt) 2.0)))
               (princ (rtos (/ (getvar "tracewid") 2.0)))
             )
@@ -788,12 +787,12 @@
 )
 ;;;
 ;;; Set the alignment of the "ghost" line to one of the following values:
-;;;   
-;;;   Left   == -1/2 of width (Real number)
-;;;           > -1/2 of width (Real number)
-;;;   Center == 0.0
-;;;           < +1/2 of width (Real number)
-;;;   Right  == +1/2 of width (Real number)
+;;;  
+;;;  Left  == -1/2 of width (Real number)
+;;;          > -1/2 of width (Real number)
+;;;  Center == 0.0
+;;;          < +1/2 of width (Real number)
+;;;  Right  == +1/2 of width (Real number)
 ;;;
 ;;; All of the alignment options are taken as if you are standing at the
 ;;; start point of the line or arc looking toward the end point, with 
@@ -825,7 +824,7 @@
 (defun dl_sao (/ temp dragos)
   (initget "Left Center Right")
   (setq temp dl:osd)
-  ;;(setq dragos T)                   ; See note above.
+  ;;(setq dragos T)                  ; See note above.
   (setq dl:osd (getreal (strcat
     "\nSet dragline position to Left/Center/Right/<Offset from center = "
     (rtos dl:osd) ">: ")))
@@ -895,7 +894,7 @@
         (setq dl:osd (/ (getvar "tracewid") 2.0))
       )
       (T
-        (princ)     ; center aligned
+        (princ)    ; center aligned
       )
     )
   )
@@ -922,17 +921,17 @@
     "\nEnter the offset distance <" (rtos (distance strtpt nextpt)) 
     ">: ")))
   (setq dist (if (or (= dist "") (null dist))
-               (distance strtpt nextpt)
-               (if (< dist 0)
-                 (* (distance strtpt nextpt) (/ (abs dist) 100.0))
-                 dist
-               )
-             )
+              (distance strtpt nextpt)
+              (if (< dist 0)
+                (* (distance strtpt nextpt) (/ (abs dist) 100.0))
+                dist
+              )
+            )
   )              
   (setq strtpt (polar strtpt
                       (angle strtpt nextpt)
                       dist
-               ) 
+              ) 
   )
   (setq temp nil)
   (command "_.UNDO" "_GROUP")
@@ -1003,7 +1002,7 @@
                 (= (dl_val 0 (eval (read vent))) "LINE")
             )
             (equal (caddr(dl_val 210 (eval (read vent))))
-                   (caddr(trans '(0 0 1) 1 0)) 0.001)
+                  (caddr(trans '(0 0 1) 1 0)) 0.001)
           )
         (princ)
         (progn
@@ -1029,16 +1028,16 @@
   (setq temp (entlast))
   (if (= (dl_val 0 temp) "LINE")
     (setq nextpt (if (equal strtpt (dl_val 10 temp) 0.001)
-                   (dl_val 11 temp)
-                   (dl_val 10 temp)
-                 )
+                  (dl_val 11 temp)
+                  (dl_val 10 temp)
+                )
     )
     ;; Then it must be an arc...
     (progn
       ;; get its center point
       (setq cpt  (trans (dl_val 10 temp) (dl_val -1 temp) 1)
-            ang  (dl_val 50 temp)     ; starting angle
-            rad  (dl_val 40 temp)     ; radius
+            ang  (dl_val 50 temp)    ; starting angle
+            rad  (dl_val 40 temp)    ; radius
       )
       (setq ange (trans '(1 0 0) (dl_val -1 temp) 1)
             ange (angle '(0 0 0) ange)
@@ -1048,9 +1047,9 @@
         (setq ang (- ang (* 2 pi)))
       )
       (setq nextpt (if (equal strtpt (polar cpt ang rad) 0.01)
-                     (polar cpt (dl_val 51 temp) rad)
-                     (polar cpt ang rad)
-                   )
+                    (polar cpt (dl_val 51 temp) rad)
+                    (polar cpt ang rad)
+                  )
       )
     )
   )
@@ -1062,8 +1061,8 @@
 ;;; dl_mlf == DLine_Main_Line_Function
 ;;;
 (defun dl_mlf (flg / temp1 temp2 newang ang1 ang2 
-                     ent cpt ang rad1 rad2 sent1 sent2
-                     tmpt1 tmpt2 tmpt3 tmpt4)
+                    ent cpt ang rad1 rad2 sent1 sent2
+                    tmpt1 tmpt2 tmpt3 tmpt4)
 
   ;; Verify nextpt
   (if (null nextpt) (setq nextpt (dl_vnp)))
@@ -1074,21 +1073,21 @@
       (setq flg 3)
     )
   )
-   
+  
   (setq temp1  (+ (/ (getvar "tracewid") 2.0) dl:osd)
         temp2  (- (getvar "tracewid") temp1)
         newang (angle strtpt nextpt)
-        ang1   (+ (angle strtpt nextpt) (/ pi 2))
-        ang2   (- (angle strtpt nextpt) (/ pi 2))
+        ang1  (+ (angle strtpt nextpt) (/ pi 2))
+        ang2  (- (angle strtpt nextpt) (/ pi 2))
   )
   (cond
     ((= flg 1)                        ; if drawing lines
-      (dl_dls nil ang1 temp1)         ; Draw line segment 1
-      (dl_dls nil ang2 temp2)         ; Draw line segment 2
+      (dl_dls nil ang1 temp1)        ; Draw line segment 1
+      (dl_dls nil ang2 temp2)        ; Draw line segment 2
     )
-    ((or (= flg 2) (= flg 4))         ; else drawing arcs...
-      (setq tmp (entlast)             ; get the last arc entity
-            ent  (entget tmp)         ; (i.e., the guideline)
+    ((or (= flg 2) (= flg 4))        ; else drawing arcs...
+      (setq tmp (entlast)            ; get the last arc entity
+            ent  (entget tmp)        ; (i.e., the guideline)
             ;; get its center point
             cpt  (trans (dl_val 10 tmp) (dl_val -1 tmp) 1) 
             ang  (dl_val 50 tmp)      ; starting angle
@@ -1100,9 +1099,9 @@
       (if (> ang (* 2 pi))
         (setq ang (- ang (* 2 pi)))
       )
-     
+    
       ;; if start angle needs revision
-      (if (equal (angle cpt strtpt) ang 0.01)   
+      (if (equal (angle cpt strtpt) ang 0.01)  
         (progn
           ;; Start angle needs revision.
           (setq strt_a T
@@ -1110,8 +1109,8 @@
                 rad2  (- (dl_val 40 tmp) temp1) ; inner radius
           )
           (setq ent (subst (cons 40 rad2) ; modify its radius
-                           (assoc 40 ent) 
-                           ent))
+                          (assoc 40 ent) 
+                          ent))
           (entmod ent) 
           (dl_atl)                    ; Add ename to list
           (setq save_1 ent)
@@ -1127,7 +1126,7 @@
                               (list tmp '(0 0 0)) 
                               (polar cpt ang (+ 1 rad1 rad2))
                               "")
-          (setq tmp (entlast)         ; get the offset arc
+          (setq tmp (entlast)        ; get the offset arc
                 ent  (entget tmp))
           (dl_atl)                    ; Add ename to list
           (setq save_2 ent)
@@ -1140,7 +1139,7 @@
                 ;; set nextpt to "CLose" which will cause an exit.
                 (setq nextpt "CLose"
                       v:stpt nil
-                      cont   nil
+                      cont  nil
                 )
               )
             )
@@ -1155,9 +1154,9 @@
                 rad2  (- (dl_val 40 tmp) temp2) ; inner radius
           )
           (setq ent (subst (cons 40 rad1) ; modify its radius
-                           (assoc 40 ent) 
-                           ent))
-          (entmod ent)                             
+                          (assoc 40 ent) 
+                          ent))
+          (entmod ent)                            
           (dl_atl)                    ; Add ename to list
           (setq save_1 ent)
           (setq sent1 (dl_val -1 tmp))                            
@@ -1172,7 +1171,7 @@
                             (list tmp '(0 0 0)) 
                             cpt 
                             "")
-          (setq tmp (entlast)         ; get the last arc entity
+          (setq tmp (entlast)        ; get the last arc entity
                 ent  (entget tmp))
           (dl_atl)                    ; Add ename to list
           (setq save_2 ent)
@@ -1185,7 +1184,7 @@
                 ;; set nextpt to "CLose" which will cause an exit.
                 (setq nextpt "CLose"
                       v:stpt nil
-                      cont   nil
+                      cont  nil
                 )
               )
             )
@@ -1197,8 +1196,8 @@
     )
     ((= flg 3)                        ; if straight closing
       (setq nextpt (nth 0 spts)
-            ang1   (+ (angle strtpt nextpt) (/ pi 2))
-            ang2   (- (angle strtpt nextpt) (/ pi 2))
+            ang1  (+ (angle strtpt nextpt) (/ pi 2))
+            ang2  (- (angle strtpt nextpt) (/ pi 2))
       )
       (dl_dls 0 ang1 temp1)
       (dl_dls 1 ang2 temp2)
@@ -1206,7 +1205,7 @@
       ;; set nextpt to "CLose" which will cause an exit.
       (setq nextpt "CLose"
             v:stpt nil
-            cont   nil
+            cont  nil
       )
     )
     (T
@@ -1214,8 +1213,8 @@
       (exit)
     )
   )
-  (setq strtpt nextpt   
-        spts   (append spts (list strtpt))
+  (setq strtpt nextpt  
+        spts  (append spts (list strtpt))
         savpts (append savpts (list savpt3))
         savpts (append savpts (list savpt4))
   )
@@ -1230,12 +1229,12 @@
 ;;;
 (defun dl_dls (flgn ang temp / j k pt1 pt2 tmp1 ent1 p1 p2)
 
-  (mapcar                             ; get endpoints of the offset line
+  (mapcar                            ; get endpoints of the offset line
     '(lambda (j k)
-       (set j (polar (eval k) ang temp))
-     )      
-     '(pt1 pt2)
-     '(strtpt nextpt)
+      (set j (polar (eval k) ang temp))
+    )      
+    '(pt1 pt2)
+    '(strtpt nextpt)
   )
   (cond
     ((= uctr 0)
@@ -1292,11 +1291,11 @@
           )
           (if (= (dl_val 0 tmp1) "LINE")
             ;; if it's a line
-            (setq pt2 (dl_mls nil 10))           
+            (setq pt2 (dl_mls nil 10))          
             ;; if it's an arc
             (setq pt2 (dl_mas T nil pt2 pt1 nil))  
           )
-        )                             
+        )                            
       )
     )
     (T
@@ -1316,11 +1315,11 @@
           )
           (if (= (dl_val 0 tmp1) "LINE")
             ;; if it's a line
-            (setq pt2 (dl_mls nil 10))           
+            (setq pt2 (dl_mls nil 10))          
             ;; if it's an arc
             (setq pt2 (dl_mas T nil pt2 pt1 nil))  
           )
-        )                             
+        )                            
       )
       ;; Now break the line or arc found at the end point 
       ;; if there is one, and we are in a breaking mood.
@@ -1332,11 +1331,11 @@
       ;; Do not set brk_e2 nil... it will be set later.
     )
   )
-  (command "_.LINE" pt1 pt2 "")         ; draw the line
+  (command "_.LINE" pt1 pt2 "")        ; draw the line
   (setq wnames (if (null wnames) 
-                 (list (setq elast (entlast)) )
-                 (append wnames (list (setq elast (entlast)))))
-        uctr   (1+ uctr)
+                (list (setq elast (entlast)) )
+                (append wnames (list (setq elast (entlast)))))
+        uctr  (1+ uctr)
   )
   wnames
 )
@@ -1394,18 +1393,18 @@
 ;;;
 (defun dl_dl2 (npt)
   (setq tmp1 (nth (- uctr 2) wnames)
-        ent1 (entget tmp1))           ; get the corresponding prev. entity
-   
+        ent1 (entget tmp1))          ; get the corresponding prev. entity
+  
   (if (= (dl_val 0 tmp1) "LINE")  
-    ;; Check angles 0 180, -180  and 360...   
+    ;; Check angles 0 180, -180  and 360...  
     (if (or  (equal (angle strtpt nextpt)
-                   (angle (trans (dl_val 10 tmp1) 0 1)
+                  (angle (trans (dl_val 10 tmp1) 0 1)
                           (trans (dl_val 11 tmp1) 0 1)) 0.001)
-             (equal (angle strtpt nextpt)
-                   (angle (trans (dl_val 11 tmp1) 0 1)
+            (equal (angle strtpt nextpt)
+                  (angle (trans (dl_val 11 tmp1) 0 1)
                           (trans (dl_val 10 tmp1) 0 1)) 0.001)
-             (equal (+ (* 2 pi) (angle strtpt nextpt))
-                   (angle (trans (dl_val 10 tmp1) 0 1)
+            (equal (+ (* 2 pi) (angle strtpt nextpt))
+                  (angle (trans (dl_val 10 tmp1) 0 1)
                           (trans (dl_val 11 tmp1) 0 1)) 0.001)
         )
       ;; if it's a line
@@ -1429,10 +1428,10 @@
 ;;; dl_mls == DLine_Modify_Line_Segment
 ;;;
 (defun dl_mls (flg2 nn / spt ept pt)  ; flg2 = nil if line to line
-                                      ;      = T   if line to arc
+                                      ;      = T  if line to arc
 
   ;; This is the previous entity; a line
-  (setq spt (trans (dl_val 10 tmp1) 0 1)   
+  (setq spt (trans (dl_val 10 tmp1) 0 1)  
         ept (trans (dl_val 11 tmp1) 0 1)
   )
   (if flg2
@@ -1448,8 +1447,8 @@
   ;; modify the previous line
   (if pt 
     (entmod (subst (cons nn (trans pt 1 0)) 
-                   (assoc nn ent1) 
-                   ent1))
+                  (assoc nn ent1) 
+                  ent1))
     (setq pt pt2)
   )
   pt
@@ -1461,9 +1460,9 @@
 ;;; then it attempts to determine which of the points serves as a 
 ;;; best-fit to the following criteria:
 ;;; 
-;;;   1) One end of the arc must lie "on" the line, or
+;;;  1) One end of the arc must lie "on" the line, or
 ;;;      one end of the line must lie on the arc. 
-;;;   2) Given that the point given in 1 above is p1,
+;;;  2) Given that the point given in 1 above is p1,
 ;;;      and that the other point is p2, then if the arc crosses over
 ;;;      the line then use p2, otherwise the arc does not cross over
 ;;;      the line so use p1.
@@ -1486,8 +1485,8 @@
 (defun dl_ial (arc pt_1 pt_2 npt / d pi2 rad ang nang temp ipt)
 
   (setq cpt  (trans (dl_val 10 arc) (dl_val -1 arc) 1)  
-        pi2  (/ pi 2)                 ; 1/2 pi
-        ang  (angle pt_1 pt_2)                   
+        pi2  (/ pi 2)                ; 1/2 pi
+        ang  (angle pt_1 pt_2)                  
         nang (+ ang pi2)              ; Normal to "ang"
         temp (inters pt_1 pt_2 cpt (polar cpt nang 1) nil)
         nang (angle cpt temp)
@@ -1500,7 +1499,7 @@
       ;; One intersection.
       (setq ipt temp)
     )
-    ((< rad d)                       
+    ((< rad d)                      
       ;; No intersection.
       (setq spt (polar cpt nang rad)
             ipt temp
@@ -1538,7 +1537,7 @@
     (setq theta pi2
           nang (+ ang pi2)            ; Normal to "ang"
     )
-    (setq l     (sqrt (abs (- (expt rad 2) (expt d 2))))
+    (setq l    (sqrt (abs (- (expt rad 2) (expt d 2))))
           theta (abs (atan (/ l d)))
     )
   )
@@ -1568,7 +1567,7 @@
 (defun dl_onl (sp ep pt / cpt sa ea ang)
   (if (inters sp ep pt
               (polar pt (+ (angle sp ep) (/ pi 2))
-                     (/ (getvar "tracewid") 10)
+                    (/ (getvar "tracewid") 10)
               )
               T)
     T 
@@ -1582,8 +1581,8 @@
 ;;;
 (defun dl_ona (arc pt / cpt sa ea ang)
   (setq cpt (trans (dl_val 10 arc) (dl_val -1 arc) 1) 
-        sa  (dl_val 50 arc)           ; angle of current ent start point
-        ea  (dl_val 51 arc)           ; angle of current ent end point
+        sa  (dl_val 50 arc)          ; angle of current ent start point
+        ea  (dl_val 51 arc)          ; angle of current ent end point
         ang (angle cpt pt)            ; angle to pt.
   )
   (if (> sa ea)
@@ -1600,12 +1599,12 @@
 ;;; Get the best intersection point of an arc and a line.  The criteria
 ;;; are as follows:
 ;;; 
-;;;   1) The best point will lie on both the arc and the line.
-;;;   2) It will be the point which causes the shortest arc to be created
+;;;  1) The best point will lie on both the arc and the line.
+;;;  2) It will be the point which causes the shortest arc to be created
 ;;;      such that (1) is satisfied.
-;;;   3) If closing, then always use the point closest to nextpt.  Unless,
+;;;  3) If closing, then always use the point closest to nextpt.  Unless,
 ;;;      the points are equidistant, then use 1 and 2 above to tiebreak.
-;;;   4) If breaking an arc with a line, always use the points nearest the
+;;;  4) If breaking an arc with a line, always use the points nearest the
 ;;;      break point.
 ;;;
 ;;; dl_bp == DLine_Best_Point_of_arc_and_line
@@ -1617,7 +1616,7 @@
   )
   (if (and temp1 temp2)
     (if (and (< uctr 2) 
-             (and brk_e1 brk_e2))
+            (and brk_e1 brk_e2))
       pp1
       (if (and temp (not fang)) pp1 pp2)
     )
@@ -1726,7 +1725,7 @@
       ;; Do not set brk_e2 nil... it will be set later.
     )
   )
-  (setq uctr   (1+ uctr))
+  (setq uctr  (1+ uctr))
 )
 ;;;
 ;;; Set pt1 or pt2 based on whether there is an arc or line to be broken.
@@ -1749,7 +1748,7 @@
               prvcpt (trans (dl_val 10 bent1) (dl_val -1 bent1) 1)
               pt1    (polar prvcpt (dl_val 50 bent1) (dl_val 40 bent1))
               pt2    (polar curcpt (dl_val nn sent1) (dl_val 40 sent1))
-              ang1   (angle prvcpt pt1)
+              ang1  (angle prvcpt pt1)
         )
         (if (not (equal ang1 (angle prvcpt strtpt) 0.01))
           (setq pt1  (polar prvcpt (dl_val 51 bent1) (dl_val 40 bent1))
@@ -1760,9 +1759,9 @@
           )
         )
         (if (or (and (< anga 0.0872665)
-                     (> anga -0.0872665))
+                    (> anga -0.0872665))
                 (and (< angb 0.0872665)
-                     (> angb -0.0872665))
+                    (> angb -0.0872665))
             )
           (progn
             (set (read n) pt)
@@ -1794,9 +1793,9 @@
   ;; get the corresponding previous entity
   (setq tmp1 (nth (- uctr 2) wnames) 
         ent1 (entget tmp1))
-  (if (= (dl_val 0 tmp1) "LINE")     
+  (if (= (dl_val 0 tmp1) "LINE")    
     ;; if it's a line
-    (setq pt (dl_mls T 11))             
+    (setq pt (dl_mls T 11))            
     ;; if it's an arc
     (setq pt (dl_mas nil T nil nil strtpt)) 
   )
@@ -1805,17 +1804,17 @@
     (progn
       (setq ang (- (angle cpt pt) ange))
       (entmod (setq ent (subst (cons nn ang) 
-                       (assoc nn ent) 
-                       ent)))         ; modify arc endpt
+                      (assoc nn ent) 
+                      ent)))        ; modify arc endpt
     )
   )
   (if flgn                            ; if closing 
     (progn
-      (setq tmp1 (nth flgn wnames)     
+      (setq tmp1 (nth flgn wnames)    
             ent1  (entget tmp1))  ; get the flagged entity
-      (if (= (dl_val 0 tmp1) "LINE")     
+      (if (= (dl_val 0 tmp1) "LINE")    
         ;; if it's a line
-        (setq pt (dl_mls T 10))   
+        (setq pt (dl_mls T 10))  
         ;; if it's an arc
         (setq pt (dl_mas T T nil nil nextpt)) 
       )
@@ -1824,11 +1823,11 @@
           (setq ang (- (angle cpt pt) ange))
           (setq nn (if (= nn 50) 51 50))
           (entmod (setq ent (subst (cons nn ang) 
-                         (assoc nn ent) 
-                         ent)))       ; modify arc endpt
-        )                             
+                        (assoc nn ent) 
+                        ent)))      ; modify arc endpt
+        )                            
       )
-    )                             
+    )                            
   )
 )
 ;;;
@@ -1886,19 +1885,19 @@
 )
 ;;;
 ;;; Modify arc                        ; flg2 = nil if arc to line
-;;;                                   ;      = T   if arc to arc
+;;;                                  ;      = T  if arc to arc
 ;;;
 ;;; dl_mas == DLine_Modify_Arc_Segment
 ;;;
 (defun dl_mas (flg3 flg2 spt ept pt / nnn pt1 pt2 rad1 ange)
   ;; get some stuff
-  (setq cpt1   (trans (dl_val 10 tmp1) (dl_val -1 tmp1) 1)           
-        rad1   (dl_val 40 tmp1)
-        ang1   (dl_val 50 tmp1)
+  (setq cpt1  (trans (dl_val 10 tmp1) (dl_val -1 tmp1) 1)          
+        rad1  (dl_val 40 tmp1)
+        ang1  (dl_val 50 tmp1)
   )
-  (if (null pt)                       ; if a point is not passed in:
+  (if (null pt)                      ; if a point is not passed in:
     (setq pt (nth 0 spts))            ; set to initial saved start point.
-  )               
+  )              
   (setq ange (trans '(1 0 0) (dl_val -1 tmp1) 1)
         ange (angle '(0 0 0) ange)
         ang1 (+ ang1 ange)
@@ -1907,22 +1906,22 @@
     (setq ang1 (- ang1 (* 2 pi)))
   )
   (if (equal (angle cpt1 pt) ang1 0.01) ; figure out if we're looking
-    (setq nnn 50)                     ; for the start or end point of
-    (setq nnn 51)                     ; the beginning arc, then
-  )                                   ; get the intersection point
+    (setq nnn 50)                    ; for the start or end point of
+    (setq nnn 51)                    ; the beginning arc, then
+  )                                  ; get the intersection point
   ;; if arc to arc
   (if flg2
     ;; then
     (progn
       ;; find intersection with arc
-      (setq pt1 (dl_iaa tmp tmp1 (if flg3 nextpt strtpt) flg2))   
+      (setq pt1 (dl_iaa tmp tmp1 (if flg3 nextpt strtpt) flg2))  
       (if pt1 
         (progn
           (setq ang1 (- (angle cpt1 pt1) ange))
           (setq ent1 (subst (cons nnn ang1) 
                             (assoc nnn ent1) 
-                            ent1))                 
-          (entmod ent1)               ; modify arc endpt
+                            ent1))                
+          (entmod ent1)              ; modify arc endpt
         )
       )
     )
@@ -1933,8 +1932,8 @@
       (setq ang1 (- (angle cpt1 pt1) ange))
       (setq ent1 (subst (cons nnn ang1) 
                         (assoc nnn ent1) 
-                        ent1))                 
-      (entmod ent1)                   ; modify arc endpt
+                        ent1))                
+      (entmod ent1)                  ; modify arc endpt
     )
   )
   pt1
@@ -1946,8 +1945,8 @@
 ;;; then it attempts to determine which of the points serves as a 
 ;;; best-fit to the following criteria:
 ;;; 
-;;;   1) One end of the arc must lie "on" the arc. 
-;;;   2) Given that the point given in 1 above is pt1,
+;;;  1) One end of the arc must lie "on" the arc. 
+;;;  2) Given that the point given in 1 above is pt1,
 ;;;      and that the other point is pt2, then if the arc crosses over
 ;;;      the other arc then use pt2, otherwise the arc does not cross over
 ;;;      the other arc so use pt1.
@@ -1971,14 +1970,14 @@
 ;;; dl_iaa == DLine_Intersect_Arc_and_Arc
 ;;;
 (defun dl_iaa  (en1 en2 npt flga / a b c s ang alpha alph ipt 
-                                   curcpt prvcpt temp temp1 temp2)
+                                  curcpt prvcpt temp temp1 temp2)
   (setq curcpt  (trans (dl_val 10 en1) (dl_val -1 en1) 1) ; the "last" entity
         prvcpt  (trans (dl_val 10 en2) (dl_val -1 en2) 1) ; the previous entity
-        a       (dl_val 40 en2)
-        b       (distance curcpt prvcpt)
-        c       (dl_val 40 en1)
-        s       (/ (+ a b c) 2.0)
-        ang     (angle curcpt prvcpt)
+        a      (dl_val 40 en2)
+        b      (distance curcpt prvcpt)
+        c      (dl_val 40 en1)
+        s      (/ (+ a b c) 2.0)
+        ang    (angle curcpt prvcpt)
   )
   (cond
     ;; circles are tangent
@@ -1988,7 +1987,7 @@
       (setq ipt nil)
     )
     ;; circles do not intersect
-    ((and (or (> b (+ a c)) (if (> c a) (< (+ a b) c) (< (+ c b) a)))                 
+    ((and (or (> b (+ a c)) (if (> c a) (< (+ a b) c) (< (+ c b) a)))                
           (not (equal (+ a b ) c (/ (+ a b c) 1000000))))
       ;; No intersection.
       (if (= flg 4) 
@@ -2005,7 +2004,7 @@
     (T
       ;; general law of cosines formula -- (- s a) != 0
       (setq alpha (* 2.0 (atan (sqrt (abs (/ (* (- s b) (- s c)) 
-                                             (* s (- s a)))))))
+                                            (* s (- s a)))))))
       )
       
       (setq tpt1 (polar curcpt (+ ang alpha) c)
@@ -2036,7 +2035,7 @@
   )
   (setq cpt curcpt)
   (setq cpt1 prvcpt)
-  ipt                                 ; return point
+  ipt                                ; return point
 )
 ;;;
 ;;; Get the best point for the arc/arc intersection.
@@ -2049,7 +2048,7 @@
   )
   (if temp2
     (if (and (< uctr 2) 
-             (and brk_e1 brk_e2))
+            (and brk_e1 brk_e2))
       pp1
       (if temp1 
         (if (< uctr 2) 
@@ -2071,8 +2070,8 @@
 ;;;
 (defun dl_atl ()
   (setq wnames (if (null wnames) 
-                 (list (entlast)) 
-                 (append wnames (list tmp)))
+                (list (entlast)) 
+                (append wnames (list tmp)))
   )
   wnames
 )
@@ -2122,7 +2121,8 @@
 ;;;
 ;;; Set these defaults when loading the routine.
 ;;;
-(if (null dl:ecp) (setq dl:ecp 4))    ; default to auto endcaps
+;(if (null dl:ecp) (setq dl:ecp 4))    ; default to auto endcaps
+(if (null dl:ecp) (setq dl:ecp 0))    ; default to no endcaps
 (if (null dl:snp) (setq dl:snp T))    ; default to snapping ON
 (if (null dl:brk) (setq dl:brk T))    ; default to breaking ON
 (if (null dl:osd) (setq dl:osd 0))    ; default to center alignment
@@ -2130,14 +2130,10 @@
 ;;; These are the c: functions.
 ;;;
 (defun c:dl ()
-(SETQ OLD_OS (GETVAR "OSMODE"))
-  (if (ai_notrans) (dline))           ; DLINE can't be used transparently
-	(setvar "osmode" OLD_OS)
+  (if (ai_notrans) (dline))          ; DLINE can't be used transparently
 )
 (defun c:dline ()
-(SETQ OLD_OS (GETVAR "OSMODE"))
-  (if (ai_notrans) (dline))           ; DLINE can't be used transparently
-	(setvar "osmode" OLD_OS)
+  (if (ai_notrans) (dline))          ; DLINE can't be used transparently
 )
 
 (princ "  DLINE loaded.")
