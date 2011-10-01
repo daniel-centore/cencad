@@ -672,15 +672,15 @@ ID_POP4		[&Plumbing]
 				[<-<-Non-Potable Hot Water Retn (NHRH)]^P^C^C(loadblockinfo "NHRH")
 		[->Waste]
 			[Soil or Waste (S or W)]^P^C^C(loadblockinfo "WAST")
-			[Soil or Waste Below Floor (S or W)]
-			[Vent (V)]
-			[Vent Below Floor (V)]
-			[Indirect Waste (IW)]
-			[Grease Waste (GW)]
-			[Grease Waste Below Floor (GW)]
-			[Pumped Discharge (PD)]
-			[Rain Water Leader (RWL)]
-			[Rain Water Below Floor (RWL)]
+			[Soil or Waste Below Floor (S or W)]^P^C^C(loadblockinfo "WUNS")
+			[Vent (V)]^P^C^C(loadblockinfo "VENT")
+			[Vent Below Floor (V)]^P^C^C(loadblockinfo "VUNS")
+			[Indirect Waste (IW)]^P^C^C(loadblockinfo "IWST")
+			[Grease Waste (GW)]^P^C^C(loadblockinfo "GRSW")
+			[Grease Waste Below Floor (GW)]^P^C^C(loadblockinfo "GWUS")
+			[Pumped Discharge (PD)]^P^C^C(loadblockinfo "PMPD")
+			[Rain Water Leader (RWL)]^P^C^C(loadblockinfo "RNWL")
+			[Rain Water Below Floor (RWL)]^P^C^C(loadblockinfo "RWUS")
 			[Lab Waste (LW)]
 			[Lab Waste Below Floor (LW)]
 			[Lab Vent (LV)]

@@ -37,6 +37,7 @@
 	(if (= myscale nil) (setq myscale (getvar "dimscale")))
 	
 	(setvar "dimscale" myscale)
+	(setvar "ltscale" myscale)
 	(setq text-size (/ myscale text-var))	
 	
 	(command "-style" "CEN-ATT" "romans.shx" text-size "0.75" "0" "no" "no")
