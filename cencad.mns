@@ -690,15 +690,15 @@ ID_POP4		[&Plumbing]
 			[Special Vent (SV)]^P^C^C(loadblockinfo "SPCV")
 			[<-Special Vent Below Floor (SV)]^P^C^C(loadblockinfo "SVUS")
 		[->Hospital/ Lab Gas]
-			[Lab Compressed Air (LA)]
-			[Med Compressed Air (MA)]
-			[Vacuum (VAC)]
-			[Lab Vacuum (V)]
-			[Med Vacuum (MV)]
-			[Surg Vacuum (SV)]
-			[Oxygen (OX)]
-			[Carbon Dioxide (CO2)]
-			[Nitrogen (N)]
+			[Lab Compressed Air (LA)]^P^C^C(loadblockinfo "LAIR")
+			[Med Compressed Air (MA)]^P^C^C(loadblockinfo "MAIR")
+			[Vacuum (VAC)]^P^C^C(loadblockinfo "VACM")
+			[Lab Vacuum (V)]^P^C^C(loadblockinfo "LVAC")
+			[Med Vacuum (MV)]^P^C^C(loadblockinfo "MVAC")
+			[Surg Vacuum (SV)]^P^C^C(loadblockinfo "SVAC")
+			[Oxygen (OX)]^P^C^C(loadblockinfo "OXYG")
+			[Carbon Dioxide (CO2)]^P^C^C(loadblockinfo "CO2S")
+			[Nitrogen (N)]^P^C^C(loadblockinfo "N2GA")
 			[Liquid Nitrogen (N2LQ)]
 			[Nitrous Oxide (NO)]
 			[Nitrous Oxide Evac (EV)]
