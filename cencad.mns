@@ -631,23 +631,23 @@ ID_TBEFuse		[<-Fuse]^P^C^C(loadblockinfo "E1FUSE")
 ID_POP4		[&Plumbing]
 	[->Pipe Layer]
 		[->Water]
-			[Cold Water (-)]
-			[Hot Water (--)]
-			[Hot Water Retn (---)]
-			[Non-Potable Cold Water (NCW)]
-			[Non-Potable Hot Water (NHW)]
-			[Non-Potable Hot Water Retn (NHWR)]
-			[140 Hot Water (HW140)]
-			[140 Hot Water Retn (HWR140)]
-			[180 Hot Water (HW180)]
-			[180 Hot Water Retn (HWR180)]
-			[Chilled Drinking Water Supp (DWS)]
-			[Chilled Drinking Water Retn (DWR)]
-			[Irrigation Water (IR)]
-			[Tempered Water (TW)]
-			[Rev Osmosis Sup (ROS)]
-			[Rev Osmosis Ret (ROR)]
-			[<-Rev Osmosis Deionized Water (RODI)]
+			[Cold Water (-)]^P^C^C(loadblockinfo "COLDWATER")
+			[Hot Water (--)]^P^C^C(loadblockinfo "HOTWATER")
+			[Hot Water Retn (---)]^P^C^C(loadblockinfo "HOTWATERR")
+			[Non-Potable Cold Water (NCW)]^P^C^C(loadblockinfo "NCW")
+			[Non-Potable Hot Water (NHW)]^P^C^C(loadblockinfo "NHW")
+			[Non-Potable Hot Water Retn (NHWR)]^P^C^C(loadblockinfo "NHWR")
+			[140 Hot Water (HW140)]^P^C^C(loadblockinfo "HW140")
+			[140 Hot Water Retn (HWR140)]^P^C^C(loadblockinfo "HWR140")
+			[180 Hot Water (HW180)]^P^C^C(loadblockinfo "HW180")
+			[180 Hot Water Retn (HWR180)]^P^C^C(loadblockinfo "HWR180")
+			[Chilled Drinking Water Supp (DWS)]^P^C^C(loadblockinfo "DWS")
+			[Chilled Drinking Water Retn (DWR)]^P^C^C(loadblockinfo "DWR")
+			[Irrigation Water (IR)]^P^C^C(loadblockinfo "IRRIG")
+			[Tempered Water (TW)]^P^C^C(loadblockinfo "TW")
+			[Rev Osmosis Sup (ROS)]^P^C^C(loadblockinfo "ROWS")
+			[Rev Osmosis Ret (ROR)]^P^C^C(loadblockinfo "ROWR")
+			[<-Rev Osmosis Deionized Water (RODI)]^P^C^C(loadblockinfo "RODI")
 		[->Zoned Water]
 			[->Low Zone]
 				[Cold Water (CWL)]
