@@ -681,14 +681,14 @@ ID_POP4		[&Plumbing]
 			[Pumped Discharge (PD)]^P^C^C(loadblockinfo "PMPD")
 			[Rain Water Leader (RWL)]^P^C^C(loadblockinfo "RNWL")
 			[Rain Water Below Floor (RWL)]^P^C^C(loadblockinfo "RWUS")
-			[Lab Waste (LW)]
-			[Lab Waste Below Floor (LW)]
-			[Lab Vent (LV)]
-			[Lab Vent Below Floor (LV)]
-			[Special Waste (SW)]
-			[Special Waste Below Floor (SW)]
-			[Special Vent (SV)]
-			[<-Special Vent Below Floor (SV)]
+			[Lab Waste (LW)]^P^C^C(loadblockinfo "LABW")
+			[Lab Waste Below Floor (LW)]^P^C^C(loadblockinfo "LWUS")
+			[Lab Vent (LV)]^P^C^C(loadblockinfo "LABV")
+			[Lab Vent Below Floor (LV)]^P^C^C(loadblockinfo "LVUS")
+			[Special Waste (SW)]^P^C^C(loadblockinfo "SPCW")
+			[Special Waste Below Floor (SW)]^P^C^C(loadblockinfo "SWUS")
+			[Special Vent (SV)]^P^C^C(loadblockinfo "SPCV")
+			[<-Special Vent Below Floor (SV)]^P^C^C(loadblockinfo "SVUS")
 		[->Hospital/ Lab Gas]
 			[Lab Compressed Air (LA)]
 			[Med Compressed Air (MA)]

@@ -4290,109 +4290,109 @@
       <MenuMacro UID="MM_00674">
         <Macro>
           <Name>Soil or Waste (S or W)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "WAST")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00675">
         <Macro>
           <Name>Soil or Waste Below Floor (S or W)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "WUNS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00676">
         <Macro>
           <Name>Vent (V)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "VENT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00677">
         <Macro>
           <Name>Vent Below Floor (V)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "VUNS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00678">
         <Macro>
           <Name>Indirect Waste (IW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "IWST")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00679">
         <Macro>
           <Name>Grease Waste (GW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "GRSW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00680">
         <Macro>
           <Name>Grease Waste Below Floor (GW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "GWUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00681">
         <Macro>
           <Name>Pumped Discharge (PD)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PMPD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00682">
         <Macro>
           <Name>Rain Water Leader (RWL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "RNWL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00683">
         <Macro>
           <Name>Rain Water Below Floor (RWL)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "RWUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00684">
         <Macro>
           <Name>Lab Waste (LW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LABW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00685">
         <Macro>
           <Name>Lab Waste Below Floor (LW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LWUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00686">
         <Macro>
           <Name>Lab Vent (LV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LABV")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00687">
         <Macro>
           <Name>Lab Vent Below Floor (LV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LVUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00688">
         <Macro>
           <Name>Special Waste (SW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "SPCW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00689">
         <Macro>
           <Name>Special Waste Below Floor (SW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "SWUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00690">
         <Macro>
           <Name>Special Vent (SV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "SPCV")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00691">
         <Macro>
           <Name>Special Vent Below Floor (SV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "SVUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00693">
