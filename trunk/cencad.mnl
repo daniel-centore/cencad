@@ -54,6 +54,7 @@
 ;;rotation	How much to rotate by (-1 for prompt)
 ;;position	0=Prompt, -1=Use former
 ;;xcommand	A command that should be excecuted afterwards. Separate with ';' for progn effect.
+;;xscale	-1=Current Scale, Other=Use that as scale
 (defun insertblock (blockpath layername color linetype rotation position xcommand xscale)	;;dont set any temp vars here - it needs them as public
 	(begincommand)
 	(if (= xcommand '()) (*error* "xcommand is nil"))

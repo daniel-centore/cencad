@@ -4080,103 +4080,103 @@
       <MenuMacro UID="MM_00634">
         <Macro>
           <Name>Cold Water (-)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "COLDWATER")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00635">
         <Macro>
           <Name>Hot Water (--)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HOTWATER")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00636">
         <Macro>
           <Name>Hot Water Retn (---)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HOTWATERR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00637">
         <Macro>
           <Name>Non-Potable Cold Water (NCW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NCW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00638">
         <Macro>
           <Name>Non-Potable Hot Water (NHW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NHW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00639">
         <Macro>
           <Name>Non-Potable Hot Water Retn (NHWR)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NHWR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00640">
         <Macro>
           <Name>140 Hot Water (HW140)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HW140")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00641">
         <Macro>
           <Name>140 Hot Water Retn (HWR140)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HWR140")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00642">
         <Macro>
           <Name>180 Hot Water (HW180)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HW180")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00643">
         <Macro>
           <Name>180 Hot Water Retn (HWR180)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "HWR180")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00644">
         <Macro>
           <Name>Chilled Drinking Water Supp (DWS)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "DWS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00645">
         <Macro>
           <Name>Chilled Drinking Water Retn (DWR)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "DWR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00646">
         <Macro>
           <Name>Irrigation Water (IR)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "IRRIG")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00647">
         <Macro>
           <Name>Tempered Water (TW)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "TW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00648">
         <Macro>
           <Name>Rev Osmosis Sup (ROS)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ROWS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00649">
         <Macro>
           <Name>Rev Osmosis Ret (ROR)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "ROWR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00650">
         <Macro>
           <Name>Rev Osmosis Deionized Water (RODI)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "RODI")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00653">
