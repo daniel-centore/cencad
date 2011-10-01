@@ -650,26 +650,26 @@ ID_POP4		[&Plumbing]
 			[<-Rev Osmosis Deionized Water (RODI)]^P^C^C(loadblockinfo "RODI")
 		[->Zoned Water]
 			[->Low Zone]
-				[Cold Water (CWL)]
-				[Hot Water (HWL)]
-				[Hot Water Retn (HWRL)]
-				[Non-Potable Cold Water (NCWL)]
-				[Non-Potable Hot Water (NHWL)]
-				[<-Non-Potable Hot Water Retn (NHRL)]
+				[Cold Water (CWL)]^P^C^C(loadblockinfo "CWLZ")
+				[Hot Water (HWL)]^P^C^C(loadblockinfo "HWLZ")
+				[Hot Water Retn (HWRL)]^P^C^C(loadblockinfo "HRLZ")
+				[Non-Potable Cold Water (NCWL)]^P^C^C(loadblockinfo "NCWL")
+				[Non-Potable Hot Water (NHWL)]^P^C^C(loadblockinfo "NHWL")
+				[<-Non-Potable Hot Water Retn (NHRL)]^P^C^C(loadblockinfo "NHRL")
 			[->Medium Zone]
-				[Cold Water (CWL)]
-				[Hot Water (HWL)]
-				[Hot Water Retn (HWRL)]
-				[Non-Potable Cold Water (NCWL)]
-				[Non-Potable Hot Water (NHWL)]
-				[<-Non-Potable Hot Water Retn (NHRL)]
+				[Cold Water (CWM)]^P^C^C(loadblockinfo "CWMZ")
+				[Hot Water (HWM)]^P^C^C(loadblockinfo "HWMZ")
+				[Hot Water Retn (HWRM)]^P^C^C(loadblockinfo "HRMZ")
+				[Non-Potable Cold Water (NCWM)]^P^C^C(loadblockinfo "NCWM")
+				[Non-Potable Hot Water (NHWM)]^P^C^C(loadblockinfo "NHWM")
+				[<-Non-Potable Hot Water Retn (NHRM)]^P^C^C(loadblockinfo "NHRM")
 			[->High Zone]
-				[Cold Water (CWL)]
-				[Hot Water (HWL)]
-				[Hot Water Retn (HWRL)]
-				[Non-Potable Cold Water (NCWL)]
-				[Non-Potable Hot Water (NHWL)]
-				[<-<-Non-Potable Hot Water Retn (NHRL)]
+				[Cold Water (CWH)]^P^C^C(loadblockinfo "CWHZ")
+				[Hot Water (HWH)]^P^C^C(loadblockinfo "HWHZ")
+				[Hot Water Retn (HWRH)]^P^C^C(loadblockinfo "HRHZ")
+				[Non-Potable Cold Water (NCWH)]^P^C^C(loadblockinfo "NCWH")
+				[Non-Potable Hot Water (NHWH)]^P^C^C(loadblockinfo "NHWH")
+				[<-<-Non-Potable Hot Water Retn (NHRH)]^P^C^C(loadblockinfo "NHRH")
 		[->Waste]
 			[Soil or Waste (S or W)]
 			[Soil or Waste Below Floor (S or W)]
@@ -1754,70 +1754,4 @@ ID_TOFFuture   [_Button("Floor Mtd Future Consideration", i-toffc.bmp, i-toffc.b
 ID_TOPoke1     [_Button("Poke Thru #1", i-topoke1.bmp, i-topoke1.bmp)]^P^C^C(loadblockinfo "2TSQR2")
 ID_TOPoke2     [_Button("Poke Thru #2", i-topoke2.bmp, i-topoke2.bmp)]^P^C^C(loadblockinfo "2TOPOKE2")
 ID_TOFurnFeed  [_Button("Furniture Feed", i-tofurnf.bmp, i-tofurnf.bmp)]^P^C^C(loadblockinfo "2TSQR2-2")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
