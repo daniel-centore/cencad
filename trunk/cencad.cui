@@ -389,184 +389,184 @@
         <Macro>
           <Name>Wall Phone</Name>
           <Command>^P^C^C(loadblockinfo "2TOVOICE")</Command>
-          <SmallImage Name="i-towallp.bmp"/>
-          <LargeImage Name="i-towallp.bmp"/>
+          <SmallImage Name="i-towallp"/>
+          <LargeImage Name="i-towallp"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOData">
         <Macro>
           <Name>Data</Name>
           <Command>^P^C^C(loadblockinfo "2TODATA")</Command>
-          <SmallImage Name="i-todata.bmp"/>
-          <LargeImage Name="i-todata.bmp"/>
+          <SmallImage Name="i-todata"/>
+          <LargeImage Name="i-todata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOVoice">
         <Macro>
           <Name>Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOVOICE2")</Command>
-          <SmallImage Name="i-tovoice.bmp"/>
-          <LargeImage Name="i-tovoice.bmp"/>
+          <SmallImage Name="i-tovoice"/>
+          <LargeImage Name="i-tovoice"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOVD">
         <Macro>
           <Name>Voice/ Data Combo</Name>
           <Command>^P^C^C(loadblockinfo "2TOVD")</Command>
-          <SmallImage Name="i-tovd.bmp"/>
-          <LargeImage Name="i-tovd.bmp"/>
+          <SmallImage Name="i-tovd"/>
+          <LargeImage Name="i-tovd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOMData">
         <Macro>
           <Name>Misc Data</Name>
           <Command>^P^C^C(loadblockinfo "2TODATA2")</Command>
-          <SmallImage Name="i-tomdata.bmp"/>
-          <LargeImage Name="i-tomdata.bmp"/>
+          <SmallImage Name="i-tomdata"/>
+          <LargeImage Name="i-tomdata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOMVoice">
         <Macro>
           <Name>Misc Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOVOICE3")</Command>
-          <SmallImage Name="i-tomvoice.bmp"/>
-          <LargeImage Name="i-tomvoice.bmp"/>
+          <SmallImage Name="i-tomvoice"/>
+          <LargeImage Name="i-tomvoice"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOMVD">
         <Macro>
           <Name>Misc Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOVD2")</Command>
-          <SmallImage Name="i-tomvd.bmp"/>
-          <LargeImage Name="i-tomvd.bmp"/>
+          <SmallImage Name="i-tomvd"/>
+          <LargeImage Name="i-tomvd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOSMData">
         <Macro>
           <Name>Surface Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOSDATA")</Command>
-          <SmallImage Name="i-tosdata.bmp"/>
-          <LargeImage Name="i-tosdata.bmp"/>
+          <SmallImage Name="i-tosdata"/>
+          <LargeImage Name="i-tosdata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOSMVoice">
         <Macro>
           <Name>Surface Mtd Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOSVOICE")</Command>
-          <SmallImage Name="i-tosvoice.bmp"/>
-          <LargeImage Name="i-tosvoice.bmp"/>
+          <SmallImage Name="i-tosvoice"/>
+          <LargeImage Name="i-tosvoice"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOSMVD">
         <Macro>
           <Name>Surface Mtd Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOSVD")</Command>
-          <SmallImage Name="i-tosvd.bmp"/>
-          <LargeImage Name="i-tosvd.bmp"/>
+          <SmallImage Name="i-tosvd"/>
+          <LargeImage Name="i-tosvd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOFData">
         <Macro>
           <Name>Floor Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOFDATA")</Command>
-          <SmallImage Name="i-tofdata.bmp"/>
-          <LargeImage Name="i-tofdata.bmp"/>
+          <SmallImage Name="i-tofdata"/>
+          <LargeImage Name="i-tofdata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOFVoice">
         <Macro>
           <Name>Floor Mtd Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TODVOICE")</Command>
-          <SmallImage Name="i-tofvoice.bmp"/>
-          <LargeImage Name="i-tofvoice.bmp"/>
+          <SmallImage Name="i-tofvoice"/>
+          <LargeImage Name="i-tofvoice"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOFVD">
         <Macro>
           <Name>Floor Mtd Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOFVD")</Command>
-          <SmallImage Name="i-tofvd.bmp"/>
-          <LargeImage Name="i-tofvd.bmp"/>
+          <SmallImage Name="i-tofvd"/>
+          <LargeImage Name="i-tofvd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOCMData">
         <Macro>
           <Name>Ceiling Mtd Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOCDATA")</Command>
-          <SmallImage Name="i-tocdata.bmp"/>
-          <LargeImage Name="i-tocdata.bmp"/>
+          <SmallImage Name="i-tocdata"/>
+          <LargeImage Name="i-tocdata"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOCMVoice">
         <Macro>
           <Name>Ceiling Mtd Voice</Name>
           <Command>^P^C^C(loadblockinfo "2TOCVOICE")</Command>
-          <SmallImage Name="i-tocvoice.bmp"/>
-          <LargeImage Name="i-tocvoice.bmp"/>
+          <SmallImage Name="i-tocvoice"/>
+          <LargeImage Name="i-tocvoice"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOCMVD">
         <Macro>
           <Name>Ceiling Mtd Voice/ Data</Name>
           <Command>^P^C^C(loadblockinfo "2TOCVD")</Command>
-          <SmallImage Name="i-tocvd.bmp"/>
-          <LargeImage Name="i-tocvd.bmp"/>
+          <SmallImage Name="i-tocvd"/>
+          <LargeImage Name="i-tocvd"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOFuture">
         <Macro>
           <Name>Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOFC")</Command>
-          <SmallImage Name="i-tofc.bmp"/>
-          <LargeImage Name="i-tofc.bmp"/>
+          <SmallImage Name="i-tofc"/>
+          <LargeImage Name="i-tofc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOSFuture">
         <Macro>
           <Name>Surface Mtd Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOSFC")</Command>
-          <SmallImage Name="i-tosfc.bmp"/>
-          <LargeImage Name="i-tosfc.bmp"/>
+          <SmallImage Name="i-tosfc"/>
+          <LargeImage Name="i-tosfc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOCFuture">
         <Macro>
           <Name>Ceiling Mtd Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOCFC")</Command>
-          <SmallImage Name="i-tocfc.bmp"/>
-          <LargeImage Name="i-tocfc.bmp"/>
+          <SmallImage Name="i-tocfc"/>
+          <LargeImage Name="i-tocfc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOFFuture">
         <Macro>
           <Name>Floor Mtd Future Consideration</Name>
           <Command>^P^C^C(loadblockinfo "2TOFFC")</Command>
-          <SmallImage Name="i-toffc.bmp"/>
-          <LargeImage Name="i-toffc.bmp"/>
+          <SmallImage Name="i-toffc"/>
+          <LargeImage Name="i-toffc"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOPoke1">
         <Macro>
           <Name>Poke Thru #1</Name>
           <Command>^P^C^C(loadblockinfo "2TSQR2")</Command>
-          <SmallImage Name="i-topoke1.bmp"/>
-          <LargeImage Name="i-topoke1.bmp"/>
+          <SmallImage Name="i-topoke1"/>
+          <LargeImage Name="i-topoke1"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOPoke2">
         <Macro>
           <Name>Poke Thru #2</Name>
           <Command>^P^C^C(loadblockinfo "2TOPOKE2")</Command>
-          <SmallImage Name="i-topoke2.bmp"/>
-          <LargeImage Name="i-topoke2.bmp"/>
+          <SmallImage Name="i-topoke2"/>
+          <LargeImage Name="i-topoke2"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="ID_TOFurnFeed">
         <Macro>
           <Name>Furniture Feed</Name>
           <Command>^P^C^C(loadblockinfo "2TSQR2-2")</Command>
-          <SmallImage Name="i-tofurnf.bmp"/>
-          <LargeImage Name="i-tofurnf.bmp"/>
+          <SmallImage Name="i-tofurnf"/>
+          <LargeImage Name="i-tofurnf"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00120">
@@ -4398,121 +4398,121 @@
       <MenuMacro UID="MM_00693">
         <Macro>
           <Name>Lab Compressed Air (LA)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LAIR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00694">
         <Macro>
           <Name>Med Compressed Air (MA)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MAIR")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00695">
         <Macro>
           <Name>Vacuum (VAC)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "VACM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00696">
         <Macro>
           <Name>Lab Vacuum (V)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LVAC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00697">
         <Macro>
           <Name>Med Vacuum (MV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MVAC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00698">
         <Macro>
           <Name>Surg Vacuum (SV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "SVAC")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00699">
         <Macro>
           <Name>Oxygen (OX)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "OXYG")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00700">
         <Macro>
           <Name>Carbon Dioxide (CO2)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "CO2S")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00701">
         <Macro>
           <Name>Nitrogen (N)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "N2GA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00702">
         <Macro>
           <Name>Liquid Nitrogen (N2LQ)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "N2LQ")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00703">
         <Macro>
           <Name>Nitrous Oxide (NO)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NOGA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00704">
         <Macro>
           <Name>Nitrous Oxide Evac (EV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NOEV")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00705">
         <Macro>
           <Name>Vacuum Exhaust (VE)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "VCEX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00706">
         <Macro>
           <Name>Med Air Intake (MAI)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "MAIN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00707">
         <Macro>
           <Name>Lab Air Intake (LAI)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LAIN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00708">
         <Macro>
           <Name>Vapor Vent (V-V)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "VAPV")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00709">
         <Macro>
           <Name>Natural Gas (G)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NGAS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00710">
         <Macro>
           <Name>Natural Gas Below Floor (G)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NGUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00711">
         <Macro>
           <Name>Natural Gas Vent GV)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "NGAV")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00712">
         <Macro>
           <Name>Propane Gas (LP)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "LPGA")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00714">
