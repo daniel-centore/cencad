@@ -73,7 +73,7 @@
 ;;Gets an entity
 (defun entsel-def (prompt)
 	(setq final (entsel prompt))
-	(while (= final nil) (setq final (entsel (strcat "You missed (haha) please try again ==> " prompt))))
+	(while (= final nil) (setq final (entsel (strcat "Try again: " prompt))))
 	
 	final
 )

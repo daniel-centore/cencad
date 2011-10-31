@@ -37,6 +37,7 @@
 (load "customteldata" '("wirebreakend"))
 (load "autobreaktxt" '("autobreaktext"))
 (load "annotation" '("quickarrow"))
+(load "customplum" '("insertbreak"))
 
 ;userinput
 (loaddefaults)
