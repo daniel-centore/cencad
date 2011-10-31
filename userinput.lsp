@@ -78,3 +78,12 @@
 	final
 )
 
+(defun truefalse (prompt)
+	(setq prompt (strcat prompt " [Y/N]: "))
+	(setq final (getstring prompt))
+	
+	(while (or (= final nil) (and (/= final "y") (/= final "Y") (/= final "n") (/= final "N"))) (setq final (getstring prompt)))
+	
+	(strcase final T) ; returns as lowercase
+)
+
