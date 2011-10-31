@@ -768,12 +768,12 @@ ID_POP4		[&Plumbing]
 		[Balancing]^P^C^C(insertbreak "plbalncv" 0 4.5 0)
 		[Diaphragm]^P^C^C(insertbreak "pldiaphv" 0 4.5 0)
 		[Check]^P^C^C(insertbreak "plcheckv" 1 2.25 0)
-		[Hose End Drain]^P^C^C(nearend "plhedrnv")
+		[Hose End Drain]^P^C^C(nearend "plhedrnv" 0)
 		[Backwater]^P^C^C(insertbreak "plbwtrv" 1 2.25 0)
 		[Gas Shutoff]^P^C^C(insertbreak "plgasv2" 0 4.5 1)
-		[Strainer]
-		[Double Check Valve Assembly]
-		[Reduced Pressure Backflow Preventer]
+		[Strainer]^P^C^C(insertbreak "plstrnr" 1 4.5 0)
+		[Double Check Valve Assembly]^P^C^C(insertbreak "pldcva" 1 13.5 0)
+		[Reduced Pressure Backflow Preventer]^P^C^C(insertbreak "plrpbp" 0 15.915645 0)
 		[Temperature and Pressure Relief]
 		[Vacuum Relief]
 		[->Isometric Shut-Off]
