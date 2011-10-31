@@ -775,23 +775,16 @@ ID_POP4		[&Plumbing]
 		[Double Check Valve Assembly]^P^C^C(insertbreak "pldcva" 1 13.5 0)
 		[Reduced Pressure Backflow Preventer]^P^C^C(insertbreak "plrpbp" 0 15.915645 0)
 		[Temperature and Pressure Relief]^P^C^C(nearend "pltpv" 1)
-		[Vacuum Relief]^P^C^C(vacuumrelief)
-		[->Isometric Shut-Off]
-			[Left Horizontal]
-			[Left Vertical]
-			[Right Horizontal]
-			[Right Vertical]
-			[Top Left]
-			[<-<-Top Right]
+		[<-Vacuum Relief]^P^C^C(vacuumrelief)
 	[->Fitting/ Misc]
-		[Connect to Existing 1]
-		[Connect to Existing 2]
-		[Connect to Existing 3]
-		[Cleanout Plug 1]
-		[Cleanout Plug 2]
-		[Pipe Roll Down]
-		[Pipe Turning Down]
-		[Pipe Turning Up]
+		[Connect to Existing 1]^P^C^C(insertbreak "plcte1" 0 4.5 0)
+		[Connect to Existing 2]^P^C^C(insertbreak "plcte2" 1 4.5 0)
+		[Connect to Existing 3]^P^C^C(insertbreak "plcte3" 0 6 1)
+		[Cleanout Plug 1]^P^C^C(nearend "plclno1" 0)
+		[Cleanout Plug 2]^P^C^C(qip "plclno2")
+		[Pipe Roll Down]^P^C^C(nearend "plprd" 0)
+		[Pipe Turning Down]^P^C^C(nearend "plpdn" 0)
+		[Pipe Turning Up]^P^C^C(nearend "plpup" 0)
 		[Tee Up]
 		[Tee Down]
 		[Drop and Run]

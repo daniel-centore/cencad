@@ -44,7 +44,49 @@
 	(endcommand)
 )
 
+;; For inserting isometric stuff
+;; DEPRECATED - Isometric has been scrapped :'-(
+;;
+;; block and radius - see above
+;; rotation - Amount to rotate
+;; sX and sY - The X and Y scale multipliers (so -1 no multiply dimscale by -1)
+(defun insertiso (block radius rotation sX sY)
+	(begincommand)
+	
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+	
+	(setq entity (entsel "Pick the line! (or press ENTER)"))
+	
+	(setq sX (* sX (dimscale)))
+	(setq sY (* sY (dimscale)))
+	
+	(if (= entity '()) (progn
+		(prompt "\nInsertion point?")
+		(command "-insert" block "_non" "x" sX "y" sY pause)
+		(command rotation)
+	) (progn ; else
+		(disablesnap) ;\/
+;		(setq ang1 (rtd (moving-toward entity (line-end entity))))
+;		(setq ang2 (moving-toward entity (line-start entity)))
+		(setq ang1 rotation)
+		
+		(setq point1 (nth 1 entity)) ; where we clicked
+		(setq insert (list (nth 0 point1) (getYL entity (nth 0 point1)) 0)) ; KLUDGE KLUDGE KLUDGE!
+		
+		(command "-insert" block insert sX sY ang1)
+		(setq block (entlast))
+		(command "break" entity "F" (polar (getentdata block 10) (moving-toward entity (line-start entity)) radius) (polar (getentdata block 10) (moving-toward entity (line-end entity)) radius))
+		
+		(enablesnap) ;/\
+	))
+	
+	(endcommand)
+)
+
 ;; for inserting stuff at the end of a line
+;; block - The block to insert
+;; symmetrical - 0 if block is symmetrical (do not ask to flip) or 1 if it isn't (so we do ask)
 (defun nearend (block symmetrical)
 	(begincommand)
 	
@@ -76,6 +118,21 @@
 	
 	(prompt "\nInsertion point?")
 	(command "-insert" "plvr" "_non" "s" (dimscale) pause)
+	(prompt "\nRotation?")
+	(command pause)
+	
+	(endcommand)
+)
+
+; quick insert plumbing
+(defun qip (block)
+	(begincommand)
+	
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+	
+	(prompt "\nInsertion point?")
+	(command "-insert" block "_non" "s" (dimscale) pause)
 	(prompt "\nRotation?")
 	(command pause)
 	
