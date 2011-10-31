@@ -292,6 +292,20 @@
 	(getvar "lastpoint")
 )
 
+(defun getY (x1 y1 x2 y2 x / m b y)
+	(setq m (/ (- y2 y1) (- x2 x1)))
+	(setq b (- y1 (* m x1)))
+	(setq y (+ (* m x) b))
+	
+	y
+)
+
+(defun getYL (line x / a b)
+	(setq a (line-start line))
+	(setq b (line-end line))
+	(getY (nth 0 a) (nth 1 a) (nth 0 b) (nth 1 b) x)
+)
+
 ;;Source: http://forums.augi.com/showthread.php?t=58198
 ;;Sets an entity's height
 (defun set-attribute-height (entity height / BS BSL CT NOFUV NOFNU LP NE NEL NEAET NEA OFNU NNEL)
