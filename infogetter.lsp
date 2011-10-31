@@ -72,6 +72,10 @@
 	(- 0 number)
 )
 
+(defun dimscale ()
+	(getvar "dimscale")
+)
+
 ;;Finds the intersection between line1 and line2, even if they are not touching
 (defun infiniteptintersection (line1 line2 / ang1 ang2 possiblelength start1 end1 start2 end2)
 	(setq ang1 (line-angle line1))
@@ -97,7 +101,7 @@
 	
 	(command "erase" myline "")
 	(command "line" start (closerpoint pt1 pt2 start) "")
-	
+	""
 	(setq lines (cons (entlast) lines))
 	(command "line" (closerpoint pt1 pt2 end) end "")
 	
@@ -281,6 +285,11 @@
 	(command "-insert" path (getvar "lastpoint") "1" "1" "0")
 	(while (/= (getvar "cmdactive") 0) (command ""))
 	(command "erase" (entlast) "")
+)
+
+;;Returns the last clicked point
+(defun lastpoint ()
+	(getvar "lastpoint")
 )
 
 ;;Source: http://forums.augi.com/showthread.php?t=58198

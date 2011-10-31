@@ -480,3 +480,106 @@
 )
 
 
+
+
+
+
+(defun c:abreak ( / oldsnap bname ip ent1 ent2 ep1 ep2 ang edata ip1 ip2)
+
+	(setq oldsnap (getvar "OSMODE"))
+	;get the current snap
+
+	(setvar "OSMODE" 544)
+	;set snap to intersection and nearest
+
+	(setvar "BLIPMODE" 0)
+	;switch blips off
+
+	(setvar "CMDECHO" 0)
+	;switch command echo off
+
+	(setq bname (getfiled "Select Auto-Breaking Block" "" "dwg" 8))
+	;get the block to insert
+
+	(while
+	;while an insertion point is selected
+
+	(setq ip (getpoint "\nInsertion Point: "))
+	;get the insertion point
+
+	(setq ent1 (entsel "\nSelect Line to AutoBreak: "))
+	;get the line to break
+
+	(setvar "OSMODE" 0)
+	;switch the snap off
+
+	(setq ent2 (entget (car ent1)))
+	;get the entity data of the line
+
+	(setq ep1 (cdr (assoc 10 ent2)))
+	;get the first end point
+
+	(setq ep2 (cdr (assoc 11 ent2)))
+	;get the second end point
+
+	(setq ang (angle ep1 ep2))
+	;get the angle of the line
+
+	(setq ang (/ (* ang 180.0) pi))
+	;convert it to degrees
+
+	(setvar "ATTDIA" 0)
+	;switch off the attribute dialog box
+
+	(command "Insert" bname ip "" "" ang "" "")
+	;insert the block
+
+	(setq edata (entget (setq en (entlast))))
+	;get the block entity data
+
+	(setq edata (entget (entnext (dxf -1 edata))))
+	;get the attribute entity list
+
+	(setq ip1 (dxf 10 edata))
+	;extract the first attribute insertion point
+
+	(setq edata (entget (entnext (dxf -1 edata))))
+	;get the next attribute entity list
+
+	(setq ip2 (dxf 10 edata))
+	;extract the second attribute insertion point
+
+	(command "Break" ent1 "f" ip1 ip2)
+	;break the line
+
+	(setvar "OSMODE" 544)
+	;switch snap back on
+
+	);while
+
+	(setvar "OSMODE" oldsnap)	
+	;reset snap
+
+	(setvar "BLIPMODE" 1)
+	;switch blips back on
+
+	(setvar "CMDECHO" 1)
+	;switch command echo back on
+
+	(setvar "ATTDIA" 1)
+	;switch attribute dialog boc back on
+
+(princ)
+;finish clean
+
+);defun
+
+;;;**********************************************************
+	
+(defun dxf (code elist)
+
+  (cdr (assoc code elist))
+
+);defun
+
+
