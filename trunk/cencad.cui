@@ -4518,49 +4518,49 @@
       <MenuMacro UID="MM_00714">
         <Macro>
           <Name>Fire Main (F)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-MAIN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00715">
         <Macro>
           <Name>Fire Main Below Floor (F)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-MNUS")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00716">
         <Macro>
           <Name>Wet Standpipe (FSP)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-FSPW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00717">
         <Macro>
           <Name>Dry Standpipe (DSP)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-FSPD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00718">
         <Macro>
           <Name>Sprinkler Preaction (PA)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-SPRP")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00719">
         <Macro>
           <Name>Fire Sprinkler Wet (SPR)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-SPRW")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00720">
         <Macro>
           <Name>Fire Sprinkler Dry (DS)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-SPRD")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00721">
         <Macro>
           <Name>Fire Sprinklers Drain (SD)</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "F-SDRN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00723">
