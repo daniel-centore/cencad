@@ -21,7 +21,8 @@
 		(setq ang1 (rtd (moving-toward entity (line-end entity))))
 		(setq ang2 (moving-toward entity (line-start entity)))
 		
-		(setq insert (nth 1 entity)) ; TODO: make this snapped to the line!
+		(setq point1 (nth 1 entity)) ; where we clicked
+		(setq insert (list (nth 0 point1) (getYL entity (nth 0 point1)) 0)) ; KLUDGE KLUDGE KLUDGE!
 		
 		(command "-insert" block insert (dimscale) (dimscale) ang1)
 		(setq block (entlast))
