@@ -162,8 +162,45 @@
 	(endcommand)
 )
 
+(defun teeofftop() ;;I didn't like making this one
+	(begincommand)
+	
+	(setq main (entsel-def "Pick main: "))
+	(setq branch (entsel-def "Now for the branch: "))
+	
+	(setq block "plpteeot")
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+	
+	(disablesnap) ;\/
+	(setq ang1 (rtd (moving-toward main (line-end main))))
+	(setq ang2 (moving-toward main (line-start main)))
+	
+	(setq top (line-start branch))
+	(setq bottom (line-end branch))
+	
+	(setq insert (infiniteptintersection main branch))
+		
+	(command "-insert" block insert (dimscale) (dimscale) ang1)
+	(setq block (entlast))
+	
+	(command "break" main "F" (polar (getentdata block 10) (moving-toward main (line-start main)) 3) (polar (getentdata block 10) (moving-toward main (line-end main)) 3))
+	(if (= (truefalse "Flip symbol?") "y") (progn
+		(setent-var block 41 (- 0 (getentdata block 41)))
+		(setent-var block 50 ang2)
+	))
+	
+	(command "break" branch "F" (polar (getentdata block 10) (moving-toward branch (line-start branch)) 0) (polar (getentdata block 10) (moving-toward branch (line-end branch)) 0))
+
+	(entdel (entity-ename (entsel-def "Pick line to remove")))
+		
+	(enablesnap);/\
+	
+	(endcommand)
+)
+
 (defun c:test ()
-	(teedown "plpteedn" 3)
+	(teeofftop)
 	
 )
 
