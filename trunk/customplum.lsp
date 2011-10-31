@@ -13,7 +13,7 @@
 	
 	(if (= entity '()) (progn
 		(prompt "\nInsertion point?")
-		(command "-insert" block pause (dimscale) (dimscale))
+		(command "-insert" block "_non" "s" (dimscale) pause)
 		(prompt "\nRotation?")
 		(command pause)
 	) (progn ; else
@@ -65,6 +65,21 @@
 	(enablesnap) ;/\
 	
 	(endcommand)	
+)
+
+(defun vacuumrelief()
+	(begincommand)
+	
+	(setq block "plvr")
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+	
+	(prompt "\nInsertion point?")
+	(command "-insert" "plvr" "_non" "s" (dimscale) pause)
+	(prompt "\nRotation?")
+	(command pause)
+	
+	(endcommand)
 )
 
 (defun c:test ()
