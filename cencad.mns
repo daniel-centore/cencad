@@ -720,19 +720,48 @@ ID_POP4		[&Plumbing]
 			[Fire Sprinkler Dry (DS)]^P^C^C(loadblockinfo "F-SPRD")
 			[<-<-Fire Sprinklers Drain (SD)]^P^C^C(loadblockinfo "F-SDRN")
 	[->Other Layers]
-		[Plumbing Equipment (EQPM)]
-		[Plumbing Fixtures (FIXT)]
-		[Room Names (RMNM)]
-		[<-HVAC Equipment (HVAC)]
+		[Plumbing Equipment (EQPM)]^P^C^C(loadblockinfo "P-EQPM")
+		[Plumbing Fixtures (FIXT)]^P^C^C(loadblockinfo "P-FIXT")
+		[Room Names (RMNM)]^P^C^C(loadblockinfo "P-RMNM")
+		[<-HVAC Equipment (HVAC)]^P^C^C(loadblockinfo "P-HVAC")
 	[--]
 	[->Fixtures]
-		[Toilets/ Urinal]
-		[Lavatory]
-		[Bath/ Shower]
-		[Drinking Fountain]
-		[Standard Sinks]
-		[Lab Sinks]
-		[<-Janitor Sinks]
+		[->Toilets/ Urinal]
+			[Tank Toilet]^P^C^C(loadblockinfo "PFWCTNK")
+			[Flush Valve Toilet]^P^C^C(loadblockinfo "PFWCFV")
+			[<-Urinal]^P^C^C(loadblockinfo "PFUR")
+		[->Lavatory]
+			[Lavatory]^P^C^C(loadblockinfo "PFLAVRECT")
+			[Oval Lavatory]^P^C^C(loadblockinfo "PFLAVOVAL")
+			[Corner Lavatory]^P^C^C(loadblockinfo "PFLAVCNR")
+			[<-Handicapped Lavatory]^P^C^C(loadblockinfo "PFLAVHC")
+		[->Bath/ Shower]
+			[36*36 Shower]^P^C^C(loadblockinfo "PFSHWR36X36")
+			[36*36 Cnr Shower]^P^C^C(loadblockinfo "PFSHWR36X36C")
+			[36*48 Shower]^P^C^C(loadblockinfo "PFSHWR36X48")
+			[<-Tub]^P^C^C(loadblockinfo "PFTUB")
+		[->Drinking Fountain]
+			[Drinking Fountain]^P^C^C(loadblockinfo "PFDF")
+			[Handicapped DF]^P^C^C(loadblockinfo "PFDFHC")
+			[Oval DF]^P^C^C(loadblockinfo "PFDFOVAL")
+			[High/Low DF]^P^C^C(loadblockinfo "PFDFHILO")
+			[<-Electric Water Cooler]^P^C^C(loadblockinfo "PFDFEWC")
+		[->Standard Sinks]
+			[Single 24" Sink]^P^C^C(loadblockinfo "PFSKSNGL24")
+			[Single 30" Sink]^P^C^C(loadblockinfo "PFSKSNGL30")
+			[Double 32" Sink]^P^C^C(loadblockinfo "PFSKDBL32")
+			[Double 36" Sink]^P^C^C(loadblockinfo "PFSKDBL36")
+			[<-Double 42" Sink]^P^C^C(loadblockinfo "PFSKDBL42")
+		[->Lab Sinks]
+			[Lab Sink]^P^C^C(loadblockinfo "PFSKLAB")
+			[Cup Sink]^P^C^C(loadblockinfo "PFSKCUP")
+			[<-Emergency Shower/Eye Wash]^P^C^C(loadblockinfo "PLES")
+		[->Janitor Sinks]
+			[24*24 Mop Receptor]^P^C^C(loadblockinfo "PFMR24X24")
+			[Corner Mop Receptor]^P^C^C(loadblockinfo "PFMRCNR")
+			[24*36 Mop Receptor]^P^C^C(loadblockinfo "PFMR24X36")
+			[Service Sink]^P^C^C(loadblockinfo "PFSKSS")
+			[<-<-Flushing Rim Sink]^P^C^C(loadblockinfo "PFSKFR")
 	[->Plumbing Valves]
 		[Shut Off]
 		[Pressure Reducing]
