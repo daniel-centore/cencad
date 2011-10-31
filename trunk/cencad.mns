@@ -763,14 +763,14 @@ ID_POP4		[&Plumbing]
 			[Service Sink]^P^C^C(loadblockinfo "PFSKSS")
 			[<-<-Flushing Rim Sink]^P^C^C(loadblockinfo "PFSKFR")
 	[->Plumbing Valves]
-		[Shut Off]
-		[Pressure Reducing]
-		[Balancing]
-		[Diaphragm]
-		[Check]
-		[Hose End Drain]
-		[Backwater]
-		[Gas Shutoff]
+		[Shut Off]^P^C^C(insertbreak "plshutv" 0 4.5 0)
+		[Pressure Reducing]^P^C^C(insertbreak "plpresrv" 0 4.5 0)
+		[Balancing]^P^C^C(insertbreak "plbalncv" 0 4.5 0)
+		[Diaphragm]^P^C^C(insertbreak "pldiaphv" 0 4.5 0)
+		[Check]^P^C^C(insertbreak "plcheckv" 1 2.25 0)
+		[Hose End Drain]^P^C^C(nearend "plhedrnv")
+		[Backwater]^P^C^C(insertbreak "plbwtrv" 1 2.25 0)
+		[Gas Shutoff]^P^C^C(insertbreak "plgasv2" 0 4.5 1)
 		[Strainer]
 		[Double Check Valve Assembly]
 		[Reduced Pressure Backflow Preventer]
