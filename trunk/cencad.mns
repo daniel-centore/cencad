@@ -711,14 +711,14 @@ ID_POP4		[&Plumbing]
 			[Natural Gas Vent GV)]^P^C^C(loadblockinfo "NGAV")
 			[<-Propane Gas (LP)]^P^C^C(loadblockinfo "LPGA")
 		[->Fire Protection]
-			[Fire Main (F)]
-			[Fire Main Below Floor (F)]
-			[Wet Standpipe (FSP)]
-			[Dry Standpipe (DSP)]
-			[Sprinkler Preaction (PA)]
-			[Fire Sprinkler Wet (SPR)]
-			[Fire Sprinkler Dry (DS)]
-			[<-<-Fire Sprinklers Drain (SD)]
+			[Fire Main (F)]^P^C^C(loadblockinfo "F-MAIN")
+			[Fire Main Below Floor (F)]^P^C^C(loadblockinfo "F-MNUS")
+			[Wet Standpipe (FSP)]^P^C^C(loadblockinfo "F-FSPW")
+			[Dry Standpipe (DSP)]^P^C^C(loadblockinfo "F-FSPD")
+			[Sprinkler Preaction (PA)]^P^C^C(loadblockinfo "F-SPRP")
+			[Fire Sprinkler Wet (SPR)]^P^C^C(loadblockinfo "F-SPRW")
+			[Fire Sprinkler Dry (DS)]^P^C^C(loadblockinfo "F-SPRD")
+			[<-<-Fire Sprinklers Drain (SD)]^P^C^C(loadblockinfo "F-SDRN")
 	[->Other Layers]
 		[Plumbing Equipment (EQPM)]
 		[Plumbing Fixtures (FIXT)]
