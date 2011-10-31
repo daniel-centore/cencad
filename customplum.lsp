@@ -139,8 +139,31 @@
 	(endcommand)
 )
 
+;; for doing intersectionstuff like teedown
+(defun teedown (block radius)
+	(begincommand)
+	
+	(setq main (entsel-def "Pick main: "))
+	(setq branch (entsel-def "Now for the branch: "))
+	
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+	
+	(disablesnap) ;\/
+	(setq ang1 (rtd (moving-toward main (line-end main))))
+		
+	(setq insert (infiniteptintersection main branch))
+		
+	(command "-insert" block insert (dimscale) (dimscale) ang1)
+	(setq block (entlast))
+	(command "break" branch "F" (polar (getentdata block 10) (moving-toward branch (line-start branch)) radius) (polar (getentdata block 10) (moving-toward branch (line-end branch)) radius))
+		
+	(enablesnap);/\
+	(endcommand)
+)
+
 (defun c:test ()
-	(insertbreak "plgasv2" 0 4.5 1)
+	(teedown "plpteedn" 3)
 	
 )
 

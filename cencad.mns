@@ -785,8 +785,8 @@ ID_POP4		[&Plumbing]
 		[Pipe Roll Down]^P^C^C(nearend "plprd" 0)
 		[Pipe Turning Down]^P^C^C(nearend "plpdn" 0)
 		[Pipe Turning Up]^P^C^C(nearend "plpup" 0)
-		[Tee Up]
-		[Tee Down]
+		[Tee Up]^P^C^C(insertbreak "plpteeup" 0 3 0)
+		[Tee Down]^P^C^C(teedown "plpteedn" 3)
 		[Drop and Run]
 		[Tee off Top]
 		[Cap]
