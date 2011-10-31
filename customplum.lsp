@@ -45,7 +45,7 @@
 )
 
 ;; for inserting stuff at the end of a line
-(defun nearend (block)
+(defun nearend (block symmetrical)
 	(begincommand)
 	
 	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
@@ -57,6 +57,11 @@
 	
 	(disablesnap) ;\/
 	(command "-insert" block (closerend entity (nth 1 entity)) (dimscale) (dimscale) ang)
+	(setq block (entlast))
+	
+	(if (and (= symmetrical 1) (= (truefalse "Flip symbol?") "y")) (progn
+		(setent-var block 41 (- 0 (getentdata block 41)))
+	))
 	(enablesnap) ;/\
 	
 	(endcommand)	

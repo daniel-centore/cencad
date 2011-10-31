@@ -292,6 +292,7 @@
 	(getvar "lastpoint")
 )
 
+;;Take a look at getYL
 (defun getY (x1 y1 x2 y2 x / m b y)
 	(setq m (/ (- y2 y1) (- x2 x1)))
 	(setq b (- y1 (* m x1)))
@@ -300,6 +301,8 @@
 	y
 )
 
+;;Takes a line, then figures out what the Y value on that line is when the x value is x
+;;Based on slope-intercept (y=mx+b)
 (defun getYL (line x / a b)
 	(setq a (line-start line))
 	(setq b (line-end line))
