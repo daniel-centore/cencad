@@ -774,8 +774,8 @@ ID_POP4		[&Plumbing]
 		[Strainer]^P^C^C(insertbreak "plstrnr" 1 4.5 0)
 		[Double Check Valve Assembly]^P^C^C(insertbreak "pldcva" 1 13.5 0)
 		[Reduced Pressure Backflow Preventer]^P^C^C(insertbreak "plrpbp" 0 15.915645 0)
-		[Temperature and Pressure Relief]
-		[Vacuum Relief]
+		[Temperature and Pressure Relief]^P^C^C(nearend "pltpv" 1)
+		[Vacuum Relief]^P^C^C(vacuumrelief)
 		[->Isometric Shut-Off]
 			[Left Horizontal]
 			[Left Vertical]
