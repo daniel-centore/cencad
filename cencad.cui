@@ -4764,49 +4764,49 @@
       <MenuMacro UID="MM_00766">
         <Macro>
           <Name>Shut Off</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plshutv" 0 4.5 0)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00767">
         <Macro>
           <Name>Pressure Reducing</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plpresrv" 0 4.5 0)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00768">
         <Macro>
           <Name>Balancing</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plbalncv" 0 4.5 0)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00769">
         <Macro>
           <Name>Diaphragm</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "pldiaphv" 0 4.5 0)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00770">
         <Macro>
           <Name>Check</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plcheckv" 1 2.25 0)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00771">
         <Macro>
           <Name>Hose End Drain</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plhedrnv")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00772">
         <Macro>
           <Name>Backwater</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plbwtrv" 1 2.25 0)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00773">
         <Macro>
           <Name>Gas Shutoff</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plgasv2" 0 4.5 1)</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00774">
