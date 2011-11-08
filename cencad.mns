@@ -867,7 +867,7 @@ ID_PFPWaterGong		[<-<-Water Motor Gong]^P^C^C(loadblockinfo "PLGONG")
 	[->Programs]
 		[Change to Existing]^P^C^C(c:to-exist)
 		[Change to Demo]^P^C^C(c:to-demo)
-		[Fire Hose Distance]
+		[Fire Hose Distance]^P^C^C(fhd)
 		[Hatch Demo Fixtures]
 		[Taper 45 Single Line]
 		[<-Taper 45 Double Line]
