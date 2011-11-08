@@ -6,6 +6,8 @@
 (defun insertbreak (block symmetrical radius mirror)
 	(begincommand)
 	
+	(setq radius (/ (* (dimscale) radius) 96)) ; convert our radii depending on the dimscale
+	
 	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
 	(defblock j)
 	
@@ -52,6 +54,8 @@
 ;; sX and sY - The X and Y scale multipliers (so -1 no multiply dimscale by -1)
 (defun insertiso (block radius rotation sX sY)
 	(begincommand)
+	
+	(setq radius (/ (* (dimscale) radius) 96)) ; convert our radii depending on the dimscale
 	
 	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
 	(defblock j)
@@ -142,6 +146,8 @@
 ;; for doing intersectionstuff like teedown
 (defun teedown (block radius)
 	(begincommand)
+	
+	(setq radius (/ (* (dimscale) radius) 96)) ; convert our radii depending on the dimscale
 	
 	(setq main (entsel-def "Pick main: "))
 	(setq branch (entsel-def "Now for the branch: "))
