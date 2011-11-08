@@ -4761,268 +4761,356 @@
           <Command>^P^C^C(loadblockinfo "PFSKFR")</Command>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00766">
+      <MenuMacro UID="ID_PVShutOff">
         <Macro>
           <Name>Shut Off</Name>
           <Command>^P^C^C(insertbreak "plshutv" 0 4.5 0)</Command>
+          <SmallImage Name="i-plshutv"/>
+          <LargeImage Name="i-plshutv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00767">
+      <MenuMacro UID="ID_PVPressRed">
         <Macro>
           <Name>Pressure Reducing</Name>
           <Command>^P^C^C(insertbreak "plpresrv" 0 4.5 0)</Command>
+          <SmallImage Name="i-plpresrv"/>
+          <LargeImage Name="i-plpresrv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00768">
+      <MenuMacro UID="ID_PVBalance">
         <Macro>
           <Name>Balancing</Name>
           <Command>^P^C^C(insertbreak "plbalncv" 0 4.5 0)</Command>
+          <SmallImage Name="i-plbalncv"/>
+          <LargeImage Name="i-plbalncv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00769">
+      <MenuMacro UID="ID_PVDiaphragm">
         <Macro>
           <Name>Diaphragm</Name>
           <Command>^P^C^C(insertbreak "pldiaphv" 0 4.5 0)</Command>
+          <SmallImage Name="i-pldiaphv"/>
+          <LargeImage Name="i-pldiaphv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00770">
+      <MenuMacro UID="ID_PVCheck">
         <Macro>
           <Name>Check</Name>
           <Command>^P^C^C(insertbreak "plcheckv" 1 2.25 0)</Command>
+          <SmallImage Name="i-plcheckv"/>
+          <LargeImage Name="i-plcheckv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00771">
+      <MenuMacro UID="ID_PVHostDrain">
         <Macro>
           <Name>Hose End Drain</Name>
           <Command>^P^C^C(nearend "plhedrnv" 0)</Command>
+          <SmallImage Name="i-plhedrnv"/>
+          <LargeImage Name="i-plhedrnv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00772">
+      <MenuMacro UID="ID_PVBackWater">
         <Macro>
           <Name>Backwater</Name>
           <Command>^P^C^C(insertbreak "plbwtrv" 1 2.25 0)</Command>
+          <SmallImage Name="i-plbwtrv"/>
+          <LargeImage Name="i-plbwtrv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00773">
+      <MenuMacro UID="ID_PVGasShutoff">
         <Macro>
           <Name>Gas Shutoff</Name>
           <Command>^P^C^C(insertbreak "plgasv2" 0 4.5 1)</Command>
+          <SmallImage Name="i-plgasv2"/>
+          <LargeImage Name="i-plgasv2"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00774">
+      <MenuMacro UID="ID_PVStrainer">
         <Macro>
           <Name>Strainer</Name>
           <Command>^P^C^C(insertbreak "plstrnr" 1 4.5 0)</Command>
+          <SmallImage Name="i-plstrnr"/>
+          <LargeImage Name="i-plstrnr"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00775">
+      <MenuMacro UID="ID_PVDCVA">
         <Macro>
           <Name>Double Check Valve Assembly</Name>
           <Command>^P^C^C(insertbreak "pldcva" 1 13.5 0)</Command>
+          <SmallImage Name="i-pldcva"/>
+          <LargeImage Name="i-pldcva"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00776">
+      <MenuMacro UID="ID_PVRPBP">
         <Macro>
           <Name>Reduced Pressure Backflow Preventer</Name>
           <Command>^P^C^C(insertbreak "plrpbp" 0 15.915645 0)</Command>
+          <SmallImage Name="i-plrpbp"/>
+          <LargeImage Name="i-plrpbp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00777">
+      <MenuMacro UID="ID_PVTemp_PressRelief">
         <Macro>
           <Name>Temperature and Pressure Relief</Name>
           <Command>^P^C^C(nearend "pltpv" 1)</Command>
+          <SmallImage Name="i-pltpv"/>
+          <LargeImage Name="i-pltpv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00778">
+      <MenuMacro UID="ID_PVVacuumRelief">
         <Macro>
           <Name>Vacuum Relief</Name>
           <Command>^P^C^C(vacuumrelief)</Command>
+          <SmallImage Name="i-plvr"/>
+          <LargeImage Name="i-plvr"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00780">
+      <MenuMacro UID="ID_PFITConnExist1">
         <Macro>
           <Name>Connect to Existing 1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plcte1" 0 4.5 0)</Command>
+          <SmallImage Name="i-plcte1"/>
+          <LargeImage Name="i-plcte1"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00781">
+      <MenuMacro UID="ID_PFITConnExist2">
         <Macro>
           <Name>Connect to Existing 2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plcte2" 1 4.5 0)</Command>
+          <SmallImage Name="i-plcte2"/>
+          <LargeImage Name="i-plcte2"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00782">
+      <MenuMacro UID="ID_PFITConnExist3">
         <Macro>
           <Name>Connect to Existing 3</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plcte3" 0 6 1)</Command>
+          <SmallImage Name="i-plcte3"/>
+          <LargeImage Name="i-plcte3"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00783">
+      <MenuMacro UID="ID_PFITCleanP1">
         <Macro>
           <Name>Cleanout Plug 1</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plclno1" 0)</Command>
+          <SmallImage Name="i-plclno1"/>
+          <LargeImage Name="i-plclno1"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00784">
+      <MenuMacro UID="ID_PFITCleanP2">
         <Macro>
           <Name>Cleanout Plug 2</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(qip "plclno2")</Command>
+          <SmallImage Name="i-plclno2"/>
+          <LargeImage Name="i-plclno2"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00785">
+      <MenuMacro UID="ID_PFITRollDown">
         <Macro>
           <Name>Pipe Roll Down</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plprd" 0)</Command>
+          <SmallImage Name="i-plprd"/>
+          <LargeImage Name="i-plprd"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00786">
+      <MenuMacro UID="ID_PFITPipeDown">
         <Macro>
           <Name>Pipe Turning Down</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plpdn" 0)</Command>
+          <SmallImage Name="i-plpdn"/>
+          <LargeImage Name="i-plpdn"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00787">
+      <MenuMacro UID="ID_PFITPipeUp">
         <Macro>
           <Name>Pipe Turning Up</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plpup" 0)</Command>
+          <SmallImage Name="i-plpup"/>
+          <LargeImage Name="i-plpup"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00788">
+      <MenuMacro UID="ID_PFITTeeUp">
         <Macro>
           <Name>Tee Up</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plpteeup" 0 3 0)</Command>
+          <SmallImage Name="i-plptup"/>
+          <LargeImage Name="i-plptup"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00789">
+      <MenuMacro UID="ID_PFITTeeDown">
         <Macro>
           <Name>Tee Down</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(teedown "plpteedn" 3)</Command>
+          <SmallImage Name="i-plpteedn"/>
+          <LargeImage Name="i-plpteedn"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00790">
+      <MenuMacro UID="ID_PFITDropRun">
         <Macro>
           <Name>Drop and Run</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plpdar" 1 3 0)</Command>
+          <SmallImage Name="i-plpdnr"/>
+          <LargeImage Name="i-plpdnr"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00791">
+      <MenuMacro UID="ID_PFITTeeOffTop">
         <Macro>
           <Name>Tee off Top</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(teeofftop)</Command>
+          <SmallImage Name="i-plpteeot"/>
+          <LargeImage Name="i-plpteeot"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00792">
+      <MenuMacro UID="ID_PFITCap">
         <Macro>
           <Name>Cap</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plcap" 0)</Command>
+          <SmallImage Name="i-plcap"/>
+          <LargeImage Name="i-plcap"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00793">
+      <MenuMacro UID="ID_PFITUnion">
         <Macro>
           <Name>Union</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "pluni" 0 4.5 0)</Command>
+          <SmallImage Name="i-pluni"/>
+          <LargeImage Name="i-pluni"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00794">
+      <MenuMacro UID="ID_PFITAnchor">
         <Macro>
           <Name>Anchor</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plpa" 0 -1 0)</Command>
+          <SmallImage Name="i-plpa"/>
+          <LargeImage Name="i-plpa"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00795">
+      <MenuMacro UID="ID_PFITWaterSleeve">
         <Macro>
           <Name>Watertight Sleeve</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plwtsl" 0 -1 0)</Command>
+          <SmallImage Name="i-plwtsl"/>
+          <LargeImage Name="i-plwtsl"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00796">
+      <MenuMacro UID="ID_PFITAlignGuide">
         <Macro>
           <Name>Alignment Guide</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plpag" 0 -1 0)</Command>
+          <SmallImage Name="i-plpag"/>
+          <LargeImage Name="i-plpag"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00797">
+      <MenuMacro UID="ID_PFITExpansionJoint">
         <Macro>
           <Name>Expansion Joint</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plflex" 0 9 0)</Command>
+          <SmallImage Name="i-plflex"/>
+          <LargeImage Name="i-plflex"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00799">
+      <MenuMacro UID="ID_PFITFlushClean">
         <Macro>
           <Name>Flush Floor Cleanout</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLFCO")</Command>
+          <SmallImage Name="i-plfco"/>
+          <LargeImage Name="i-plfco"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00800">
+      <MenuMacro UID="ID_PFITWasteTrap">
         <Macro>
           <Name>Waste and Trap</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLPW-T")</Command>
+          <SmallImage Name="i-plpw-t"/>
+          <LargeImage Name="i-plpw-t"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00801">
+      <MenuMacro UID="ID_PFITTrap">
         <Macro>
           <Name>Trap</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLTP")</Command>
+          <SmallImage Name="i-pltp"/>
+          <LargeImage Name="i-pltp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00802">
+      <MenuMacro UID="ID_PFITHoseBibb">
         <Macro>
           <Name>Hose Bibb/ Wall Hydrant</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLHB2")</Command>
+          <SmallImage Name="i-plhb"/>
+          <LargeImage Name="i-plhb"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00803">
+      <MenuMacro UID="ID_PFITRoofD">
         <Macro>
           <Name>Roof Drain</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLRD")</Command>
+          <SmallImage Name="i-plrd"/>
+          <LargeImage Name="i-plrd"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00804">
+      <MenuMacro UID="ID_PFITFloorD">
         <Macro>
           <Name>Floor Drain</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLFD")</Command>
+          <SmallImage Name="i-plfd"/>
+          <LargeImage Name="i-plfd"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00805">
+      <MenuMacro UID="ID_PFITFloorDT">
         <Macro>
           <Name>Floor Drain w/ Trap</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLFDT")</Command>
+          <SmallImage Name="i-plfdt"/>
+          <LargeImage Name="i-plfdt"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00806">
+      <MenuMacro UID="ID_PFITTrenchD">
         <Macro>
           <Name>Trench Drain</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(trenchdrain)</Command>
+          <SmallImage Name="i-pltrench"/>
+          <LargeImage Name="i-pltrench"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00807">
+      <MenuMacro UID="ID_PFITLMAlarmP">
         <Macro>
           <Name>Local/ Master Alarm Panel</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLLGA")</Command>
+          <SmallImage Name="i-pllga"/>
+          <LargeImage Name="i-pllga"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00808">
+      <MenuMacro UID="ID_PFITShockAb">
         <Macro>
           <Name>Shock Absorber</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLSA")</Command>
+          <SmallImage Name="i-plsa"/>
+          <LargeImage Name="i-plsa"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00809">
+      <MenuMacro UID="ID_PFITPressureGauge">
         <Macro>
           <Name>Pressure Gauge</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLPG")</Command>
+          <SmallImage Name="i-plpg"/>
+          <LargeImage Name="i-plpg"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00810">
+      <MenuMacro UID="ID_PFITWaterMeter">
         <Macro>
           <Name>Water Meter</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plmtr" 0 7.91713 0)</Command>
+          <SmallImage Name="i-plmtr"/>
+          <LargeImage Name="i-plmtr"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00811">
+      <MenuMacro UID="ID_PFITThermometer">
         <Macro>
           <Name>Thermometer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLTHM")</Command>
+          <SmallImage Name="i-plthm"/>
+          <LargeImage Name="i-plthm"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00815">
@@ -11371,79 +11459,79 @@
           <PopMenuItem>
             <NameRef>Shut Off</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00766"/>
+              <MacroRef MenuMacroID="ID_PVShutOff"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pressure Reducing</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00767"/>
+              <MacroRef MenuMacroID="ID_PVPressRed"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Balancing</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00768"/>
+              <MacroRef MenuMacroID="ID_PVBalance"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Diaphragm</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00769"/>
+              <MacroRef MenuMacroID="ID_PVDiaphragm"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Check</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00770"/>
+              <MacroRef MenuMacroID="ID_PVCheck"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Hose End Drain</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00771"/>
+              <MacroRef MenuMacroID="ID_PVHostDrain"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Backwater</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00772"/>
+              <MacroRef MenuMacroID="ID_PVBackWater"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Gas Shutoff</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00773"/>
+              <MacroRef MenuMacroID="ID_PVGasShutoff"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Strainer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00774"/>
+              <MacroRef MenuMacroID="ID_PVStrainer"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Double Check Valve Assembly</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00775"/>
+              <MacroRef MenuMacroID="ID_PVDCVA"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Reduced Pressure Backflow Preventer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00776"/>
+              <MacroRef MenuMacroID="ID_PVRPBP"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Temperature and Pressure Relief</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00777"/>
+              <MacroRef MenuMacroID="ID_PVTemp_PressRelief"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Vacuum Relief</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00778"/>
+              <MacroRef MenuMacroID="ID_PVVacuumRelief"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -11452,188 +11540,188 @@
           <PopMenuItem>
             <NameRef>Connect to Existing 1</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00780"/>
+              <MacroRef MenuMacroID="ID_PFITConnExist1"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Connect to Existing 2</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00781"/>
+              <MacroRef MenuMacroID="ID_PFITConnExist2"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Connect to Existing 3</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00782"/>
+              <MacroRef MenuMacroID="ID_PFITConnExist3"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Cleanout Plug 1</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00783"/>
+              <MacroRef MenuMacroID="ID_PFITCleanP1"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Cleanout Plug 2</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00784"/>
+              <MacroRef MenuMacroID="ID_PFITCleanP2"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pipe Roll Down</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00785"/>
+              <MacroRef MenuMacroID="ID_PFITRollDown"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pipe Turning Down</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00786"/>
+              <MacroRef MenuMacroID="ID_PFITPipeDown"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pipe Turning Up</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00787"/>
+              <MacroRef MenuMacroID="ID_PFITPipeUp"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Tee Up</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00788"/>
+              <MacroRef MenuMacroID="ID_PFITTeeUp"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Tee Down</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00789"/>
+              <MacroRef MenuMacroID="ID_PFITTeeDown"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Drop and Run</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00790"/>
+              <MacroRef MenuMacroID="ID_PFITDropRun"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Tee off Top</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00791"/>
+              <MacroRef MenuMacroID="ID_PFITTeeOffTop"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Cap</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00792"/>
+              <MacroRef MenuMacroID="ID_PFITCap"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Union</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00793"/>
+              <MacroRef MenuMacroID="ID_PFITUnion"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Anchor</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00794"/>
+              <MacroRef MenuMacroID="ID_PFITAnchor"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Watertight Sleeve</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00795"/>
+              <MacroRef MenuMacroID="ID_PFITWaterSleeve"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Alignment Guide</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00796"/>
+              <MacroRef MenuMacroID="ID_PFITAlignGuide"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Expansion Joint</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00797"/>
+              <MacroRef MenuMacroID="ID_PFITExpansionJoint"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem IsSeparator="true"/>
           <PopMenuItem>
             <NameRef>Flush Floor Cleanout</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00799"/>
+              <MacroRef MenuMacroID="ID_PFITFlushClean"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Waste and Trap</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00800"/>
+              <MacroRef MenuMacroID="ID_PFITWasteTrap"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Trap</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00801"/>
+              <MacroRef MenuMacroID="ID_PFITTrap"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Hose Bibb/ Wall Hydrant</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00802"/>
+              <MacroRef MenuMacroID="ID_PFITHoseBibb"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Roof Drain</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00803"/>
+              <MacroRef MenuMacroID="ID_PFITRoofD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Drain</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00804"/>
+              <MacroRef MenuMacroID="ID_PFITFloorD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Drain w/ Trap</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00805"/>
+              <MacroRef MenuMacroID="ID_PFITFloorDT"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Trench Drain</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00806"/>
+              <MacroRef MenuMacroID="ID_PFITTrenchD"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Local/ Master Alarm Panel</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00807"/>
+              <MacroRef MenuMacroID="ID_PFITLMAlarmP"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Shock Absorber</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00808"/>
+              <MacroRef MenuMacroID="ID_PFITShockAb"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pressure Gauge</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00809"/>
+              <MacroRef MenuMacroID="ID_PFITPressureGauge"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Water Meter</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00810"/>
+              <MacroRef MenuMacroID="ID_PFITWaterMeter"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Thermometer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00811"/>
+              <MacroRef MenuMacroID="ID_PFITThermometer"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -16636,6 +16724,285 @@
             <Name>Furniture Feed</Name>
             <MenuItem>
               <MacroRef MenuMacroID="ID_TOFurnFeed"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbPValves" rows="6" xval="545" yval="73">
+          <Alias>P-VALVES</Alias>
+          <Alias>P/VALVES</Alias>
+          <Name>P/Valves</Name>
+          <ToolbarButton>
+            <Name>Shut-off</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVShutOff"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pressure Reducing</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVPressRed"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Balancing</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVBalance"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Diaphragm</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVDiaphragm"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Check</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVCheck"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Hose End Drain</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVHostDrain"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Backwater</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVBackWater"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Gas Shutoff</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVGasShutoff"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Strainer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVStrainer"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Double Check Valve Assembly</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVDCVA"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Reduced Pessure Backflow Preventer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVRPBP"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Temperature and Pressure Relief</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVTemp_PressRelief"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Vacuum Relief</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PVVacuumRelief"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbPFittings1" rows="6" xval="545" yval="73">
+          <Alias>P-FITTINGS1</Alias>
+          <Alias>TB_P/FITTINGS_1</Alias>
+          <Name>P/Fittings 1</Name>
+          <ToolbarButton>
+            <Name>Connect to Existing 1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITConnExist1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Connect to Existing 2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITConnExist2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Connect to Existing 3</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITConnExist3"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Cleanout Plug 1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITCleanP1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Cleanout Plug 2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITCleanP2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pipe Roll Down</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITRollDown"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pipe Turning Down</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITPipeDown"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pipe Turning Up</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITPipeUp"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Tee Up</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITTeeUp"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Tee Down</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITTeeDown"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Drop and Run</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITDropRun"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Tee Off Top</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITTeeOffTop"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Cap</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITCap"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Union</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITUnion"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Anchor</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITAnchor"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Watertight Sleeve</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITWaterSleeve"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Alignment Guide</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITAlignGuide"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Expansion Joint</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITExpansionJoint"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbPFittings2" rows="6" xval="545" yval="73">
+          <Alias>P-FITTINGS2</Alias>
+          <Alias>TB_P/FITTINGS_2</Alias>
+          <Name>P/Fittings 2</Name>
+          <ToolbarButton>
+            <Name>Flush Floor Cleanout</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITFlushClean"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Waste and Trap</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITWasteTrap"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Trap</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITTrap"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Hose Bibb/Wall Hydrant</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITHoseBibb"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Roof Drain</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITRoofD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Drain</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITFloorD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Drain with Trap</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITFloorDT"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Trench Drain</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITTrenchD"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Local/Master alarm Panel</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITLMAlarmP"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Shock Absorber</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITShockAb"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pressure Gauge</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITPressureGauge"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Water Meter</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITWaterMeter"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Thermometer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFITThermometer"/>
             </MenuItem>
           </ToolbarButton>
         </Toolbar>

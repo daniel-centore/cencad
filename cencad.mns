@@ -762,53 +762,53 @@ ID_POP4		[&Plumbing]
 			[24*36 Mop Receptor]^P^C^C(loadblockinfo "PFMR24X36")
 			[Service Sink]^P^C^C(loadblockinfo "PFSKSS")
 			[<-<-Flushing Rim Sink]^P^C^C(loadblockinfo "PFSKFR")
-	[->Plumbing Valves]
-		[Shut Off]^P^C^C(insertbreak "plshutv" 0 4.5 0)
-		[Pressure Reducing]^P^C^C(insertbreak "plpresrv" 0 4.5 0)
-		[Balancing]^P^C^C(insertbreak "plbalncv" 0 4.5 0)
-		[Diaphragm]^P^C^C(insertbreak "pldiaphv" 0 4.5 0)
-		[Check]^P^C^C(insertbreak "plcheckv" 1 2.25 0)
-		[Hose End Drain]^P^C^C(nearend "plhedrnv" 0)
-		[Backwater]^P^C^C(insertbreak "plbwtrv" 1 2.25 0)
-		[Gas Shutoff]^P^C^C(insertbreak "plgasv2" 0 4.5 1)
-		[Strainer]^P^C^C(insertbreak "plstrnr" 1 4.5 0)
-		[Double Check Valve Assembly]^P^C^C(insertbreak "pldcva" 1 13.5 0)
-		[Reduced Pressure Backflow Preventer]^P^C^C(insertbreak "plrpbp" 0 15.915645 0)
-		[Temperature and Pressure Relief]^P^C^C(nearend "pltpv" 1)
-		[<-Vacuum Relief]^P^C^C(vacuumrelief)
-	[->Fitting/ Misc]
-		[Connect to Existing 1]^P^C^C(insertbreak "plcte1" 0 4.5 0)
-		[Connect to Existing 2]^P^C^C(insertbreak "plcte2" 1 4.5 0)
-		[Connect to Existing 3]^P^C^C(insertbreak "plcte3" 0 6 1)
-		[Cleanout Plug 1]^P^C^C(nearend "plclno1" 0)
-		[Cleanout Plug 2]^P^C^C(qip "plclno2")
-		[Pipe Roll Down]^P^C^C(nearend "plprd" 0)
-		[Pipe Turning Down]^P^C^C(nearend "plpdn" 0)
-		[Pipe Turning Up]^P^C^C(nearend "plpup" 0)
-		[Tee Up]^P^C^C(insertbreak "plpteeup" 0 3 0)
-		[Tee Down]^P^C^C(teedown "plpteedn" 3)
-		[Drop and Run]^P^C^C(insertbreak "plpdar" 1 3 0)
-		[Tee off Top]^P^C^C(teeofftop)
-		[Cap]^P^C^C(nearend "plcap" 0)
-		[Union]
-		[Anchor]
-		[Watertight Sleeve]
-		[Alignment Guide]
-		[Expansion Joint]
-		[--]
-		[Flush Floor Cleanout]
-		[Waste and Trap]
-		[Trap]
-		[Hose Bibb/ Wall Hydrant]
-		[Roof Drain]
-		[Floor Drain]
-		[Floor Drain w/ Trap]
-		[Trench Drain]
-		[Local/ Master Alarm Panel]
-		[Shock Absorber]
-		[Pressure Gauge]
-		[Water Meter]
-		[<-Thermometer]
+		[->Plumbing Valves]
+ID_PVShutOff		[Shut Off]^P^C^C(insertbreak "plshutv" 0 4.5 0)
+ID_PVPressRed		[Pressure Reducing]^P^C^C(insertbreak "plpresrv" 0 4.5 0)
+ID_PVBalance		[Balancing]^P^C^C(insertbreak "plbalncv" 0 4.5 0)
+ID_PVDiaphragm		[Diaphragm]^P^C^C(insertbreak "pldiaphv" 0 4.5 0)
+ID_PVCheck		[Check]^P^C^C(insertbreak "plcheckv" 1 2.25 0)
+ID_PVHostDrain		[Hose End Drain]^P^C^C(nearend "plhedrnv" 0)
+ID_PVBackWater		[Backwater]^P^C^C(insertbreak "plbwtrv" 1 2.25 0)
+ID_PVGasShutoff		[Gas Shutoff]^P^C^C(insertbreak "plgasv2" 0 4.5 1)
+ID_PVStrainer		[Strainer]^P^C^C(insertbreak "plstrnr" 1 4.5 0)
+ID_PVDCVA		[Double Check Valve Assembly]^P^C^C(insertbreak "pldcva" 1 13.5 0)
+ID_PVRPBP		[Reduced Pressure Backflow Preventer]^P^C^C(insertbreak "plrpbp" 0 15.915645 0)
+ID_PVTemp_PressRelief	[Temperature and Pressure Relief]^P^C^C(nearend "pltpv" 1)
+ID_PVVacuumRelief	[<-Vacuum Relief]^P^C^C(vacuumrelief)
+		[->Fitting/ Misc]
+ID_PFITConnExist1	[Connect to Existing 1]^P^C^C(insertbreak "plcte1" 0 4.5 0)
+ID_PFITConnExist2	[Connect to Existing 2]^P^C^C(insertbreak "plcte2" 1 4.5 0)
+ID_PFITConnExist3	[Connect to Existing 3]^P^C^C(insertbreak "plcte3" 0 6 1)
+ID_PFITCleanP1		[Cleanout Plug 1]^P^C^C(nearend "plclno1" 0)
+ID_PFITCleanP2		[Cleanout Plug 2]^P^C^C(qip "plclno2")
+ID_PFITRollDown		[Pipe Roll Down]^P^C^C(nearend "plprd" 0)
+ID_PFITPipeDown		[Pipe Turning Down]^P^C^C(nearend "plpdn" 0)
+ID_PFITPipeUp		[Pipe Turning Up]^P^C^C(nearend "plpup" 0)
+ID_PFITTeeUp		[Tee Up]^P^C^C(insertbreak "plpteeup" 0 3 0)
+ID_PFITTeeDown		[Tee Down]^P^C^C(teedown "plpteedn" 3)
+ID_PFITDropRun		[Drop and Run]^P^C^C(insertbreak "plpdar" 1 3 0)
+ID_PFITTeeOffTop	[Tee off Top]^P^C^C(teeofftop)
+ID_PFITCap		[Cap]^P^C^C(nearend "plcap" 0)
+ID_PFITUnion		[Union]^P^C^C(insertbreak "pluni" 0 4.5 0)
+ID_PFITAnchor		[Anchor]^P^C^C(insertbreak "plpa" 0 -1 0)
+ID_PFITWaterSleeve	[Watertight Sleeve]^P^C^C(insertbreak "plwtsl" 0 -1 0)
+ID_PFITAlignGuide	[Alignment Guide]^P^C^C(insertbreak "plpag" 0 -1 0)
+ID_PFITExpansionJoint	[Expansion Joint]^P^C^C(insertbreak "plflex" 0 9 0)
+			[--]
+ID_PFITFlushClean	[Flush Floor Cleanout]^P^C^C(loadblockinfo "PLFCO")
+ID_PFITWasteTrap	[Waste and Trap]^P^C^C(loadblockinfo "PLPW-T")
+ID_PFITTrap		[Trap]^P^C^C(loadblockinfo "PLTP")
+ID_PFITHoseBibb		[Hose Bibb/ Wall Hydrant]^P^C^C(loadblockinfo "PLHB2")
+ID_PFITRoofD		[Roof Drain]^P^C^C(loadblockinfo "PLRD")
+ID_PFITFloorD		[Floor Drain]^P^C^C(loadblockinfo "PLFD")
+ID_PFITFloorDT		[Floor Drain w/ Trap]^P^C^C(loadblockinfo "PLFDT")
+ID_PFITTrenchD		[Trench Drain]^P^C^C(trenchdrain)
+ID_PFITLMAlarmP		[Local/ Master Alarm Panel]^P^C^C(loadblockinfo "PLLGA")
+ID_PFITShockAb		[Shock Absorber]^P^C^C(loadblockinfo "PLSA")
+ID_PFITPressureGauge	[Pressure Gauge]^P^C^C(loadblockinfo "PLPG")
+ID_PFITWaterMeter	[Water Meter]^P^C^C(insertbreak "plmtr" 0 7.91713 0)
+ID_PFITThermometer	[<-Thermometer]^P^C^C(loadblockinfo "PLTHM")
 	[--]
 	[->Fire Protection]
 		[->Sprinkler Heads]
@@ -1776,4 +1776,61 @@ ID_TOFFuture   [_Button("Floor Mtd Future Consideration", i-toffc, i-toffc)]^P^C
 ID_TOPoke1     [_Button("Poke Thru #1", i-topoke1, i-topoke1)]^P^C^C(loadblockinfo "2TSQR2")
 ID_TOPoke2     [_Button("Poke Thru #2", i-topoke2, i-topoke2)]^P^C^C(loadblockinfo "2TOPOKE2")
 ID_TOFurnFeed  [_Button("Furniture Feed", i-tofurnf, i-tofurnf)]^P^C^C(loadblockinfo "2TSQR2-2")
+
+**P-VALVES
+**P/VALVES
+ID_TbPValves   [_Toolbar("P/Valves", _Floating, _Hide, 545, 73, 6)]
+ID_PVShutOff   [_Button("Shut-off", i-plshutv, i-plshutv)]^P^C^C(insertbreak "plshutv" 0 4.5 0)
+ID_PVPressRed  [_Button("Pressure Reducing", i-plpresrv, i-plpresrv)]^P^C^C(insertbreak "plpresrv" 0 4.5 0)
+ID_PVBalance   [_Button("Balancing", i-plbalncv, i-plbalncv)]^P^C^C(insertbreak "plbalncv" 0 4.5 0)
+ID_PVDiaphragm [_Button("Diaphragm", i-pldiaphv, i-pldiaphv)]^P^C^C(insertbreak "pldiaphv" 0 4.5 0)
+ID_PVCheck     [_Button("Check", i-plcheckv, i-plcheckv)]^P^C^C(insertbreak "plcheckv" 1 2.25 0)
+ID_PVHostDrain [_Button("Hose End Drain", i-plhedrnv, i-plhedrnv)]^P^C^C(nearend "plhedrnv" 0)
+ID_PVBackWater [_Button("Backwater", i-plbwtrv, i-plbwtrv)]^P^C^C(insertbreak "plbwtrv" 1 2.25 0)
+ID_PVGasShutoff [_Button("Gas Shutoff", i-plgasv2, i-plgasv2)]^P^C^C(insertbreak "plgasv2" 0 4.5 1)
+ID_PVStrainer  [_Button("Strainer", i-plstrnr, i-plstrnr)]^P^C^C(insertbreak "plstrnr" 1 4.5 0)
+ID_PVDCVA      [_Button("Double Check Valve Assembly", i-pldcva, i-pldcva)]^P^C^C(insertbreak "pldcva" 1 13.5 0)
+ID_PVRPBP      [_Button("Reduced Pessure Backflow Preventer", i-plrpbp, i-plrpbp)]^P^C^C(insertbreak "plrpbp" 0 15.915645 0)
+ID_PVTemp_PressRelief [_Button("Temperature and Pressure Relief", i-pltpv, i-pltpv)]^P^C^C(nearend "pltpv" 1)
+ID_PVVacuumRelief [_Button("Vacuum Relief", i-plvr, i-plvr)]^P^C^C(vacuumrelief)
+
+**P-FITTINGS1
+**TB_P/FITTINGS_1
+ID_TbPFittings1 [_Toolbar("P/Fittings 1", _Floating, _Hide, 545, 73, 6)]
+ID_PFITConnExist1 [_Button("Connect to Existing 1", i-plcte1, i-plcte1)]^P^C^C(insertbreak "plcte1" 0 4.5 0)
+ID_PFITConnExist2 [_Button("Connect to Existing 2", i-plcte2, i-plcte2)]^P^C^C(insertbreak "plcte2" 1 4.5 0)
+ID_PFITConnExist3 [_Button("Connect to Existing 3", i-plcte3, i-plcte3)]^P^C^C(insertbreak "plcte3" 0 6 1)
+ID_PFITCleanP1 [_Button("Cleanout Plug 1", i-plclno1, i-plclno1)]^P^C^C(nearend "plclno1" 0)
+ID_PFITCleanP2 [_Button("Cleanout Plug 2", i-plclno2, i-plclno2)]^P^C^C(qip "plclno2")
+ID_PFITRollDown [_Button("Pipe Roll Down", i-plprd, i-plprd)]^P^C^C(nearend "plprd" 0)
+ID_PFITPipeDown [_Button("Pipe Turning Down", i-plpdn, i-plpdn)]^P^C^C(nearend "plpdn" 0)
+ID_PFITPipeUp  [_Button("Pipe Turning Up", i-plpup, i-plpup)]^P^C^C(nearend "plpup" 0)
+ID_PFITTeeUp   [_Button("Tee Up", i-plptup, i-plptup)]^P^C^C(insertbreak "plpteeup" 0 3 0)
+ID_PFITTeeDown [_Button("Tee Down", i-plpteedn, i-plpteedn)]^P^C^C(teedown "plpteedn" 3)
+ID_PFITDropRun [_Button("Drop and Run", i-plpdnr, i-plpdnr)]^P^C^C(insertbreak "plpdar" 1 3 0)
+ID_PFITTeeOffTop [_Button("Tee Off Top", i-plpteeot, i-plpteeot)]^P^C^C(teeofftop)
+ID_PFITCap     [_Button("Cap", i-plcap, i-plcap)]^P^C^C(nearend "plcap" 0)
+ID_PFITUnion   [_Button("Union", i-pluni, i-pluni)]^P^C^C(insertbreak "pluni" 0 4.5 0)
+ID_PFITAnchor  [_Button("Anchor", i-plpa, i-plpa)]^P^C^C(insertbreak "plpa" 0 -1 0)
+ID_PFITWaterSleeve [_Button("Watertight Sleeve", i-plwtsl, i-plwtsl)]^P^C^C(insertbreak "plwtsl" 0 -1 0)
+ID_PFITAlignGuide [_Button("Alignment Guide", i-plpag, i-plpag)]^P^C^C(insertbreak "plpag" 0 -1 0)
+ID_PFITExpansionJoint [_Button("Expansion Joint", i-plflex, i-plflex)]^P^C^C(insertbreak "plflex" 0 9 0)
+
+**P-FITTINGS2
+**TB_P/FITTINGS_2
+ID_TbPFittings2 [_Toolbar("P/Fittings 2", _Floating, _Hide, 545, 73, 6)]
+ID_PFITFlushClean [_Button("Flush Floor Cleanout", i-plfco, i-plfco)]^P^C^C(loadblockinfo "PLFCO")
+ID_PFITWasteTrap [_Button("Waste and Trap", i-plpw-t, i-plpw-t)]^P^C^C(loadblockinfo "PLPW-T")
+ID_PFITTrap    [_Button("Trap", i-pltp, i-pltp)]^P^C^C(loadblockinfo "PLTP")
+ID_PFITHoseBibb [_Button("Hose Bibb/Wall Hydrant", i-plhb, i-plhb)]^P^C^C(loadblockinfo "PLHB2")
+ID_PFITRoofD   [_Button("Roof Drain", i-plrd, i-plrd)]^P^C^C(loadblockinfo "PLRD")
+ID_PFITFloorD  [_Button("Floor Drain", i-plfd, i-plfd)]^P^C^C(loadblockinfo "PLFD")
+ID_PFITFloorDT [_Button("Floor Drain with Trap", i-plfdt, i-plfdt)]^P^C^C(loadblockinfo "PLFDT")
+ID_PFITTrenchD [_Button("Trench Drain", i-pltrench, i-pltrench)]^P^C^C(trenchdrain)
+ID_PFITLMAlarmP [_Button("Local/Master alarm Panel", i-pllga, i-pllga)]^P^C^C(loadblockinfo "PLLGA")
+ID_PFITShockAb [_Button("Shock Absorber", i-plsa, i-plsa)]^P^C^C(loadblockinfo "PLSA")
+ID_PFITPressureGauge [_Button("Pressure Gauge", i-plpg, i-plpg)]^P^C^C(loadblockinfo "PLPG")
+ID_PFITWaterMeter [_Button("Water Meter", i-plmtr, i-plmtr)]^P^C^C(insertbreak "plmtr" 0 7.91713 0)
+ID_PFITThermometer [_Button("Thermometer", i-plthm, i-plthm)]^P^C^C(loadblockinfo "PLTHM")
+
 
