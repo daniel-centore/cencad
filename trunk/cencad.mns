@@ -1005,18 +1005,18 @@ ID_POP5		[&HVAC]
 		[<-Square Elbow w/ Vanes]
 	[->Diffuser]
 		[->Supply]
-			[6*6]
-			[6*12]
-			[9*9]
-			[12*12]
-			[12*18]
-			[12*24]
-			[15*15]
-			[18*18]
-			[24*24]
-			[30*30]
-			[36*36]
-			[Custom]
+			[6*6]^P^C^C(hdfsup 6 6 "M-EQPM" "RED" "CONTINUOUS")
+			[6*12]^P^C^C(hdfsup 6 12 "M-EQPM" "RED" "CONTINUOUS")
+			[9*9]^P^C^C(hdfsup 9 9 "M-EQPM" "RED" "CONTINUOUS")
+			[12*12]^P^C^C(hdfsup 12 12 "M-EQPM" "RED" "CONTINUOUS")
+			[12*18]^P^C^C(hdfsup 12 18 "M-EQPM" "RED" "CONTINUOUS")
+			[12*24]^P^C^C(hdfsup 12 24 "M-EQPM" "RED" "CONTINUOUS")
+			[15*15]^P^C^C(hdfsup 15 15 "M-EQPM" "RED" "CONTINUOUS")
+			[18*18]^P^C^C(hdfsup 18 18 "M-EQPM" "RED" "CONTINUOUS")
+			[24*24]^P^C^C(hdfsup 24 24 "M-EQPM" "RED" "CONTINUOUS")
+			[30*30]^P^C^C(hdfsup 30 30 "M-EQPM" "RED" "CONTINUOUS")
+			[36*36]^P^C^C(hdfsup 36 36 "M-EQPM" "RED" "CONTINUOUS")
+			[Custom]^P^C^C(hdfcustom "M-EQPM" "RED")
 			[<-Custom Hidden]
 		[->Return]
 			[6*6]
