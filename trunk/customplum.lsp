@@ -273,6 +273,39 @@
 	(endcommand)
 )
 
+;; fire hose distance
+(defun fhd ()
+	(begincommand)
+	
+	(setq dist 0)
+	(setq pt1 (getpoint "Start of fire hose distance: "))
+	
+	
+	
+	(while (and (>= dist 0) (< dist 100))
+		(setq pt2 (getpoint "To: "))
+		(if (= pt2 nil)
+			;if
+			(setq dist -1)
+			
+			;else
+			(progn
+				(setq dist (+ dist (distance pt1 pt2)))
+				(setq pt1 pt2)
+				(prompt (as-string dist))
+			)
+		)
+
+	)
+	
+	(if (> dist 10)
+		; if
+		(prompt "\nNote: Fire hose distance over 100 ft!")
+	)
+	
+	(endcommand)
+)
+
 (defun trenchdrain ()
 	(begincommand)
 	
