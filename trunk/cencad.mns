@@ -843,8 +843,8 @@ ID_PFPWaterGong		[<-<-Water Motor Gong]^P^C^C(loadblockinfo "PLGONG")
 	[->Labels and Breaks]
 		[Auto Break and Text]^P^C^C(c:autobreaktext)
 		[Intersection Break]^P^C^C(c:intersectionbreak)
-		[Pipe Break End]
-		[Pipe Break 2 Points]
+		[Pipe Break End]^P^C^C(nearend "plsquig" 0)
+		[Pipe Break 2 Points]^P^C^C(pbtp)
 		[Demo Mark]
 		[Flow Arrow]
 		[<-Slope]
