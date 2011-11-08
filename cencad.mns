@@ -869,8 +869,8 @@ ID_PFPWaterGong		[<-<-Water Motor Gong]^P^C^C(loadblockinfo "PLGONG")
 		[Change to Demo]^P^C^C(c:to-demo)
 		[Fire Hose Distance]^P^C^C(fhd)
 		[Hatch Demo Fixtures]^P^C^C(hatchdemo)
-		[Taper 45 Single Line]
-		[<-Taper 45 Double Line]
+		[Taper 45 (TP)]^P^C^C(c:taper45)
+		[<-Taper 45 Double Line (TP2)]^P^C^C(c:taper45dbl)
 ***POP5
 ID_POP5		[&HVAC]
 	[->Layers]
