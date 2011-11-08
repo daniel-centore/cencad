@@ -61,6 +61,20 @@
 	(terminalinsert (strcat "hvtb" (as-string num)) "M-SUPP-TRBX" "BLUE")
 )
 
+(defun vvrr (num)
+	(terminalinsert (strcat "hvtb" (as-string num) "e") "M-RTRN-TRBX" "GREEN")
+)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

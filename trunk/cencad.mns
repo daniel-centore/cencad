@@ -1083,7 +1083,16 @@ ID_POP5		[&HVAC]
 			[VV-16]^P^C^C(vvwohc 16)
 			[VV-19]^P^C^C(vvwohc 19)
 			[<-VV-22]^P^C^C(vvwohc 22)
-		[VVR - Return...]
+		[->VVR - Return...]
+			[VVR-5]^P^C^C(vvrr 5)
+			[VVR-6]^P^C^C(vvrr 6)
+			[VVR-8]^P^C^C(vvrr 8)
+			[VVR-10]^P^C^C(vvrr 10)
+			[VVR-12]^P^C^C(vvrr 12)
+			[VVR-14]^P^C^C(vvrr 14)
+			[VVR-16]^P^C^C(vvrr 16)
+			[VVR-19]^P^C^C(vvrr 19)
+			[<-VVR-22]^P^C^C(vvrr 22)
 		[VVE - Exhaust...]
 		[--]
 		[HV - Hood Valves...]
