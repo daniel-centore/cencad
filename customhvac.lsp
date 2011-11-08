@@ -21,13 +21,12 @@
 )
 
 ;; do not call as command b/c we do not start and end it. use hdfsup.
-(defun hdfhelper (x y layername color linetype)
+(defun hdfhelper (x y layername color block)
 	(if (/= (equal layername "") t) (command "._layer" "_M"    layername ""))
 	(if (/= (equal color "")     t) (command "-layer"  "color" color     "" ""))
-	(if (/= (equal linetype "")  t) (command "-layer"  "ltype" linetype  "" ""))
 	
-	(setq block "hdfsup")
-	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+;	(setq block "hdfsup")
+	(setq j (strcat "./DWGs/HVAC/" block ".dwg"))
 	(defblock j)
 	
 	(command "-insert" block "x" x "y" y)
@@ -37,13 +36,13 @@
 	(command pause)
 )
 
-(defun hdfcustom (layername color)
+(defun hdfcustom (layername color block)
 	(begincommand)
 	
 	(setq x (getint "Width: "))
 	(setq y (getint "Height: "))
 	
-	(hdfhelper x y layername color "CONTINUOUS")
+	(hdfhelper x y layername color block)
 	
 	(endcommand)
 )
