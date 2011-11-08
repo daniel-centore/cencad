@@ -812,27 +812,27 @@ ID_PFITThermometer	[<-Thermometer]^P^C^C(loadblockinfo "PLTHM")
 	[--]
 	[->Fire Protection]
 		[->Sprinkler Heads]
-			[Sprinkler Removed]
-			[Sprinkler Pendent]
-			[Sprinkler Upright]
-			[Sprinkler Sidewall]
-			[Sprinkler Dry Sidewall]
-			[<-Sprinkler Dry Pendent/ UP]
+			[Sprinkler Removed]^P^C^C(loadblockinfo "PLS-RE")
+			[Sprinkler Pendent]^P^C^C(loadblockinfo "PLS-PN")
+			[Sprinkler Upright]^P^C^C(loadblockinfo "PLS-UP")
+			[Sprinkler Sidewall]^P^C^C(loadblockinfo "PLS-SW")
+			[Sprinkler Dry Sidewall]^P^C^C(loadblockinfo "PLS-DSW")
+			[<-Sprinkler Dry Pendent/ UP]^P^C^C(loadblockinfo "PLS-DPN")
 		[->Valves/ Fittings]
-			[Check Valve Ball Drip]
-			[Double Check Valve Assembly]
-			[Reduced Pressure Backflow Preventer]
-			[Indicating W/S Switch]
-			[Valve in Vertical]
-			[Wet Alarm Check]
-			[Dry Alarm Check]
-			[Pre-Action]
-			[Post Indicator w/ Supervisory Switch]
-			[Pressure Relief]
+			[Check Valve Ball Drip]^P^C^C(insertbreak "fpcvbd" 1 2.25 0)
+			[Double Check Valve Assembly]^P^C^C(insertbreak "fpdcva" 1 13.5 0)
+			[Reduced Pressure Backflow Preventer]^P^C^C(insertbreak "fprpbp" 0 15.9156 0)
+			[Indicating W/S Switch]^P^C^C(insertbreak "plishut" 0 4.5 0)
+			[Valve in Vertical]^P^C^C(loadblockinfo "PLVIV")
+			[Wet Alarm Check]^P^C^C(loadblockinfo "PLACV")
+			[Dry Alarm Check]^P^C^C(loadblockinfo "PLDACV")
+			[Pre-Action]^P^C^C(loadblockinfo "PLPAV")
+			[Post Indicator w/ Supervisory Switch]^P^C^C(insertbreak "plpiv" 0 6 0)
+			[Pressure Relief]^P^C^C(nearend "plfprv" 1)
 			[--]
-			[Free Standing Siamese Connection]
-			[Wall/ Flush Siamese Connection]
-			[Fire Department Valve/ Hose Cabinet]
+			[Free Standing Siamese Connection]^P^C^C(loadblockinfo "PLFSI")
+			[Wall/ Flush Siamese Connection]^P^C^C(loadblockinfo "PLWSI")
+			[Fire Department Valve/ Hose Cabinet]^P^C^C(loadblockinfo "PLFDFH")
 			[Fire Department Valve]
 			[Flow Switch]
 			[Floor Control]
