@@ -1073,7 +1073,16 @@ ID_POP5		[&HVAC]
 			[VCV-16/CV-16]^P^C^C(vcvcvhc 16)
 			[VCV-19/CV-19]^P^C^C(vcvcvhc 19)
 			[<-VCV-22/CV-22]^P^C^C(vcvcvhc 22)
-		[VV - Without Heat Coil...]
+		[->VV - Without Heat Coil...]
+			[VV-5]^P^C^C(vvwohc 5)
+			[VV-6]^P^C^C(vvwohc 6)
+			[VV-8]^P^C^C(vvwohc 8)
+			[VV-10]^P^C^C(vvwohc 10)
+			[VV-12]^P^C^C(vvwohc 12)
+			[VV-14]^P^C^C(vvwohc 14)
+			[VV-16]^P^C^C(vvwohc 16)
+			[VV-19]^P^C^C(vvwohc 19)
+			[<-VV-22]^P^C^C(vvwohc 22)
 		[VVR - Return...]
 		[VVE - Exhaust...]
 		[--]
