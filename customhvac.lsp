@@ -52,11 +52,14 @@
 	(insertblock (strcat "./DWGs/HVAC/" block ".dwg") layer color "CONTINUOUS" "-1" "0" "-1" "1")
 )
 
+; vcv-cv w/ heat coil
 (defun vcvcvhc (num)
 	(terminalinsert (strcat "hvtb" (as-string num) "c") "M-SUPP-TRBX" "BLUE")
 )
 
-
+(defun vvwohc (num)
+	(terminalinsert (strcat "hvtb" (as-string num)) "M-SUPP-TRBX" "BLUE")
+)
 
 
 
