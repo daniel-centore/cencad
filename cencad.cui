@@ -5113,154 +5113,204 @@
           <LargeImage Name="i-plthm"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00815">
+      <MenuMacro UID="ID_PFPSprinkRem">
         <Macro>
           <Name>Sprinkler Removed</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLS-RE")</Command>
+          <SmallImage Name="i-pls-re"/>
+          <LargeImage Name="i-pls-re"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00816">
+      <MenuMacro UID="ID_PFPSprinkPend">
         <Macro>
           <Name>Sprinkler Pendent</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLS-PN")</Command>
+          <SmallImage Name="i-pls-pn"/>
+          <LargeImage Name="i-pls-pn"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00817">
+      <MenuMacro UID="ID_PFPSprinkUpRight">
         <Macro>
           <Name>Sprinkler Upright</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLS-UP")</Command>
+          <SmallImage Name="i-pls-up"/>
+          <LargeImage Name="i-pls-up"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00818">
+      <MenuMacro UID="ID_PFPSprinkSide">
         <Macro>
           <Name>Sprinkler Sidewall</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLS-SW")</Command>
+          <SmallImage Name="i-pls-sw"/>
+          <LargeImage Name="i-pls-sw"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00819">
+      <MenuMacro UID="ID_PFPSprinkDry">
         <Macro>
           <Name>Sprinkler Dry Sidewall</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLS-DSW")</Command>
+          <SmallImage Name="i-pls-dsw"/>
+          <LargeImage Name="i-pls-dsw"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00820">
+      <MenuMacro UID="ID_PFPSprinkPendant">
         <Macro>
           <Name>Sprinkler Dry Pendent/ UP</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLS-DPN")</Command>
+          <SmallImage Name="i-pls-dpn"/>
+          <LargeImage Name="i-pls-dpn"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00822">
+      <MenuMacro UID="ID_PFPCheck">
         <Macro>
           <Name>Check Valve Ball Drip</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "fpcvbd" 1 2.25 0)</Command>
+          <SmallImage Name="i-fpcvbd"/>
+          <LargeImage Name="i-fpcvbd"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00823">
+      <MenuMacro UID="ID_PFPDCVA">
         <Macro>
           <Name>Double Check Valve Assembly</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "fpdcva" 1 13.5 0)</Command>
+          <SmallImage Name="i-fpdcva"/>
+          <LargeImage Name="i-fpdcva"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00824">
+      <MenuMacro UID="ID_PFPRPBP">
         <Macro>
           <Name>Reduced Pressure Backflow Preventer</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "fprpbp" 0 15.9156 0)</Command>
+          <SmallImage Name="i-fprpbp"/>
+          <LargeImage Name="i-fprpbp"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00825">
+      <MenuMacro UID="ID_PFPIndWSSw">
         <Macro>
           <Name>Indicating W/S Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plishut" 0 4.5 0)</Command>
+          <SmallImage Name="i-plishut"/>
+          <LargeImage Name="i-plishut"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00826">
+      <MenuMacro UID="ID_PFPValveVert">
         <Macro>
           <Name>Valve in Vertical</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLVIV")</Command>
+          <SmallImage Name="i-plviv"/>
+          <LargeImage Name="i-plviv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00827">
+      <MenuMacro UID="ID_PFPWetAlarmC">
         <Macro>
           <Name>Wet Alarm Check</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLACV")</Command>
+          <SmallImage Name="i-placv"/>
+          <LargeImage Name="i-placv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00828">
+      <MenuMacro UID="ID_PFPDryAlarmC">
         <Macro>
           <Name>Dry Alarm Check</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLDACV")</Command>
+          <SmallImage Name="i-pldacv"/>
+          <LargeImage Name="i-pldacv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00829">
+      <MenuMacro UID="ID_PFPPreAction">
         <Macro>
           <Name>Pre-Action</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLPAV")</Command>
+          <SmallImage Name="i-plpav"/>
+          <LargeImage Name="i-plpav"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00830">
+      <MenuMacro UID="ID_PFPPostInd">
         <Macro>
           <Name>Post Indicator w/ Supervisory Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plpiv" 0 6 0)</Command>
+          <SmallImage Name="i-plpiv"/>
+          <LargeImage Name="i-plpiv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00831">
+      <MenuMacro UID="ID_PFPPressRelief">
         <Macro>
           <Name>Pressure Relief</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plfprv" 1)</Command>
+          <SmallImage Name="i-plfprv"/>
+          <LargeImage Name="i-plfprv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00833">
+      <MenuMacro UID="ID_PFPFreeSiamese">
         <Macro>
           <Name>Free Standing Siamese Connection</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLFSI")</Command>
+          <SmallImage Name="i-plwsi"/>
+          <LargeImage Name="i-plwsi"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00834">
+      <MenuMacro UID="ID_PFPWallFSiamese">
         <Macro>
           <Name>Wall/ Flush Siamese Connection</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLWSI")</Command>
+          <SmallImage Name="i-plfsi"/>
+          <LargeImage Name="i-plfsi"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00835">
+      <MenuMacro UID="ID_PFPFireVHoseCab">
         <Macro>
           <Name>Fire Department Valve/ Hose Cabinet</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLFDFH")</Command>
+          <SmallImage Name="i-plfdfh"/>
+          <LargeImage Name="i-plfdfh"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00836">
+      <MenuMacro UID="ID_PFPFireValve">
         <Macro>
           <Name>Fire Department Valve</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(nearend "plfdv" 1)</Command>
+          <SmallImage Name="i-plfdv"/>
+          <LargeImage Name="i-plfdv"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00837">
+      <MenuMacro UID="ID_PFPFlowSw">
         <Macro>
           <Name>Flow Switch</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plfs" 0 1.5 0)</Command>
+          <SmallImage Name="i-plfs"/>
+          <LargeImage Name="i-plfs"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00838">
+      <MenuMacro UID="ID_PFPFloorCtrl">
         <Macro>
           <Name>Floor Control</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(insertbreak "plfcva" 0 12 0)</Command>
+          <SmallImage Name="i-plfcva"/>
+          <LargeImage Name="i-plfcva"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00839">
+      <MenuMacro UID="ID_PFPFireRack">
         <Macro>
           <Name>Fire Hose Rack</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLFHR")</Command>
+          <SmallImage Name="i-plfhr"/>
+          <LargeImage Name="i-plfhr"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00840">
+      <MenuMacro UID="ID_PFPElecAlarm">
         <Macro>
           <Name>Electric Alarm Bell</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLEBELL")</Command>
+          <SmallImage Name="i-plebell"/>
+          <LargeImage Name="i-plebell"/>
         </Macro>
       </MenuMacro>
-      <MenuMacro UID="MM_00841">
+      <MenuMacro UID="ID_PFPWaterGong">
         <Macro>
           <Name>Water Motor Gong</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "PLGONG")</Command>
+          <SmallImage Name="i-plgong"/>
+          <LargeImage Name="i-plgong"/>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00844">
@@ -11735,37 +11785,37 @@
           <PopMenuItem>
             <NameRef>Sprinkler Removed</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00815"/>
+              <MacroRef MenuMacroID="ID_PFPSprinkRem"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Sprinkler Pendent</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00816"/>
+              <MacroRef MenuMacroID="ID_PFPSprinkPend"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Sprinkler Upright</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00817"/>
+              <MacroRef MenuMacroID="ID_PFPSprinkUpRight"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Sprinkler Sidewall</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00818"/>
+              <MacroRef MenuMacroID="ID_PFPSprinkSide"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Sprinkler Dry Sidewall</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00819"/>
+              <MacroRef MenuMacroID="ID_PFPSprinkDry"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Sprinkler Dry Pendent/ UP</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00820"/>
+              <MacroRef MenuMacroID="ID_PFPSprinkPendant"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -11774,116 +11824,116 @@
           <PopMenuItem>
             <NameRef>Check Valve Ball Drip</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00822"/>
+              <MacroRef MenuMacroID="ID_PFPCheck"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Double Check Valve Assembly</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00823"/>
+              <MacroRef MenuMacroID="ID_PFPDCVA"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Reduced Pressure Backflow Preventer</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00824"/>
+              <MacroRef MenuMacroID="ID_PFPRPBP"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Indicating W/S Switch</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00825"/>
+              <MacroRef MenuMacroID="ID_PFPIndWSSw"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Valve in Vertical</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00826"/>
+              <MacroRef MenuMacroID="ID_PFPValveVert"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Wet Alarm Check</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00827"/>
+              <MacroRef MenuMacroID="ID_PFPWetAlarmC"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Dry Alarm Check</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00828"/>
+              <MacroRef MenuMacroID="ID_PFPDryAlarmC"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pre-Action</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00829"/>
+              <MacroRef MenuMacroID="ID_PFPPreAction"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Post Indicator w/ Supervisory Switch</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00830"/>
+              <MacroRef MenuMacroID="ID_PFPPostInd"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Pressure Relief</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00831"/>
+              <MacroRef MenuMacroID="ID_PFPPressRelief"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem IsSeparator="true"/>
           <PopMenuItem>
             <NameRef>Free Standing Siamese Connection</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00833"/>
+              <MacroRef MenuMacroID="ID_PFPFreeSiamese"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Wall/ Flush Siamese Connection</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00834"/>
+              <MacroRef MenuMacroID="ID_PFPWallFSiamese"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Fire Department Valve/ Hose Cabinet</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00835"/>
+              <MacroRef MenuMacroID="ID_PFPFireVHoseCab"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Fire Department Valve</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00836"/>
+              <MacroRef MenuMacroID="ID_PFPFireValve"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Flow Switch</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00837"/>
+              <MacroRef MenuMacroID="ID_PFPFlowSw"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Floor Control</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00838"/>
+              <MacroRef MenuMacroID="ID_PFPFloorCtrl"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Fire Hose Rack</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00839"/>
+              <MacroRef MenuMacroID="ID_PFPFireRack"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Electric Alarm Bell</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00840"/>
+              <MacroRef MenuMacroID="ID_PFPElecAlarm"/>
             </MenuItem>
           </PopMenuItem>
           <PopMenuItem>
             <NameRef>Water Motor Gong</NameRef>
             <MenuItem>
-              <MacroRef MenuMacroID="MM_00841"/>
+              <MacroRef MenuMacroID="ID_PFPWaterGong"/>
             </MenuItem>
           </PopMenuItem>
         </PopMenu>
@@ -17003,6 +17053,167 @@
             <Name>Thermometer</Name>
             <MenuItem>
               <MacroRef MenuMacroID="ID_PFITThermometer"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbPFireSprinkler" rows="6" xval="545" yval="73">
+          <Alias>P-FIRE_SPRINKLER</Alias>
+          <Alias>TB_P/FIRE_PROTECTION_SPRINKLER_HEADS</Alias>
+          <Name>P/Fire Protection Sprinkler Heads</Name>
+          <ToolbarButton>
+            <Name>Sprinkler Removed</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPSprinkRem"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sprinkler Pendant</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPSprinkPend"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sprinkler Upright</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPSprinkUpRight"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sprinkler Sidewall</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPSprinkSide"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sprinkler Dry Sidewall</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPSprinkDry"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sprinkler Dry Pendant/UP</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPSprinkPendant"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="ID_TbPFireValveFit" rows="6" xval="545" yval="73">
+          <Alias>P-FIRE_VALVEFIT</Alias>
+          <Alias>TB_P/FIRE_PROTECTION_VALVES/FITTINGS</Alias>
+          <Name>P/Fire Protection Valves/Fittings</Name>
+          <ToolbarButton>
+            <Name>Check Valve Ball Drip</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPCheck"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Double Check Valve Assembly</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPDCVA"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Reduced Pessure Backflow Preventer</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPRPBP"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Indicating W/S Switch</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPIndWSSw"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Valve in Vertical</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPValveVert"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Wet Alarm Check</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPWetAlarmC"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Dry Alarm Check</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPDryAlarmC"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pre-Action</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPPreAction"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Post Indicator W/Supervisory Switch</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPPostInd"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Pressure Relief</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPPressRelief"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Free Standing Siamese Connection</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPFreeSiamese"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Wall/Flush Siamese Connection</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPWallFSiamese"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Fire Department Valve/Hose Cabinet</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPFireVHoseCab"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Fire Department Valve</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPFireValve"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Flow Switch</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPFlowSw"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Floor Control</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPFloorCtrl"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Fire Hose Rack</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPFireRack"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Electric Alarm Bell</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPElecAlarm"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Water Motor Gong</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PFPWaterGong"/>
             </MenuItem>
           </ToolbarButton>
         </Toolbar>
