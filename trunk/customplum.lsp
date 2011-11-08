@@ -306,6 +306,24 @@
 	(endcommand)
 )
 
+(defun hatchdemo ()
+	(begincommand)
+	
+	(setq pt1 (getpoint "First point"))
+	(setq pt2 (getcorner pt1 "Second point"))
+	
+	(disablesnap)
+	
+	(command "rectangle" pt1 pt2)
+	(setq rect (entlast))
+	(command "-hatch" "p" "ANSI31" (* 0.25 (dimscale)) "0" "s" rect "" "")
+	(entdel rect)
+	
+	(enablesnap)
+	
+	(endcommand)
+)
+
 (defun trenchdrain ()
 	(begincommand)
 	
