@@ -833,12 +833,12 @@ ID_PFITThermometer	[<-Thermometer]^P^C^C(loadblockinfo "PLTHM")
 			[Free Standing Siamese Connection]^P^C^C(loadblockinfo "PLFSI")
 			[Wall/ Flush Siamese Connection]^P^C^C(loadblockinfo "PLWSI")
 			[Fire Department Valve/ Hose Cabinet]^P^C^C(loadblockinfo "PLFDFH")
-			[Fire Department Valve]
-			[Flow Switch]
-			[Floor Control]
-			[Fire Hose Rack]
-			[Electric Alarm Bell]
-			[<-<-Water Motor Gong]
+			[Fire Department Valve]^P^C^C(nearend "plfdv" 1)
+			[Flow Switch]^P^C^C(insertbreak "plfs" 0 1.5 0)
+			[Floor Control]^P^C^C(insertbreak "plfcva" 0 12 0)
+			[Fire Hose Rack]^P^C^C(loadblockinfo "PLFHR")
+			[Electric Alarm Bell]^P^C^C(loadblockinfo "PLEBELL")
+			[<-<-Water Motor Gong]^P^C^C(loadblockinfo "PLGONG")
 	[--]
 	[->Labels and Breaks]
 		[Auto Break and Text]^P^C^C(c:autobreaktext)
