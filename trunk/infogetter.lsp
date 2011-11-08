@@ -276,7 +276,7 @@
 
 ;;Returns a degrees number in radians
 (defun dtr (deg)
-	(/ (* deg 180) pi)
+	(* deg (/ pi 180))
 )
 
 ;;Allows you to reference a block by name rather than path

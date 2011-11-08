@@ -111,6 +111,7 @@
 	
 	(if (and (= symmetrical 1) (= (truefalse "Flip symbol?") "y")) (progn
 		(setent-var block 41 (- 0 (getentdata block 41)))
+		(setent-var block 50 (dtr (+ ang 180)))
 	))
 	(enablesnap) ;/\
 	
@@ -212,7 +213,7 @@
 (defun trenchdrain ()
 	(begincommand)
 	
-	(cleanprint "This command is not yet available because of a problem.")
+	(cleanprint "This command is not yet available because of a problem. Sorry.")
 	
 	;; --										--;;
 	;; I am waiting for Bricscad to get back to be regarding the following bug	  ;;
