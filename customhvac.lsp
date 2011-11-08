@@ -65,7 +65,9 @@
 	(terminalinsert (strcat "hvtb" (as-string num) "e") "M-RTRN-TRBX" "GREEN")
 )
 
-
+(defun vvee (num)
+	(terminalinsert (strcat "hvtb" (as-string num) "e") "M-EXHS-TRBX" "YELLOW")
+)
 
 
 
