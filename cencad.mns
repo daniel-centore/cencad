@@ -875,40 +875,40 @@ ID_PFPWaterGong		[<-<-Water Motor Gong]^P^C^C(loadblockinfo "PLGONG")
 ID_POP5		[&HVAC]
 	[->Layers]
 		[->Common Layers]
-			[Equipment]
-			[Controls]
-			[Control Signal Lines]
-			[Text/ Annotation/ Leaders etc]
-			[Details]
-			[<-Demolition Hatch/ Boundary]
+			[Equipment]^P^C^C(loadblockinfo "M-EQPM")
+			[Controls]^P^C^C(loadblockinfo "M-CONT")
+			[Control Signal Lines]^P^C^C(loadblockinfo "M-CONT-SIGN")
+			[Text/ Annotation/ Leaders etc]^P^C^C(loadblockinfo "M-NOTE")
+			[Details]^P^C^C(loadblockinfo "M-DETL")
+			[<-Demolition Hatch/ Boundary]^P^C^C(loadblockinfo "M-DEMO-PATT")
 		[->Supply Layers]
-			[Duct]
-			[Duct Labels]
-			[Diffusers]
-			[Diffuser Blow-out Arrows]
-			[Diffuser Tags]
-			[<-Terminal Boxes]
+			[Duct]^P^C^C(loadblockinfo "M-SUPP-DUCT")
+			[Duct Labels]^P^C^C(loadblockinfo "M-SUPP-DUCT-IDEN")
+			[Diffusers]^P^C^C^P^C^C(loadblockinfo "M-SUPP-DIFF")
+			[Diffuser Blow-out Arrows]^P^C^C(loadblockinfo "M-SUPP-DIFF-IDEN")
+			[Diffuser Tags]^P^C^C^P^C^C(loadblockinfo "M-SUPP-DIFF-IDEN")
+			[<-Terminal Boxes]^P^C^C(loadblockinfo "M-SUPP-TRBX")
 		[->Return Layers]
-			[Duct]
-			[Duct Labels]
-			[Diffusers]
-			[Diffuser Blow-out Arrows]
-			[Diffuser Tags]
-			[<-Terminal Boxes]
+			[Duct]^P^C^C(loadblockinfo "M-RTRN-DUCT")
+			[Duct Labels]^P^C^C(loadblockinfo "M-RTRN-DUCT-IDEN")
+			[Diffusers]^P^C^C^P^C^C(loadblockinfo "M-RTRN-DIFF")
+			[Diffuser Blow-out Arrows]^P^C^C(loadblockinfo "M-RTRN-DIFF-IDEN")
+			[Diffuser Tags]^P^C^C^P^C^C(loadblockinfo "M-RTRN-DIFF-IDEN")
+			[<-Terminal Boxes]^P^C^C(loadblockinfo "M-RTRN-TRBX")
 		[->Exhaust Layers]
-			[Duct]
-			[Duct Labels]
-			[Diffusers]
-			[Diffuser Blow-out Arrows]
-			[Diffuser Tags]
-			[<-Terminal Boxes]
+			[Duct]^P^C^C(loadblockinfo "M-EXHS-DUCT")
+			[Duct Labels]^P^C^C(loadblockinfo "M-EXHS-DUCT-IDEN")
+			[Diffusers]^P^C^C^P^C^C(loadblockinfo "M-EXHS-DIFF")
+			[Diffuser Blow-out Arrows]^P^C^C(loadblockinfo "M-EXHS-DIFF-IDEN")
+			[Diffuser Tags]^P^C^C^P^C^C(loadblockinfo "M-EXHS-DIFF-IDEN")
+			[<-Terminal Boxes]^P^C^C(loadblockinfo "M-EXHS-TRBX")
 		[->Other Duct Plan Layers]
-			[Duct]
-			[Duct Labels]
-			[Diffusers]
-			[Diffuser Blow-out Arrows]
-			[Diffuser Tags]
-			[<-<-Terminal Boxes]
+			[Duct]^P^C^C(loadblockinfo "M-OTHR-DUCT")
+			[Duct Labels]^P^C^C(loadblockinfo "M-OTHR-DUCT-IDEN")
+			[Diffusers]^P^C^C^P^C^C(loadblockinfo "M-OTHR-DIFF")
+			[Diffuser Blow-out Arrows]^P^C^C(loadblockinfo "M-OTHR-DIFF-IDEN")
+			[Diffuser Tags]^P^C^C^P^C^C(loadblockinfo "M-OTHR-DIFF-IDEN")
+			[<-<-Terminal Boxes]^P^C^C(loadblockinfo "M-OTHR-TRBX")
 	[--]
 	[->Duct]
 		[->Single Line]

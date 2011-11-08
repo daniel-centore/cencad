@@ -5466,181 +5466,181 @@
       <MenuMacro UID="MM_00878">
         <Macro>
           <Name>Equipment</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-EQPM")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00879">
         <Macro>
           <Name>Controls</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-CONT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00880">
         <Macro>
           <Name>Control Signal Lines</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-CONT-SIGN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00881">
         <Macro>
           <Name>Text/ Annotation/ Leaders etc</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-NOTE")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00882">
         <Macro>
           <Name>Details</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-DETL")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00883">
         <Macro>
           <Name>Demolition Hatch/ Boundary</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-DEMO-PATT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00885">
         <Macro>
           <Name>Duct</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-SUPP-DUCT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00886">
         <Macro>
           <Name>Duct Labels</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-SUPP-DUCT-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00887">
         <Macro>
           <Name>Diffusers</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-SUPP-DIFF")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00888">
         <Macro>
           <Name>Diffuser Blow-out Arrows</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-SUPP-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00889">
         <Macro>
           <Name>Diffuser Tags</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-SUPP-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00890">
         <Macro>
           <Name>Terminal Boxes</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-SUPP-TRBX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00892">
         <Macro>
           <Name>Duct</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-RTRN-DUCT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00893">
         <Macro>
           <Name>Duct Labels</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-RTRN-DUCT-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00894">
         <Macro>
           <Name>Diffusers</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-RTRN-DIFF")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00895">
         <Macro>
           <Name>Diffuser Blow-out Arrows</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-RTRN-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00896">
         <Macro>
           <Name>Diffuser Tags</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-RTRN-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00897">
         <Macro>
           <Name>Terminal Boxes</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-RTRN-TRBX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00899">
         <Macro>
           <Name>Duct</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-EXHS-DUCT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00900">
         <Macro>
           <Name>Duct Labels</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-EXHS-DUCT-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00901">
         <Macro>
           <Name>Diffusers</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-EXHS-DIFF")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00902">
         <Macro>
           <Name>Diffuser Blow-out Arrows</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-EXHS-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00903">
         <Macro>
           <Name>Diffuser Tags</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-EXHS-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00904">
         <Macro>
           <Name>Terminal Boxes</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-EXHS-TRBX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00906">
         <Macro>
           <Name>Duct</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-OTHR-DUCT")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00907">
         <Macro>
           <Name>Duct Labels</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-OTHR-DUCT-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00908">
         <Macro>
           <Name>Diffusers</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-OTHR-DIFF")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00909">
         <Macro>
           <Name>Diffuser Blow-out Arrows</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-OTHR-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00910">
         <Macro>
           <Name>Diffuser Tags</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C^P^C^C(loadblockinfo "M-OTHR-DIFF-IDEN")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00911">
         <Macro>
           <Name>Terminal Boxes</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(loadblockinfo "M-OTHR-TRBX")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_00915">
