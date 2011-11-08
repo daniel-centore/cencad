@@ -242,6 +242,37 @@
 	(endcommand)
 )
 
+(defun slope()
+	(begincommand)
+	(setq mt (getvar "mirrtext"))
+	(setvar "mirrtext" 0)
+	
+	(setq block "plslope")
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+
+	(setq line (entsel-def "Pick line at insert point: "))
+	
+	(disablesnap)
+	(command "-insert" block (nth 1 line) (dimscale) "" (rtd (line-angle line)))
+	(prompt "\nPipe slope: ")
+	(command pause)
+	(enablesnap)
+	
+	(setq pt (nth 1 line))
+	(setq ang (rtd (line-angle line)))
+	(setq secondPt (polar pt (dtr (+ ang 90)) 1))
+	
+	(disablesnap)
+	(if (= (truefalse "Flip symbol?") "y")
+		(command "mirror" (entlast) "" (nth 1 line) secondPt "yes")
+	)
+	(enablesnap)
+	
+	(setvar "mirrtext" mt)
+	(endcommand)
+)
+
 (defun trenchdrain ()
 	(begincommand)
 	
