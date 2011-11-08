@@ -617,8 +617,6 @@ PLPAV,./DWGs/PLUM/plpav.dwg,,,,-1,0,-1,-1
 PLFSI,./DWGs/PLUM/plfsi.dwg,,,,-1,0,-1,-1
 PLWSI,./DWGs/PLUM/plwsi.dwg,,,,-1,0,-1,-1
 PLFDFH,./DWGs/PLUM/plfdfh.dwg,,,,-1,0,-1,-1
-,./DWGs/PLUM/plthm.dwg,,,,-1,0,-1,-1
-,./DWGs/PLUM/plthm.dwg,,,,-1,0,-1,-1
-,./DWGs/PLUM/plthm.dwg,,,,-1,0,-1,-1
-,./DWGs/PLUM/plthm.dwg,,,,-1,0,-1,-1
-,./DWGs/PLUM/plthm.dwg,,,,-1,0,-1,-1
+PLFHR,./DWGs/PLUM/plfhr.dwg,,,,-1,0,-1,-1
+PLEBELL,./DWGs/PLUM/plebell.dwg,,,,-1,0,-1,-1
+PLGONG,./DWGs/PLUM/plgong.dwg,,,,-1,0,-1,-1
