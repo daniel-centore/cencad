@@ -28,7 +28,10 @@
 		
 		(command "-insert" block insert (dimscale) (dimscale) ang1)
 		(setq block (entlast))
-		(command "break" entity "F" (polar (getentdata block 10) (moving-toward entity (line-start entity)) radius) (polar (getentdata block 10) (moving-toward entity (line-end entity)) radius))
+		
+		(if (>= radius 0) (progn
+			(command "break" entity "F" (polar (getentdata block 10) (moving-toward entity (line-start entity)) radius) (polar (getentdata block 10) (moving-toward entity (line-end entity)) radius))
+		))
 		
 		(if (and (= symmetrical 1) (= (truefalse "Flip symbol?") "y")) (progn
 			(setent-var block 41 (- 0 (getentdata block 41)))
@@ -80,6 +83,7 @@
 		
 		(command "-insert" block insert sX sY ang1)
 		(setq block (entlast))
+		
 		(command "break" entity "F" (polar (getentdata block 10) (moving-toward entity (line-start entity)) radius) (polar (getentdata block 10) (moving-toward entity (line-end entity)) radius))
 		
 		(enablesnap) ;/\
@@ -205,6 +209,34 @@
 	(endcommand)
 )
 
+(defun trenchdrain ()
+	(begincommand)
+	
+	(cleanprint "This command is not yet available because of a problem.")
+	
+	;; --										--;;
+	;; I am waiting for Bricscad to get back to be regarding the following bug	  ;;
+	;; https://www.bricsys.com/protected/common/meetingpoint/srEdit.jsp?id=32148      ;;
+	;; --										--;;
+	
+;	(setq pt1 (getpoint "First point of rectangle: "))
+;	(setq pt2 (getcorner pt1 "Second Point of Rectangle: "))
+;	
+;	(disablesnap)
+;	(command "rectangle" pt1 pt2)
+;	(enablesnap)
+;	
+;	(setq rect (entlast))
+;	
+;	(command "-hatch" "p" "LINE,_Ire" "0" (dimscale) "N" "s" rect "")
+;	(setq hatch (entlast))
+;	
+;	(if (= (truefalse "Rotate 90 degrees? ") "y")
+;		(entdel hatch)
+;		(command "-hatch" "p" "LINES" "90" (dimscale) "N" "s" rect "")
+;	)
+	(endcommand)
+)
 (defun c:test ()
 	(teeofftop)
 	

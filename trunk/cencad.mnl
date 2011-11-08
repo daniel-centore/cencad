@@ -201,6 +201,11 @@
 	;(endcommand)	;dont add this back - we lose the return val
 )
 
+;; just prints some info for user
+(defun cleanprint (text)
+	(prompt (strcat "\n" text "\n"))
+	(princ)
+)
 
 ;;Sets the style and such
 (command "-style" "CEN-ATT" "romans.shx" (as-string text-size) "0.75" "0" "no" "no")
