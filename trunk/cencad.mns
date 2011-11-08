@@ -909,6 +909,7 @@ ID_POP5		[&HVAC]
 			[Diffuser Blow-out Arrows]^P^C^C(loadblockinfo "M-OTHR-CDFF-IDEN")
 			[Diffuser Tags]^P^C^C^P^C^C(loadblockinfo "M-OTHR-CDFF-IDEN")
 			[<-<-Terminal Boxes]^P^C^C(loadblockinfo "M-OTHR-TRBX")
+	// SAVING THIS FOR LAST //
 	[--]
 	[->Duct]
 		[->Single Line]
@@ -1003,6 +1004,10 @@ ID_POP5		[&HVAC]
 		[Round Short Radius Elbow]
 		[Square Elbow]
 		[<-Square Elbow w/ Vanes]
+		
+	// END OF PART WE ARE SAVING FOR LAST //
+	
+	
 	[->Diffuser]
 		[->Supply]
 			[6*6]^P^C^C(hdfsup 6 6 "M-SUPP-DIFF" "BLUE" "hdfsup")
@@ -1054,9 +1059,9 @@ ID_POP5		[&HVAC]
 		[--]
 		[->Diffuser Tag]
 			[Supply]^P^C^C(loadblockinfo "SUPPDIFF")
-			[Return]
-			[Exhaust]
-			[<-<-Other]
+			[Return]^P^C^C(loadblockinfo "RTRNDIFF")
+			[Exhaust]^P^C^C(loadblockinfo "EXHSDIFF")
+			[<-<-Other]^P^C^C(loadblockinfo "OTHRDIFF")
 	[->Terminal Boxes]
 		[VCV/ CV - With Heat Coil...]
 		[VV - Without Heat Coil...]
