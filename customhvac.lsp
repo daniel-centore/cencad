@@ -46,3 +46,24 @@
 	
 	(endcommand)
 )
+
+;; this is a helper. do not directly call.
+(defun terminalinsert (block layer color)
+	(insertblock (strcat "./DWGs/HVAC/" block ".dwg") layer color "CONTINUOUS" "-1" "0" "-1" "1")
+)
+
+(defun vcvcvhc (num)
+	(terminalinsert (strcat "hvtb" (as-string num) "c") "M-SUPP-TRBX" "BLUE")
+)
+
+
+
+
+
+
+
+
+
+
+
+
