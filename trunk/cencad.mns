@@ -1063,7 +1063,16 @@ ID_POP5		[&HVAC]
 			[Exhaust]^P^C^C(loadblockinfo "EXHSDIFF")
 			[<-<-Other]^P^C^C(loadblockinfo "OTHRDIFF")
 	[->Terminal Boxes]
-		[VCV/ CV - With Heat Coil...]
+		[->VCV/ CV - With Heat Coil...]
+			[VCV-5/CV-5]^P^C^C(vcvcvhc 5)
+			[VCV-6/CV-6]^P^C^C(vcvcvhc 6)
+			[VCV-8/CV-8]^P^C^C(vcvcvhc 8)
+			[VCV-10/CV-10]^P^C^C(vcvcvhc 10)
+			[VCV-12/CV-12]^P^C^C(vcvcvhc 12)
+			[VCV-14/CV-14]^P^C^C(vcvcvhc 14)
+			[VCV-16/CV-16]^P^C^C(vcvcvhc 16)
+			[VCV-19/CV-19]^P^C^C(vcvcvhc 19)
+			[<-VCV-22/CV-22]^P^C^C(vcvcvhc 22)
 		[VV - Without Heat Coil...]
 		[VVR - Return...]
 		[VVE - Exhaust...]
