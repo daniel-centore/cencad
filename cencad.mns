@@ -755,7 +755,7 @@ ID_POP4		[&Plumbing]
 		[->Lab Sinks]
 			[Lab Sink]^P^C^C(loadblockinfo "PFSKLAB")
 			[Cup Sink]^P^C^C(loadblockinfo "PFSKCUP")
-			[<-Emergency Shower/Eye Wash]^P^C^C(loadblockinfo "PLES")
+			[<-Emergency Shower/Eye Wash]^P^C^C(loadblockinfo "PLES") //it's not a mistake that this has a scale of 1
 		[->Janitor Sinks]
 			[24*24 Mop Receptor]^P^C^C(loadblockinfo "PFMR24X24")
 			[Corner Mop Receptor]^P^C^C(loadblockinfo "PFMRCNR")
@@ -1048,9 +1048,9 @@ ID_POP5		[&HVAC]
 			[<-Custom Hidden]^P^C^C(hdfcustom "M-EXHS-CDFF" "YELLOW" "hdfsupu")
 		[--]
 		[->Flow Arrows]
-			[Supply Arrow]
-			[Return Arrow]
-			[<-Exhaust Arrow]
+			[Supply Arrow]^P^C^C(loadblockinfo "HDARROWS")
+			[Return Arrow]^P^C^C(loadblockinfo "HDARROWR")
+			[<-Exhaust Arrow]^P^C^C(loadblockinfo "HDARROWR2")
 		[--]
 		[->Diffuser Tag]
 			[Supply]
