@@ -858,11 +858,11 @@ ID_PFPWaterGong		[<-<-Water Motor Gong]^P^C^C(loadblockinfo "PLGONG")
 		[--]
 		[Key Note Tag]^P^C^C(loadblockinfo "PGDIAM")
 		[General Note Tag]^P^C^C(loadblockinfo "PGNOTE")
-		[Hydraulic Node Tag]
-		[Medical Gas Designation]
-		[Equipment Designation]
-		[Kitchen Designation]
-		[<-Riser Designation]
+		[Hydraulic Node Tag]^P^C^C(loadblockinfo "PLTAGH")
+		[Medical Gas Designation]^P^C^C(loadblockinfo "PLTAGM")
+		[Equipment Designation]^P^C^C(loadblockinfo "PLTAGE")
+		[Kitchen Designation]^P^C^C(loadblockinfo "PLTAGK")
+		[<-Riser Designation]^P^C^C(loadblockinfo "PLTAGR")
 	[--]
 	[->Programs]
 		[Change to Existing]^P^C^C(c:to-exist)
