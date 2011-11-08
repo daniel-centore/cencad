@@ -201,11 +201,43 @@
 		(setent-var block 50 ang2)
 	))
 	
+	(disablesnap)
 	(command "break" branch "F" (polar (getentdata block 10) (moving-toward branch (line-start branch)) 0) (polar (getentdata block 10) (moving-toward branch (line-end branch)) 0))
+	(enablesnap)
 
 	(entdel (entity-ename (entsel-def "Pick line to remove")))
 		
 	(enablesnap);/\
+	
+	(endcommand)
+)
+
+; pipe break 2 points
+(defun pbtp ()
+	(begincommand)
+	
+	(setq entity (entsel-def "Pick the first point"))
+	(command "_none")
+	(setq pt2 (getpoint (nth 1 entity) "Second one?"))
+	
+	(disablesnap) ;; \/
+	(command "break" (nth 1 entity) pt2)
+	(setq last (entlast))
+	(enablesnap)  ;; /\
+	
+	
+	(setq block "plsquig")
+	(setq j (strcat "./DWGs/PLUM/" block ".dwg"))
+	(defblock j)
+	
+	(setq ang (rtd (moving-toward entity (nth 1 entity))))
+	
+	(disablesnap) ;\/
+	(command "-insert" block (closerend entity (nth 1 entity)) (dimscale) (dimscale) ang)
+	
+	(command "-insert" block (closerend last (nth 1 entity)) (dimscale) (dimscale) ang)
+	
+	(enablesnap) ;/\
 	
 	(endcommand)
 )
@@ -238,8 +270,3 @@
 ;	)
 	(endcommand)
 )
-(defun c:test ()
-	(teeofftop)
-	
-)
-
