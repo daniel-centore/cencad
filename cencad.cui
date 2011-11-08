@@ -6090,235 +6090,235 @@
       <MenuMacro UID="MM_01008">
         <Macro>
           <Name>6*6</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 6 6 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01009">
         <Macro>
           <Name>6*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 6 12 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01010">
         <Macro>
           <Name>9*9</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 9 9 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01011">
         <Macro>
           <Name>12*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 12 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01012">
         <Macro>
           <Name>12*18</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 18 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01013">
         <Macro>
           <Name>12*24</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 24 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01014">
         <Macro>
           <Name>15*15</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 15 15 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01015">
         <Macro>
           <Name>18*18</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 18 18 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01016">
         <Macro>
           <Name>24*24</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 24 24 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01017">
         <Macro>
           <Name>30*30</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 30 30 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01018">
         <Macro>
           <Name>36*36</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 36 36 "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01019">
         <Macro>
           <Name>Custom</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfcustom "M-SUPP-DIFF" "BLUE" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01020">
         <Macro>
           <Name>Custom Hidden</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfcustom "M-SUPP-DIFF" "BLUE" "hdfsupu")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01022">
         <Macro>
           <Name>6*6</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 6 6 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01023">
         <Macro>
           <Name>6*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 6 12 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01024">
         <Macro>
           <Name>9*9</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 9 9 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01025">
         <Macro>
           <Name>12*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 12 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01026">
         <Macro>
           <Name>12*18</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 18 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01027">
         <Macro>
           <Name>12*24</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 24 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01028">
         <Macro>
           <Name>15*15</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 15 15 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01029">
         <Macro>
           <Name>18*18</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 18 18 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01030">
         <Macro>
           <Name>24*24</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 24 24 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01031">
         <Macro>
           <Name>30*30</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 30 30 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01032">
         <Macro>
           <Name>36*36</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 36 36 "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01033">
         <Macro>
           <Name>Custom</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfcustom "M-RTRN-CDFF" "GREEN" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01034">
         <Macro>
           <Name>Custom Hidden</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfcustom "M-RTRN-CDFF" "GREEN" "hdfsupu")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01036">
         <Macro>
           <Name>6*6</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 6 6 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01037">
         <Macro>
           <Name>6*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 6 12 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01038">
         <Macro>
           <Name>9*9</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 9 9 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01039">
         <Macro>
           <Name>12*12</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 12 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01040">
         <Macro>
           <Name>12*18</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 18 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01041">
         <Macro>
           <Name>12*24</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 12 24 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01042">
         <Macro>
           <Name>15*15</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 15 15 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01043">
         <Macro>
           <Name>18*18</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 18 18 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01044">
         <Macro>
           <Name>24*24</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 24 24 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01045">
         <Macro>
           <Name>30*30</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 30 30 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01046">
         <Macro>
           <Name>36*36</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfsup 36 36 "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01047">
         <Macro>
           <Name>Custom</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfcustom "M-EXHS-CDFF" "YELLOW" "hdfsup")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01048">
         <Macro>
           <Name>Custom Hidden</Name>
-          <Command>^c^c</Command>
+          <Command>^P^C^C(hdfcustom "M-EXHS-CDFF" "YELLOW" "hdfsupu")</Command>
         </Macro>
       </MenuMacro>
       <MenuMacro UID="MM_01051">

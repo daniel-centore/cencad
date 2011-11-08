@@ -1019,33 +1019,33 @@ ID_POP5		[&HVAC]
 			[Custom]^P^C^C(hdfcustom "M-SUPP-DIFF" "BLUE" "hdfsup")
 			[<-Custom Hidden]^P^C^C(hdfcustom "M-SUPP-DIFF" "BLUE" "hdfsupu")
 		[->Return]
-			[6*6]
-			[6*12]
-			[9*9]
-			[12*12]
-			[12*18]
-			[12*24]
-			[15*15]
-			[18*18]
-			[24*24]
-			[30*30]
-			[36*36]
-			[Custom]
-			[<-Custom Hidden]
+			[6*6]^P^C^C(hdfsup 6 6 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[6*12]^P^C^C(hdfsup 6 12 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[9*9]^P^C^C(hdfsup 9 9 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[12*12]^P^C^C(hdfsup 12 12 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[12*18]^P^C^C(hdfsup 12 18 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[12*24]^P^C^C(hdfsup 12 24 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[15*15]^P^C^C(hdfsup 15 15 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[18*18]^P^C^C(hdfsup 18 18 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[24*24]^P^C^C(hdfsup 24 24 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[30*30]^P^C^C(hdfsup 30 30 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[36*36]^P^C^C(hdfsup 36 36 "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[Custom]^P^C^C(hdfcustom "M-RTRN-CDFF" "GREEN" "hdfsup")
+			[<-Custom Hidden]^P^C^C(hdfcustom "M-RTRN-CDFF" "GREEN" "hdfsupu")
 		[->Exhaust]
-			[6*6]
-			[6*12]
-			[9*9]
-			[12*12]
-			[12*18]
-			[12*24]
-			[15*15]
-			[18*18]
-			[24*24]
-			[30*30]
-			[36*36]
-			[Custom]
-			[<-Custom Hidden]
+			[6*6]^P^C^C(hdfsup 6 6 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[6*12]^P^C^C(hdfsup 6 12 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[9*9]^P^C^C(hdfsup 9 9 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[12*12]^P^C^C(hdfsup 12 12 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[12*18]^P^C^C(hdfsup 12 18 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[12*24]^P^C^C(hdfsup 12 24 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[15*15]^P^C^C(hdfsup 15 15 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[18*18]^P^C^C(hdfsup 18 18 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[24*24]^P^C^C(hdfsup 24 24 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[30*30]^P^C^C(hdfsup 30 30 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[36*36]^P^C^C(hdfsup 36 36 "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[Custom]^P^C^C(hdfcustom "M-EXHS-CDFF" "YELLOW" "hdfsup")
+			[<-Custom Hidden]^P^C^C(hdfcustom "M-EXHS-CDFF" "YELLOW" "hdfsupu")
 		[--]
 		[->Flow Arrows]
 			[Supply Arrow]
